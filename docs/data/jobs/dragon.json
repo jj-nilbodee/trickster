@@ -101,7 +101,7 @@
   {
    "name": "Path of Tribulation 16 ห้อง",
    "where": "Room of Tribulation 1–16",
-   "todo": "ล่าห้องละ 3 ตัว ทำต่อกันตามลำดับ (ดูตาราง Tribunal ด้านล่าง)",
+   "todo": "ล่าห้องละ 3 ตัวใน 5 นาที ทำต่อกันตามลำดับ",
    "reward": "ห้องสุดท้ายได้ Stone of Patience",
    "id": "dragon-q10"
   },
@@ -203,120 +203,6 @@
    "item": "เฉพาะ Dark Lord: Adamantite × 1 + Alexandrite × 2 แทน Harkon",
    "where": "Adamantite ขุดที่ 1st Mining Lot of Precious Jewel / Tapasco Mine 1 · Alexandrite ขุดที่ 2nd Mining Lot / Tapasco Mine 2",
    "step": "ขั้น 2"
-  }
- ],
- "tribunal": [
-  {
-   "id": "dragon-trib-0",
-   "messenger": "1. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Vulcanus Phoenix's Messenger",
-   "room": "Room of Tribulation 1",
-   "hunt": "3 × Tribunal Flame Moth (Lv 150) ใน 5 นาที",
-   "reward": "Flower of Revival"
-  },
-  {
-   "id": "dragon-trib-1",
-   "messenger": "2. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Alsiedo Bird's Messenger",
-   "room": "Room of Tribulation 2",
-   "hunt": "3 × Tribunal Siremaid (Lv 150) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-2",
-   "messenger": "3. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Dragon Tale's Messenger",
-   "room": "Room of Tribulation 3",
-   "hunt": "3 × Tribunal Crow (Lv 150) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-3",
-   "messenger": "4. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Black Wings' Messenger",
-   "room": "Room of Tribulation 4",
-   "hunt": "3 × Tribunal Seth (Lv 150) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-4",
-   "messenger": "5. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Sacred Esper's Messenger",
-   "room": "Room of Tribulation 5",
-   "hunt": "3 × Tribunal Shadow (Lv 160) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-5",
-   "messenger": "6. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Golden Ant's Messenger",
-   "room": "Room of Tribulation 6",
-   "hunt": "3 × Tribunal Tooth Flower (Lv 160) ใน 5 นาที",
-   "reward": "Flower of Revival"
-  },
-  {
-   "id": "dragon-trib-6",
-   "messenger": "7. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Eternal Knight's Messenger",
-   "room": "Room of Tribulation 7",
-   "hunt": "3 × Tribunal Hell Knight (Lv 160) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-7",
-   "messenger": "8. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Silvanian's Messenger",
-   "room": "Room of Tribulation 8",
-   "hunt": "3 × Tribunal Yeti (Lv 160) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-8",
-   "messenger": "9. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>King Enigmo's Messenger",
-   "room": "Room of Tribulation 9",
-   "hunt": "3 × Tribunal Koom (Lv 170) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-9",
-   "messenger": "10. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Enigmo Van Peruoza's Messenger",
-   "room": "Room of Tribulation 10",
-   "hunt": "3 × Tribunal Merman Aku (Lv 170) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-10",
-   "messenger": "11. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Centakonus' Messenger",
-   "room": "Room of Tribulation 11",
-   "hunt": "3 × Tribunal Addax (Lv 170) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-11",
-   "messenger": "12. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Oddeye Dragon's Messenger",
-   "room": "Room of Tribulation 12",
-   "hunt": "3 × Tribunal Stoor Worm (Lv 170) ใน 5 นาที",
-   "reward": "Flower of Revival"
-  },
-  {
-   "id": "dragon-trib-12",
-   "messenger": "13. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Rosaspina's Messenger",
-   "room": "Room of Tribulation 13",
-   "hunt": "3 × Tribunal Madame Chiffon (Lv 180) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-13",
-   "messenger": "14. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Amethysta's Messenger",
-   "room": "Room of Tribulation 14",
-   "hunt": "3 × Tribunal Freyja (Lv 180) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-14",
-   "messenger": "15. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Delphinus' Messenger",
-   "room": "Room of Tribulation 15",
-   "hunt": "3 × Tribunal Fish Guardian Tink (Lv 180) ใน 5 นาที",
-   "reward": "–"
-  },
-  {
-   "id": "dragon-trib-15",
-   "messenger": "16. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Flashire Snake's Messenger",
-   "room": "Room of Tribulation 16",
-   "hunt": "3 × Tribunal Leviathan (Lv 180) ใน 5 นาที",
-   "reward": "Stone of Patience"
   }
  ],
  "tiers": [

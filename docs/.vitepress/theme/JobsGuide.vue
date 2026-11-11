@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// The Jobs page: pick a character, then see its job quests, 3rd job prep, Tribunal rooms and skills per job.
+// The Jobs page: pick a character, then see its job quests, 3rd job prep and skills per job.
 // Data comes from docs/data/jobs/<id>.json. Ticks are saved in localStorage under KEY, for every character at once.
 import { computed, onMounted, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
@@ -76,7 +76,6 @@ const sections = computed(() => {
     { id: 'quest', title: 'เควสเปลี่ยนอาชีพ', kind: 'quest', rows: d.quests,
       sub: d.tiers.length > 4 ? 'เรียงตามลำดับที่ทำจริง แถวที่มีป้ายชื่ออาชีพทำเฉพาะอาชีพ 3 ที่เลือก' : 'เรียงตามลำดับที่ทำจริง' + (d.tiers.length > 3 ? ' แถวที่มีป้ายชื่ออาชีพทำเฉพาะอาชีพ 3 ที่เลือก' : '') },
     { id: 'prep', title: 'อาชีพ 3: ของที่ต้องเตรียม', kind: 'prep', rows: d.prep, sub: 'ของที่ต้องหาเองระหว่างทำเควสอาชีพ 3 ช่อง "ใช้ในขั้น" ตรงกับขั้นในเควสด้านบน' },
-    { id: 'trib', title: 'ล่ามอน Tribunal 16 ห้อง', kind: 'trib', rows: d.tribunal, sub: 'ต้องมีเควสค้างในสมุด ทำต่อกันตามลำดับ ห้องละ 3 ตัวใน 5 นาที แต่ละห้องให้ 749,730 EXP / 761,562 TM' },
   ]
   for (const t of d.tiers) {
     out.push({ id: 'sk' + t.key, title: t.title, kind: 'skill', rows: t.skills, icon: t.icon,
@@ -145,15 +144,6 @@ const secDone = (s: any) => s.rows.filter((r: any) => ticks.value[r.id]).length
           </tr>
         </tbody></table>
 
-        <table v-else-if="s.kind === 'trib'"><thead><tr><th></th><th>Messenger</th><th>ห้อง</th><th>ล่า</th><th>ได้</th></tr></thead><tbody>
-          <tr v-for="r in s.rows" v-show="visible(r)" :key="r.id" :class="{ done: ticks[r.id] }">
-            <td class="ck"><input :id="r.id" type="checkbox" aria-label="ทำแล้ว" :checked="!!ticks[r.id]" @change="toggle(r.id, ($event.target as HTMLInputElement).checked)" /></td>
-            <td class="nm" data-l="Messenger" v-html="html(r.messenger)"></td>
-            <td class="nw" data-l="ห้อง">{{ r.room }}</td>
-            <td data-l="ล่า">{{ r.hunt }}</td>
-            <td data-l="ได้">{{ r.reward }}</td>
-          </tr>
-        </tbody></table>
 
         <table v-else><thead><tr><th></th><th>สกิล</th><th>TM</th><th>ทำอะไร</th><th>ต้องมีก่อน</th><th>ของฝึก Mastery</th><th>ได้จาก</th></tr></thead><tbody>
           <tr v-for="r in s.rows" v-show="visible(r)" :key="r.id" :class="{ done: ticks[r.id] }">

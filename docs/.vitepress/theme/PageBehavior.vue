@@ -5,6 +5,7 @@ import { onBeforeUnmount, onMounted } from 'vue'
 import { useData } from 'vitepress'
 import initGuide from './behaviors-guide.js'
 import initKeyRows from './behaviors-key.js'
+import initFold from './behaviors-fold.js'
 
 const zones = import.meta.glob<{ default: () => void }>('./zones/*.js', { eager: true })
 const { frontmatter } = useData()
@@ -18,6 +19,8 @@ onMounted(() => {
     zones[`./zones/${fm.zone}.js`].default()
     initKeyRows(fm.hiddenKey, controller.signal)
   }
+  const page = document.querySelector<HTMLElement>('.pg[data-page]')?.dataset.page
+  if (page && (fm.kind === 'guide' || fm.kind === 'key')) initFold(page, controller.signal)
 })
 onBeforeUnmount(() => controller?.abort())
 </script>

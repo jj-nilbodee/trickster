@@ -17,3 +17,10 @@
 
 /* VitePress makes every img a block; the pages expect inline icons next to text. */
 .pg img { display: inline; vertical-align: middle }
+/* foldable sections (behaviors-fold.js) */
+.pg section.foldable > h2 { cursor: pointer; user-select: none }
+.pg section.foldable > h2 .fold-btn { all: unset; display: inline-block; width: 1.1em; margin-right: 4px; color: var(--accent); cursor: pointer }
+.pg section.foldable > h2 .fold-btn:focus-visible { outline: 2px solid var(--accent); border-radius: 4px }
+.pg section.foldable > h2 .fold-link { margin-left: 10px; font-size: 14px; font-weight: 400; color: var(--muted); text-decoration: none; opacity: .6 }
+.pg section.foldable > h2:hover .fold-link, .pg section.foldable > h2 .fold-link:focus-visible { opacity: 1; color: var(--accent) }
+.pg .wrap:not(.searching) section.folded > :not(h2) { display: none !important }

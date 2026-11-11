@@ -69,3 +69,5 @@
 .pg-key .step .give ul { list-style:none; margin:0; padding:0 0 0 4px; display:flex; flex-direction:column; gap:6px }
 .pg-key .step .give li { margin:0; padding-left:10px; border-left:2px solid var(--line) }
 .pg-key img.mob { display:inline-block; width:auto; height:auto; max-width:30px; max-height:30px; vertical-align:middle; margin:0 3px 0 2px }
+.pg-key .exp { color:var(--accent); font-variant-numeric:tabular-nums }
+.pg-key .tag.exp { display:inline-block; margin-top:2px }

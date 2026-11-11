@@ -1,0 +1,12 @@
+.site-nav {
+  --nav-bg: #ffffff; --nav-fg: #2d5f6e; --nav-line: #d6dddb;
+  position: sticky; top: 0; z-index: 1000;
+  padding: 8px max(16px, env(safe-area-inset-left, 0px));
+  background: var(--nav-bg); border-bottom: 1px solid var(--nav-line);
+  font: 600 14px/1.4 "Noto Sans Thai", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  .site-nav { --nav-bg: #182024; --nav-fg: #8ccbd8; --nav-line: #2b373b; }
+}
+.site-nav a { color: var(--nav-fg); text-decoration: none; }
+.site-nav a:hover { text-decoration: underline; }

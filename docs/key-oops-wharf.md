@@ -193,6 +193,36 @@ hiddenKey: "oops-hidden-v1"
 
 <section>
 
+## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
+
+<p class="muted">ไม่รวมเควส Card Girl เควสเปลี่ยนอาชีพ และเควส Guardian</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>รอบ</th><th>ที่อยู่</th><th>ของที่ต้องส่ง</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td>Kochi - Register Oops Wharf</td><td class="n">1</td><td>Gate of Oops Wharf</td><td>ลงทะเบียนวาร์ปกับ Kochi</td><td>เปิดวาร์ปมา Gate of Oops Wharf </td></tr>
+<tr><td>Marinel - Mermaid Palace's Entertainer Elicia<br/><span class="tag">Lv 70+, หลังผ่าน Skipper Min - The Way to Mermaid Palace</span></td><td class="n">1</td><td>Oops Wharf</td><td>ไปคุยกับ Entertainer Elicia</td><td><img alt="" class="it" src="./assets/img/dde1739c3f2e.gif"/>1,000 Galder Coupon</td></tr>
+<tr><td>Eclipse - The Story of the Gods 5<br/><span class="tag">Lv 240+, ใช้ Mind's Eye, หลังผ่าน The Story of the Gods 4 และ หลังผ่าน Shadow Star 5 อย่างน้อย 1 ครั้ง</span></td><td class="n">1</td><td>Oops Wharf</td><td>Shadow Onyx × 2 ← Mermaid Palace Shadow Monsters<br/>Shadow Drop Agate × 2 ← Mermaid Palace Shadow Monsters</td><td><img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon × 3</td></tr>
+<tr><td>Monkey T - Monkey T's Request (4)<br/><span class="tag">Lv 60+</span></td><td class="n">25</td><td>Wharf Field 1 - Haunted Town</td><td>Eternal Life Grass × 10 ← Quiem</td><td><img alt="" class="it" src="./assets/img/8b350f212dfa.gif"/>50 Galder Coupon, 100 Galder Coupon or 500 Galder Coupon</td></tr>
+<tr><td>Stella - Shadow Star 5<br/><span class="tag">Lv 240+, ใช้ Mind's Eye</span></td><td class="n">1</td><td>Oops Wharf</td><td>Hair Tie × 5 ← Shadow Sea Tiger / Shadow Quiem / Shadow Crow / Shadow Black Foe / Shadow Master Foe / Shadow Mermaid Little / Shadow Fish Guardian Tink / Shadow Fish Guardian Bell / Shadow Merman Aku / and Shadow Merman Ale</td><td>Half Pink Potion × 9, Half Blue Potion or Story of the Star Gazer Girl 5 × 9</td></tr>
+<tr><td>Driller King Marky - Romance of Drilling - Oops Wharf<br/><span class="tag">Lv 60+~160, หลังผ่าน Indiana John - Old Man's Dream</span></td><td class="n">1</td><td>Oops Wharf</td><td>Weird Wharf Map A ← ขุดใน Oops Wharf Fields<br/>Weird Wharf Map B ← ขุดใน Oops Wharf Fields</td><td>Weird Wharf Treasure Map</td></tr>
+<tr><td>Explorer Reina - Treasure Hunting 2 - Oops Wharf<br/><span class="tag">Lv 60+~160, หลังผ่าน Indiana John - Old Man's Dream และ finished Treasure Hunting 1 - Oops Wharf 50 times, ไม่มี Old Wharf Treasure Map ในกระเป๋า</span></td><td class="n">1</td><td>Wharf Field 1 - Haunted Town</td><td>Old Wharf Map A ← ขุดใน Oops Wharf Fields<br/>Old Wharf Map B ← ขุดใน Oops Wharf Fields</td><td>Old Wharf Treasure Map</td></tr>
+<tr><td>Copyfish DomDom - Requiem Test 1<br/><span class="tag">Lv 1+~210</span></td><td class="n">1</td><td>Path to Oops Wharf Boss 3 - Real Wharf of Darkness</td><td>Requiem Mass Candle × 6 ← ขุดใน Path to Oops Wharf Boss 3 - Real Wharf of Darkness<br/>Requiem Mass Candelabrum ← ขุดใน Path to Oops Wharf Boss 3 - Real Wharf of Darkness</td><td>Dom Dom Approval Letter 1</td></tr>
+<tr><td>Copyfish DomDom - Requiem Test 2<br/><span class="tag">Lv 1+~210, have Dom Dom Approval Letter 2</span></td><td class="n">1</td><td>Path to Oops Wharf Boss 3 - Real Wharf of Darkness</td><td>Requiem Mass Brush ← ขุดใน Path to Oops Wharf Boss 3 - Real Wharf of Darkness<br/>Requiem Mass Sword ← ขุดใน Path to Oops Wharf Boss 3 - Real Wharf of Darkness</td><td>Dom Dom Approval Letter 3</td></tr>
+<tr><td>Vice Captain - Sea Men's Requiem Song 1<br/><span class="tag">Lv 1+~210, มี La Vida - A Requiem Song for an Old Friend ค้างในสมุดเควส</span></td><td class="n">1</td><td>Path to Oops Wharf Boss 4 - Real Dock of Darkness</td><td>Sailor's Requiem pt. 1 , Pirate's F Note</td><td><img alt="" class="it" src="./assets/img/5996ce824d75.gif"/>Pirate's Combined Song</td></tr>
+<tr><td>Black Pirate Swab - Sea Men's Requiem Song 2<br/><span class="tag">Lv 1+~210, มี Vice Captain - Sea Men's Requiem Song 1 ค้างในสมุดเควส</span></td><td class="n">1</td><td>Path to Oops Wharf Boss 4 - Real Dock of Darkness</td><td>G Note ← ขุดใน Path to Oops Wharf Boss 4 - Real Dock of Darkness</td><td>Pirate's G Note</td></tr>
+<tr><td>Black Pirate Swab - Sea Men's Requiem Song 3<br/><span class="tag">Lv 1+~210, มี Vice Captain - Sea Men's Requiem Song 1 ค้างในสมุดเควส, have Pirate's G Note</span></td><td class="n">1</td><td>Path to Oops Wharf Boss 4 - Real Dock of Darkness</td><td>A Note ← ขุดใน Path to Oops Wharf Boss 4 - Real Dock of Darkness<br/>Pirate's G Note ← รางวัลจาก Sea Men's Requiem Song 2</td><td>Pirate's A Note</td></tr>
+<tr><td>Black Pirate Swab - Sea Men's Requiem Song 4<br/><span class="tag">Lv 1+~210, มี Vice Captain - Sea Men's Requiem Song 1 ค้างในสมุดเควส, have Pirate's A Note</span></td><td class="n">1</td><td>Path to Oops Wharf Boss 4 - Real Dock of Darkness</td><td>F Note ← ขุดใน Path to Oops Wharf Boss 4 - Real Dock of Darkness<br/>Pirate's A Note</td><td>Pirate's F Note</td></tr>
+<tr><td>Star Gazer Stella - An Area of Bad Vibes<br/><span class="tag">Lv 120+~210, have Dread Cutlass และ Dread Pirate Hat in inventory, หลังผ่าน Star Gazer Stella - The Star Gazer Girl</span></td><td class="n">1</td><td>Oops Wharf</td><td>-</td><td>Star Card Pack No.5</td></tr>
+<tr><td>Star Gazer Stella - Quack Requiem Mass Priest<br/><span class="tag">Have Dread Cutlass และ Dread Pirate Hat in inventory, หลังผ่าน Star Gazer Stella - An Area of Bad Vibes</span></td><td class="n">1</td><td>Oops Wharf</td><td>Requiem Charm ← รางวัลจาก Shaman Girl Jia - The Requiem Mass</td><td>Dread Dagger Sheath</td></tr>
+<tr><td>Shaman Girl Jia - The Requiem Mass for the One With Golden Eyes<br/><span class="tag">Lv 120+~210, Have Dread Cutlass และ Dread Pirate Hat in inventory, มี Star Gazer Stella - Quack Requiem Mass Priest ค้างในสมุดเควส</span></td><td class="n">1</td><td>Gate of Oops Wharf</td><td><img alt="" class="it" src="./assets/img/cfc4fe059116.gif"/>Requi Card ← Requi<br/><img alt="" class="it" src="./assets/img/c690ce2f9b2b.gif"/>Quiem Card ← Quiem<br/><img alt="" class="it" src="./assets/img/1dd2cc1df8f8.gif"/>Crow Card ← Crow<br/><img alt="" class="it" src="./assets/img/67a3bf69fd40.gif"/>Black Foe Card ← Black Foe<br/><img alt="" class="it" src="./assets/img/fbcbc547fd20.gif"/>Master Foe Card ← Master Foe</td><td>Requiem Charm</td></tr>
+</tbody>
+</table></div>
+
+</section>
+
+<section>
+
 ## รูปจากวิกิ
 
 ### NPC

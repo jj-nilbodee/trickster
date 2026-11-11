@@ -158,6 +158,26 @@ hiddenKey: "mermaid-hidden-v1"
 
 <section>
 
+## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
+
+<p class="muted">ไม่รวมเควส Card Girl เควสเปลี่ยนอาชีพ และเควส Guardian</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>รอบ</th><th>ที่อยู่</th><th>ของที่ต้องส่ง</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td>Kochi - Register to Mermaid Palace</td><td class="n">1</td><td>Gate of Mermaid Dungeon</td><td>ลงทะเบียนวาร์ปกับ Kochi</td><td>เปิดวาร์ปมา Gate of Mermaid Dungeon </td></tr>
+<tr><td>Monkey T - Monkey T's Request (5)<br/><span class="tag">Lv 75+</span></td><td class="n">25</td><td>Mermaid Palace Field 2 - Seaweeds Square</td><td>Eternal Glamor Grass × 10 ← Mermaid Little</td><td><img alt="" class="it" src="./assets/img/8b350f212dfa.gif"/>50 Galder Coupon, 100 Galder Coupon or 500 Galder Coupon</td></tr>
+<tr><td>Clerk Z. Smith - Mermaid Palace's Rare Stone Collection<br/><span class="tag">Lv 80+</span></td><td class="n">5</td><td>Mermaid Palace Field 4 - Rock Square</td><td><img alt="" class="it" src="./assets/img/23c9be873fec.gif"/>Abalone Pearl ← ขุดใน Mermaid Dungeon<br/><img alt="" class="it" src="./assets/img/4916bddc4e06.gif"/>Conch Pearl ← ขุดใน Mermaid Dungeon<br/><img alt="" class="it" src="./assets/img/bbc994fde94f.gif"/>Melo Pearl ← ขุดใน Mermaid Dungeon</td><td>1~4x 500 Galder Coupon</td></tr>
+<tr><td>Guard Gilbert - Gilbert Wants Better Armor<br/><span class="tag">Lv 80+, หลังผ่าน Gilbert Wants Better Weapons</span></td><td class="n">5</td><td>Mermaid Dungeon 1 - Underworld</td><td><img alt="" class="it" src="./assets/img/dc2334d1f0a1.gif"/>Sulaphat's Shell × 5 ← Sulaphat</td><td>รอบ 1–4: Mermaid Scale, <img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon<br/>รอบ 5: Water Pistol Gun</td></tr>
+<tr><td>Driller King Marky - Romance of Drilling - Mermaid Palace<br/><span class="tag">Lv 70+~260, หลังผ่าน Indiana John - Old Man's Dream</span></td><td class="n">1</td><td>Mermaid Palace Field 4 - Rock Square</td><td>Weird Sea Map A ← ขุดใน Mermaid Palace Fields<br/>Weird Sea Map B ← ขุดใน Mermaid Palace Fields</td><td>Weird Sea Treasure Map</td></tr>
+<tr><td>Explorer Reina - Treasure Hunting 2 - Mermaid Palace<br/><span class="tag">Lv.70~260, หลังผ่าน Indiana John - Old Man's Dream และ finished Treasure Hunting 1 - Mermaid Palace 50 times, ไม่มี Old Sea Treasure Map ในกระเป๋า</span></td><td class="n">1</td><td>Mermaid Palace Field 1 - Water Park</td><td>Old Sea Map A ← ขุดใน Mermaid Palace Fields<br/>Old Sea Map B ← ขุดใน Mermaid Palace Fields</td><td>Old Sea Treasure Map</td></tr>
+</tbody>
+</table></div>
+
+</section>
+
+<section>
+
 ## รูปจากวิกิ
 
 ### NPC

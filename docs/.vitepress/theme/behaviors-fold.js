@@ -3,7 +3,7 @@
 // Not foldable: short intro/info sections and the key-quest progress counter, which are always useful to see.
 var SKIP = { go: 1, tp: 1, req: 1 }
 // Sections folded until the reader opens them (their choice is then remembered).
-var FOLD_BY_DEFAULT = ['รูปจากวิกิ']
+var FOLD_BY_DEFAULT = ['รูปจากวิกิ', 'เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)']
 
 export default function initFold(page, signal) {
   var KEY = 'fold:' + page, folded = {}

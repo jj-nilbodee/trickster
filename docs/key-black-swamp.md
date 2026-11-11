@@ -178,6 +178,37 @@ hiddenKey: "blackswamp-hidden-v1"
 
 <section>
 
+## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
+
+<p class="muted">ไม่รวมเควส Card Girl เควสเปลี่ยนอาชีพ และเควส Guardian</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>รอบ</th><th>ที่อยู่</th><th>ของที่ต้องส่ง</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td>Little Chagan - Chagan's Dream<br/><span class="tag">Lv 150+, หลังผ่าน Pastor Tau - Tau's Dream</span></td><td class="n">1</td><td>Swamp Town - Carbigal</td><td><img alt="" class="it" src="./assets/img/a88f4265594f.gif"/>Lotus Fruit ← Lotus Wormhole<br/><img alt="" class="it" src="./assets/img/d8cd72192bc4.gif"/>Ginseng Root × 5 ← Mandragora<br/><img alt="" class="it" src="./assets/img/ae0d709d238b.gif"/>Herb Potion × 5</td><td><img alt="" class="it" src="./assets/img/ccb2069fccaf.gif"/>Dream Note</td></tr>
+<tr><td>Little Chagan - Interpret Chagan's Dream<br/><span class="tag">Lv 150+, หลังผ่าน Little Chagan - Chagan's Dream</span></td><td class="n">1</td><td>Swamp Town - Carbigal</td><td><img alt="" class="it" src="./assets/img/0c5280f25775.gif"/>Dream Interpretation ← รางวัลจาก Fortune Teller - Dream Reader</td><td><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book, <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Exchange G</td></tr>
+<tr><td>Fortune Teller - Dream Reader<br/><span class="tag">Lv 150+, มี Read Chagan's Dream ค้างในสมุดเควส</span></td><td class="n">1</td><td>Gate of Black Swamp</td><td><img alt="" class="it" src="./assets/img/ccb2069fccaf.gif"/>Dream Note ← รางวัลจาก Little Chagan - Chagan's Dream<br/><img alt="" class="it" src="./assets/img/1629f688993f.gif"/>Crystal Marble ← Aposis<br/><img alt="" class="it" src="./assets/img/ccfb6c32ae39.gif"/>Old Book ← Aposis</td><td><img alt="" class="it" src="./assets/img/0c5280f25775.gif"/>Dream Interpretation</td></tr>
+<tr><td>Kochi - Register Black Swamp</td><td class="n">1</td><td>Gate of Black Swamp</td><td>ลงทะเบียนวาร์ปกับ Kochi</td><td>เปิดวาร์ปมา Gate of Black Swamp</td></tr>
+<tr><td>Explorer Reina - Journey to Carbigal<br/><span class="tag">Lv 140+, หลังผ่าน Rosaline Gracia - The Swamp Beyond Azteca</span></td><td class="n">1</td><td>Gate of Black Swamp</td><td>ไปคุยกับ Vagabond Eloy</td><td>ไม่มี</td></tr>
+<tr><td>Explorer Reina - Bring Black Swamp Goods<br/><span class="tag">Lv 120+</span></td><td class="n">5</td><td>Gate of Black Swamp</td><td><img alt="" class="it" src="./assets/img/73483d5ce17d.gif"/>Amber × 2 ← ขุดใน Poppuri Dungeons and Black Swamp Fields<br/><img alt="" class="it" src="./assets/img/7e56943106cd.gif"/>Grass-Leaf Doll × 2 ← ขุดใน Black Swamp Fields<br/><img alt="" class="it" src="./assets/img/742d37dc6563.gif"/>White Hair Moss × 2 ← ขุดใน Swamp Dungeons<br/><img alt="" class="it" src="./assets/img/a417412f12e4.gif"/>Litmus Moss × 2 ← ขุดใน Swamp Dungeons</td><td>Land Drill No. 6</td></tr>
+<tr><td>Little Chagan - Fairy at Snow Hill<br/><span class="tag">Lv 150+, หลังผ่าน Little Chagan - Interpret Chagan's Dream</span></td><td class="n">1</td><td>Swamp Town - Carbigal</td><td>ไปคุยกับ Fairy Feria</td><td>ไม่มี</td></tr>
+<tr><td>Monkey T - Monkey T's Request (8)<br/><span class="tag">Lv 140+</span></td><td class="n">25</td><td>Swamp Field 3 - Maze of Forest</td><td>Eternal Clarity Grass × 10 ← Monkya</td><td><img alt="" class="it" src="./assets/img/8b350f212dfa.gif"/>50 Galder Coupon, 100 Galder Coupon or 500 Galder Coupon</td></tr>
+<tr><td>Blacksmith Marx - Find Ingredients for Silver Jewel<br/><span class="tag">Lv 75+</span></td><td class="n">5</td><td>Swamp Mine - Silver Jewel</td><td>Pure Silver × 3 ← ขุดใน 1st Mining Lot of Silver Jewel<br/>Flawless Turquoise × 3 ← ขุดใน 2nd Mining Lot of Silver Jewel</td><td>รอบ 1–4: Tornado Stone or 2~4x 500 Galder Coupon<br/>รอบ 5: <img alt="" class="it" src="./assets/img/cf0c1ecf7f7c.gif"/>Mithril, Garnet</td></tr>
+<tr><td>Eclipse - The Story of the Gods 8<br/><span class="tag">Lv 285+, ใช้ Mind's Eye, หลังผ่าน The Story of the Gods 7 และ หลังผ่าน Shadow Star 8 อย่างน้อย 1 ครั้ง</span></td><td class="n">1</td><td>Swamp Town - Carbigal</td><td>Shadow Jade × 2 ← Shadow Swamp Dungeon Monsters<br/>Shadow Rhodonite × 2 ← Shadow Swamp Dungeon Monsters</td><td><img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon × 4</td></tr>
+<tr><td>Frog Prince - Essence of Life<br/><span class="tag">Lv 135+, 3rd Job</span></td><td class="n">1</td><td>Black Swamp - Site of Life</td><td>Cobra Flower Seed × 15 ← Cobra Flower<br/>Tooth Flower Seed × 15 ← Tooth Flower<br/>Mud Bigfoot Seed × 15 ← Mud Bigfoot<br/>Lotus Wormhole Seed × 15 ← Lotus Wormhole</td><td><img alt="" class="it" src="./assets/img/d8bf1d174c98.gif"/>Essence of Life</td></tr>
+<tr><td>Stella - Shadow Star 8<br/><span class="tag">Lv 285+, ใช้ Mind's Eye</span></td><td class="n">1</td><td>Swamp Town - Carbigal</td><td>Shadow Flames × 5 ← Shadow Monkya / Shadow Arachne / Shadow Mud Bigfoot</td><td>Star Card Pack No.5, Half Pink Potion × 11, Half Blue Potion or Story of the Star Gazer Girl 8 × 11</td></tr>
+<tr><td>Frog Shaman - Passing the Spell<br/><span class="tag">Card Master or Gambler, Metamorphosis (Master)</span></td><td class="n">1</td><td>Swamp Dungeon 2 - Marshy Pool</td><td>Eyes of the Sun × 20 ← Lima</td><td>(Summon) Card Soldier Card</td></tr>
+<tr><td>Driller King Marky - Romance of Drilling - Black Swamp<br/><span class="tag">Lv 110+, หลังผ่าน Indiana John - Old Man's Dream</span></td><td class="n">1</td><td>Swamp Field 5 - Further Maze of Forest</td><td>Weird Swamp Map A ← ขุดใน Black Swamp Fields<br/>Weird Swamp Map B ← ขุดใน Black Swamp Fields</td><td>Weird Swamp Treasure Map</td></tr>
+<tr><td>Explorer Reina - Treasure Hunting 2 - Black Swamp<br/><span class="tag">Lv 110+, หลังผ่าน Indiana John - Old Man's Dream และ finished Treasure Hunting 1 - Black Swamp 50 times, ไม่มี Old Swamp Treasure Map ในกระเป๋า</span></td><td class="n">1</td><td>Swamp Field 1 - Black Hole</td><td>Old Swamp Map A ← ขุดใน Black Swamp Fields<br/>Old Swamp Map B ← ขุดใน Black Swamp Fields</td><td>Old Swamp Treasure Map</td></tr>
+<tr><td>Dr. Cat - Tenter Lion's Legendary Shield<br/><span class="tag">Lv 210+, have Tenter Lion Tail Spear, Tenter Lion Mane, Tenter Lion Earring in inventory</span></td><td class="n">1</td><td>Swamp Field 6 - Lake of Illusion</td><td>Clever Owl's Book of Myths ← รางวัลจาก Clever Owl - Acquire Clever Owl's Book<br/><img alt="" class="it" src="./assets/img/0ec4ffda49d4.gif"/>Red Tentacle</td><td>Tenter Lion Shield</td></tr>
+<tr><td>Clever Owl - Acquire Clever Owl's Book<br/><span class="tag">Lv 210+, มี Dr. Cat - Tenter Lion's Legendary Shield ค้างในสมุดเควส.</span></td><td class="n">3</td><td>Swamp Field 5 - Further Maze of Forest</td><td><img alt="" class="it" src="./assets/img/1ab5589f7b68.gif"/>Red Apple × 15 ← Monkya<br/><img alt="" class="it" src="./assets/img/6b0830db4320.gif"/>Snail Dish × 15 ← Electric Snail<br/><img alt="" class="it" src="./assets/img/953a8a6cdcb2.gif"/>Swamp Shark's Fin × 15 ← Swamp Shark</td><td>รอบ 1-2: ไม่มี<br/>รอบ 3: Clever Owl's Book of Myths</td></tr>
+</tbody>
+</table></div>
+
+</section>
+
+<section>
+
 ## รูปจากวิกิ
 
 ### NPC

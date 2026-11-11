@@ -48,7 +48,7 @@ export default defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=Mitr:wght@400;500&family=Sarabun:wght@400;600&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&family=Mitr:wght@400;500&family=Sarabun:wght@400;600&display=swap',
     }],
   ],
   // Keep spaces between inline tags exactly as written in the pages.

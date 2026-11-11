@@ -52,14 +52,14 @@ hiddenKey: "blackswamp-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/b59f101fff83.gif"/><h3>Pastor Tau - Swamp Stickers</h3></div>
 <div class="meta"><span class="chip">Swamp Town - Carbigal</span><span class="chip">Lv 150+</span><span class="chip">หลังผ่าน Rosaline Gracia - Childhood Promise</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Swamp Sticker × 13</b> และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Swamp Sticker × 13</b></li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/6f3bc439120e.gif"/>Flower of Revival · ทำครั้งเดียว</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/63c7bba8e509.gif"/><h3>Madam Sarah - Sarah's Flashback</h3></div>
 <div class="meta"><span class="chip">Carbigal Tea House</span><span class="chip">Lv 150+</span><span class="chip">หลังผ่านขั้น 1</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/9c67a81ce90d.gif"/><b>Lotus Flower × 1</b> ← <b>Lotus Wormhole</b> Lv 219 (Swamp Dungeon 4, 5) และ <img alt="" class="it" src="./assets/img/feb2e42e479c.gif"/><b>Lotus Leaf × 5</b> ← <b>Chameleon Frog</b> Lv 169 (Swamp Field 2, 4)</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/9c67a81ce90d.gif"/><b>Lotus Flower × 1</b> ← <b>Lotus Wormhole</b> Lv 219 (Swamp Dungeon 4, 5)</li><li><img alt="" class="it" src="./assets/img/feb2e42e479c.gif"/><b>Lotus Leaf × 5</b> ← <b>Chameleon Frog</b> Lv 169 (Swamp Field 2, 4)</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/93137b029b0b.gif"/>Flower Tea (เอาไปใช้ขั้น 3)</p>
 </div>
 

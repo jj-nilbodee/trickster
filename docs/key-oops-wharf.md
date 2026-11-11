@@ -90,14 +90,14 @@ hiddenKey: "oops-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/3a7b2171a6d2.gif"/><h3>Mighty Captain Stan - Lost Ship's Log</h3></div>
 <div class="meta"><span class="chip">Oops Wharf</span><span class="chip">หลังผ่าน Urgent Issue</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p9</b> ← <b>Master Foe</b> Lv 84 (Wharf Field 4) · <img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p25</b> ← <b>Quiem</b> Lv 75 (Wharf Field 1, 3) · <img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p31</b> ← <b>Requi</b> Lv 72 (Wharf Field 1–3)</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p9</b> ← <b>Master Foe</b> Lv 84 (Wharf Field 4)</li><li><img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p25</b> ← <b>Quiem</b> Lv 75 (Wharf Field 1, 3)</li><li><img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p31</b> ← <b>Requi</b> Lv 72 (Wharf Field 1–3)</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/330b160b1fc4.gif"/>500 Galder Coupon × 5, <img alt="" class="it" src="./assets/img/5e735ccef390.gif"/>Old Unsigned Letter</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/a523e4c304a6.gif"/><h3>Skipper Min - Min's Weakness</h3></div>
 <div class="meta"><span class="chip">Oops Wharf</span><span class="chip">หลังผ่าน Lost Ship's Log</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/51b42a8e81ae.gif"/><b>Nausea Drink × 5</b> และ <img alt="" class="it" src="./assets/img/bb9f4cfd0e51.gif"/><b>Nausea Patch × 5</b> ← ขุดใน Wharf Field 4 · <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/51b42a8e81ae.gif"/><b>Nausea Drink × 5</b> ← ขุดใน Wharf Field 4</li><li><img alt="" class="it" src="./assets/img/bb9f4cfd0e51.gif"/><b>Nausea Patch × 5</b> ← ขุดใน Wharf Field 4</li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Ticket C, <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</p>
 </div>
 

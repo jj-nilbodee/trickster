@@ -62,7 +62,8 @@ hiddenKey: "caballa-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/8a1bcd0cb8ba.gif"/><h3>Fortune Teller - Borrow Gold Silk Pouch</h3></div>
 <div class="meta"><span class="chip">Relics Town - Azteca</span><span class="chip">Lv 55+</span><span class="chip">รับค้างไว้ก่อน</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> และ <img alt="" class="it" src="./assets/img/0110bb62c2c1.gif"/><b>Gold Silk Pouch</b> (ได้จากขั้น 3) รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 3</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b></li><li><img alt="" class="it" src="./assets/img/0110bb62c2c1.gif"/><b>Gold Silk Pouch</b> (ได้จากขั้น 3)</li></ul></div>
+<p class="muted">รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 3</p>
 <p class="muted">รางวัล: ได้ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book และ <img alt="" class="it" src="./assets/img/0110bb62c2c1.gif"/>Gold Silk Pouch คืน (ใช้ขั้น 4), <img alt="" class="it" src="./assets/img/330b160b1fc4.gif"/>500 Galder Coupon × 5</p>
 </div>
 
@@ -76,7 +77,7 @@ hiddenKey: "caballa-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/66752caff8c6.gif"/><h3>Keeper Julio - Return Gold Silk Pouch</h3></div>
 <div class="meta"><span class="chip">Relics Field 4 - An Altar for Sacrifice</span><span class="chip">หลังผ่าน Borrow Gold Silk Pouch</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/0110bb62c2c1.gif"/><b>Gold Silk Pouch</b> และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (ได้คืนจากขั้น 2)</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/0110bb62c2c1.gif"/><b>Gold Silk Pouch</b></li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (ได้คืนจากขั้น 2)</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป), <img alt="" class="it" src="./assets/img/4ccbde810e07.gif"/>Weapon Ticket B · ต่อด้วย Path to Oops Wharf</p>
 </div>
 

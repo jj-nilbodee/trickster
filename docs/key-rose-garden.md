@@ -52,7 +52,7 @@ hiddenKey: "rosegarden-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/4e16d739dd21.gif"/><h3>Rosaline Gracia - Rose Garden Stickers</h3></div>
 <div class="meta"><span class="chip">Rose Field 1 - Stairway to Sorrow</span><span class="chip">Lv 125+</span><span class="chip">หลังผ่าน Chief Koha - Get a Date</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Rose Garden Sticker × 13</b> และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Rose Garden Sticker × 13</b></li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/ed278090ce82.gif"/>Blue Potion C × 20 · ทำครั้งเดียว</p>
 </div>
 
@@ -74,7 +74,7 @@ hiddenKey: "rosegarden-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/4e16d739dd21.gif"/><h3>Rosaline Gracia - Childhood Promise</h3></div>
 <div class="meta"><span class="chip">Rose Field 1 - Stairway to Sorrow</span><span class="chip">หลังผ่านขั้น 1</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/9c12bdd1f3b3.gif"/><b>D's Letter</b> (จากขั้น 3) และ <img alt="" class="it" src="./assets/img/c2f7e9bea7a7.gif"/><b>Rosaline's Story Book (B)</b> (จากขั้น 2)</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/9c12bdd1f3b3.gif"/><b>D's Letter</b> (จากขั้น 3)</li><li><img alt="" class="it" src="./assets/img/c2f7e9bea7a7.gif"/><b>Rosaline's Story Book (B)</b> (จากขั้น 2)</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book (เก็บไว้ใช้โซนต่อไป), <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Exchange Ticket F</p>
 </div>
 

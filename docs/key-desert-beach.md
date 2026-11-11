@@ -59,14 +59,14 @@ hiddenKey: "desert-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/95226e303086.gif"/><h3>Sandman - Legendary Recipe</h3></div>
 <div class="meta"><span class="chip">Beach Town - Paradise</span><span class="chip">หลังผ่าน Desert Sticker</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/2b2a61629d7a.gif"/><b>Sand Cake × 5</b> และ <img alt="" class="it" src="./assets/img/1bb1d5f6df76.gif"/><b>Sand Glass × 1</b> ← <b>Sand Demon</b> Lv 28 (Field 3) · <img alt="" class="it" src="./assets/img/ee30c40dc2ec.gif"/><b>Limestone × 2</b>, <img alt="" class="it" src="./assets/img/1d4828df8975.gif"/><b>Garden Trowel × 1</b>, <img alt="" class="it" src="./assets/img/0692e666edc9.gif"/><b>Oasis Water × 1</b> ← ขุดใน Desert Beach Field</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/2b2a61629d7a.gif"/><b>Sand Cake × 5</b> ← <b>Sand Demon</b> Lv 28 (Field 3)</li><li><img alt="" class="it" src="./assets/img/1bb1d5f6df76.gif"/><b>Sand Glass × 1</b> ← <b>Sand Demon</b> Lv 28 (Field 3)</li><li><img alt="" class="it" src="./assets/img/ee30c40dc2ec.gif"/><b>Limestone × 2</b> ← ขุดใน Desert Beach Field</li><li><img alt="" class="it" src="./assets/img/1d4828df8975.gif"/><b>Garden Trowel × 1</b> ← ขุดใน Desert Beach Field</li><li><img alt="" class="it" src="./assets/img/0692e666edc9.gif"/><b>Oasis Water × 1</b> ← ขุดใน Desert Beach Field</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/330b160b1fc4.gif"/>500 Galder Coupon × 5</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/95226e303086.gif"/><h3>Sandman - The Miracle of Sand</h3></div>
 <div class="meta"><span class="chip">Beach Town - Paradise</span><span class="chip">หลังผ่าน Legendary Recipe</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/3190f37c3363.gif"/><b>Legendary Recipe</b> ← <b>Sand Demon</b> Lv 28 (Field 3) · <img alt="" class="it" src="./assets/img/cb2d6772d94f.gif"/><b>Glyph Tablet</b> ← ขุดใน Pyramid Dungeon</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/3190f37c3363.gif"/><b>Legendary Recipe</b> ← <b>Sand Demon</b> Lv 28 (Field 3)</li><li><img alt="" class="it" src="./assets/img/cb2d6772d94f.gif"/><b>Glyph Tablet</b> ← ขุดใน Pyramid Dungeon</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป), <img alt="" class="it" src="./assets/img/73ec70c58d45.gif"/>Weapon Ticket A</p>
 </div>
 

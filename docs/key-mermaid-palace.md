@@ -55,7 +55,7 @@ hiddenKey: "mermaid-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/6902c80313d0.gif"/><h3>Captain Stan - Mermaid Palace Stickers</h3></div>
 <div class="meta"><span class="chip">Gate of Mermaid Palace</span><span class="chip">Lv 80+</span><span class="chip">หลังผ่าน Min's Weakness</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Palace Proof Sticker × 7</b> และ <img alt="" class="it" src="./assets/img/ffccf172a8c1.gif"/><b>Old Picture × 1</b> ← ขุดใน Mermaid Palace Field</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Palace Proof Sticker × 7</b></li><li><img alt="" class="it" src="./assets/img/ffccf172a8c1.gif"/><b>Old Picture × 1</b> ← ขุดใน Mermaid Palace Field</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/e17baef974ea.gif"/>Captain Stan's Log</p>
 </div>
 

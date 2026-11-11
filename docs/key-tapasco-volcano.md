@@ -69,7 +69,7 @@ hiddenKey: "tapasco-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/01d6ac3e1c9e.gif"/><h3>Blacksmith Marx - Ptah's Secrets</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 1 - Net of Lava</span><span class="chip">Lv 235+</span><span class="chip">หลังผ่าน Absolute Ring</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/02ea51e1c29a.gif"/><b>Hot Iron × 2</b> และ <img alt="" class="it" src="./assets/img/93e138993c8f.gif"/><b>Whetstone × 2</b> ← ขุดใน Tapasco Field</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/02ea51e1c29a.gif"/><b>Hot Iron × 2</b> ← ขุดใน Tapasco Field</li><li><img alt="" class="it" src="./assets/img/93e138993c8f.gif"/><b>Whetstone × 2</b> ← ขุดใน Tapasco Field</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon</p>
 </div>
 
@@ -83,7 +83,8 @@ hiddenKey: "tapasco-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><img alt="" class="npc" src="./assets/img/01d6ac3e1c9e.gif"/><h3>Blacksmith Marx - The Ring's Abilities</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 2 - Rhythm of Hammer</span><span class="chip">Lv 235+</span><span class="chip">รับค้างไว้ก่อน</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/68514436f862.gif"/><b>Hunter's Certificate</b> (ได้จากขั้น 6) และ <img alt="" class="it" src="./assets/img/7d9413658bf4.gif"/><b>Polished Trickster Ring</b> รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 6</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/68514436f862.gif"/><b>Hunter's Certificate</b> (ได้จากขั้น 6)</li><li><img alt="" class="it" src="./assets/img/7d9413658bf4.gif"/><b>Polished Trickster Ring</b></li></ul></div>
+<p class="muted">รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 6</p>
 <p class="muted">รางวัล: The Trickster Ring</p>
 </div>
 

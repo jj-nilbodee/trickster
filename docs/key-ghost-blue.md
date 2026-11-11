@@ -87,7 +87,8 @@ hiddenKey: "ghostblue-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/51b567298e0b.gif"/><h3>Chief Koha - Get a Date</h3></div>
 <div class="meta"><span class="chip">Aquarius</span><span class="chip">หลังผ่านขั้น 2</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/f3b4cae73e60.gif"/><b>Jia's Pouch</b> (ได้จากขั้น 4) และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (จาก Marin's Sister) รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 4</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/f3b4cae73e60.gif"/><b>Jia's Pouch</b> (ได้จากขั้น 4)</li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (จาก Marin's Sister)</li></ul></div>
+<p class="muted">รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 4</p>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book คืน, <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Wep Exchange Ticket E</p>
 </div>
 

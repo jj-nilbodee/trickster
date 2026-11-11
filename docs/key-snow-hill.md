@@ -55,14 +55,14 @@ hiddenKey: "snowhill-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="c1" type="checkbox"/> ทำแล้ว</label><span class="num">ก่อนเริ่ม 1</span><img alt="" class="npc" src="./assets/img/524d79b6e57b.gif"/><h3>Little Chagan - Chagan's Dream</h3></div>
 <div class="meta"><span class="chip">Swamp Town - Carbigal</span><span class="chip">Lv 150+</span><span class="chip">หลังผ่าน Tau's Dream</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/a88f4265594f.gif"/><b>Lotus Fruit × 1</b> ← <b>Lotus Wormhole</b> Lv 219 (Swamp Dungeon 4, 5) · <img alt="" class="it" src="./assets/img/d8cd72192bc4.gif"/><b>Ginseng Root × 5</b> ← <b>Mandragora</b> Lv 53 (Path to Caballa Relics, Relics Field 1) · <img alt="" class="it" src="./assets/img/ae0d709d238b.gif"/><b>Herb Potion × 5</b> (ซื้อที่ร้าน)</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/a88f4265594f.gif"/><b>Lotus Fruit × 1</b> ← <b>Lotus Wormhole</b> Lv 219 (Swamp Dungeon 4, 5)</li><li><img alt="" class="it" src="./assets/img/d8cd72192bc4.gif"/><b>Ginseng Root × 5</b> ← <b>Mandragora</b> Lv 53 (Path to Caballa Relics, Relics Field 1)</li><li><img alt="" class="it" src="./assets/img/ae0d709d238b.gif"/><b>Herb Potion × 5</b> (ซื้อที่ร้าน)</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/ccb2069fccaf.gif"/>Dream Note</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="c2" type="checkbox"/> ทำแล้ว</label><span class="num">ก่อนเริ่ม 2</span><img alt="" class="npc" src="./assets/img/8a1bcd0cb8ba.gif"/><h3>Fortune Teller - Dream Reader</h3></div>
 <div class="meta"><span class="chip">Gate of Black Swamp</span><span class="chip">ต้องรับ Interpret Chagan's Dream ค้างไว้</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/ccb2069fccaf.gif"/><b>Dream Note</b> (จากก่อนเริ่ม 1) · <img alt="" class="it" src="./assets/img/1629f688993f.gif"/><b>Crystal Marble</b> และ <img alt="" class="it" src="./assets/img/ccfb6c32ae39.gif"/><b>Old Book</b> ← <b>Aposis</b> Lv 66 (Relics Field 3, 4)</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/ccb2069fccaf.gif"/><b>Dream Note</b> (จากก่อนเริ่ม 1)</li><li><img alt="" class="it" src="./assets/img/1629f688993f.gif"/><b>Crystal Marble</b> ← <b>Aposis</b> Lv 66 (Relics Field 3, 4)</li><li><img alt="" class="it" src="./assets/img/ccfb6c32ae39.gif"/><b>Old Book</b> ← <b>Aposis</b> Lv 66 (Relics Field 3, 4)</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/0c5280f25775.gif"/>Dream Interpretation</p>
 </div>
 
@@ -84,14 +84,14 @@ hiddenKey: "snowhill-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/0980c96fa67b.gif"/><h3>Fairy Godmother - Snow Hill Recommendation Sticker</h3></div>
 <div class="meta"><span class="chip">Snow Hill Town - Laplanoel</span><span class="chip">Lv 170+</span><span class="chip">หลังผ่าน Interpret Chagan's Dream</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Snow Hill Sticker × 14</b> และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Snow Hill Sticker × 14</b></li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/330b160b1fc4.gif"/>500 Galder Coupon × 20 · ทำครั้งเดียว</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/4730a1aa38ea.gif"/><h3>Santa Claus (2) - Save the Snow Machine</h3></div>
 <div class="meta"><span class="chip">Laplanoel - Santa's Post Office</span><span class="chip">Lv 170+</span><span class="chip">รับค้างไว้ก่อนได้</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/768a54e7802d.gif"/><b>Broken Remote</b> ← <b>Giant Coolem</b> Lv 277 (Ice Dungeon 4) · <img alt="" class="it" src="./assets/img/ad244d8f9e6d.gif"/><b>Remote Part A</b> ← <b>Great Coolem</b> Lv 280 (Ice Dungeon 3, 4) · <img alt="" class="it" src="./assets/img/ad244d8f9e6d.gif"/><b>Remote Part B</b> ← <b>Freyr</b> Lv 259 (Ice Dungeon 1, 2) · <img alt="" class="it" src="./assets/img/ad244d8f9e6d.gif"/><b>Remote Part C</b> ← <b>Freyja</b> Lv 264 (Ice Dungeon 1–3)</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/768a54e7802d.gif"/><b>Broken Remote</b> ← <b>Giant Coolem</b> Lv 277 (Ice Dungeon 4)</li><li><img alt="" class="it" src="./assets/img/ad244d8f9e6d.gif"/><b>Remote Part A</b> ← <b>Great Coolem</b> Lv 280 (Ice Dungeon 3, 4)</li><li><img alt="" class="it" src="./assets/img/ad244d8f9e6d.gif"/><b>Remote Part B</b> ← <b>Freyr</b> Lv 259 (Ice Dungeon 1, 2)</li><li><img alt="" class="it" src="./assets/img/ad244d8f9e6d.gif"/><b>Remote Part C</b> ← <b>Freyja</b> Lv 264 (Ice Dungeon 1–3)</li></ul></div>
 <p>ต้องผ่านขั้น 3 (Broken Promise) ก่อนถึงจะส่งได้</p>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/94a48bac165e.gif"/>Satisfaction Guarantee และได้ <img alt="" class="it" src="./assets/img/768a54e7802d.gif"/>Broken Remote, <img alt="" class="it" src="./assets/img/ad244d8f9e6d.gif"/>Remote Part A, B, C คืน (เก็บไว้ผสมในขั้น 5)</p>
 </div>
@@ -99,14 +99,15 @@ hiddenKey: "snowhill-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/9a1954acb18f.gif"/><h3>Witch La Befana - Broken Promise</h3></div>
 <div class="meta"><span class="chip">Snow Hill Town - Laplanoel</span><span class="chip">ต้องมี Save the Snow Machine ค้างในสมุดเควส</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/58be47ba4a7c.gif"/><b>Truth Draught</b> และ <img alt="" class="it" src="./assets/img/a4a9e6c64fdc.gif"/><b>Ice Heart</b> (ได้จากขั้น 4) รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 4</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/58be47ba4a7c.gif"/><b>Truth Draught</b></li><li><img alt="" class="it" src="./assets/img/a4a9e6c64fdc.gif"/><b>Ice Heart</b> (ได้จากขั้น 4)</li></ul></div>
+<p class="muted">รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 4</p>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/2dd841564f8e.gif"/>La Befana's Broomstick A, B</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/0980c96fa67b.gif"/><h3>Fairy Godmother - Truth Draught</h3></div>
 <div class="meta"><span class="chip">Snow Hill Town - Laplanoel</span><span class="chip">ต้องมี Broken Promise ค้างในสมุดเควส</span></div>
-<p>ส่ง <img alt="" class="it" src="./assets/img/6230adfc15e6.gif"/><b>Blue Orchid × 1</b> และ <img alt="" class="it" src="./assets/img/fa0b1a94d95d.gif"/><b>Udambara × 1</b> ← ขุดใน Snow Hill Fields</p>
+<div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/6230adfc15e6.gif"/><b>Blue Orchid × 1</b> ← ขุดใน Snow Hill Fields</li><li><img alt="" class="it" src="./assets/img/fa0b1a94d95d.gif"/><b>Udambara × 1</b> ← ขุดใน Snow Hill Fields</li></ul></div>
 <p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/58be47ba4a7c.gif"/>Truth Draught, <img alt="" class="it" src="./assets/img/a4a9e6c64fdc.gif"/>Ice Heart → เอาไปส่งขั้น 3</p>
 </div>
 

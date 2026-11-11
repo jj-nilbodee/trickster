@@ -1,0 +1,805 @@
+{
+ "id": "bunny",
+ "name": "Bunny",
+ "icon": "img/jobs/29d10cf72602.gif",
+ "stat": "Power",
+ "gender": "หญิง",
+ "path": "Schoolgirl → Boxer → Champion (เพียว) / Duelist (ไฮบริด)",
+ "jobMaster": "Boxer Jeanne",
+ "jobMasterIcon": "img/jobs/83c5aa0f7dee.gif",
+ "about": "ตัวละครสาย <b>Power</b> ผู้หญิง ตีระยะประชิด แรงตีมาจาก AP เด่นที่สกิลตีเป้าเดียวแรงๆ มีสกิลพุ่งตัวและตั้งการ์ดบล็อกการตีระยะประชิด สายอาชีพ <b>Schoolgirl → Boxer → Champion (เพียว) / Duelist (ไฮบริด)</b> Job Master คือ <b>Boxer Jeanne</b>",
+ "source": [
+  [
+   "วิกิ ggFTW: Bunny",
+   "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Bunny.html"
+  ]
+ ],
+ "quests": [
+  {
+   "name": "Boxer Jeanne - Bunny 2nd Job Quest",
+   "where": "Relics Town - Azteca หรือ Room of Job Administrator (Garden of Skill Master)",
+   "todo": "Lv 60+, TM 50+ · ส่ง Growth Badge × 1 (ดรอปจาก Kaboom ที่ Caballa Relics Dungeon 4) + 100K Galder Check × 3 (ซื้อจาก Andrew ใบละ 105,000)",
+   "reward": "เปลี่ยนเป็น Boxer · Sign of Fighting Spirit, 1,000,000 EXP / 12,000,000 TM",
+   "icon": "img/jobs/83c5aa0f7dee.gif",
+   "id": "bunny-q0"
+  },
+  {
+   "name": "Door of Tribulation - Path of Tribulation",
+   "where": "Garden of Skill Master",
+   "todo": "อาชีพ 2, Lv 130+, TM 120+ · ส่ง Ticket of the Valiant (ดูตารางของที่ต้องเตรียม) + 1 Mil Galder Check × 3",
+   "reward": "Marble of Triumph, เข้า Room of Guardian ได้, TM 10,000,000",
+   "id": "bunny-q1"
+  },
+  {
+   "name": "Vulcanus Phoenix's Messenger - Champion Quest (รับไว้ก่อน)",
+   "job": "Champion",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "bunny-q2"
+  },
+  {
+   "name": "Alsiedo Bird's Messenger - Duelist Quest (รับไว้ก่อน)",
+   "job": "Duelist",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "bunny-q3"
+  },
+  {
+   "name": "Boxer Jeanne - Find Champion Guardian Stone",
+   "job": "Champion",
+   "where": "Desert Beach Field 3 - Statue of Anubis",
+   "todo": "ถือ Marble of Triumph · ส่ง Red Ruby (ได้จาก Chele (Lv 117)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/90152d22ae06.gif",
+   "id": "bunny-q4"
+  },
+  {
+   "name": "Boxer Jeanne - Find Duelist Guardian Stone",
+   "job": "Duelist",
+   "where": "Desert Beach Field 3 - Statue of Anubis",
+   "todo": "ถือ Marble of Triumph · ส่ง Special Jade (ได้จาก Nora Joe (Lv 126)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/59be3ee0c6f0.gif",
+   "id": "bunny-q5"
+  },
+  {
+   "name": "Happisto Stallone - Make Happisto's Compass Frame (3 รอบ)",
+   "where": "Gate of Snow Hill",
+   "todo": "ต้องมี Scroll · รอบละ Brass, Glass Piece, Magnetite, Magic Powder อย่างละ 1 (ดูตารางของที่ต้องเตรียม)",
+   "reward": "รอบ 3 ได้ Compass Frame",
+   "id": "bunny-q6"
+  },
+  {
+   "name": "Boxer Jeanne - Room of Ordeal Key - Find Compass Frame",
+   "where": "Desert Beach Field 3 - Statue of Anubis",
+   "todo": "ส่ง Compass Frame",
+   "reward": "The Key of Trials",
+   "id": "bunny-q7"
+  },
+  {
+   "name": "Path of Tribulation 16 ห้อง",
+   "where": "Room of Tribulation 1–16",
+   "todo": "ล่าห้องละ 3 ตัว ทำต่อกันตามลำดับ (ดูตาราง Tribunal ด้านล่าง)",
+   "reward": "ห้องสุดท้ายได้ Stone of Patience",
+   "id": "bunny-q8"
+  },
+  {
+   "name": "Boxer Jeanne - Find 16 Guardian Stones for the Needleless Compass",
+   "where": "Desert Beach Field 3 - Statue of Anubis",
+   "todo": "ส่ง Stone of Patience + The Key of Trials + Marble of Triumph",
+   "reward": "Needleless Compass",
+   "id": "bunny-q9"
+  },
+  {
+   "name": "ส่ง Champion Quest ให้ Vulcanus Phoenix's Messenger",
+   "job": "Champion",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Champion · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "bunny-q10"
+  },
+  {
+   "name": "ส่ง Duelist Quest ให้ Alsiedo Bird's Messenger",
+   "job": "Duelist",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Duelist · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "bunny-q11"
+  }
+ ],
+ "prep": [
+  {
+   "id": "bunny-prep-0",
+   "item": "Base Lv 130, TM Lv 120",
+   "where": "",
+   "step": ""
+  },
+  {
+   "id": "bunny-prep-1",
+   "item": "Ticket of the Valiant × 1",
+   "where": "ดรอปจาก Clurican (Lv 240) / Tenter Lion หรือขุดใน Swamp Dungeon",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "bunny-prep-2",
+   "item": "1 Mil Galder Check × 3",
+   "where": "ซื้อจาก Andrew ที่ Megalopolis Bank ใบละ 1,050,000",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "bunny-prep-3",
+   "item": "Sacred Water × 1",
+   "where": "ขุดใน Black Swamp Fields",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "bunny-prep-4",
+   "item": "Brass × 3",
+   "where": "ดรอปจาก Brass Knight (Lv 186)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bunny-prep-5",
+   "item": "Magnetite × 3",
+   "where": "ดรอปจาก Iron Knight (Lv 184)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bunny-prep-6",
+   "item": "Magic Powder × 3",
+   "where": "ดรอปจาก Bone Magician (Lv 231)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bunny-prep-7",
+   "item": "Glass Piece × 3",
+   "where": "ดรอปจาก Bone Warrior (Lv 225)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bunny-prep-8",
+   "item": "Guardian Stone ของอาชีพที่เลือก × 1",
+   "where": "ดูตาราง “เลือกอาชีพ” ด้านล่าง",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "bunny-prep-9",
+   "item": "Harkon × 1",
+   "where": "ขุดใน Techichi / Tapasco Fields, ชั้นต่อสู้ของ Tower of Chaos, Gate of Abyss, Abyss Fields หรือจากเควส Blacksmith Marx (Find Ingredients for Precious Jewel, Silent Lava Mine Collection)",
+   "step": "ขั้น 2 (ยกเว้น Dark Lord)"
+  }
+ ],
+ "tribunal": [
+  {
+   "id": "bunny-trib-0",
+   "messenger": "1. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Vulcanus Phoenix's Messenger",
+   "room": "Room of Tribulation 1",
+   "hunt": "3 × Tribunal Flame Moth (Lv 150) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "bunny-trib-1",
+   "messenger": "2. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Alsiedo Bird's Messenger",
+   "room": "Room of Tribulation 2",
+   "hunt": "3 × Tribunal Siremaid (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-2",
+   "messenger": "3. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Dragon Tale's Messenger",
+   "room": "Room of Tribulation 3",
+   "hunt": "3 × Tribunal Crow (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-3",
+   "messenger": "4. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Black Wings' Messenger",
+   "room": "Room of Tribulation 4",
+   "hunt": "3 × Tribunal Seth (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-4",
+   "messenger": "5. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Sacred Esper's Messenger",
+   "room": "Room of Tribulation 5",
+   "hunt": "3 × Tribunal Shadow (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-5",
+   "messenger": "6. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Golden Ant's Messenger",
+   "room": "Room of Tribulation 6",
+   "hunt": "3 × Tribunal Tooth Flower (Lv 160) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "bunny-trib-6",
+   "messenger": "7. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Eternal Knight's Messenger",
+   "room": "Room of Tribulation 7",
+   "hunt": "3 × Tribunal Hell Knight (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-7",
+   "messenger": "8. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Silvanian's Messenger",
+   "room": "Room of Tribulation 8",
+   "hunt": "3 × Tribunal Yeti (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-8",
+   "messenger": "9. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>King Enigmo's Messenger",
+   "room": "Room of Tribulation 9",
+   "hunt": "3 × Tribunal Koom (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-9",
+   "messenger": "10. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Enigmo Van Peruoza's Messenger",
+   "room": "Room of Tribulation 10",
+   "hunt": "3 × Tribunal Merman Aku (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-10",
+   "messenger": "11. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Centakonus' Messenger",
+   "room": "Room of Tribulation 11",
+   "hunt": "3 × Tribunal Addax (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-11",
+   "messenger": "12. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Oddeye Dragon's Messenger",
+   "room": "Room of Tribulation 12",
+   "hunt": "3 × Tribunal Stoor Worm (Lv 170) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "bunny-trib-12",
+   "messenger": "13. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Rosaspina's Messenger",
+   "room": "Room of Tribulation 13",
+   "hunt": "3 × Tribunal Madame Chiffon (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-13",
+   "messenger": "14. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Amethysta's Messenger",
+   "room": "Room of Tribulation 14",
+   "hunt": "3 × Tribunal Freyja (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-14",
+   "messenger": "15. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Delphinus' Messenger",
+   "room": "Room of Tribulation 15",
+   "hunt": "3 × Tribunal Fish Guardian Tink (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bunny-trib-15",
+   "messenger": "16. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Flashire Snake's Messenger",
+   "room": "Room of Tribulation 16",
+   "hunt": "3 × Tribunal Leviathan (Lv 180) ใน 5 นาที",
+   "reward": "Stone of Patience"
+  }
+ ],
+ "tiers": [
+  {
+   "key": "1",
+   "title": "สกิล Schoolgirl (อาชีพ 1)",
+   "job": "Schoolgirl",
+   "skills": [
+    {
+     "id": "bunny-1-SteelPunch",
+     "name": "Steel Punch",
+     "icon": "img/jobs/263027a1374e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Steel_Punch_(Skill).html",
+     "tm": 0,
+     "does": "โจมตีกายภาพเป้าเดียว สกิลเริ่มต้น",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "ได้ตอนสร้างตัวละคร"
+    },
+    {
+     "id": "bunny-1-Shockwave",
+     "name": "Shockwave",
+     "icon": "img/jobs/08c46b0594a4.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shockwave.html",
+     "tm": 1,
+     "does": "ตีแรงเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/534b4056d231.gif\"/><b>Clione Card</b> × 2",
+     "masteryFrom": "Clione Lv 10 <span class=\"m\">· Coral Beach Field 3 - Sunny Beach</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-BullsEye",
+     "name": "Bull's Eye",
+     "icon": "img/jobs/620b0d248536.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Bull's_Eye.html",
+     "tm": 10,
+     "does": "เพิ่ม AC ตัวเอง",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a7d8e34e4941.gif\"/><b>Hula Octopus Card</b> × 2",
+     "masteryFrom": "Hula Octopus Lv 25 <span class=\"m\">· Desert Beach Field 2 - Sand Palace</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-BurningRave",
+     "name": "Burning Rave",
+     "icon": "img/jobs/d77761c113b2.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Burning_Rave.html",
+     "tm": 20,
+     "does": "ตีสองครั้งเป้าเดียว (ต้องใช้ Lv 10 ก่อนเรียน Quad Punch)",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/16e85a00c6f9.gif\"/><b>Nephthys Card</b> × 2",
+     "masteryFrom": "Nephthys Lv 38 <span class=\"m\">· Pyramid Dungeon 2 - Hall of Harpy</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-Shockvibe",
+     "name": "Shockvibe",
+     "icon": "img/jobs/1a2727d91349.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shockvibe.html",
+     "tm": 20,
+     "does": "ลด AC ศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/6d315f053dd0.gif\"/><b>Gold G Card</b> × 2",
+     "masteryFrom": "Gold G Lv 36 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet, Pyramid Dungeon 5 - Hall of Love Affair</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-SenseBreaker",
+     "name": "Sense Breaker",
+     "icon": "img/jobs/dcfd0fbe9331.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sense_Breaker.html",
+     "tm": 20,
+     "does": "ลดค่า Sense ศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e9734f69028.gif\"/><b>Book of the Dead</b> × 20",
+     "masteryFrom": "ขุด ใน Pyramid Dungeon",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-LuckBreaker",
+     "name": "Luck Breaker",
+     "icon": "img/jobs/1df1199cdf07.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Luck_Breaker.html",
+     "tm": 20,
+     "does": "ลด LK ศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/044fc4a1a97b.gif\"/><b>Silver G Card</b> × 2",
+     "masteryFrom": "Silver G Lv 35 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-PumpingHeart",
+     "name": "Pumping Heart",
+     "icon": "img/jobs/29a56157539b.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Pumping_Heart.html",
+     "tm": 25,
+     "does": "เพิ่ม AP ตัวเองและปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Burning Rave Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2745674ab1be.gif\"/><b>Mummy Card</b> × 2",
+     "masteryFrom": "Mummy",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-ArmorBreaker",
+     "name": "Armor Breaker",
+     "icon": "img/jobs/b2ddb81dfd66.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Armor_Breaker.html",
+     "tm": 30,
+     "does": "ลดพลังป้องกันศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Shockwave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/ee3632a6d272.gif\"/><b>Turvy Card</b> × 2",
+     "masteryFrom": "Turvy Lv 45 <span class=\"m\">· Poppuri Dungeon - Spore Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-UpperSmash",
+     "name": "Upper Smash",
+     "icon": "img/jobs/bcc4810d5271.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Upper_Smash.html",
+     "tm": 40,
+     "does": "ตีสามครั้งเป้าเดียวและทำให้มึน",
+     "type": "กดใช้",
+     "prereq": "Bull's Eye Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/3d3704afc9d2.gif\"/><b>Koom Card</b> × 2",
+     "masteryFrom": "Koom Lv 55 <span class=\"m\">· Poppuri Dungeon - Moss Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-HyperBeat",
+     "name": "Hyper Beat",
+     "icon": "img/jobs/b003d532c28e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Hyper_Beat.html",
+     "tm": 45,
+     "does": "เพิ่มความเร็วตี",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Bull's Eye Lv 10, Burning Rave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f593b524e686.gif\"/><b>Mimic Card</b> × 2",
+     "masteryFrom": "Mimic Lv 61 <span class=\"m\">· Relics Field 2 - Hand of Giant, Relics Field 3 - Monkey Statues</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-1-TornadoBomb",
+     "name": "Tornado Bomb",
+     "icon": "img/jobs/39ecae9a0e27.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tornado_Bomb.html",
+     "tm": 50,
+     "does": "ตีแรงเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "Armor Breaker Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/43a48a7d5453.gif\"/><b>Guiana Card</b> × 2",
+     "masteryFrom": "Guiana Lv 66 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
+     "source": "–"
+    }
+   ]
+  },
+  {
+   "key": "2",
+   "title": "สกิล Boxer (อาชีพ 2)",
+   "job": "Boxer",
+   "skills": [
+    {
+     "id": "bunny-2-GuardBreak",
+     "name": "Guard Break",
+     "icon": "img/jobs/bd7a887b7a56.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Guard_Break.html",
+     "tm": 41,
+     "does": "ทำงานตอนใช้ Shockwave ถ้าติด เป้าจะบล็อก/หลบการตีถัดไปไม่ได้",
+     "type": "ติดตัว",
+     "prereq": "Shockwave Lv 10",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-Dash",
+     "name": "Dash",
+     "icon": "img/jobs/4296060e20e0.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Dash.html",
+     "tm": 55,
+     "does": "พุ่งตัวไปข้างหน้าระยะสั้น",
+     "type": "กดใช้",
+     "prereq": "Hyper Beat Lv 1",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-Uppercut",
+     "name": "Uppercut",
+     "icon": "img/jobs/459e7c19ebaf.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Uppercut.html",
+     "tm": 60,
+     "does": "รวมพลังตีอัปเปอร์คัต",
+     "type": "กดใช้",
+     "prereq": "Upper Smash Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
+     "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-QuadPunch",
+     "name": "Quad Punch",
+     "icon": "img/jobs/29213bb8841a.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Quad_Punch.html",
+     "tm": 85,
+     "does": "ต่อยรัวสี่ครั้ง",
+     "type": "กดใช้",
+     "prereq": "Burning Rave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-CounterPunch",
+     "name": "Counter Punch",
+     "icon": "img/jobs/b175c987ab9e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Counter_Punch.html",
+     "tm": 100,
+     "does": "เพิ่มดาเมจ Uppercut",
+     "type": "ติดตัว",
+     "prereq": "Uppercut Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/fe5725472b79.gif\"/><b>Silver-Colored Mantle</b> × 7",
+     "masteryFrom": "Captain Arman Lv 145 <span class=\"m\">· Rose Field 2 - Maze of Black Rose</span>",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-EagleEye",
+     "name": "Eagle Eye",
+     "icon": "img/jobs/026db2792423.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Eagle_Eye.html",
+     "tm": 110,
+     "does": "เพิ่มความแม่นของปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Bull's Eye Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
+     "masteryFrom": "Officer Surapat",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-Guard",
+     "name": "Guard",
+     "icon": "img/jobs/642eae195933.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Guard.html",
+     "tm": 110,
+     "does": "ตั้งการ์ดบล็อกการโจมตีระยะประชิด",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Hyper Beat Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
+     "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-TetraPunch",
+     "name": "Tetra Punch",
+     "icon": "img/jobs/213ed1b1a846.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tetra_Punch.html",
+     "tm": 120,
+     "does": "ต่อยรัวสี่ครั้ง (แรงขึ้น)",
+     "type": "กดใช้",
+     "prereq": "Quad Punch Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e6dfabb65f4.gif\"/><b>Slithis Card</b> × 4",
+     "masteryFrom": "Slithis Lv 203 <span class=\"m\">· Swamp Dungeon 1 - Marshy Trail</span>",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-DesperateRally",
+     "name": "Desperate Rally",
+     "icon": "img/jobs/22f7c8cac828.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Desperate_Rally.html",
+     "tm": 125,
+     "does": "ดึงพลังสูงสุดตอนเข้าตาจน",
+     "type": "กดใช้",
+     "prereq": "Burning Rave Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "ซื้อจาก Boxer Jeanne"
+    },
+    {
+     "id": "bunny-2-ClinchRelease",
+     "name": "Clinch Release",
+     "icon": "img/jobs/f6d6712bb06d.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Clinch_Release.html",
+     "tm": 210,
+     "does": "หลุดจากอาการมึน",
+     "type": "กดใช้",
+     "prereq": "Desperate Rally Lv M",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Boxer Jeanne"
+    }
+   ]
+  },
+  {
+   "key": "3pChampion",
+   "title": "สกิล Champion (อาชีพ 3)",
+   "job": "Champion",
+   "icon": "img/jobs/18a48944e91d.gif",
+   "sub": "สายเพียว",
+   "skills": [
+    {
+     "id": "bunny-3p-FlashCut",
+     "name": "Flash Cut",
+     "icon": "img/jobs/f88dc8f38d50.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Flash_Cut.html",
+     "tm": 120,
+     "does": "คอมโบ Dash ต่อ Uppercut",
+     "type": "กดใช้",
+     "prereq": "Dash Lv 1, Uppercut Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e6dfabb65f4.gif\"/><b>Slithis Card</b> × 5",
+     "masteryFrom": "Slithis Lv 203 <span class=\"m\">· Swamp Dungeon 1 - Marshy Trail</span>",
+     "source": "เปิด Card Pack Ur"
+    },
+    {
+     "id": "bunny-3p-Adrenaline",
+     "name": "Adrenaline",
+     "icon": "img/jobs/b74466d0d694.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Adrenaline.html",
+     "tm": 130,
+     "does": "เพิ่ม AP",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Pumping Heart Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 5",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "เปิด Card Pack Feoh"
+    },
+    {
+     "id": "bunny-3p-FlamingFist",
+     "name": "Flaming Fist",
+     "icon": "img/jobs/51324444ccd9.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Flaming_Fist.html",
+     "tm": 145,
+     "does": "ต่อยธาตุไฟ ดาเมจไฟเพิ่มตามค่าธาตุไฟของอาวุธ",
+     "type": "กดใช้",
+     "prereq": "Burning Rave Lv M, Counter Punch Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/96a194995664.gif\"/><b>Madam Chiffon Card</b> × 5",
+     "masteryFrom": "Madam Chiffon Lv 150 <span class=\"m\">· Rose Field 3 - Maze of Blue Rose</span>",
+     "source": "ทำเควส Boxer Jeanne - Fist of Will"
+    },
+    {
+     "id": "bunny-3p-MegaFlashCut",
+     "name": "Mega Flash Cut",
+     "icon": "img/jobs/b84b9b3802cc.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Mega_Flash_Cut.html",
+     "tm": 160,
+     "does": "Flash Cut ขั้นสูง ตีเร็วและกระแทกศัตรูลอยขึ้น",
+     "type": "กดใช้",
+     "prereq": "Flash Cut Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/92f4e107279f.gif\"/><b>Slug G Card</b> × 5",
+     "masteryFrom": "Slug G Lv 224 <span class=\"m\">· Swamp Dungeon 6 - Suu's Muddy Pool</span>",
+     "source": "เปิด Card Pack Wunjo"
+    },
+    {
+     "id": "bunny-3p-ChiRelease",
+     "name": "Chi Release",
+     "icon": "img/jobs/09532f66a4d3.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Chi_Release.html",
+     "tm": 240,
+     "does": "ระเบิดพลังรอบตัว โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "Flaming Fist Lv M",
+     "mastery": "Blue Salamander Card × 5",
+     "masteryFrom": "",
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+    }
+   ]
+  },
+  {
+   "key": "3hDuelist",
+   "title": "สกิล Duelist (อาชีพ 3)",
+   "job": "Duelist",
+   "icon": "img/jobs/031657a6e4bc.gif",
+   "sub": "สายไฮบริด: ได้ใช้สกิลอาชีพ 2 ของ Buffalo แต่ต้องใช้ TM สูงกว่าเดิม 50",
+   "skills": [
+    {
+     "id": "bunny-3h-Faint",
+     "name": "Faint",
+     "icon": "img/jobs/220c08bcbdc0.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Faint.html",
+     "tm": 91,
+     "does": "ทำให้ Shockwave มีโอกาสทำศัตรูชา (รวมบอส)",
+     "type": "ติดตัว",
+     "prereq": "Shockwave Lv 1",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-Lacerator",
+     "name": "Lacerator",
+     "icon": "img/jobs/fc8ba65db002.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lacerator.html",
+     "tm": 105,
+     "does": "ปล่อยคลื่นดาบเป็นเส้นตรง โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
+     "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-Berserker",
+     "name": "Berserker",
+     "icon": "img/jobs/c1567c7a21e5.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Berserker.html",
+     "tm": 120,
+     "does": "เพิ่ม AP มาก แต่ควบคุมตัวเองไม่ได้ระหว่างใช้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Pumping Heart Lv 7",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-PiercingWave",
+     "name": "Piercing Wave",
+     "icon": "img/jobs/cd49e256cc68.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Piercing_Wave.html",
+     "tm": 135,
+     "does": "ปล่อยคลื่นลมใส่ศัตรู",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 18",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-AuraofHaste",
+     "name": "Aura of Haste",
+     "icon": "img/jobs/b1eed8568d8c.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Aura_of_Haste.html",
+     "tm": 150,
+     "does": "เพิ่มความเร็วตี (DX) ทั้งปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Hyper Beat Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/36f302553a8e.gif\"/><b>Squishy Mud</b> × 8",
+     "masteryFrom": "Walking Tadpole Lv 166 <span class=\"m\">· Swamp Field 1 - Black Hole</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-TidalSlash",
+     "name": "Tidal Slash",
+     "icon": "img/jobs/4d6b8173a80a.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tidal_Slash.html",
+     "tm": 160,
+     "does": "ฟันธาตุน้ำเป็นแนว โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "Lacerator Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
+     "masteryFrom": "Officer Surapat",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-EarthquakeBlade",
+     "name": "Earthquake Blade",
+     "icon": "img/jobs/87e2678c55e8.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Earthquake_Blade.html",
+     "tm": 165,
+     "does": "ฟันแผ่นดินไหว โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "Piercing Wave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
+     "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-BlazingStrike",
+     "name": "Blazing Strike",
+     "icon": "img/jobs/ff361c26b1f2.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Blazing_Strike.html",
+     "tm": 170,
+     "does": "ตีหลายครั้งเป็นวงกว้าง",
+     "type": "กดใช้",
+     "prereq": "Aura of Haste Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7df1bc192294.gif\"/><b>Mingo Toy</b> × 24",
+     "masteryFrom": "Mingo Lv 171 <span class=\"m\">· Swamp Field 3 - Maze of Forest</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-InfernoBlade",
+     "name": "Inferno Blade",
+     "icon": "img/jobs/c1b0e346adec.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Inferno_Blade.html",
+     "tm": 175,
+     "does": "ฟันธาตุไฟ",
+     "type": "กดใช้",
+     "prereq": "Piercing Wave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    },
+    {
+     "id": "bunny-3h-TempestStrike",
+     "name": "Tempest Strike",
+     "icon": "img/jobs/a2ac8c709a12.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tempest_Strike.html",
+     "tm": 180,
+     "does": "หมุนดาบเป็นวงลมฟันศัตรูรอบตัว",
+     "type": "กดใช้",
+     "prereq": "Lacerator Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 4",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "–"
+    }
+   ]
+  }
+ ]
+}

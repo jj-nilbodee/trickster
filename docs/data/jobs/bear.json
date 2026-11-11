@@ -1,0 +1,621 @@
+{
+ "id": "bear",
+ "name": "Bear",
+ "icon": null,
+ "stat": "Power",
+ "gender": "หญิง",
+ "path": "Animal Lover → Trainer → Zoologist (เพียว)",
+ "jobMaster": "Trainer Mimi",
+ "jobMasterIcon": null,
+ "about": "ตัวละครสาย <b>Power</b> ผู้หญิงตัวที่ 9 ชื่อ <b>Paula</b> ใช้ <b>ค้อนสองมือ</b> ตีระยะประชิด แรงตีมาจาก AP และ DA (วิกิแนะนำอัปสเตตัส Power กับ Sense) สายอาชีพ <b>Animal Lover → Trainer → Zoologist</b> มีอาชีพ 3 สายเดียว (สายเพียว) Job Master คือ <b>Trainer Mimi</b> วิกิเขียนไว้ว่ามีเฉพาะเซิร์ฟ Polar<br/><br/>จุดเด่นของสายนี้คือ <b>โหมด Crazy Hammer</b>: ตีไปเรื่อยๆ จะสะสมเกจ พอเต็มจะเข้าโหมดชั่วคราว Crazy Hammer I–V แต่ละขั้นเพิ่มความสามารถของโหมด (AP, ความเร็ว, ดาเมจตีธรรมดา, คริ, คลื่นกระแทกรอบตัว)",
+ "note": "ข้อมูล Bear มาจากวิกิแฟนเกม PlayTrickster (oto.fandom) ของเซิร์ฟอื่น เพราะวิกิ ggFTW ไม่มีอาชีพนี้ ตัวเลขหรือของฝึกอาจไม่ตรงกับในเกม",
+ "source": [
+  [
+   "oto.fandom: Bear",
+   "https://oto.fandom.com/wiki/Bear"
+  ]
+ ],
+ "quests": [
+  {
+   "id": "bear-q0",
+   "name": "Trainer Mimi - Bear 2nd Job Quest",
+   "where": "Relics Town - Azteca หรือ Room of Job Administrator 1 (Garden of Skill Master)",
+   "todo": "Lv 60+, TM 50+ · ส่ง Growth Badge × 1 (ดรอปจาก Kaboom ที่ Caballa Relics Dungeon 4) + 100K Galder Check × 3 (ซื้อจาก Andrew ใบละ 105,000)",
+   "reward": "เปลี่ยนเป็น Trainer · Sign of Wilderness, Second Job Advancement Cloak (Power), 1,000,000 EXP / 12,000,000 TM"
+  },
+  {
+   "id": "bear-q1",
+   "name": "Door of Tribulation - The Riddle",
+   "where": "Garden of Skill Master",
+   "todo": "อาชีพ 2, Lv 130+ · ส่ง Ticket of the Valiant (ดรอปจาก Clurican Lv 240 ที่ 2nd Closed Lot of Jade Steel) + 1 Mil Galder Check × 3",
+   "reward": "Marble of Triumph, เข้า Room of Guardian ได้, TM 10,000,000"
+  },
+  {
+   "id": "bear-q2",
+   "name": "Vulcanus Phoenix's Messenger - Zoologist Job Quest (รับไว้ก่อน)",
+   "where": "Room of Guardian",
+   "todo": "รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": ""
+  },
+  {
+   "id": "bear-q3",
+   "name": "Trainer Mimi - Bring the Zoologist Guardian Stone",
+   "where": "Rose Field 3 - Maze of Blue Rose",
+   "todo": "ถือ Marble of Triumph · ส่ง Red Ruby (ดรอปจาก Chele หรือ Monkya) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll, 7,497,300 EXP / 7,615,625 TM"
+  },
+  {
+   "id": "bear-q4",
+   "name": "Happisto Stallone - Make Happisto's Compass Frame (3 รอบ)",
+   "where": "Gate of Snow Hill",
+   "todo": "ต้องมี Scroll · รอบละ Brass, Glass Piece, Magnetite, Magic Powder (ดูตารางของที่ต้องเตรียม)",
+   "reward": "รอบ 3 ได้ Compass Frame"
+  },
+  {
+   "id": "bear-q5",
+   "name": "Trainer Mimi - The Compass Frame",
+   "where": "Rose Field 3 - Maze of Blue Rose",
+   "todo": "ส่ง Compass Frame",
+   "reward": "The Key of Trials"
+  },
+  {
+   "id": "bear-q6",
+   "name": "Path of Tribulation 16 ห้อง",
+   "where": "Room of Tribulation 1–16",
+   "todo": "ล่าห้องละ 3 ตัว ทำต่อกันตามลำดับ เหมือนสายอื่น (ดูตาราง Tribunal ด้านล่าง)",
+   "reward": "ห้องสุดท้ายได้ Stone of Patience"
+  },
+  {
+   "id": "bear-q7",
+   "name": "Trainer Mimi - Making the Compass",
+   "where": "Rose Field 3 - Maze of Blue Rose",
+   "todo": "ส่ง Stone of Patience + The Key of Trials + Marble of Triumph",
+   "reward": "Needleless Compass"
+  },
+  {
+   "id": "bear-q8",
+   "name": "ส่ง Zoologist Job Quest ให้ Vulcanus Phoenix's Messenger",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Zoologist · Ruby Guardian, Light Compass, TM 16,000,000"
+  }
+ ],
+ "prep": [
+  {
+   "id": "bear-prep-0",
+   "item": "Base Lv 130, TM Lv 120",
+   "where": "",
+   "step": ""
+  },
+  {
+   "id": "bear-prep-1",
+   "item": "Ticket of the Valiant × 1",
+   "where": "ดรอปจาก Clurican (Lv 240) / Tenter Lion หรือขุดใน Swamp Dungeon",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "bear-prep-2",
+   "item": "1 Mil Galder Check × 3",
+   "where": "ซื้อจาก Andrew ที่ Megalopolis Bank ใบละ 1,050,000",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "bear-prep-3",
+   "item": "Sacred Water × 1",
+   "where": "ขุดใน Black Swamp Fields",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "bear-prep-4",
+   "item": "Brass × 3",
+   "where": "ดรอปจาก Brass Knight (Lv 186)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bear-prep-5",
+   "item": "Magnetite × 3",
+   "where": "ดรอปจาก Iron Knight (Lv 184)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bear-prep-6",
+   "item": "Magic Powder × 3",
+   "where": "ดรอปจาก Bone Magician (Lv 231)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bear-prep-7",
+   "item": "Glass Piece × 3",
+   "where": "ดรอปจาก Bone Warrior (Lv 225)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "bear-prep-8",
+   "item": "Guardian Stone ของอาชีพที่เลือก × 1",
+   "where": "ดูตาราง “เลือกอาชีพ” ด้านล่าง",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "bear-prep-9",
+   "item": "Harkon × 1",
+   "where": "ขุดใน Techichi / Tapasco Fields, ชั้นต่อสู้ของ Tower of Chaos, Gate of Abyss, Abyss Fields หรือจากเควส Blacksmith Marx (Find Ingredients for Precious Jewel, Silent Lava Mine Collection)",
+   "step": "ขั้น 2 (ยกเว้น Dark Lord)"
+  }
+ ],
+ "tribunal": [
+  {
+   "id": "bear-trib-0",
+   "messenger": "1. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Vulcanus Phoenix's Messenger",
+   "room": "Room of Tribulation 1",
+   "hunt": "3 × Tribunal Flame Moth (Lv 150) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "bear-trib-1",
+   "messenger": "2. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Alsiedo Bird's Messenger",
+   "room": "Room of Tribulation 2",
+   "hunt": "3 × Tribunal Siremaid (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-2",
+   "messenger": "3. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Dragon Tale's Messenger",
+   "room": "Room of Tribulation 3",
+   "hunt": "3 × Tribunal Crow (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-3",
+   "messenger": "4. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Black Wings' Messenger",
+   "room": "Room of Tribulation 4",
+   "hunt": "3 × Tribunal Seth (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-4",
+   "messenger": "5. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Sacred Esper's Messenger",
+   "room": "Room of Tribulation 5",
+   "hunt": "3 × Tribunal Shadow (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-5",
+   "messenger": "6. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Golden Ant's Messenger",
+   "room": "Room of Tribulation 6",
+   "hunt": "3 × Tribunal Tooth Flower (Lv 160) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "bear-trib-6",
+   "messenger": "7. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Eternal Knight's Messenger",
+   "room": "Room of Tribulation 7",
+   "hunt": "3 × Tribunal Hell Knight (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-7",
+   "messenger": "8. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Silvanian's Messenger",
+   "room": "Room of Tribulation 8",
+   "hunt": "3 × Tribunal Yeti (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-8",
+   "messenger": "9. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>King Enigmo's Messenger",
+   "room": "Room of Tribulation 9",
+   "hunt": "3 × Tribunal Koom (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-9",
+   "messenger": "10. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Enigmo Van Peruoza's Messenger",
+   "room": "Room of Tribulation 10",
+   "hunt": "3 × Tribunal Merman Aku (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-10",
+   "messenger": "11. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Centakonus' Messenger",
+   "room": "Room of Tribulation 11",
+   "hunt": "3 × Tribunal Addax (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-11",
+   "messenger": "12. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Oddeye Dragon's Messenger",
+   "room": "Room of Tribulation 12",
+   "hunt": "3 × Tribunal Stoor Worm (Lv 170) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "bear-trib-12",
+   "messenger": "13. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Rosaspina's Messenger",
+   "room": "Room of Tribulation 13",
+   "hunt": "3 × Tribunal Madame Chiffon (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-13",
+   "messenger": "14. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Amethysta's Messenger",
+   "room": "Room of Tribulation 14",
+   "hunt": "3 × Tribunal Freyja (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-14",
+   "messenger": "15. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Delphinus' Messenger",
+   "room": "Room of Tribulation 15",
+   "hunt": "3 × Tribunal Fish Guardian Tink (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "bear-trib-15",
+   "messenger": "16. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Flashire Snake's Messenger",
+   "room": "Room of Tribulation 16",
+   "hunt": "3 × Tribunal Leviathan (Lv 180) ใน 5 นาที",
+   "reward": "Stone of Patience"
+  }
+ ],
+ "tiers": [
+  {
+   "key": "1",
+   "title": "สกิล Animal Lover (อาชีพ 1)",
+   "job": "Animal Lover",
+   "skills": [
+    {
+     "id": "bear-1-EquipHammer",
+     "name": "Equip Hammer",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Equip_Hammer",
+     "tm": 1,
+     "does": "ติดตัว ใช้ค้อนสองมือได้",
+     "type": "ติดตัว",
+     "prereq": "–",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-PowerfulHammer",
+     "name": "Powerful Hammer",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Powerful_Hammer",
+     "tm": 1,
+     "does": "ตีแรงสำหรับมือใหม่ เลเวลสูงสุด 1 ฝึกไม่ได้",
+     "type": "ใช้โจมตี",
+     "prereq": "–",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-DoubleHammer",
+     "name": "Double Hammer",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Double_Hammer",
+     "tm": 10,
+     "does": "ตีสองครั้งในทีเดียว",
+     "type": "ใช้โจมตี",
+     "prereq": "Equip Hammer Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a7d8e34e4941.gif\"/>Hula Octopus Card × 2",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-StrengthTraining",
+     "name": "Strength Training",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Strength_Training",
+     "tm": 20,
+     "does": "เพิ่ม AP ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Double Hammer Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/044fc4a1a97b.gif\"/>Silver G Card × 2",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-Concentration",
+     "name": "Concentration",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Concentration",
+     "tm": 25,
+     "does": "เพิ่ม DA ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Double Hammer Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/ee3632a6d272.gif\"/>Turvy Card × 2",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-MentalBreakdown",
+     "name": "Mental Breakdown",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Mental_Breakdown",
+     "tm": 30,
+     "does": "ทำให้ศัตรูขยับไม่ได้ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Concentration Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/3d3704afc9d2.gif\"/>Koom Card × 2",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-ShieldofWill",
+     "name": "Shield of Will",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Shield_of_Will",
+     "tm": 35,
+     "does": "เพิ่ม DP ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Mental Concentration Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f593b524e686.gif\"/>Mimic Card × 2",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-PartyGuard",
+     "name": "Party Guard",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Party_Guard",
+     "tm": 40,
+     "does": "โล่กันกายภาพให้ทั้งปาร์ตี้ตามจำนวนครั้ง (กันเวทไม่ได้)",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Shield of Will Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/43a48a7d5453.gif\"/>Guiana Card × 2",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-1-EarthquakeHammer",
+     "name": "Earthquake Hammer",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Earthquake_Hammer",
+     "tm": 50,
+     "does": "เรียกค้อนยักษ์ตีรอบตัว (โจมตีวงกว้าง)",
+     "type": "ใช้โจมตี",
+     "prereq": "Concentration Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/>Quiem Card × 2",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    }
+   ]
+  },
+  {
+   "key": "2",
+   "title": "สกิล Trainer (อาชีพ 2)",
+   "job": "Trainer",
+   "skills": [
+    {
+     "id": "bear-2-CrazyHammerI",
+     "name": "Crazy Hammer I",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Crazy_Hammer_I",
+     "tm": 60,
+     "does": "สะสมเกจแล้วเข้าโหมด Crazy Hammer เพิ่ม AP",
+     "type": "โหมด",
+     "prereq": "Strength Training Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/>Crow Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-2-InvisibleDefence",
+     "name": "Invisible Defence",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Invisible_Defence",
+     "tm": 70,
+     "does": "เพิ่ม MD และ DP ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Shield of Will Lv Master",
+     "mastery": "Officer Sulaphat Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-2-OverSwing",
+     "name": "Over Swing",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Over_Swing",
+     "tm": 90,
+     "does": "ตีเป้าเดียว 3 ครั้งติด",
+     "type": "ใช้โจมตี",
+     "prereq": "Earthquake Hammer Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/>Chele Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-2-CrazyHammerII",
+     "name": "Crazy Hammer II",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Crazy_Hammer_II",
+     "tm": 90,
+     "does": "โหมด Crazy Hammer วิ่งเร็วขึ้น",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Crazy Hammer I Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/>Dancer Michel Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-2-MoleHammer",
+     "name": "Mole Hammer",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Mole_Hammer",
+     "tm": 110,
+     "does": "ลด DP ศัตรูและทำดาเมจต่อเนื่อง",
+     "type": "ดีบัฟ + ดาเมจต่อเนื่อง",
+     "prereq": "Mental Breakdown Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/>Dancer Isabelle Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-2-CrazyHammerIII",
+     "name": "Crazy Hammer III",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Crazy_Hammer_III",
+     "tm": 120,
+     "does": "โหมด Crazy Hammer ตีธรรมดาแรงขึ้นอีก",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Crazy Hammer II Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e6dfabb65f4.gif\"/>Slithis Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    },
+    {
+     "id": "bear-2-FlyingHammer",
+     "name": "Flying Hammer",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Flying_Hammer",
+     "tm": 120,
+     "does": "ขว้างค้อนใส่ศัตรูไกล ยิ่ง DA ของอาวุธสูงยิ่งแรง",
+     "type": "ใช้โจมตี",
+     "prereq": "Over Swing Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/>Cobra Flower Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Trainer Mimi (Skill Card Shop)"
+    }
+   ]
+  },
+  {
+   "key": "3pZoologist",
+   "title": "สกิล Zoologist (อาชีพ 3)",
+   "job": "Zoologist",
+   "skills": [
+    {
+     "id": "bear-3pZoologist-AuraofAnger",
+     "name": "Aura of Anger",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Aura_of_Anger",
+     "tm": 140,
+     "does": "เพิ่ม DA ชั่วคราว (แรงกว่า Concentration)",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Concentration Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/92f4e107279f.gif\"/>Slug G Card × 5",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Feoh"
+    },
+    {
+     "id": "bear-3pZoologist-StrongArms",
+     "name": "Strong Arms",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Strong_Arms",
+     "tm": 140,
+     "does": "เพิ่ม AP ชั่วคราว (แรงกว่า Strength Training)",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Strength Training Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/061ad0f88522.gif\"/>Malefic Matron Card × 5",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Ur"
+    },
+    {
+     "id": "bear-3pZoologist-LastDefence",
+     "name": "Last Defence",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Last_Defence",
+     "tm": 150,
+     "does": "เพิ่ม DP ตอนเลือดต่ำกว่า 30%",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Invisible Defence Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/68e2ae9eba99.gif\"/>Fire Moth Card × 5",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Thorn"
+    },
+    {
+     "id": "bear-3pZoologist-BearAttack",
+     "name": "Bear Attack",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Bear_Attack",
+     "tm": 170,
+     "does": "เรียกหมีขาวขู่ศัตรู ลด DP ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Mole Hammer Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/8b50a5e8b2fc.gif\"/>Blue Salamander Card × 5",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Ansur"
+    },
+    {
+     "id": "bear-3pZoologist-BestShield",
+     "name": "Best Shield",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Best_Shield",
+     "tm": 180,
+     "does": "เพิ่ม DP ให้ปาร์ตี้ตามค่า DP ของคนที่สูงสุด",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Party Guard Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f0db6151bc21.gif\"/>Fire Golem Card × 5",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Rad"
+    },
+    {
+     "id": "bear-3pZoologist-RainofHammers",
+     "name": "Rain of Hammers",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Rain_of_Hammers",
+     "tm": 190,
+     "does": "โปรยค้อนเล็กรอบตัว (โจมตีวงกว้าง)",
+     "type": "ใช้โจมตี",
+     "prereq": "Strong Arms Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/45a4a7dd7de6.gif\"/>Skelefish Card × 5",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Ken"
+    },
+    {
+     "id": "bear-3pZoologist-HammerSpin",
+     "name": "Hammer Spin",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Hammer_Spin",
+     "tm": 220,
+     "does": "หมุนค้อนตีรอบตัวต่อเนื่อง (โจมตีวงกว้าง)",
+     "type": "ใช้โจมตี",
+     "prereq": "Flying Hammer Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/8d2a65b6ce0c.gif\"/>Reggae Orc Card × 5",
+     "masteryFrom": "",
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
+    },
+    {
+     "id": "bear-3pZoologist-CrazyHammerIV",
+     "name": "Crazy Hammer IV",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Crazy_Hammer_IV",
+     "tm": 220,
+     "does": "โหมด Crazy Hammer เพิ่มโอกาสคริ",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Crazy Hammer III Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a055753258fc.gif\"/>Krybeth Card × 5",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Wunjo"
+    },
+    {
+     "id": "bear-3pZoologist-HammerSpinBooster",
+     "name": "Hammer Spin Booster",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Hammer_Spin_Booster",
+     "tm": 240,
+     "does": "เพิ่มดาเมจ Hammer Spin",
+     "type": "ใช้โจมตี",
+     "prereq": "Hammer Spin Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/45a4a7dd7de6.gif\"/>Skelefish Card × 5",
+     "masteryFrom": "",
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
+    },
+    {
+     "id": "bear-3pZoologist-CrazyHammerV",
+     "name": "Crazy Hammer V",
+     "icon": null,
+     "wiki": "https://oto.fandom.com/wiki/Crazy_Hammer_V",
+     "tm": 240,
+     "does": "โหมด Crazy Hammer ปล่อยคลื่นกระแทกรอบตัว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Crazy Hammer IV Lv Master",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/50efd5e28aa6.gif\"/>Phantom Dame Card × 5",
+     "masteryFrom": "",
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
+    }
+   ],
+   "sub": "สายเพียว (Bear มีอาชีพ 3 สายเดียว)"
+  }
+ ]
+}

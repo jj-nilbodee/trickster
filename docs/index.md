@@ -25,11 +25,9 @@ sidebar: false
 <div class="grid">
 <a class="g" href="daily-quests.html" style="--c:var(--g-daily)"><span class="name">เควสรายวัน</span><span class="lv">80 เควส · ติ๊กรีเซ็ตทุกวัน</span><span class="d">เดลี่ประจำเมือง, Julio, Shadow World, แผนที่สมบัติ</span><span class="go">เปิด →</span></a>
 <a class="g" href="card-girl-quests.html" style="--c:var(--g-cards)"><span class="name">เควสการ์ด</span><span class="lv">53 เควส · 11 โซน</span><span class="d">Card Girl พร้อมเฉลยการ์ดและมอนที่ดรอป</span><span class="go">เปิด →</span></a>
-<a class="g" href="skill-mastery-items.html" style="--c:var(--g-mastery)"><span class="name">ของฝึกสกิล</span><span class="lv">190 สกิล · 4 สาย</span><span class="d">Skill Mastery ค้นชื่อสกิลได้</span><span class="go">เปิด →</span></a>
-<a class="g" href="job-advancement.html" style="--c:var(--g-jobs)"><span class="name">เปลี่ยนอาชีพ</span><span class="lv">ขั้น 2 และ 3</span><span class="d">ของที่ต้องเตรียม, ลำดับเควส, Guardian Stone, สกิลอาชีพ 3</span><span class="go">เปิด →</span></a>
+<a class="g" href="jobs.html" style="--c:var(--g-jobs)"><span class="name">อาชีพ</span><span class="lv">9 ตัวละคร · 35 อาชีพ</span><span class="d">เควสเปลี่ยนอาชีพ 2 และ 3, สกิลทุกอาชีพ, ของฝึก Mastery รวม Bear (Paula)</span><span class="go">เปิด →</span></a>
 <a class="g" href="tower-of-chaos.html" style="--c:var(--g-chaos)"><span class="name">Tower of Chaos</span><span class="lv">72 ชั้น</span><span class="d">ทางเข้า, เควสขอบัตร, วาร์ป, เลเวลมอนแต่ละช่วง</span><span class="go">เปิด →</span></a>
 <a class="g" href="leveling-maps.html" style="--c:var(--g-level)"><span class="name">แมพเก็บเลเวล</span><span class="lv">253 แมพ</span><span class="d">ทุกโซนเรียงตามเลเวลมอน</span><span class="go">เปิด →</span></a>
-<a class="g" href="bear-paula.html" style="--c:var(--g-bear)"><span class="name">อาชีพ Bear (Paula)</span><span class="lv">Animal Lover → Trainer → Zoologist</span><span class="d">เควสเปลี่ยนอาชีพ สกิล 26 ตัว และของฝึก Mastery</span><span class="go">เปิด →</span></a>
 </div>
 
 </section>

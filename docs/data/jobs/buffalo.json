@@ -1,0 +1,818 @@
+{
+ "id": "buffalo",
+ "name": "Buffalo",
+ "icon": "img/jobs/29d10cf72602.gif",
+ "stat": "Power",
+ "gender": "ชาย",
+ "path": "Fighter → Warrior → Gladiator (เพียว) / Mercenary (ไฮบริด)",
+ "jobMaster": "Warrior Kei",
+ "jobMasterIcon": "img/jobs/67b217bebc98.gif",
+ "about": "ตัวละครสาย <b>Power</b> ผู้ชาย ตีระยะประชิด แรงตีมาจาก AP มีสกิลโจมตีหลายตัวให้เลือกเยอะ และมีสกิลเป้าเดียวด้วย สายอาชีพ <b>Fighter → Warrior → Gladiator (เพียว) / Mercenary (ไฮบริด)</b> Job Master คือ <b>Warrior Kei</b>",
+ "source": [
+  [
+   "วิกิ ggFTW: Buffalo",
+   "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Buffalo.html"
+  ]
+ ],
+ "quests": [
+  {
+   "name": "Warrior Kei - Buffalo 2nd Job Quest",
+   "where": "Relics Town - Azteca หรือ Room of Job Administrator (Garden of Skill Master)",
+   "todo": "Lv 60+, TM 50+ · ส่ง Growth Badge × 1 (ดรอปจาก Kaboom ที่ Caballa Relics Dungeon 4) + 100K Galder Check × 3 (ซื้อจาก Andrew ใบละ 105,000)",
+   "reward": "เปลี่ยนเป็น Warrior · Sign of Sword, 1,000,000 EXP / 12,000,000 TM",
+   "icon": "img/jobs/67b217bebc98.gif",
+   "id": "buffalo-q0"
+  },
+  {
+   "name": "Door of Tribulation - Path of Tribulation",
+   "where": "Garden of Skill Master",
+   "todo": "อาชีพ 2, Lv 130+, TM 120+ · ส่ง Ticket of the Valiant (ดูตารางของที่ต้องเตรียม) + 1 Mil Galder Check × 3",
+   "reward": "Marble of Triumph, เข้า Room of Guardian ได้, TM 10,000,000",
+   "id": "buffalo-q1"
+  },
+  {
+   "name": "Dragon Tale's Messenger - Gladiator Quest (รับไว้ก่อน)",
+   "job": "Gladiator",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "buffalo-q2"
+  },
+  {
+   "name": "Black Wings' Messenger - Mercenary Quest (รับไว้ก่อน)",
+   "job": "Mercenary",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "buffalo-q3"
+  },
+  {
+   "name": "Warrior Kei - Find Gladiator Guardian Stone",
+   "job": "Gladiator",
+   "where": "Wharf Field 4 - Chrono Wharf",
+   "todo": "ถือ Marble of Triumph · ส่ง Blue Turquoise (ได้จาก Siremaid (Lv 120)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/58af5220ba5b.gif",
+   "id": "buffalo-q4"
+  },
+  {
+   "name": "Warrior Kei - Find Mercenary Guardian Stone",
+   "job": "Mercenary",
+   "where": "Wharf Field 4 - Chrono Wharf",
+   "todo": "ถือ Marble of Triumph · ส่ง Onyx (ได้จาก Tanya (Lv 150)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/ad2a94ad3945.gif",
+   "id": "buffalo-q5"
+  },
+  {
+   "name": "Happisto Stallone - Make Happisto's Compass Frame (3 รอบ)",
+   "where": "Gate of Snow Hill",
+   "todo": "ต้องมี Scroll · รอบละ Brass, Glass Piece, Magnetite, Magic Powder อย่างละ 1 (ดูตารางของที่ต้องเตรียม)",
+   "reward": "รอบ 3 ได้ Compass Frame",
+   "id": "buffalo-q6"
+  },
+  {
+   "name": "Warrior Kei - Room of Ordeal Key - Find Compass Frame",
+   "where": "Wharf Field 4 - Chrono Wharf",
+   "todo": "ส่ง Compass Frame",
+   "reward": "The Key of Trials",
+   "id": "buffalo-q7"
+  },
+  {
+   "name": "Path of Tribulation 16 ห้อง",
+   "where": "Room of Tribulation 1–16",
+   "todo": "ล่าห้องละ 3 ตัว ทำต่อกันตามลำดับ (ดูตาราง Tribunal ด้านล่าง)",
+   "reward": "ห้องสุดท้ายได้ Stone of Patience",
+   "id": "buffalo-q8"
+  },
+  {
+   "name": "Warrior Kei - Find 16 Guardian Stones for the Needleless Compass",
+   "where": "Wharf Field 4 - Chrono Wharf",
+   "todo": "ส่ง Stone of Patience + The Key of Trials + Marble of Triumph",
+   "reward": "Needleless Compass",
+   "id": "buffalo-q9"
+  },
+  {
+   "name": "ส่ง Gladiator Quest ให้ Dragon Tale's Messenger",
+   "job": "Gladiator",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Gladiator · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "buffalo-q10"
+  },
+  {
+   "name": "ส่ง Mercenary Quest ให้ Black Wings' Messenger",
+   "job": "Mercenary",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Mercenary · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "buffalo-q11"
+  }
+ ],
+ "prep": [
+  {
+   "id": "buffalo-prep-0",
+   "item": "Base Lv 130, TM Lv 120",
+   "where": "",
+   "step": ""
+  },
+  {
+   "id": "buffalo-prep-1",
+   "item": "Ticket of the Valiant × 1",
+   "where": "ดรอปจาก Clurican (Lv 240) / Tenter Lion หรือขุดใน Swamp Dungeon",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "buffalo-prep-2",
+   "item": "1 Mil Galder Check × 3",
+   "where": "ซื้อจาก Andrew ที่ Megalopolis Bank ใบละ 1,050,000",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "buffalo-prep-3",
+   "item": "Sacred Water × 1",
+   "where": "ขุดใน Black Swamp Fields",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "buffalo-prep-4",
+   "item": "Brass × 3",
+   "where": "ดรอปจาก Brass Knight (Lv 186)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "buffalo-prep-5",
+   "item": "Magnetite × 3",
+   "where": "ดรอปจาก Iron Knight (Lv 184)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "buffalo-prep-6",
+   "item": "Magic Powder × 3",
+   "where": "ดรอปจาก Bone Magician (Lv 231)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "buffalo-prep-7",
+   "item": "Glass Piece × 3",
+   "where": "ดรอปจาก Bone Warrior (Lv 225)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "buffalo-prep-8",
+   "item": "Guardian Stone ของอาชีพที่เลือก × 1",
+   "where": "ดูตาราง “เลือกอาชีพ” ด้านล่าง",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "buffalo-prep-9",
+   "item": "Harkon × 1",
+   "where": "ขุดใน Techichi / Tapasco Fields, ชั้นต่อสู้ของ Tower of Chaos, Gate of Abyss, Abyss Fields หรือจากเควส Blacksmith Marx (Find Ingredients for Precious Jewel, Silent Lava Mine Collection)",
+   "step": "ขั้น 2 (ยกเว้น Dark Lord)"
+  }
+ ],
+ "tribunal": [
+  {
+   "id": "buffalo-trib-0",
+   "messenger": "1. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Vulcanus Phoenix's Messenger",
+   "room": "Room of Tribulation 1",
+   "hunt": "3 × Tribunal Flame Moth (Lv 150) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "buffalo-trib-1",
+   "messenger": "2. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Alsiedo Bird's Messenger",
+   "room": "Room of Tribulation 2",
+   "hunt": "3 × Tribunal Siremaid (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-2",
+   "messenger": "3. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Dragon Tale's Messenger",
+   "room": "Room of Tribulation 3",
+   "hunt": "3 × Tribunal Crow (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-3",
+   "messenger": "4. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Black Wings' Messenger",
+   "room": "Room of Tribulation 4",
+   "hunt": "3 × Tribunal Seth (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-4",
+   "messenger": "5. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Sacred Esper's Messenger",
+   "room": "Room of Tribulation 5",
+   "hunt": "3 × Tribunal Shadow (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-5",
+   "messenger": "6. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Golden Ant's Messenger",
+   "room": "Room of Tribulation 6",
+   "hunt": "3 × Tribunal Tooth Flower (Lv 160) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "buffalo-trib-6",
+   "messenger": "7. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Eternal Knight's Messenger",
+   "room": "Room of Tribulation 7",
+   "hunt": "3 × Tribunal Hell Knight (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-7",
+   "messenger": "8. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Silvanian's Messenger",
+   "room": "Room of Tribulation 8",
+   "hunt": "3 × Tribunal Yeti (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-8",
+   "messenger": "9. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>King Enigmo's Messenger",
+   "room": "Room of Tribulation 9",
+   "hunt": "3 × Tribunal Koom (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-9",
+   "messenger": "10. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Enigmo Van Peruoza's Messenger",
+   "room": "Room of Tribulation 10",
+   "hunt": "3 × Tribunal Merman Aku (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-10",
+   "messenger": "11. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Centakonus' Messenger",
+   "room": "Room of Tribulation 11",
+   "hunt": "3 × Tribunal Addax (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-11",
+   "messenger": "12. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Oddeye Dragon's Messenger",
+   "room": "Room of Tribulation 12",
+   "hunt": "3 × Tribunal Stoor Worm (Lv 170) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "buffalo-trib-12",
+   "messenger": "13. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Rosaspina's Messenger",
+   "room": "Room of Tribulation 13",
+   "hunt": "3 × Tribunal Madame Chiffon (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-13",
+   "messenger": "14. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Amethysta's Messenger",
+   "room": "Room of Tribulation 14",
+   "hunt": "3 × Tribunal Freyja (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-14",
+   "messenger": "15. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Delphinus' Messenger",
+   "room": "Room of Tribulation 15",
+   "hunt": "3 × Tribunal Fish Guardian Tink (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "buffalo-trib-15",
+   "messenger": "16. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Flashire Snake's Messenger",
+   "room": "Room of Tribulation 16",
+   "hunt": "3 × Tribunal Leviathan (Lv 180) ใน 5 นาที",
+   "reward": "Stone of Patience"
+  }
+ ],
+ "tiers": [
+  {
+   "key": "1",
+   "title": "สกิล Fighter (อาชีพ 1)",
+   "job": "Fighter",
+   "skills": [
+    {
+     "id": "buffalo-1-SteelPunch",
+     "name": "Steel Punch",
+     "icon": "img/jobs/263027a1374e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Steel_Punch_(Skill).html",
+     "tm": 0,
+     "does": "โจมตีกายภาพเป้าเดียว สกิลเริ่มต้น",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "ได้ตอนสร้างตัวละคร"
+    },
+    {
+     "id": "buffalo-1-Shockwave",
+     "name": "Shockwave",
+     "icon": "img/jobs/08c46b0594a4.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shockwave.html",
+     "tm": 1,
+     "does": "ตีแรงเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/534b4056d231.gif\"/><b>Clione Card</b> × 2",
+     "masteryFrom": "Clione Lv 10 <span class=\"m\">· Coral Beach Field 3 - Sunny Beach</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-BullsEye",
+     "name": "Bull's Eye",
+     "icon": "img/jobs/620b0d248536.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Bull's_Eye.html",
+     "tm": 10,
+     "does": "เพิ่ม AC ตัวเอง",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a7d8e34e4941.gif\"/><b>Hula Octopus Card</b> × 2",
+     "masteryFrom": "Hula Octopus Lv 25 <span class=\"m\">· Desert Beach Field 2 - Sand Palace</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-BurningRave",
+     "name": "Burning Rave",
+     "icon": "img/jobs/d77761c113b2.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Burning_Rave.html",
+     "tm": 20,
+     "does": "ตีสองครั้งเป้าเดียว (ต้องใช้ Lv 10 ก่อนเรียน Quad Punch)",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/16e85a00c6f9.gif\"/><b>Nephthys Card</b> × 2",
+     "masteryFrom": "Nephthys Lv 38 <span class=\"m\">· Pyramid Dungeon 2 - Hall of Harpy</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-Shockvibe",
+     "name": "Shockvibe",
+     "icon": "img/jobs/1a2727d91349.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shockvibe.html",
+     "tm": 20,
+     "does": "ลด AC ศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/6d315f053dd0.gif\"/><b>Gold G Card</b> × 2",
+     "masteryFrom": "Gold G Lv 36 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet, Pyramid Dungeon 5 - Hall of Love Affair</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-SenseBreaker",
+     "name": "Sense Breaker",
+     "icon": "img/jobs/dcfd0fbe9331.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sense_Breaker.html",
+     "tm": 20,
+     "does": "ลดค่า Sense ศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e9734f69028.gif\"/><b>Book of the Dead</b> × 20",
+     "masteryFrom": "ขุด ใน Pyramid Dungeon",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-LuckBreaker",
+     "name": "Luck Breaker",
+     "icon": "img/jobs/1df1199cdf07.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Luck_Breaker.html",
+     "tm": 20,
+     "does": "ลด LK ศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/044fc4a1a97b.gif\"/><b>Silver G Card</b> × 2",
+     "masteryFrom": "Silver G Lv 35 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-PumpingHeart",
+     "name": "Pumping Heart",
+     "icon": "img/jobs/29a56157539b.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Pumping_Heart.html",
+     "tm": 25,
+     "does": "เพิ่ม AP ตัวเองและปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Burning Rave Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2745674ab1be.gif\"/><b>Mummy Card</b> × 2",
+     "masteryFrom": "Mummy",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-ArmorBreaker",
+     "name": "Armor Breaker",
+     "icon": "img/jobs/b2ddb81dfd66.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Armor_Breaker.html",
+     "tm": 30,
+     "does": "ลดพลังป้องกันศัตรู",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Shockwave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/ee3632a6d272.gif\"/><b>Turvy Card</b> × 2",
+     "masteryFrom": "Turvy Lv 45 <span class=\"m\">· Poppuri Dungeon - Spore Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-UpperSmash",
+     "name": "Upper Smash",
+     "icon": "img/jobs/bcc4810d5271.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Upper_Smash.html",
+     "tm": 40,
+     "does": "ตีสามครั้งเป้าเดียวและทำให้มึน",
+     "type": "กดใช้",
+     "prereq": "Bull's Eye Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/3d3704afc9d2.gif\"/><b>Koom Card</b> × 2",
+     "masteryFrom": "Koom Lv 55 <span class=\"m\">· Poppuri Dungeon - Moss Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-HyperBeat",
+     "name": "Hyper Beat",
+     "icon": "img/jobs/b003d532c28e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Hyper_Beat.html",
+     "tm": 45,
+     "does": "เพิ่มความเร็วตี",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Bull's Eye Lv 10, Burning Rave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f593b524e686.gif\"/><b>Mimic Card</b> × 2",
+     "masteryFrom": "Mimic Lv 61 <span class=\"m\">· Relics Field 2 - Hand of Giant, Relics Field 3 - Monkey Statues</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-1-TornadoBomb",
+     "name": "Tornado Bomb",
+     "icon": "img/jobs/39ecae9a0e27.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tornado_Bomb.html",
+     "tm": 50,
+     "does": "ตีแรงเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "Armor Breaker Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/43a48a7d5453.gif\"/><b>Guiana Card</b> × 2",
+     "masteryFrom": "Guiana Lv 66 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
+     "source": "–"
+    }
+   ]
+  },
+  {
+   "key": "2",
+   "title": "สกิล Warrior (อาชีพ 2)",
+   "job": "Warrior",
+   "skills": [
+    {
+     "id": "buffalo-2-Faint",
+     "name": "Faint",
+     "icon": "img/jobs/220c08bcbdc0.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Faint.html",
+     "tm": 41,
+     "does": "ทำให้ Shockwave มีโอกาสทำศัตรูชา (รวมบอส)",
+     "type": "ติดตัว",
+     "prereq": "Shockwave Lv 1",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-Lacerator",
+     "name": "Lacerator",
+     "icon": "img/jobs/fc8ba65db002.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lacerator.html",
+     "tm": 55,
+     "does": "ปล่อยคลื่นดาบเป็นเส้นตรง โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
+     "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-Berserker",
+     "name": "Berserker",
+     "icon": "img/jobs/c1567c7a21e5.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Berserker.html",
+     "tm": 70,
+     "does": "เพิ่ม AP มาก แต่ควบคุมตัวเองไม่ได้ระหว่างใช้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Pumping Heart Lv 7",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-PiercingWave",
+     "name": "Piercing Wave",
+     "icon": "img/jobs/cd49e256cc68.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Piercing_Wave.html",
+     "tm": 85,
+     "does": "ปล่อยคลื่นลมใส่ศัตรู",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 18",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-AuraofHaste",
+     "name": "Aura of Haste",
+     "icon": "img/jobs/b1eed8568d8c.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Aura_of_Haste.html",
+     "tm": 100,
+     "does": "เพิ่มความเร็วตี (DX) ทั้งปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Hyper Beat Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/36f302553a8e.gif\"/><b>Squishy Mud</b> × 8",
+     "masteryFrom": "Walking Tadpole Lv 166 <span class=\"m\">· Swamp Field 1 - Black Hole</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-TidalSlash",
+     "name": "Tidal Slash",
+     "icon": "img/jobs/4d6b8173a80a.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tidal_Slash.html",
+     "tm": 110,
+     "does": "ฟันธาตุน้ำเป็นแนว โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "Lacerator Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
+     "masteryFrom": "Officer Surapat",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-EarthquakeBlade",
+     "name": "Earthquake Blade",
+     "icon": "img/jobs/87e2678c55e8.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Earthquake_Blade.html",
+     "tm": 115,
+     "does": "ฟันแผ่นดินไหว โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "Piercing Wave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
+     "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-BlazingStrike",
+     "name": "Blazing Strike",
+     "icon": "img/jobs/ff361c26b1f2.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Blazing_Strike.html",
+     "tm": 120,
+     "does": "ตีหลายครั้งเป็นวงกว้าง",
+     "type": "กดใช้",
+     "prereq": "Aura of Haste Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7df1bc192294.gif\"/><b>Mingo Toy</b> × 24",
+     "masteryFrom": "Mingo Lv 171 <span class=\"m\">· Swamp Field 3 - Maze of Forest</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-InfernoBlade",
+     "name": "Inferno Blade",
+     "icon": "img/jobs/c1b0e346adec.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Inferno_Blade.html",
+     "tm": 125,
+     "does": "ฟันธาตุไฟ",
+     "type": "กดใช้",
+     "prereq": "Piercing Wave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-TempestStrike",
+     "name": "Tempest Strike",
+     "icon": "img/jobs/a2ac8c709a12.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tempest_Strike.html",
+     "tm": 130,
+     "does": "หมุนดาบเป็นวงลมฟันศัตรูรอบตัว",
+     "type": "กดใช้",
+     "prereq": "Lacerator Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 4",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "ซื้อจาก Warrior Kei"
+    },
+    {
+     "id": "buffalo-2-LightningStrike",
+     "name": "Lightning Strike",
+     "icon": "img/jobs/eab95367b855.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lightning_Strike.html",
+     "tm": 210,
+     "does": "ฟันธาตุไฟฟ้า มีโอกาสทำมึน",
+     "type": "กดใช้",
+     "prereq": "Piercing Wave Lv 10",
+     "mastery": "Malefic Matron Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Warrior Kei"
+    }
+   ]
+  },
+  {
+   "key": "3pGladiator",
+   "title": "สกิล Gladiator (อาชีพ 3)",
+   "job": "Gladiator",
+   "icon": "img/jobs/22d16de991f5.gif",
+   "sub": "สายเพียว",
+   "skills": [
+    {
+     "id": "buffalo-3p-Shadow",
+     "name": "Shadow",
+     "icon": "img/jobs/867155a26732.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shadow_(skill).html",
+     "tm": 125,
+     "does": "สร้างภาพลวงโจมตีจากหลายทิศ",
+     "type": "กดใช้",
+     "prereq": "Blazing Strike Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a820399066fd.gif\"/><b>Myconid Card</b> × 5",
+     "masteryFrom": "Myconid Lv 208 <span class=\"m\">· Swamp Dungeon 1 - Marshy Trail, Swamp Dungeon 2 - Marshy Pool</span>",
+     "source": "เปิด Card Pack Thorn"
+    },
+    {
+     "id": "buffalo-3p-Suffocate",
+     "name": "Suffocate",
+     "icon": "img/jobs/b64dd67d4f5f.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Suffocate.html",
+     "tm": 130,
+     "does": "เผยศัตรูที่ซ่อนตัวและทำให้หายใจไม่ออก",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Sense Breaker Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 5",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "เปิด Card Pack Ur"
+    },
+    {
+     "id": "buffalo-3p-SonicSlash",
+     "name": "Sonic Slash",
+     "icon": "img/jobs/8aad805f74db.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sonic_Slash.html",
+     "tm": 140,
+     "does": "ฟันคลื่นเสียงใส่ศัตรู",
+     "type": "กดใช้",
+     "prereq": "Tidal Slash Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
+     "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
+     "source": "เปิด Card Pack Feoh"
+    },
+    {
+     "id": "buffalo-3p-GaleStrike",
+     "name": "Gale Strike",
+     "icon": "img/jobs/bc1bbc422cdf.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Gale_Strike.html",
+     "tm": 145,
+     "does": "Tempest Strike ขั้นสูง",
+     "type": "กดใช้",
+     "prereq": "Tempest Strike Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/96a194995664.gif\"/><b>Madam Chiffon Card</b> × 5",
+     "masteryFrom": "Madam Chiffon Lv 150 <span class=\"m\">· Rose Field 3 - Maze of Blue Rose</span>",
+     "source": "ดรอปจาก Iron Knight (Lv 203)"
+    },
+    {
+     "id": "buffalo-3p-ChiSword",
+     "name": "Chi Sword",
+     "icon": "img/jobs/59c6e1de70f4.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Chi_Sword.html",
+     "tm": 170,
+     "does": "อัดพลังให้ดาบใหญ่ขึ้น เพิ่มแรงตี",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Piercing Wave Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 5",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "ทำเควส Warrior Kei - Fight With Your Soul!"
+    },
+    {
+     "id": "buffalo-3p-ChakraBalance",
+     "name": "Chakra Balance",
+     "icon": "img/jobs/ce72aa01b080.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Chakra_Balance.html",
+     "tm": 240,
+     "does": "ฟื้น HP ต่อเนื่องช่วงหนึ่ง",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Chi Sword",
+     "mastery": "Krybeth Card × 5",
+     "masteryFrom": "",
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+    }
+   ]
+  },
+  {
+   "key": "3hMercenary",
+   "title": "สกิล Mercenary (อาชีพ 3)",
+   "job": "Mercenary",
+   "icon": "img/jobs/d235fa874b1c.gif",
+   "sub": "สายไฮบริด: ได้ใช้สกิลอาชีพ 2 ของ Bunny แต่ต้องใช้ TM สูงกว่าเดิม 50",
+   "skills": [
+    {
+     "id": "buffalo-3h-GuardBreak",
+     "name": "Guard Break",
+     "icon": "img/jobs/bd7a887b7a56.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Guard_Break.html",
+     "tm": 91,
+     "does": "ทำงานตอนใช้ Shockwave ถ้าติด เป้าจะบล็อก/หลบการตีถัดไปไม่ได้",
+     "type": "ติดตัว",
+     "prereq": "Shockwave Lv 10",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-Dash",
+     "name": "Dash",
+     "icon": "img/jobs/4296060e20e0.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Dash.html",
+     "tm": 105,
+     "does": "พุ่งตัวไปข้างหน้าระยะสั้น",
+     "type": "กดใช้",
+     "prereq": "Hyper Beat Lv 1",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-Uppercut",
+     "name": "Uppercut",
+     "icon": "img/jobs/459e7c19ebaf.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Uppercut.html",
+     "tm": 110,
+     "does": "รวมพลังตีอัปเปอร์คัต",
+     "type": "กดใช้",
+     "prereq": "Upper Smash Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
+     "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-QuadPunch",
+     "name": "Quad Punch",
+     "icon": "img/jobs/29213bb8841a.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Quad_Punch.html",
+     "tm": 135,
+     "does": "ต่อยรัวสี่ครั้ง",
+     "type": "กดใช้",
+     "prereq": "Burning Rave Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-CounterPunch",
+     "name": "Counter Punch",
+     "icon": "img/jobs/b175c987ab9e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Counter_Punch.html",
+     "tm": 150,
+     "does": "เพิ่มดาเมจ Uppercut",
+     "type": "ติดตัว",
+     "prereq": "Uppercut Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/fe5725472b79.gif\"/><b>Silver-Colored Mantle</b> × 7",
+     "masteryFrom": "Captain Arman Lv 145 <span class=\"m\">· Rose Field 2 - Maze of Black Rose</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-EagleEye",
+     "name": "Eagle Eye",
+     "icon": "img/jobs/026db2792423.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Eagle_Eye.html",
+     "tm": 160,
+     "does": "เพิ่มความแม่นของปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Bull's Eye Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
+     "masteryFrom": "Officer Surapat",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-Guard",
+     "name": "Guard",
+     "icon": "img/jobs/642eae195933.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Guard.html",
+     "tm": 160,
+     "does": "ตั้งการ์ดบล็อกการโจมตีระยะประชิด",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Hyper Beat Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
+     "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-TetraPunch",
+     "name": "Tetra Punch",
+     "icon": "img/jobs/213ed1b1a846.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tetra_Punch.html",
+     "tm": 170,
+     "does": "ต่อยรัวสี่ครั้ง (แรงขึ้น)",
+     "type": "กดใช้",
+     "prereq": "Quad Punch Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e6dfabb65f4.gif\"/><b>Slithis Card</b> × 4",
+     "masteryFrom": "Slithis Lv 203 <span class=\"m\">· Swamp Dungeon 1 - Marshy Trail</span>",
+     "source": "–"
+    },
+    {
+     "id": "buffalo-3h-DesperateRally",
+     "name": "Desperate Rally",
+     "icon": "img/jobs/22f7c8cac828.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Desperate_Rally.html",
+     "tm": 175,
+     "does": "ดึงพลังสูงสุดตอนเข้าตาจน",
+     "type": "กดใช้",
+     "prereq": "Burning Rave Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    }
+   ]
+  }
+ ]
+}

@@ -34,3 +34,5 @@
 .dark .pg[data-page="key-techichi-volcano"] { --surface:#1e1917; --fg:#ece4df; --muted:#ada19a; --line:#382f2b; --accent:#f09a7f; --ghost:#aab0d6; --chip:#29211e }
 .pg[data-page="key-tapasco-volcano"] { --surface:#ffffff; --fg:#26191a; --muted:#6e5b5c; --line:#e3d4d2; --accent:#b0322b; --ghost:#6b5a1e; --chip:#efe2df }
 .dark .pg[data-page="key-tapasco-volcano"] { --surface:#211717; --fg:#efe2e1; --muted:#b39e9c; --line:#3d2b2a; --accent:#ff8a7a; --ghost:#e3c96f; --chip:#2c1e1e }
+.pg[data-page="jobs"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#2c6e3f; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="jobs"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#8fd6a3; --done:#7fd19b; --warn:#f0b35a }

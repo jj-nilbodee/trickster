@@ -1,0 +1,792 @@
+{
+ "id": "cat",
+ "name": "Cat",
+ "icon": "img/jobs/26fcfe1a7f42.gif",
+ "stat": "Charm",
+ "gender": "หญิง",
+ "path": "Model → Entertainer → Primadonna (เพียว) / Diva (ไฮบริด)",
+ "jobMaster": "Entertainer Elicia",
+ "jobMasterIcon": "img/jobs/d851cf0d0c87.gif",
+ "about": "ตัวละครสาย <b>Charm</b> ผู้หญิง อาชีพ 1 ได้สกิลป้องกันและหลบหลีก อาชีพ 2 แปลงร่างเป็นสัตว์ได้ (Evolution) สายอาชีพ <b>Model → Entertainer → Primadonna (เพียว) / Diva (ไฮบริด)</b> Job Master คือ <b>Entertainer Elicia</b>",
+ "source": [
+  [
+   "วิกิ ggFTW: Cat",
+   "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Cat.html"
+  ]
+ ],
+ "quests": [
+  {
+   "name": "Entertainer Elicia - Cat 2nd Job Quest",
+   "where": "Relics Town - Azteca หรือ Room of Job Administrator (Garden of Skill Master)",
+   "todo": "Lv 60+, TM 50+ · ส่ง Growth Badge × 1 (ดรอปจาก Kaboom ที่ Caballa Relics Dungeon 4) + 100K Galder Check × 3 (ซื้อจาก Andrew ใบละ 105,000)",
+   "reward": "เปลี่ยนเป็น Entertainer · Sign of Popularity, 1,000,000 EXP / 12,000,000 TM",
+   "icon": "img/jobs/d851cf0d0c87.gif",
+   "id": "cat-q0"
+  },
+  {
+   "name": "Door of Tribulation - Path of Tribulation",
+   "where": "Garden of Skill Master",
+   "todo": "อาชีพ 2, Lv 130+, TM 120+ · ส่ง Ticket of the Valiant (ดูตารางของที่ต้องเตรียม) + 1 Mil Galder Check × 3",
+   "reward": "Marble of Triumph, เข้า Room of Guardian ได้, TM 10,000,000",
+   "id": "cat-q1"
+  },
+  {
+   "name": "Rosaspina's Messenger - Primadonna Quest (รับไว้ก่อน)",
+   "job": "Primadonna",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "cat-q2"
+  },
+  {
+   "name": "Amethysta's Messenger - Diva Quest (รับไว้ก่อน)",
+   "job": "Diva",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "cat-q3"
+  },
+  {
+   "name": "Entertainer Elicia - Find Primadonna Guardian Stone",
+   "job": "Primadonna",
+   "where": "Rose Field 3 - Maze of Blue Rose",
+   "todo": "ถือ Marble of Triumph · ส่ง Rodonite (ได้จาก Beast Vincento (Lv 156)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/33f4598cafde.gif",
+   "id": "cat-q4"
+  },
+  {
+   "name": "Entertainer Elicia - Find Diva Guardian Stone",
+   "job": "Diva",
+   "where": "Rose Field 3 - Maze of Blue Rose",
+   "todo": "ถือ Marble of Triumph · ส่ง Dusk Amethyst (ได้จาก Fish Guardian Tink (Lv 85)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/600d2f76fd1e.gif",
+   "id": "cat-q5"
+  },
+  {
+   "name": "Happisto Stallone - Make Happisto's Compass Frame (3 รอบ)",
+   "where": "Gate of Snow Hill",
+   "todo": "ต้องมี Scroll · รอบละ Brass, Glass Piece, Magnetite, Magic Powder อย่างละ 1 (ดูตารางของที่ต้องเตรียม)",
+   "reward": "รอบ 3 ได้ Compass Frame",
+   "id": "cat-q6"
+  },
+  {
+   "name": "Entertainer Elicia - Room of Ordeal Key - Find Compass Frame",
+   "where": "Rose Field 3 - Maze of Blue Rose",
+   "todo": "ส่ง Compass Frame",
+   "reward": "The Key of Trials",
+   "id": "cat-q7"
+  },
+  {
+   "name": "Path of Tribulation 16 ห้อง",
+   "where": "Room of Tribulation 1–16",
+   "todo": "ล่าห้องละ 3 ตัว ทำต่อกันตามลำดับ (ดูตาราง Tribunal ด้านล่าง)",
+   "reward": "ห้องสุดท้ายได้ Stone of Patience",
+   "id": "cat-q8"
+  },
+  {
+   "name": "Entertainer Elicia - Find 16 Guardian Stones for the Needleless Compass",
+   "where": "Rose Field 3 - Maze of Blue Rose",
+   "todo": "ส่ง Stone of Patience + The Key of Trials + Marble of Triumph",
+   "reward": "Needleless Compass",
+   "id": "cat-q9"
+  },
+  {
+   "name": "ส่ง Primadonna Quest ให้ Rosaspina's Messenger",
+   "job": "Primadonna",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Primadonna · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "cat-q10"
+  },
+  {
+   "name": "ส่ง Diva Quest ให้ Amethysta's Messenger",
+   "job": "Diva",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Diva · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "cat-q11"
+  }
+ ],
+ "prep": [
+  {
+   "id": "cat-prep-0",
+   "item": "Base Lv 130, TM Lv 120",
+   "where": "",
+   "step": ""
+  },
+  {
+   "id": "cat-prep-1",
+   "item": "Ticket of the Valiant × 1",
+   "where": "ดรอปจาก Clurican (Lv 240) / Tenter Lion หรือขุดใน Swamp Dungeon",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "cat-prep-2",
+   "item": "1 Mil Galder Check × 3",
+   "where": "ซื้อจาก Andrew ที่ Megalopolis Bank ใบละ 1,050,000",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "cat-prep-3",
+   "item": "Sacred Water × 1",
+   "where": "ขุดใน Black Swamp Fields",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "cat-prep-4",
+   "item": "Brass × 3",
+   "where": "ดรอปจาก Brass Knight (Lv 186)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "cat-prep-5",
+   "item": "Magnetite × 3",
+   "where": "ดรอปจาก Iron Knight (Lv 184)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "cat-prep-6",
+   "item": "Magic Powder × 3",
+   "where": "ดรอปจาก Bone Magician (Lv 231)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "cat-prep-7",
+   "item": "Glass Piece × 3",
+   "where": "ดรอปจาก Bone Warrior (Lv 225)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "cat-prep-8",
+   "item": "Guardian Stone ของอาชีพที่เลือก × 1",
+   "where": "ดูตาราง “เลือกอาชีพ” ด้านล่าง",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "cat-prep-9",
+   "item": "Harkon × 1",
+   "where": "ขุดใน Techichi / Tapasco Fields, ชั้นต่อสู้ของ Tower of Chaos, Gate of Abyss, Abyss Fields หรือจากเควส Blacksmith Marx (Find Ingredients for Precious Jewel, Silent Lava Mine Collection)",
+   "step": "ขั้น 2 (ยกเว้น Dark Lord)"
+  }
+ ],
+ "tribunal": [
+  {
+   "id": "cat-trib-0",
+   "messenger": "1. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Vulcanus Phoenix's Messenger",
+   "room": "Room of Tribulation 1",
+   "hunt": "3 × Tribunal Flame Moth (Lv 150) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "cat-trib-1",
+   "messenger": "2. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Alsiedo Bird's Messenger",
+   "room": "Room of Tribulation 2",
+   "hunt": "3 × Tribunal Siremaid (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-2",
+   "messenger": "3. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Dragon Tale's Messenger",
+   "room": "Room of Tribulation 3",
+   "hunt": "3 × Tribunal Crow (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-3",
+   "messenger": "4. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Black Wings' Messenger",
+   "room": "Room of Tribulation 4",
+   "hunt": "3 × Tribunal Seth (Lv 150) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-4",
+   "messenger": "5. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Sacred Esper's Messenger",
+   "room": "Room of Tribulation 5",
+   "hunt": "3 × Tribunal Shadow (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-5",
+   "messenger": "6. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Golden Ant's Messenger",
+   "room": "Room of Tribulation 6",
+   "hunt": "3 × Tribunal Tooth Flower (Lv 160) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "cat-trib-6",
+   "messenger": "7. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Eternal Knight's Messenger",
+   "room": "Room of Tribulation 7",
+   "hunt": "3 × Tribunal Hell Knight (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-7",
+   "messenger": "8. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Silvanian's Messenger",
+   "room": "Room of Tribulation 8",
+   "hunt": "3 × Tribunal Yeti (Lv 160) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-8",
+   "messenger": "9. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>King Enigmo's Messenger",
+   "room": "Room of Tribulation 9",
+   "hunt": "3 × Tribunal Koom (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-9",
+   "messenger": "10. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Enigmo Van Peruoza's Messenger",
+   "room": "Room of Tribulation 10",
+   "hunt": "3 × Tribunal Merman Aku (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-10",
+   "messenger": "11. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Centakonus' Messenger",
+   "room": "Room of Tribulation 11",
+   "hunt": "3 × Tribunal Addax (Lv 170) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-11",
+   "messenger": "12. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Oddeye Dragon's Messenger",
+   "room": "Room of Tribulation 12",
+   "hunt": "3 × Tribunal Stoor Worm (Lv 170) ใน 5 นาที",
+   "reward": "Flower of Revival"
+  },
+  {
+   "id": "cat-trib-12",
+   "messenger": "13. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Rosaspina's Messenger",
+   "room": "Room of Tribulation 13",
+   "hunt": "3 × Tribunal Madame Chiffon (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-13",
+   "messenger": "14. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Amethysta's Messenger",
+   "room": "Room of Tribulation 14",
+   "hunt": "3 × Tribunal Freyja (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-14",
+   "messenger": "15. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Delphinus' Messenger",
+   "room": "Room of Tribulation 15",
+   "hunt": "3 × Tribunal Fish Guardian Tink (Lv 180) ใน 5 นาที",
+   "reward": "–"
+  },
+  {
+   "id": "cat-trib-15",
+   "messenger": "16. <img alt=\"\" class=\"sp\" src=\"img/jobs/5fc468a4c307.gif\"/>Flashire Snake's Messenger",
+   "room": "Room of Tribulation 16",
+   "hunt": "3 × Tribunal Leviathan (Lv 180) ใน 5 นาที",
+   "reward": "Stone of Patience"
+  }
+ ],
+ "tiers": [
+  {
+   "key": "1",
+   "title": "สกิล Model (อาชีพ 1)",
+   "job": "Model",
+   "skills": [
+    {
+     "id": "cat-1-WarmUp",
+     "name": "Warm Up",
+     "icon": "img/jobs/3d296c0ccaa5.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Warm_Up.html",
+     "tm": 0,
+     "does": "โจมตีเป้าเดียว สกิลเริ่มต้น",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "ได้ตอนสร้างตัวละคร"
+    },
+    {
+     "id": "cat-1-PowerBlow",
+     "name": "Power Blow",
+     "icon": "img/jobs/1ac4074edb53.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Power_Blow.html",
+     "tm": 1,
+     "does": "ต่อยสองมือแรงๆ เป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/534b4056d231.gif\"/><b>Clione Card</b> × 2",
+     "masteryFrom": "Clione Lv 10 <span class=\"m\">· Coral Beach Field 3 - Sunny Beach</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-DodgeMaster",
+     "name": "Dodge Master",
+     "icon": "img/jobs/8eae0db18cdd.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Dodge_Master.html",
+     "tm": 10,
+     "does": "เพิ่ม HV ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a7d8e34e4941.gif\"/><b>Hula Octopus Card</b> × 2",
+     "masteryFrom": "Hula Octopus Lv 25 <span class=\"m\">· Desert Beach Field 2 - Sand Palace</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-GalderThrower",
+     "name": "Galder Thrower",
+     "icon": "img/jobs/6ddad31a52e1.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Galder_Thrower.html",
+     "tm": 20,
+     "does": "ใช้ 100 Galder ปาใส่เป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/6d315f053dd0.gif\"/><b>Gold G Card</b> × 2",
+     "masteryFrom": "Gold G Lv 36 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet, Pyramid Dungeon 5 - Hall of Love Affair</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-MagicMeltdown",
+     "name": "Magic Meltdown",
+     "icon": "img/jobs/a78a5c024159.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Magic_Meltdown.html",
+     "tm": 20,
+     "does": "ลด MA เป้าชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/6d315f053dd0.gif\"/><b>Gold G Card</b> × 2",
+     "masteryFrom": "Gold G Lv 36 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet, Pyramid Dungeon 5 - Hall of Love Affair</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-MagicDefBreaker",
+     "name": "Magic Def Breaker",
+     "icon": "img/jobs/2d53fa8bec5e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Magic_Defense_Breaker.html",
+     "tm": 20,
+     "does": "ลด MD เป้าชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/044fc4a1a97b.gif\"/><b>Silver G Card</b> × 2",
+     "masteryFrom": "Silver G Lv 35 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-ManaReflector",
+     "name": "Mana Reflector",
+     "icon": "img/jobs/20c3e843538b.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Mana_Reflector.html",
+     "tm": 20,
+     "does": "บาเรียลดและสะท้อนดาเมจเวท",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/16e85a00c6f9.gif\"/><b>Nephthys Card</b> × 2",
+     "masteryFrom": "Nephthys Lv 38 <span class=\"m\">· Pyramid Dungeon 2 - Hall of Harpy</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-ShieldAll",
+     "name": "Shield All",
+     "icon": "img/jobs/be4ebbda11e6.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shield_All.html",
+     "tm": 25,
+     "does": "เพิ่ม DP ตัวเองและปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Mana Reflector Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2745674ab1be.gif\"/><b>Mummy Card</b> × 2",
+     "masteryFrom": "Mummy",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-SturdyShield",
+     "name": "Sturdy Shield",
+     "icon": "img/jobs/eaebf6b544d9.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sturdy_Shield.html",
+     "tm": 30,
+     "does": "เพิ่ม DP ตัวเอง",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/ee3632a6d272.gif\"/><b>Turvy Card</b> × 2",
+     "masteryFrom": "Turvy Lv 45 <span class=\"m\">· Poppuri Dungeon - Spore Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-TitaniumWrist",
+     "name": "Titanium Wrist",
+     "icon": "img/jobs/2b6482fc37c3.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Titanium_Wrist.html",
+     "tm": 40,
+     "does": "เพิ่มแรง Power Blow",
+     "type": "ติดตัว",
+     "prereq": "Power Blow Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/3d3704afc9d2.gif\"/><b>Koom Card</b> × 2",
+     "masteryFrom": "Koom Lv 55 <span class=\"m\">· Poppuri Dungeon - Moss Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-SkunkPouch",
+     "name": "Skunk Pouch",
+     "icon": "img/jobs/3c539345cdec.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Skunk_Pouch.html",
+     "tm": 40,
+     "does": "ทำศัตรูสลบช่วงสั้นๆ",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/3d3704afc9d2.gif\"/><b>Koom Card</b> × 2",
+     "masteryFrom": "Koom Lv 55 <span class=\"m\">· Poppuri Dungeon - Moss Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-PhysicalTraining",
+     "name": "Physical Training",
+     "icon": "img/jobs/be929f9c1b39.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Physical_Training.html",
+     "tm": 45,
+     "does": "เพิ่ม HP สูงสุด",
+     "type": "ติดตัว",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f593b524e686.gif\"/><b>Mimic Card</b> × 2",
+     "masteryFrom": "Mimic Lv 61 <span class=\"m\">· Relics Field 2 - Hand of Giant, Relics Field 3 - Monkey Statues</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-1-FinalBlow",
+     "name": "Final Blow",
+     "icon": "img/jobs/f0af483065cc.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Final_Blow.html",
+     "tm": 50,
+     "does": "ตีกลับเท่าดาเมจที่โดนมา",
+     "type": "กดใช้",
+     "prereq": "Sturdy Shield Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/43a48a7d5453.gif\"/><b>Guiana Card</b> × 2",
+     "masteryFrom": "Guiana Lv 66 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
+     "source": "–"
+    }
+   ]
+  },
+  {
+   "key": "2",
+   "title": "สกิล Entertainer (อาชีพ 2)",
+   "job": "Entertainer",
+   "skills": [
+    {
+     "id": "cat-2-VolleyKick",
+     "name": "Volley Kick",
+     "icon": "img/jobs/8191c1a07bd0.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Volley_Kick.html",
+     "tm": 41,
+     "does": "เตะแรงเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
+     "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-GalderBarrage",
+     "name": "Galder Barrage",
+     "icon": "img/jobs/81332e3f8359.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Galder_Barrage.html",
+     "tm": 55,
+     "does": "ใช้ 100 Galder ดาเมจคงที่ใส่ 3 ตัว",
+     "type": "กดใช้",
+     "prereq": "Galder Thrower Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
+     "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-TeamBolster",
+     "name": "Team Bolster",
+     "icon": "img/jobs/b42175ced8b7.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Team_Bolster.html",
+     "tm": 65,
+     "does": "เพิ่มผล Shield All ตามจำนวนคนในปาร์ตี้ในระยะ (เฉพาะตัวเอง)",
+     "type": "ติดตัว",
+     "prereq": "Shield All Lv 10",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-SirenSong",
+     "name": "Siren Song",
+     "icon": "img/jobs/95c73e2a8468.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Siren_Song.html",
+     "tm": 90,
+     "does": "ใช้เสียงโจมตีศัตรู",
+     "type": "กดใช้",
+     "prereq": "Physical Training Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/96922a48e390.gif\"/><b>Nephthys Song</b> × 40",
+     "masteryFrom": "Nephthys Lv 38 <span class=\"m\">· Pyramid Dungeon 2 - Hall of Harpy</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-Evolution",
+     "name": "Evolution",
+     "icon": "img/jobs/19090dbee41f.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Evolution.html",
+     "tm": 110,
+     "does": "แปลงร่างเป็นสัตว์",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
+     "masteryFrom": "Officer Surapat",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-BeastClaw",
+     "name": "Beast Claw",
+     "icon": "img/jobs/6dc5a81375b6.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Beast_Claw.html",
+     "tm": 120,
+     "does": "พุ่งข่วน มีดีเลย์ตอนเริ่ม",
+     "type": "กดใช้",
+     "prereq": "Evolution Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
+     "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-FatalWound",
+     "name": "Fatal Wound",
+     "icon": "img/jobs/ccb525fcf7de.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Fatal_Wound.html",
+     "tm": 130,
+     "does": "ทำเป้าเลือดออก",
+     "type": "กดใช้",
+     "prereq": "Evolution Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c28fe22ebbb8.gif\"/><b>Thorn Stem</b> × 5",
+     "masteryFrom": "Mud Bigfoot Lv 180 <span class=\"m\">· Swamp Field 6 - Lake of Illusion</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-FistFullofGalders",
+     "name": "Fist Full of Galders",
+     "icon": "img/jobs/dba25231b16f.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Fist_Full_of_Galders.html",
+     "tm": 130,
+     "does": "ใช้ 100 Galder ต่อฮิต ดาเมจคงที่เป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "Galder Barrage Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 4",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-SumoSuit",
+     "name": "Sumo Suit",
+     "icon": "img/jobs/fc74fae2a360.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sumo_Suit.html",
+     "tm": 135,
+     "does": "ลดดาเมจกายภาพและเวทที่ได้รับ",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Shield All Lv 10, Sturdy Shield Lv 10, Physical Training Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/558dc7bc3be3.gif\"/><b>Captain Charman Card</b> × 3",
+     "masteryFrom": "Captain Charman Lv 142 <span class=\"m\">· Rose Field 2 - Maze of Black Rose</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-DeadlyFunk",
+     "name": "Deadly Funk",
+     "icon": "img/jobs/1aa9c5e87fc9.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Deadly_Funk.html",
+     "tm": 160,
+     "does": "กลิ่นเหม็นทำศัตรูสลบ",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Skunk Pouch Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
+     "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
+     "source": "ซื้อจาก Entertainer Elicia"
+    },
+    {
+     "id": "cat-2-AuraShatter",
+     "name": "Aura Shatter",
+     "icon": "img/jobs/4798c61599f2.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Aura_Shatter.html",
+     "tm": 210,
+     "does": "ลบบัฟเป้า โดนดาเมจทุกครั้งที่บัฟหาย",
+     "type": "กดใช้",
+     "prereq": "Sumo Suit Lv M",
+     "mastery": "Doom Claw Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Entertainer Elicia"
+    }
+   ]
+  },
+  {
+   "key": "3pPrimadonna",
+   "title": "สกิล Primadonna (อาชีพ 3)",
+   "job": "Primadonna",
+   "icon": "img/jobs/30879dd11bcf.gif",
+   "sub": "สายเพียว",
+   "skills": [
+    {
+     "id": "cat-3p-SharpScream",
+     "name": "Sharp Scream",
+     "icon": "img/jobs/7c80a679e275.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sharp_Scream.html",
+     "tm": 125,
+     "does": "กรีดร้องโจมตีรอบตัว ต้องแปลงร่างก่อน",
+     "type": "กดใช้",
+     "prereq": "Siren Song Lv 5",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
+     "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
+     "source": "เปิด Card Pack Wunjo"
+    },
+    {
+     "id": "cat-3p-2HitCombo",
+     "name": "2 Hit Combo",
+     "icon": "img/jobs/6c428ff652e7.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/2_Hit_Combo.html",
+     "tm": 140,
+     "does": "Power Blow ต่อ Volley Kick เป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "Power Blow Lv 1, Volley Kick Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 6",
+     "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
+     "source": "เปิด Card Pack Rad"
+    },
+    {
+     "id": "cat-3p-RagingNail",
+     "name": "Raging Nail",
+     "icon": "img/jobs/56ed299f44e3.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Raging_Nail.html",
+     "tm": 140,
+     "does": "ข่วนทะลุพลังป้องกันกายภาพบางส่วน",
+     "type": "กดใช้",
+     "prereq": "Fatal Wound Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
+     "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
+     "source": "เปิด Card Pack Ken"
+    },
+    {
+     "id": "cat-3p-EntrancingWink",
+     "name": "Entrancing Wink",
+     "icon": "img/jobs/584a1c5d5b6f.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Entrancing_Wink.html",
+     "tm": 150,
+     "does": "ทำเป้าใช้เวทไม่ได้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Magic Meltdown Lv 10, Magic Defense Breaker Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/92f4e107279f.gif\"/><b>Slug G Card</b> × 5",
+     "masteryFrom": "Slug G Lv 224 <span class=\"m\">· Swamp Dungeon 6 - Suu's Muddy Pool</span>",
+     "source": "เปิด Card Pack Rad"
+    }
+   ]
+  },
+  {
+   "key": "3hDiva",
+   "title": "สกิล Diva (อาชีพ 3)",
+   "job": "Diva",
+   "icon": "img/jobs/5ed68e97a0be.gif",
+   "sub": "สายไฮบริด: ได้ใช้สกิลอาชีพ 2 ของ Raccoon แต่ต้องใช้ TM สูงกว่าเดิม 50",
+   "skills": [
+    {
+     "id": "cat-3h-CardStrike",
+     "name": "Card Strike",
+     "icon": "img/jobs/bcd5d0696bac.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Card_Strike.html",
+     "tm": 91,
+     "does": "ใช้ Empty Card 1 ใบ ปาโดนเป็นวง",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
+     "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-3h-SuperHips",
+     "name": "Super Hips",
+     "icon": "img/jobs/2e1cdb129d10.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Super_Hips.html",
+     "tm": 105,
+     "does": "เสริม Dodge Master หลบคริและพาวเวอร์แอทแทคของมอนเลเวลใกล้กัน",
+     "type": "ติดตัว",
+     "prereq": "Dodge Master Lv 10",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "cat-3h-Bodyguard",
+     "name": "Bodyguard",
+     "icon": "img/jobs/529e74e328ab.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Bodyguard.html",
+     "tm": 115,
+     "does": "รับดาเมจแทนปาร์ตี้บางส่วน",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Physical Training Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/67a3bf69fd40.gif\"/><b>Black Foe Card</b> × 2",
+     "masteryFrom": "Black Foe Lv 79 <span class=\"m\">· Wharf Field 4 - Chrono Wharf</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-3h-ImpellingRage",
+     "name": "Impelling Rage",
+     "icon": "img/jobs/0421577ac141.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Impelling_Rage.html",
+     "tm": 150,
+     "does": "โจมตีตาม HP ผลักศัตรูออก สูงสุด 5 ตัว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
+     "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-3h-FuriousGalderThrow",
+     "name": "Furious Galder Throw",
+     "icon": "img/jobs/b65438e4379a.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Furious_Galder_Throw.html",
+     "tm": 165,
+     "does": "ใช้ 500 Galder ดาเมจสุ่มเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "Galder Thrower Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
+     "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-3h-FluxCapacitor",
+     "name": "Flux Capacitor",
+     "icon": "img/jobs/66154c7eaf30.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Flux_Capacitor.html",
+     "tm": 165,
+     "does": "ใช้ HP แลก MP",
+     "type": "กดใช้",
+     "prereq": "Physical Training Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
+     "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-3h-OnePair",
+     "name": "One Pair",
+     "icon": "img/jobs/81e2227fe0a3.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/One_Pair.html",
+     "tm": 175,
+     "does": "ใช้ Empty Card 2 ใบ ปาเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "Card Strike Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
+     "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
+     "source": "–"
+    },
+    {
+     "id": "cat-3h-LadyLuck",
+     "name": "Lady Luck",
+     "icon": "img/jobs/1ad619b1fe60.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lady_Luck.html",
+     "tm": 210,
+     "does": "เพิ่มจำนวนการ์ดที่ปาใน One Pair",
+     "type": "ติดตัว",
+     "prereq": "One Pair Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
+     "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
+     "source": "–"
+    }
+   ]
+  }
+ ]
+}

@@ -82,14 +82,14 @@ hiddenKey: "techichi-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><img alt="" class="npc" src="./assets/img/ff14c079cda2.gif"/><h3>Indiana John - Checking Out</h3></div>
 <div class="meta"><span class="chip">Techichi Field 3</span><span class="chip">Lv 210+</span></div>
 <p>ส่ง <img alt="" class="it" src="./assets/img/3e60f40847b4.gif"/><b>Tough Rope × 3</b> ← <b>Ponchichi</b> Lv 286 (Field 2, 3)</p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/99409cd9ad64.gif"/>Empty Thermos, <img alt="" class="it" src="./assets/img/f0d1722fdadc.gif"/>Lodging Fee Envelope (ใช้ขั้น 6)</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/99409cd9ad64.gif"/>Empty Thermos</li><li><img alt="" class="it" src="./assets/img/f0d1722fdadc.gif"/>Lodging Fee Envelope (ใช้ขั้น 6)</li></ul></div>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k6" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 6</span><img alt="" class="npc" src="./assets/img/fb52ed4dd14c.gif"/><h3>Grandpa Tango - Grandpa Tango's Appreciation</h3></div>
 <div class="meta"><span class="chip">Techichi Volcano - Tango Cabin</span><span class="chip">Lv 210+</span></div>
 <div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/99409cd9ad64.gif"/><b>Empty Thermos</b></li><li><img alt="" class="it" src="./assets/img/f0d1722fdadc.gif"/><b>Lodging Fee Envelope</b></li><li><img alt="" class="it" src="./assets/img/ce544578dbb2.gif"/><b>Dry Wood × 5</b> (ขุดใน Techichi Field)</li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b></li></ul></div>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป), <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Ticket I</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</li><li><img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Ticket I</li></ul></div>
 </div>
 
 </section>

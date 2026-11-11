@@ -82,7 +82,7 @@ hiddenKey: "megalopolis-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><img alt="" class="npc" src="./assets/img/1552ae41ece1.gif"/><h3>Stern Poppuri - Journey to Caballa Relics</h3></div>
 <div class="meta"><span class="chip">Poppuri Dungeon - Slide Cave</span><span class="chip">หลังผ่าน Poppuri Redemption</span></div>
 <p>ไปคุยกับ <b>Wise Hen</b> ที่ Gate of Caballa Relics</p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/c250eeb94cc1.gif"/>Wing Port (Caballa Relics), 10,000 Galder</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/c250eeb94cc1.gif"/>Wing Port (Caballa Relics)</li><li>10,000 Galder</li></ul></div>
 </div>
 
 </section>

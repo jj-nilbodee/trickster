@@ -70,7 +70,7 @@ hiddenKey: "ghostblue-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/51b567298e0b.gif"/><h3>Chief Koha - Ghost Blue Sticker</h3></div>
 <div class="meta"><span class="chip">Ghost Blue Seabed Town - Aquarius</span><span class="chip">Lv 100+</span><span class="chip">หลังผ่าน Marin's Sister</span></div>
 <p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Ghost Sticker × 10</b> (ดูตารางแหล่งสติ๊กเกอร์ด้านล่าง)</p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/ae0d709d238b.gif"/>Herb Potion × 10, <img alt="" class="it" src="./assets/img/9d23b088af88.gif"/>Gold Pearl Potion × 10</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/ae0d709d238b.gif"/>Herb Potion × 10</li><li><img alt="" class="it" src="./assets/img/9d23b088af88.gif"/>Gold Pearl Potion × 10</li></ul></div>
 </div>
 
 <div class="step">
@@ -89,14 +89,14 @@ hiddenKey: "ghostblue-hidden-v1"
 <div class="meta"><span class="chip">Aquarius</span><span class="chip">หลังผ่านขั้น 2</span></div>
 <div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/f3b4cae73e60.gif"/><b>Jia's Pouch</b> (ได้จากขั้น 4)</li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (จาก Marin's Sister)</li></ul></div>
 <p class="muted">รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 4</p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book คืน, <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Wep Exchange Ticket E</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book คืน</li><li><img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Wep Exchange Ticket E</li></ul></div>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/034682329fae.gif"/><h3>Shaman Girl Jia - Collect the Changed Spirits</h3></div>
 <div class="meta"><span class="chip">Aquarius Shrine</span><span class="chip">ต้องมี Get a Date ค้างในสมุดเควส</span></div>
 <p>ส่ง <img alt="" class="it" src="./assets/img/eace1b3c8757.gif"/><b>Ghost Blue Spirit × 5</b> ดรอปจาก <b>Pirate Ghost</b> (Lv 121) แมพ <b>Seabed Field 4 - Undersea Grave</b></p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/f3b4cae73e60.gif"/>Jia's Pouch, Jia's Amulet → เอา <img alt="" class="it" src="./assets/img/f3b4cae73e60.gif"/>Jia's Pouch กลับไปส่ง Chief Koha ปิดขั้น 3</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/f3b4cae73e60.gif"/>Jia's Pouch → เอากลับไปส่ง Chief Koha ปิดขั้น 3</li><li>Jia's Amulet</li></ul></div>
 </div>
 
 </section>

@@ -63,14 +63,14 @@ hiddenKey: "mermaid-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/6902c80313d0.gif"/><h3>Captain Stan - Captain's Stan Past</h3></div>
 <div class="meta"><span class="chip">Gate of Mermaid Palace</span><span class="chip">Lv 80+</span><span class="chip">รับค้างไว้ก่อน</span></div>
 <p>ส่ง <img alt="" class="it" src="./assets/img/5894d8d0d1d1.gif"/><b>Tanya's Letter</b> (ได้จากขั้น 3) รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 3</p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/4ccbde810e07.gif"/>Wep Exchange D, <img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/4ccbde810e07.gif"/>Wep Exchange D</li><li><img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon</li></ul></div>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/8ee67af263ab.gif"/><h3>Mermaid Marin - Marin's Sister</h3></div>
 <div class="meta"><span class="chip">Mermaid Palace Field 4 - Rock Square</span><span class="chip">Lv 80+</span><span class="chip">ต้องมี Captain's Stan Past ค้างในสมุดเควส</span></div>
 <p>ถือ <img alt="" class="it" src="./assets/img/4683c3039eb3.gif"/><b>Tanya's Sword</b> ← <b>Tanya</b> Lv 150 (Mermaid Dungeon 2) ไปคุยเพื่อรับเควส แล้วส่ง <img alt="" class="it" src="./assets/img/4683c3039eb3.gif"/><b>Tanya's Sword × 1</b> และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/5894d8d0d1d1.gif"/>Tanya's Letter → เอาไปส่งขั้น 2, <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/5894d8d0d1d1.gif"/>Tanya's Letter → เอาไปส่งขั้น 2</li><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</li></ul></div>
 </div>
 
 <div class="step">

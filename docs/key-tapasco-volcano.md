@@ -99,7 +99,7 @@ hiddenKey: "tapasco-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k7" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 7</span><img alt="" class="npc" src="./assets/img/01d6ac3e1c9e.gif"/><h3>Blacksmith Marx - For Their Goals</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 2 - Rhythm of Hammer</span><span class="chip">Lv 235+</span></div>
 <p>ส่ง <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b></p>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b>, <img alt="" class="it" src="./assets/img/4ccbde810e07.gif"/>Weapon Exchange Ticket J</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b></li><li><img alt="" class="it" src="./assets/img/4ccbde810e07.gif"/>Weapon Exchange Ticket J</li></ul></div>
 </div>
 
 </section>

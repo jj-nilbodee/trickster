@@ -67,7 +67,7 @@ hiddenKey: "desert-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/95226e303086.gif"/><h3>Sandman - The Miracle of Sand</h3></div>
 <div class="meta"><span class="chip">Beach Town - Paradise</span><span class="chip">หลังผ่าน Legendary Recipe</span></div>
 <div class="give"><span>ส่ง</span><ul><li><img alt="" class="it" src="./assets/img/3190f37c3363.gif"/><b>Legendary Recipe</b> ← <b>Sand Demon</b> Lv 28 (Field 3)</li><li><img alt="" class="it" src="./assets/img/cb2d6772d94f.gif"/><b>Glyph Tablet</b> ← ขุดใน Pyramid Dungeon</li></ul></div>
-<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป), <img alt="" class="it" src="./assets/img/73ec70c58d45.gif"/>Weapon Ticket A</p>
+<div class="give rew"><span>รางวัล</span><ul><li><img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</li><li><img alt="" class="it" src="./assets/img/73ec70c58d45.gif"/>Weapon Ticket A</li></ul></div>
 </div>
 
 </section>

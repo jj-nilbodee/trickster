@@ -3,11 +3,9 @@ import { defineConfig } from 'vitepress'
 const guides = [
   ['เควสรายวัน', '/daily-quests'],
   ['เควสการ์ด', '/card-girl-quests'],
-  ['ของฝึกสกิล', '/skill-mastery-items'],
-  ['เปลี่ยนอาชีพ', '/job-advancement'],
+  ['อาชีพ', '/jobs'],
   ['Tower of Chaos', '/tower-of-chaos'],
   ['แมพเก็บเลเวล', '/leveling-maps'],
-  ['อาชีพ Bear (Paula)', '/bear-paula'],
 ]
 
 // In the order the game unlocks them.

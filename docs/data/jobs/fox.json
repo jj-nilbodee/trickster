@@ -1,0 +1,782 @@
+{
+ "id": "fox",
+ "name": "Fox",
+ "icon": "img/jobs/078d18cfb9c9.gif",
+ "stat": "Sense",
+ "gender": "หญิง",
+ "path": "Archaeologist → Explorer → Thief Master (เพียว) / Hunter Lord (ไฮบริด)",
+ "jobMaster": "Explorer Reina",
+ "jobMasterIcon": "img/jobs/78e9c2ea7635.webp",
+ "about": "ตัวละครสาย <b>Sense</b> ผู้หญิง ใช้มีด แรงตีมาจาก DA ถนัดขุดของ ขว้างอาวุธ และมีสกิลตีเป้าเดียวแรงๆ สายอาชีพ <b>Archaeologist → Explorer → Thief Master (เพียว) / Hunter Lord (ไฮบริด)</b> Job Master คือ <b>Explorer Reina</b>",
+ "source": [
+  [
+   "วิกิ ggFTW: Fox",
+   "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Fox.html"
+  ]
+ ],
+ "quests": [
+  {
+   "name": "Explorer Reina - Fox 2nd Job Quest",
+   "where": "Relics Town - Azteca หรือ Room of Job Administrator (Garden of Skill Master)",
+   "todo": "Lv 60+, TM 50+ · ส่ง Growth Badge × 1 (ดรอปจาก Kaboom ที่ Caballa Relics Dungeon 4) + 100K Galder Check × 3 (ซื้อจาก Andrew ใบละ 105,000)",
+   "reward": "เปลี่ยนเป็น Explorer · Sign of Excavation, 1,000,000 EXP / 12,000,000 TM",
+   "icon": "img/jobs/78e9c2ea7635.webp",
+   "id": "fox-q0"
+  },
+  {
+   "name": "Door of Tribulation - Path of Tribulation",
+   "where": "Garden of Skill Master",
+   "todo": "อาชีพ 2, Lv 130+, TM 120+ · ส่ง Ticket of the Valiant (ดูตารางของที่ต้องเตรียม) + 1 Mil Galder Check × 3",
+   "reward": "Marble of Triumph, เข้า Room of Guardian ได้, TM 10,000,000",
+   "id": "fox-q1"
+  },
+  {
+   "name": "King Enigmo's Messenger - Thief Master Quest (รับไว้ก่อน)",
+   "job": "Thief Master",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "fox-q2"
+  },
+  {
+   "name": "Enigmo Van Peruoza's Messenger - Hunter Lord Quest (รับไว้ก่อน)",
+   "job": "Hunter Lord",
+   "where": "Room of Guardian",
+   "todo": "เลือกอาชีพ 3 ตรงนี้ รับเควสค้างไว้ ของที่ต้องส่งได้จากขั้นถัดไป",
+   "reward": "",
+   "icon": "img/jobs/5fc468a4c307.gif",
+   "id": "fox-q3"
+  },
+  {
+   "name": "Explorer Reina - Find Thief Master Guardian Stone",
+   "job": "Thief Master",
+   "where": "Caballa Relics Dungeon 1",
+   "todo": "ถือ Marble of Triumph · ส่ง Peridot (ได้จาก Cora Pyupyu (Lv 115)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/07902b583bc3.gif",
+   "id": "fox-q4"
+  },
+  {
+   "name": "Explorer Reina - Find Hunter Lord Guardian Stone",
+   "job": "Hunter Lord",
+   "where": "Caballa Relics Dungeon 1",
+   "todo": "ถือ Marble of Triumph · ส่ง Silver Aquamarine (ได้จาก Water Weed Witch (Lv 95)) + Sacred Water (ขุดใน Black Swamp Fields)",
+   "reward": "Sealed Guardian, Scroll",
+   "icon": "img/jobs/87be66f0f1d6.gif",
+   "id": "fox-q5"
+  },
+  {
+   "name": "Happisto Stallone - Make Happisto's Compass Frame (3 รอบ)",
+   "where": "Gate of Snow Hill",
+   "todo": "ต้องมี Scroll · รอบละ Brass, Glass Piece, Magnetite, Magic Powder อย่างละ 1 (ดูตารางของที่ต้องเตรียม)",
+   "reward": "รอบ 3 ได้ Compass Frame",
+   "id": "fox-q6"
+  },
+  {
+   "name": "Explorer Reina - Room of Ordeal Key - Find Compass Frame",
+   "where": "Caballa Relics Dungeon 1",
+   "todo": "ส่ง Compass Frame",
+   "reward": "The Key of Trials",
+   "id": "fox-q7"
+  },
+  {
+   "name": "Path of Tribulation 16 ห้อง",
+   "where": "Room of Tribulation 1–16",
+   "todo": "ล่าห้องละ 3 ตัวใน 5 นาที ทำต่อกันตามลำดับ",
+   "reward": "ห้องสุดท้ายได้ Stone of Patience",
+   "id": "fox-q8"
+  },
+  {
+   "name": "Explorer Reina - Find 16 Guardian Stones for the Needleless Compass",
+   "where": "Caballa Relics Dungeon 1",
+   "todo": "ส่ง Stone of Patience + The Key of Trials + Marble of Triumph",
+   "reward": "Needleless Compass",
+   "id": "fox-q9"
+  },
+  {
+   "name": "ส่ง Thief Master Quest ให้ King Enigmo's Messenger",
+   "job": "Thief Master",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Thief Master · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "fox-q10"
+  },
+  {
+   "name": "ส่ง Hunter Lord Quest ให้ Enigmo Van Peruoza's Messenger",
+   "job": "Hunter Lord",
+   "where": "Room of Guardian",
+   "todo": "Lv 130+, TM 120+ · ส่ง Harkon + Needleless Compass + Sealed Guardian",
+   "reward": "เปลี่ยนเป็น Hunter Lord · Light Compass, เครื่องประดับ Guardian ของอาชีพ, TM 16,000,000",
+   "id": "fox-q11"
+  }
+ ],
+ "prep": [
+  {
+   "id": "fox-prep-0",
+   "item": "Base Lv 130, TM Lv 120",
+   "where": "",
+   "step": ""
+  },
+  {
+   "id": "fox-prep-1",
+   "item": "Ticket of the Valiant × 1",
+   "where": "ดรอปจาก Clurican (Lv 240) / Tenter Lion หรือขุดใน Swamp Dungeon",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "fox-prep-2",
+   "item": "1 Mil Galder Check × 3",
+   "where": "ซื้อจาก Andrew ที่ Megalopolis Bank ใบละ 1,050,000",
+   "step": "ขั้น 1"
+  },
+  {
+   "id": "fox-prep-3",
+   "item": "Sacred Water × 1",
+   "where": "ขุดใน Black Swamp Fields",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "fox-prep-4",
+   "item": "Brass × 3",
+   "where": "ดรอปจาก Brass Knight (Lv 186)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "fox-prep-5",
+   "item": "Magnetite × 3",
+   "where": "ดรอปจาก Iron Knight (Lv 184)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "fox-prep-6",
+   "item": "Magic Powder × 3",
+   "where": "ดรอปจาก Bone Magician (Lv 231)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "fox-prep-7",
+   "item": "Glass Piece × 3",
+   "where": "ดรอปจาก Bone Warrior (Lv 225)",
+   "step": "ขั้น 4"
+  },
+  {
+   "id": "fox-prep-8",
+   "item": "Guardian Stone ของอาชีพที่เลือก × 1",
+   "where": "ดูแถว Find Guardian Stone ในเควสเปลี่ยนอาชีพ",
+   "step": "ขั้น 3"
+  },
+  {
+   "id": "fox-prep-9",
+   "item": "Harkon × 1",
+   "where": "ขุดใน Techichi / Tapasco Fields, ชั้นต่อสู้ของ Tower of Chaos, Gate of Abyss, Abyss Fields หรือจากเควส Blacksmith Marx (Find Ingredients for Precious Jewel, Silent Lava Mine Collection)",
+   "step": "ขั้น 2 (ยกเว้น Dark Lord)"
+  }
+ ],
+ "tiers": [
+  {
+   "key": "1",
+   "title": "สกิล Archaeologist (อาชีพ 1)",
+   "job": "Archaeologist",
+   "skills": [
+    {
+     "id": "fox-1-StoneShower",
+     "name": "Stone Shower",
+     "icon": "img/jobs/3675a4483d0e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Stone_Shower.html",
+     "tm": 1,
+     "does": "ขว้างหินใส่ศัตรู",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "ได้ตอนสร้างตัวละคร"
+    },
+    {
+     "id": "fox-1-InvincibleDrill",
+     "name": "Invincible Drill",
+     "icon": "img/jobs/847559f3be5a.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Invincible_Drill.html",
+     "tm": 1,
+     "does": "ขุดต่อได้แม้โดนรบกวน",
+     "type": "ติดตัว",
+     "prereq": "–",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-GunCarrier",
+     "name": "Gun Carrier",
+     "icon": "img/jobs/6fe3b3e791f7.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Gun_Carrier.html",
+     "tm": 5,
+     "does": "ใช้ปืนได้",
+     "type": "ติดตัว",
+     "prereq": "–",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-SixthSense",
+     "name": "Sixth Sense",
+     "icon": "img/jobs/60477bfcca17.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sixth_Sense.html",
+     "tm": 1,
+     "does": "เพิ่ม Sense ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/534b4056d231.gif\"/><b>Clione Card</b> × 2",
+     "masteryFrom": "Clione Lv 10 <span class=\"m\">· Coral Beach Field 3 - Sunny Beach</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-StoneStrike",
+     "name": "Stone Strike",
+     "icon": "img/jobs/1e9040ad9069.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Stone_Strike.html",
+     "tm": 1,
+     "does": "ตีจุดอ่อนแรงๆ เป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/534b4056d231.gif\"/><b>Clione Card</b> × 2",
+     "masteryFrom": "Clione Lv 10 <span class=\"m\">· Coral Beach Field 3 - Sunny Beach</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-HeavyCarrier",
+     "name": "Heavy Carrier",
+     "icon": "img/jobs/d17e0cec26f8.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Heavy_Carrier.html",
+     "tm": 10,
+     "does": "เพิ่มน้ำหนักที่แบกได้",
+     "type": "ติดตัว",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a7d8e34e4941.gif\"/><b>Hula Octopus Card</b> × 2",
+     "masteryFrom": "Hula Octopus Lv 25 <span class=\"m\">· Desert Beach Field 2 - Sand Palace</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-ShurikenMaster",
+     "name": "Shuriken Master",
+     "icon": "img/jobs/f3394c4afcfc.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shuriken_Master.html",
+     "tm": 15,
+     "does": "ขว้างอาวุธซ่อน แรงขึ้นตาม Sense",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/0445f1a41825.gif\"/><b>Oran G Card</b> × 2",
+     "masteryFrom": "Oran G Lv 30 <span class=\"m\">· Pyramid Dungeon 1 - Hall of the Slave</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-InvincibleReload",
+     "name": "Invincible Reload",
+     "icon": "img/jobs/73ff2b7445f3.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Invincible_Reload.html",
+     "tm": 20,
+     "does": "รีโหลดต่อได้แม้โดนรบกวน",
+     "type": "ติดตัว",
+     "prereq": "Gun Carrier",
+     "mastery": "ฝึกไม่ได้",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-StickyFoot",
+     "name": "Sticky Foot",
+     "icon": "img/jobs/fe352bfb5534.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sticky_Foot.html",
+     "tm": 20,
+     "does": "ลด HV ศัตรูในระยะ",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/044fc4a1a97b.gif\"/><b>Silver G Card</b> × 2",
+     "masteryFrom": "Silver G Lv 35 <span class=\"m\">· Pyramid Dungeon 3 - Hall of Bastet</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-GunBooster",
+     "name": "Gun Booster",
+     "icon": "img/jobs/4a9e0b2412f2.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Gun_Booster.html",
+     "tm": 30,
+     "does": "เพิ่ม AC",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Invincible Reload",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/ee3632a6d272.gif\"/><b>Turvy Card</b> × 2",
+     "masteryFrom": "Turvy Lv 45 <span class=\"m\">· Poppuri Dungeon - Spore Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-BasicDetection",
+     "name": "Basic Detection",
+     "icon": "img/jobs/7313c7104975.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Basic_Detection.html",
+     "tm": 35,
+     "does": "ตรวจหาไอเทมใต้ดิน",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/e8122d250cd3.gif\"/><b>Larva Card</b> × 2",
+     "masteryFrom": "Larva Lv 52 <span class=\"m\">· Poppuri Dungeon - Moss Cave, Poppuri Dungeon - Spore Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-ArmorDestructor",
+     "name": "Armor Destructor",
+     "icon": "img/jobs/90b86fead190.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Armor_Destructor.html",
+     "tm": 40,
+     "does": "ลดพลังป้องกันศัตรูช่วงหนึ่ง",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Stone Strike Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/3d3704afc9d2.gif\"/><b>Koom Card</b> × 2",
+     "masteryFrom": "Koom Lv 55 <span class=\"m\">· Poppuri Dungeon - Moss Cave</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-QuickReload",
+     "name": "Quick Reload",
+     "icon": "img/jobs/6366a07874f5.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Quick_Reload.html",
+     "tm": 40,
+     "does": "รีโหลดตอนเดินได้",
+     "type": "ติดตัว",
+     "prereq": "Invincible Reload",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-LuckySeven",
+     "name": "Lucky Seven",
+     "icon": "img/jobs/87afe62c7ec3.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lucky_Seven.html",
+     "tm": 50,
+     "does": "เพิ่ม LK ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Armor Destructor Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/43a48a7d5453.gif\"/><b>Guiana Card</b> × 2",
+     "masteryFrom": "Guiana Lv 66 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-AngerManagement",
+     "name": "Anger Management",
+     "icon": "img/jobs/cb85e2ad921a.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Anger_Management.html",
+     "tm": 55,
+     "does": "เพิ่มการสะสม Stress Point เพื่อเข้าโหมด Crazy",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Crazy Drilling",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/13dbfb9f6d15.gif\"/><b>Lima Card</b> × 2",
+     "masteryFrom": "Lima Lv 70 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-1-CompoundMaster",
+     "name": "Compound Master",
+     "icon": "img/jobs/19297a422ff5.gif",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Compound_Master.html",
+     "tm": 70,
+     "does": "เพิ่มโอกาสผสมของสำเร็จตาม LK",
+     "type": "ติดตัว",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    }
+   ]
+  },
+  {
+   "key": "2",
+   "title": "สกิล Explorer (อาชีพ 2)",
+   "job": "Explorer",
+   "skills": [
+    {
+     "id": "fox-2-PrecisePitch",
+     "name": "Precise Pitch",
+     "icon": "img/jobs/214c1259529a.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Precise_Pitch.html",
+     "tm": 41,
+     "does": "เพิ่มดาเมจ Shuriken Master ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Shuriken Master Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
+     "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-ItemDetector",
+     "name": "Item Detector",
+     "icon": "img/jobs/0225e401b455.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Item_Detector.html",
+     "tm": 55,
+     "does": "ตรวจหาไอเทมใต้ดิน (ขั้นสูง)",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Invincible Drilling Sixth Sense Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
+     "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-AuraofLuck",
+     "name": "Aura of Luck",
+     "icon": "img/jobs/b3e9385a138e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Aura_of_Luck.html",
+     "tm": 70,
+     "does": "เพิ่ม LK ทั้งปาร์ตี้",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Lucky Seven Lv 7",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-ChainofKnives",
+     "name": "Chain of Knives",
+     "icon": "img/jobs/8ed8460cac53.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Chain_of_Knives.html",
+     "tm": 80,
+     "does": "ขว้างมีดหลายเล่มใส่เป้าเดียว จำนวนเพิ่มตามเลเวล",
+     "type": "กดใช้",
+     "prereq": "Precise Pitch Lv 5",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
+     "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-MegaCrazyDrilling",
+     "name": "Mega Crazy Drilling",
+     "icon": "img/jobs/95db16c6d0d8.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Mega_Crazy_Drilling.html",
+     "tm": 80,
+     "does": "ยืดเวลาโหมด Crazy Drill",
+     "type": "ติดตัว",
+     "prereq": "Crazy Drilling",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-GasMask",
+     "name": "Gas Mask",
+     "icon": "img/jobs/8172a7cf29d1.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Gas_Mask.html",
+     "tm": 85,
+     "does": "ปาร์ตี้รอบตัวกัน Skunk Pouch",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
+     "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-Landmine",
+     "name": "Landmine",
+     "icon": "img/jobs/4b702bc7795c.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Landmine.html",
+     "tm": 90,
+     "does": "วางกับระเบิด ระเบิดใส่คนที่เข้าใกล้ แรงตาม Sense",
+     "type": "กดใช้",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
+     "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-StickyIcky",
+     "name": "Sticky Icky",
+     "icon": "img/jobs/aebccb759b46.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sticky_Icky.html",
+     "tm": 105,
+     "does": "ลด HV DP LK ศัตรูรอบตัว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Sticky Foot Lv 10, Armor Destructor Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/9d4d54246853.gif\"/><b>Red Woolen Yarn</b> × 7",
+     "masteryFrom": "Snowkid Lv 198 <span class=\"m\">· Snow Field 1 - Merry Christmas</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-LightningRod",
+     "name": "Lightning Rod",
+     "icon": "img/jobs/1d00d9d068bc.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lightning_Rod.html",
+     "tm": 110,
+     "does": "ลดดาเมจไฟฟ้าที่ตัวเองและปาร์ตี้รอบตัวได้รับ",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
+     "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-PouchofPain",
+     "name": "Pouch of Pain",
+     "icon": "img/jobs/dffbb503d39f.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Pouch_of_Pain.html",
+     "tm": 115,
+     "does": "ฟาดกระเป๋า โดนหลายตัว แรงขึ้นถ้าของในกระเป๋าหนัก",
+     "type": "กดใช้",
+     "prereq": "Heavy Carrier Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/e97dd38a03db.gif\"/><b>Red Rosary</b> × 8",
+     "masteryFrom": "Ugly Corpse Lv 119 <span class=\"m\">· Phantom School 2-4</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-FanofKnives",
+     "name": "Fan of Knives",
+     "icon": "img/jobs/335eff99c3f3.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Fan_of_Knives.html",
+     "tm": 130,
+     "does": "ขว้างอาวุธหลายเล่มโดนหลายตัว (สูงสุด 7)",
+     "type": "กดใช้",
+     "prereq": "Precise Pitch Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 4",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "ซื้อจาก Explorer Reina"
+    },
+    {
+     "id": "fox-2-RainofKnives",
+     "name": "Rain of Knives",
+     "icon": "img/jobs/8ec0a48eafc0.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Rain_of_Knives.html",
+     "tm": 210,
+     "does": "โยนมีดขึ้นฟ้าตกใส่ศัตรูในระยะ",
+     "type": "กดใช้",
+     "prereq": "Fan of Knives Lv M",
+     "mastery": "Burning Kili Card × 3",
+     "masteryFrom": "",
+     "source": "ซื้อจาก Explorer Reina"
+    }
+   ]
+  },
+  {
+   "key": "3pThiefMaster",
+   "title": "สกิล Thief Master (อาชีพ 3)",
+   "job": "Thief Master",
+   "icon": "img/jobs/0c2b8d896626.gif",
+   "sub": "สายเพียว",
+   "skills": [
+    {
+     "id": "fox-3p-ExplosivesExpert",
+     "name": "Explosives Expert",
+     "icon": "img/jobs/c4916b939cf4.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Explosives_Expert.html",
+     "tm": 120,
+     "does": "วางกับระเบิดได้หลายลูกขึ้นตามเลเวล",
+     "type": "กดใช้",
+     "prereq": "Landmine Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e6dfabb65f4.gif\"/><b>Slithis Card</b> × 8",
+     "masteryFrom": "Slithis Lv 203 <span class=\"m\">· Swamp Dungeon 1 - Marshy Trail</span>",
+     "source": "เปิด Card Pack Thorn"
+    },
+    {
+     "id": "fox-3p-PoisonPouch",
+     "name": "Poison Pouch",
+     "icon": "img/jobs/fd7168977edc.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Poison_Pouch.html",
+     "tm": 125,
+     "does": "Pouch of Pain ติดพิษ ดาเมจตามน้ำหนักของในกระเป๋า",
+     "type": "กดใช้",
+     "prereq": "Pouch of Pain Lv M",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 5",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "ทำเควส Explorer Reina - Ancient Liquid"
+    },
+    {
+     "id": "fox-3p-Hide",
+     "name": "Hide",
+     "icon": "img/jobs/97f0c7375696.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Hide.html",
+     "tm": 130,
+     "does": "ซ่อนตัว (ยกเลิกเมื่อใช้สกิล ตี หรือไอเทม)",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Aura of Luck Lv 10, Sixth Sense Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 5",
+     "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
+     "source": "เปิด Card Pack Feoh"
+    },
+    {
+     "id": "fox-3p-PoisonAssault",
+     "name": "Poison Assault",
+     "icon": "img/jobs/54dcb5c18cb1.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Poison_Assault.html",
+     "tm": 135,
+     "does": "ใช้ตอนซ่อนตัว ขว้างดาวกระจายพิษ",
+     "type": "กดใช้",
+     "prereq": "Shuriken Master Lv 1, Hide Lv 5",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 5",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "ทำเควส Explorer Reina - Poisonous Crafts"
+    },
+    {
+     "id": "fox-3p-StrongMind",
+     "name": "Strong Mind",
+     "icon": "img/jobs/6c704cd117ab.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Strong_Mind.html",
+     "tm": 140,
+     "does": "ปาร์ตี้ต้าน Entrancing Wink ชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 7",
+     "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
+     "source": "เปิด Card Pack Ur"
+    },
+    {
+     "id": "fox-3p-SuddenAttack",
+     "name": "Sudden Attack",
+     "icon": "img/jobs/800afc92a688.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sudden_Attack.html",
+     "tm": 150,
+     "does": "ใช้ตอนซ่อนตัว ตีแล้ว Hide หลุด",
+     "type": "กดใช้",
+     "prereq": "Hide Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/92f4e107279f.gif\"/><b>Slug G Card</b> × 6",
+     "masteryFrom": "Slug G Lv 224 <span class=\"m\">· Swamp Dungeon 6 - Suu's Muddy Pool</span>",
+     "source": "เปิด Card Pack Feoh"
+    },
+    {
+     "id": "fox-3p-ExploitWeakness",
+     "name": "Exploit Weakness",
+     "icon": "img/jobs/a968142f6364.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Exploit_Weakness.html",
+     "tm": 240,
+     "does": "การตีไม่สนสกิลป้องกันของศัตรู",
+     "type": "กดใช้",
+     "prereq": "Sudden Attack Lv M",
+     "mastery": "Fire Golem Card × 5",
+     "masteryFrom": "",
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+    }
+   ]
+  },
+  {
+   "key": "3hHunterLord",
+   "title": "สกิล Hunter Lord (อาชีพ 3)",
+   "job": "Hunter Lord",
+   "icon": "img/jobs/48fe4ee51506.gif",
+   "sub": "สายไฮบริด: ได้ใช้สกิลอาชีพ 2 ของ Lion แต่ต้องใช้ TM สูงกว่าเดิม 50",
+   "skills": [
+    {
+     "id": "fox-3h-ButtPlate",
+     "name": "Butt Plate",
+     "icon": "img/jobs/c13f2b93ee65.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Butt_Plate.html",
+     "tm": 91,
+     "does": "ฟาดพานท้ายปืนระยะประชิด",
+     "type": "กดใช้",
+     "prereq": "Gun Carrier Lv 1",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
+     "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-PowerShot",
+     "name": "Power Shot",
+     "icon": "img/jobs/6a7beda1a63e.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Power_Shot.html",
+     "tm": 105,
+     "does": "ยิงกระสุนแรงเป้าเดียว",
+     "type": "กดใช้",
+     "prereq": "Gun Booster Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
+     "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-ShootingSpree",
+     "name": "Shooting Spree",
+     "icon": "img/jobs/0d45fcd248c3.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shooting_Spree.html",
+     "tm": 120,
+     "does": "ยิงกราดไม่เลือกเป้า โดนหลายตัว",
+     "type": "กดใช้",
+     "prereq": "Power Shot Lv 7",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
+     "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-LuckyFist",
+     "name": "Lucky Fist",
+     "icon": "img/jobs/a49dd9e34e63.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lucky_Fist.html",
+     "tm": 145,
+     "does": "ต่อยฝากดวง แรงตาม LK",
+     "type": "กดใช้",
+     "prereq": "Lucky Seven Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1ba4a65faaa2.gif\"/><b>Royal Jelly</b> × 55",
+     "masteryFrom": "Forest Wasp Lv 47 <span class=\"m\">· Southwest Forest</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-KeenSense",
+     "name": "Keen Sense",
+     "icon": "img/jobs/52a85606247b.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Keen_Sense.html",
+     "tm": 150,
+     "does": "เพิ่มดาเมจคริของการยิงปกติชั่วคราว",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Lucky Seven Lv 1, Gun Booster Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f7d7711695ea.gif\"/><b>Old Hand Knife</b> × 8",
+     "masteryFrom": "Maiden Ghost Lv 104 <span class=\"m\">· Phantom School - 2F Chilly Hallway, Phantom School 2-2</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-Lockon",
+     "name": "Lock-on",
+     "icon": "img/jobs/1f56b0918733.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Lock-on.html",
+     "tm": 160,
+     "does": "ลด HV เป้า",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
+     "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-DoubleShot",
+     "name": "Double Shot",
+     "icon": "img/jobs/c7f110a068cc.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Double_Shot.html",
+     "tm": 165,
+     "does": "ยิงรัวสองนัด",
+     "type": "กดใช้",
+     "prereq": "Power Shot Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
+     "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-ShieldBreaker",
+     "name": "Shield Breaker",
+     "icon": "img/jobs/db21347dc674.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shield_Breaker.html",
+     "tm": 175,
+     "does": "ทำลายชิลด์ทุกแบบและ Sumo Suit",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "Lucky Seven Lv 10",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    },
+    {
+     "id": "fox-3h-LegTraining",
+     "name": "Leg Training",
+     "icon": "img/jobs/ed7ad82319e9.jpg",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Leg_Training.html",
+     "tm": 180,
+     "does": "ปาร์ตี้ต้านสกิลลดความเร็วเดิน",
+     "type": "บัฟ/ดีบัฟ",
+     "prereq": "–",
+     "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 4",
+     "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
+     "source": "–"
+    }
+   ]
+  }
+ ]
+}

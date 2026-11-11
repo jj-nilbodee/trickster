@@ -25,9 +25,9 @@ hiddenKey: "caballa-hidden-v1"
 
 โซนต่อจาก Megalopolis เควสกุญแจเริ่มกับ **Fortune Teller** ที่ Relics Town - Azteca ต้อง<b>เลเวล 55+</b> และผ่าน **Sandman - The Miracle of Sand** แล้ว
 
-- ต้องได้ **Caballa Sticker 10 ใบ** จากเควสธรรมดา ส่วนใหญ่ได้ 1 ใบในรอบที่ 5 มีหลายเควสที่ทำรอบเดียว
+- ต้องได้ **Caballa Sticker 10 ใบ** จากเควสธรรมดา
 - เตรียม **Adventurer's Book** เล่มที่ได้จาก The Miracle of Sand ไว้ส่งในขั้น 2 และ 4
-- ใช้ Wing Port จากขั้นสุดท้ายของ Megalopolis เพื่อมาที่ Caballa Relics มอนในโซนนี้ Lv 50–70
+- ใช้ Wing Port จากขั้นสุดท้ายของ Megalopolis มาที่ Caballa Relics
 - เควสถัดไปคือ Keeper Julio - Path to Oops Wharf (อยู่ในหน้า Oops Wharf)
 
 </section>
@@ -86,9 +86,9 @@ hiddenKey: "caballa-hidden-v1"
 
 ## เควสที่ให้ Caballa Sticker
 
-มี 12 เควส ต้องการ 10 ใบ ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 12 เควส ต้องการ 10 ใบ
 
-<p class="note">เส้นทางแนะนำ 10 เควสติด <span class="rec">★</span> Dr. Cat ทั้ง 4 เควสให้ชิ้นส่วนที่ Genius Cochma - Launch! Caballa V ต้องใช้ทั้งหมด ส่วน Fairy Feria ต้องรับ Catch That Thief ค้างไว้ก่อน และรอบ 5 ของ Feria ให้ Yellow Monkey Fur ไปส่ง Catch That Thief ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับ</p>
+<p class="note">เส้นทางแนะนำ 10 เควสติด <span class="rec">★</span> Dr. Cat ทั้ง 4 เควสให้ชิ้นส่วนที่ Launch! Caballa V ต้องใช้ · รับ Catch That Thief ค้างไว้ก่อน รอบ 5 ของ Fairy Feria ให้ Yellow Monkey Fur ไปส่ง</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -110,7 +110,7 @@ hiddenKey: "caballa-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">หน้าเควสของ Dr. Cat ทั้ง 4 เควสหายไปจาก wiki mirror หน้าไอเทม Caballa Sticker บอกว่าได้สติ๊กเกอร์ แต่ไม่มีรายละเอียดของที่ต้องใช้หรือจำนวนรอบ · Golden Egg, Caballa Coffee และ Yellow Monkey Fur วิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ</p>
+<p class="muted">หน้าเควสของ Dr. Cat ทั้ง 4 เควสหายไปจากวิกิ เลยไม่มีรายละเอียดของที่ต้องใช้</p>
 
 </section>
 
@@ -141,8 +141,6 @@ hiddenKey: "caballa-hidden-v1"
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

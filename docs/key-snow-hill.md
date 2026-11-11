@@ -23,13 +23,12 @@ hiddenKey: "snowhill-hidden-v1"
 
 ## ภาพรวม
 
-โซนต่อจาก Black Swamp เควสกุญแจเริ่มกับ **Fairy Godmother** ที่ Snow Hill Town - Laplanoel ต้อง<b>เลเวล 170+</b> และผ่าน **Little Chagan - Interpret Chagan's Dream** แล้ว (ยังเป็นเควสที่ Carbigal ดูหัวข้อ "ก่อนเริ่ม")
+โซนต่อจาก Black Swamp เควสกุญแจเริ่มกับ **Fairy Godmother** ที่ Snow Hill Town - Laplanoel ต้อง<b>เลเวล 170+</b> และผ่าน **Little Chagan - Interpret Chagan's Dream** แล้ว
 
-- ต้องได้ **Snow Hill Sticker 14 ใบ** จากเควสธรรมดา ส่วนใหญ่ได้ 1 ใบในรอบที่ 5 มี Tacky - Christmas Tree Decoration 1 และ 2 ที่ทำรอบเดียวได้ใบเลย
+- ต้องได้ **Snow Hill Sticker 14 ใบ** จากเควสธรรมดา
 - เตรียม **Adventurer's Book** เล่มที่ได้จาก Interpret Chagan's Dream ไว้ส่งในขั้น 1
-- Snow Hill อยู่ฝั่ง Caballa Island ทางเข้าคือ Frost Wind Forest → Path to Snow Hill → Gate of Snow Hill คุยกับ **Kochi** ที่ Gate of Snow Hill เพื่อเปิดวาร์ป
-- Snow Field 1–4 มอน Lv 198–228 ส่วน Ice Dungeon 1–4 (เข้าจาก Gate of Blue Ice Dungeon) มอน Lv 252–280
-- ขั้น 2 ต้องใช้ของจาก Freyr, Freyja, Great Coolem และ Giant Coolem (Lv 259–280) ยังไงก็ต้องลง Ice Dungeon ถึงชั้น 4
+- ทางเข้า: Frost Wind Forest → Path to Snow Hill → Gate of Snow Hill คุยกับ **Kochi** เพื่อเปิดวาร์ป
+- ขั้น 2 ต้องใช้ของจาก Freyr, Freyja, Great Coolem และ Giant Coolem ใน Ice Dungeon 4
 
 </section>
 
@@ -137,9 +136,9 @@ hiddenKey: "snowhill-hidden-v1"
 
 ## เควสที่ให้ Snow Hill Sticker
 
-มี 22 เควส ต้องการ 14 ใบ ส่วนใหญ่ทำ 5 รอบได้ 1 ใบในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 22 เควส ต้องการ 14 ใบ
 
-<p class="note">เส้นทางแนะนำ 14 เควสติด <span class="rec">★</span> อยู่ใน Snow Hill Town และ Snow Field 1–4 ใช้มอน Lv 198–228 หรือขุด ไม่ต้องลง Ice Dungeon (Lv 252+) สำหรับสติ๊กเกอร์ ส่วน Tacky 2 ต้องตี Bug Bear ที่ Path to Snow Hill ระหว่างทางเข้าโซน ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับสติ๊กเกอร์</p>
+<p class="note">เส้นทางแนะนำ 14 เควสติด <span class="rec">★</span> อยู่ใน Snow Hill Town และ Snow Field 1–4 ไม่ต้องลง Ice Dungeon · Tacky 2 ต้องตี Bug Bear ที่ Path to Snow Hill</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -182,7 +181,7 @@ hiddenKey: "snowhill-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">* วิกิไม่ได้บอกจำนวนต่อรอบ นับเป็น 1 ชิ้นต่อรอบ · Survey, Magic, How to Beat the Cold และ Christmas Nightmare Project ที่เป็นขั้น 1–3 วิกิไม่ได้เขียนว่าต้องทำก่อนขั้น 4 แต่ทุกโซนก่อนหน้าเป็นแบบนั้น · Santa's Severe Cold - 2 อยู่ในรายชื่อเควสที่ให้สติ๊กเกอร์ แต่หน้าเควสบอกว่ารอบ 5 ได้ Miniature Snowman เลยไม่ติดดาว</p>
+<p class="muted">* ไม่ทราบจำนวนต่อรอบ · Santa's Severe Cold - 2 รอบ 5 ได้ Miniature Snowman แทนสติ๊กเกอร์</p>
 
 </section>
 
@@ -241,15 +240,13 @@ hiddenKey: "snowhill-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">* วิกิไม่ได้บอกจำนวนต่อรอบ นับเป็น 1 ชิ้นต่อรอบ · Herb Potion (ก่อนเริ่ม 5 ขวด และ Bear Stew) ซื้อได้ที่ร้าน · XL Life Preserver, Red Cardigan และ All Mighty Firebolt ได้จากเควสอื่น ไม่ต้องตีมอน</p>
+<p class="muted">* ไม่ทราบจำนวนต่อรอบ · Herb Potion ซื้อได้ที่ร้าน · XL Life Preserver, Red Cardigan และ All Mighty Firebolt ได้จากเควสอื่น</p>
 
 </section>
 
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

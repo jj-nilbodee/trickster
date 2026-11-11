@@ -25,9 +25,9 @@ hiddenKey: "megalopolis-hidden-v1"
 
 โซนต่อจาก Desert Beach เควสกุญแจเริ่มกับ **Scared Poppuri** ที่ Southeast Forest ต้อง<b>เลเวล 30+</b> และผ่าน **Sandman - The Miracle of Sand** แล้ว
 
-- โซนนี้ไม่มีสติ๊กเกอร์ แต่ขั้น 3 ต้องใช้ **Instant Adhesive 4 อัน** ซึ่งได้จากเควสธรรมดา (ได้ในรอบที่ 5) ตัวนับในหน้านี้เลยนับ Instant Adhesive แทน
-- ของเกือบทั้งหมดอยู่ใน Poppuri Dungeon (มอน Lv 39–55) เข้าจาก Gate of Poppuri Dungeon
-- ไม่ต้องใช้ Adventurer's Book ในโซนนี้ เก็บเล่มจาก Desert Beach ไว้ใช้ที่ Caballa Relics
+- ไม่มีสติ๊กเกอร์ แต่ขั้น 3 ต้องใช้ **Instant Adhesive 4 อัน** จากเควสธรรมดา
+- ของเกือบทั้งหมดอยู่ใน Poppuri Dungeon
+- โซนนี้ไม่ใช้ Adventurer's Book
 - ขั้น 5 ได้ Wing Port (Caballa Relics) พาไปโซนต่อไป
 
 </section>
@@ -91,9 +91,9 @@ hiddenKey: "megalopolis-hidden-v1"
 
 ## เควสที่ให้ Instant Adhesive
 
-มี 8 เควส ต้องการ 4 อัน ทุกเควสทำ 5 รอบได้ 1 อันในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 8 เควส ต้องการ 4 อัน
 
-<p class="note">เส้นทางแนะนำ 4 เควสติด <span class="rec">★</span> ไม่มีขั้นก่อนหน้า Hungry Poppuri รับเควสได้เมื่อมี Red Petal ในกระเป๋าแล้ว ส่วน Blue Muffler Poppuri ต้องมี Super Alarm Clock จาก Artisan Poppuri ก่อน ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับ</p>
+<p class="note">เส้นทางแนะนำ 4 เควสติด <span class="rec">★</span> Hungry Poppuri รับได้เมื่อมี Red Petal ในกระเป๋า · Blue Muffler Poppuri ต้องมี Super Alarm Clock จาก Artisan Poppuri</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -112,7 +112,7 @@ hiddenKey: "megalopolis-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">Special Whistle, Amber, Gold Powder, Peridot Gemstone, Moss Water และ Super Alarm Clock วิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ · Peridot Gemstone ได้จาก Poppuri's Request, Get the Special Whistle, Blue Muffler Poppuri หรือ Alarm Clocks</p>
+<p class="muted">Peridot Gemstone ได้จาก Poppuri's Request, Get the Special Whistle, Blue Muffler Poppuri หรือ Alarm Clocks</p>
 
 </section>
 
@@ -143,15 +143,13 @@ hiddenKey: "megalopolis-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">Peridot Gemstone และ Super Alarm Clock ได้จากเควสอื่น ไม่ต้องตีมอน</p>
+<p class="muted">Peridot Gemstone และ Super Alarm Clock ได้จากเควสอื่น</p>
 
 </section>
 
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

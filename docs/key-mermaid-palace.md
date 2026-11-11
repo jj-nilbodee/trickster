@@ -25,10 +25,10 @@ hiddenKey: "mermaid-hidden-v1"
 
 โซนต่อจาก Oops Wharf เควสกุญแจเริ่มกับ **Captain Stan** ที่ Gate of Mermaid Palace ต้อง<b>เลเวล 80+</b> และผ่าน **Skipper Min - Min's Weakness** ของ Oops Wharf แล้ว
 
-- ต้องได้ **Palace Proof Sticker 7 ใบ** และ **Old Picture** (ขุดใน Mermaid Palace Field) ส่วนใหญ่ได้ 1 ใบในรอบที่ 5 ยกเว้น Prince the Merman 2 ที่มี 3 รอบ
+- ต้องได้ **Palace Proof Sticker 7 ใบ** และ **Old Picture** (ขุดใน Mermaid Palace Field)
 - เก็บ **Adventurer's Book** ที่ได้คืนจาก Min's Weakness ไว้ส่งในขั้น 3
-- ทางเข้า: Oops Wharf → Path to Mermaid Palace 1 → 2 → Gate of Mermaid Palace → Field 1–4 → Gate of Mermaid Dungeon (ทำ Skipper Min - The Way to Mermaid Palace ให้เสร็จก่อน) คุยกับ **Kochi** ที่ Gate of Mermaid Dungeon เพื่อเปิดวาร์ป Field 1 มีทางไป Gate of Desert Beach ด้วย
-- Mermaid Palace Field มอน Lv 73–95 ส่วน Mermaid Dungeon 1, 2 มอน Lv 117–150 ขั้น 3 ต้องตี **Tanya** Lv 150 ใน Mermaid Dungeon 2
+- ทางเข้า: Oops Wharf → Path to Mermaid Palace 1 → 2 → Gate of Mermaid Palace คุยกับ **Kochi** ที่ Gate of Mermaid Dungeon เพื่อเปิดวาร์ป
+- ขั้น 3 ต้องตี **Tanya** Lv 150 ใน Mermaid Dungeon 2
 
 </section>
 
@@ -86,9 +86,9 @@ hiddenKey: "mermaid-hidden-v1"
 
 ## เควสที่ให้ Palace Proof Sticker
 
-มี 11 เควส ต้องการ 7 ใบ ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 11 เควส ต้องการ 7 ใบ
 
-<p class="note">เส้นทางแนะนำ 7 เควสติด <span class="rec">★</span> อยู่ใน Mermaid Palace Field 1–4 ใช้มอน Lv 73–95 หรือขุด ไม่ต้องลง Mermaid Dungeon สำหรับสติ๊กเกอร์ สามเควสต่อกันเป็นชุด: ทำ Prince the Merman 1 → รับ Prince the Merman 2 ค้างไว้ → ทำ I Want to Ride a Fish ได้ Rumo's Remedy ทุกรอบ → เอาไปทำ Make a Merperson Potion ได้ยารอบ 1, 3, 5 → ส่ง Prince the Merman 2 ครบ 3 รอบ ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับสติ๊กเกอร์</p>
+<p class="note">เส้นทางแนะนำ 7 เควสติด <span class="rec">★</span> อยู่ใน Mermaid Palace Field 1–4 · ชุดต่อกัน: Prince the Merman 1 → รับ Prince the Merman 2 ค้างไว้ → I Want to Ride a Fish ได้ Rumo's Remedy → Make a Merperson Potion ได้ยารอบ 1, 3, 5 → ส่ง Prince the Merman 2 ครบ 3 รอบ</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -118,8 +118,6 @@ hiddenKey: "mermaid-hidden-v1"
 <tr><td><input aria-label="ได้สติ๊กเกอร์แล้ว" class="stk" id="w11" type="checkbox"/></td><td>Guard Gilbert - Gilbert Wants Better Weapons</td><td class="n">5</td><td>Mermaid Dungeon 1 - Underworld</td><td><img alt="" class="th" src="./assets/img/3fda8e550692.gif"/>Guard Gilbert</td><td>Lv 80+</td><td><img alt="" class="it" src="./assets/img/bf774e619090.gif"/>Chele's Claw × 5 ← <b>Chele</b> Lv 117 (Mermaid Dungeon 1)</td></tr>
 </tbody>
 </table></div>
-
-<p class="muted">Fragmented Map 1, 2, Merperson Potion, Rumo's Remedy และ Okto's Staff (ของ Rumo) วิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ · เลเวลมอนใช้ตามหน้าแมพในวิกิ บางหน้าเควสเขียนเลขต่างกันเล็กน้อย</p>
 
 </section>
 
@@ -154,15 +152,13 @@ hiddenKey: "mermaid-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">Rumo's Remedy และ Merperson Potion ได้จากเควสอื่น ไม่ต้องตีมอน · Fur Brush ได้จาก Merman Aqu Lv 86 (Field 4) ด้วย</p>
+<p class="muted">Rumo's Remedy และ Merperson Potion ได้จากเควสอื่น · Fur Brush ได้จาก Merman Aqu (Field 4) ด้วย</p>
 
 </section>
 
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

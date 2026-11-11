@@ -25,9 +25,9 @@ hiddenKey: "ghostblue-hidden-v1"
 
 เควสกุญแจมี 4 ขั้น ทำกับ **Chief Koha** ที่ Ghost Blue Seabed Town - Aquarius และ **Shaman Girl Jia** ที่ Aquarius Shrine ต้องเลเวล 100+
 
-- <b>ก่อนเริ่ม:</b> ต้องผ่าน **Mermaid Marin - Marin's Sister** (เควสกุญแจของ Mermaid Palace) และเก็บ **Adventurer's Book** ที่ได้จากเควสนั้นไว้ เพราะต้องใช้ในขั้นที่ 3
-- แนะนำคุยกับ **Kochi** ที่ Gate of Ghost Blue (Register Ghost Blue) เพื่อเปิดวาร์ปมาเมืองนี้ ไม่ต้องใช้ของ
-- งานที่หนักสุดคือขั้นที่ 1: ต้องได้ **Ghost Sticker 10 ใบ** ซึ่งได้จากเควสธรรมดาเท่านั้น (ไม่ดรอป ไม่ขุด) เควสละ 1 ใบในรอบที่ 5
+- ต้องผ่าน **Mermaid Marin - Marin's Sister** และเก็บ **Adventurer's Book** ไว้ใช้ขั้น 3
+- คุยกับ **Kochi** ที่ Gate of Ghost Blue เพื่อเปิดวาร์ป
+- ขั้น 1 ต้องได้ **Ghost Sticker 10 ใบ** จากเควสธรรมดา
 
 </section>
 
@@ -104,9 +104,9 @@ hiddenKey: "ghostblue-hidden-v1"
 
 ## เควสที่ให้ Ghost Sticker
 
-แต่ละเควสทำได้ 5 รอบ และให้ Ghost Sticker ในรอบที่ 5 (วิกิระบุชัดว่า 1 ใบเฉพาะ Monkey T ที่เหลือไม่ได้ระบุจำนวน แต่น่าจะ 1 ใบเหมือนกัน) จึงต้องทำให้ครบ 5 รอบประมาณ 10 เควส ของที่ระบุคือจำนวนต่อรอบ
+ต้องการ 10 ใบ
 
-<p class="note">ทางที่ง่ายสุด: เลือก 11 เควสที่อยู่แถว Seabed Field ไม่ต้องลง Nora Sewer (ติด <span class="rec">★</span>) และหลายเควสใช้ของจากมอนตัวเดียวกัน เช่น Pirate Ghost ให้ทั้ง Hook, Cure for Sleepwalking และ Ghost Blue Spirit</p>
+<p class="note">เส้นทางแนะนำ 11 เควสติด <span class="rec">★</span> อยู่แถว Seabed Field ไม่ต้องลง Nora Sewer</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -144,7 +144,7 @@ hiddenKey: "ghostblue-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">ของที่วิกิไม่ระบุจำนวน (Cash Box, Premium Wine, Fragmented Map 3, Cure for Sleepwalking, Robert's Receipt) นับเป็น 1 ชิ้นต่อรอบ · เควสลำดับที่ "- 4" อาจต้องทำตอน 1–3 ก่อน วิกิไม่ได้เขียนไว้ · Weepy Nora - Feed Nora Ron ต้องผ่าน Third Eye Nora Ron's Request ก่อนอีกขั้น ผมยังไม่ได้เปิดดูของที่ใช้ในเควสนั้น · เควสเหล่านี้ให้ 500 Galder Coupon และ Herb / Gold Pearl Potion</p>
+<p class="muted">Weepy Nora - Feed Nora Ron ต้องผ่าน Third Eye Nora Ron's Request ก่อน · เควสเหล่านี้ให้ 500 Galder Coupon และ Herb / Gold Pearl Potion</p>
 
 </section>
 
@@ -192,15 +192,13 @@ hiddenKey: "ghostblue-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">* วิกิไม่ได้บอกจำนวนต่อรอบ นับเป็น 1 ชิ้นต่อรอบ ให้เช็กในเกมตอนรับเควส · Robert's Receipt และ Heavenly Melody Potion ได้จากเควสอื่นในตาราง ไม่ต้องตีมอน · แต่ละแมพในวงเล็บคือแมพอื่นที่เจอมอนตัวเดียวกันหรือขุดได้เหมือนกัน</p>
+<p class="muted">* ไม่ทราบจำนวนต่อรอบ · Robert's Receipt และ Heavenly Melody Potion ได้จากเควสอื่น</p>
 
 </section>
 
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

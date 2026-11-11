@@ -25,11 +25,11 @@ hiddenKey: "oops-hidden-v1"
 
 โซนต่อจาก Caballa Relics เควสกุญแจเริ่มกับ **Mighty Captain Stan** ที่ Oops Wharf (เมือง) ต้อง<b>เลเวล 70+</b> และผ่าน **Keeper Julio - Return Gold Silk Pouch** ของ Caballa Relics แล้ว
 
-- ต้องได้ **Oops Sticker 7 ใบ** จากเควสธรรมดา ทุกเควสได้ 1 ใบในรอบที่ 5
+- ต้องได้ **Oops Sticker 7 ใบ** จากเควสธรรมดา
 - เก็บ **Adventurer's Book** ที่ได้คืนจาก Return Gold Silk Pouch ไว้ส่งในขั้น 4
-- ทางเข้า: Megalopolis → Southwest Forest → Path to Oops Wharf → Gate of Oops Wharf → Wharf Field 1–4 → Oops Wharf คุยกับ **Kochi** ที่ Gate of Oops Wharf เพื่อเปิดวาร์ป (Kochi พาไปเมือง Oops Wharf ได้ 1,500 Galder)
-- มอนโซนนี้ Lv 68–88 ส่วน Lethos - Elixir of Life ต้องไปตีมอนที่ Path to Mermaid Palace 1, 2 (Lv 80–86)
-- ตามวิกิ Promise with Rookie Heidi จะรับได้ต่อเมื่อทำเควสกุญแจตั้งแต่ Desert Beach มาตามลำดับ ถ้าเคยทำไปแล้ว Captain Stan จะไม่ให้เควสนี้
+- คุยกับ **Kochi** ที่ Gate of Oops Wharf เพื่อเปิดวาร์ป
+- Lethos - Elixir of Life ต้องตีมอนที่ Path to Mermaid Palace 1, 2
+- Promise with Rookie Heidi รับได้เฉพาะคนที่ทำเควสกุญแจตามลำดับตั้งแต่ Desert Beach
 
 </section>
 
@@ -114,9 +114,9 @@ hiddenKey: "oops-hidden-v1"
 
 ## เควสที่ให้ Oops Sticker
 
-มี 12 เควส ต้องการ 7 ใบ ทุกเควสทำ 5 รอบได้ 1 ใบในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 12 เควส ต้องการ 7 ใบ
 
-<p class="note">เส้นทางแนะนำ 7 เควสติด <span class="rec">★</span> ไม่มีขั้นก่อนหน้า ใช้มอน Lv 68–75 ที่ Path to Oops Wharf และ Wharf Field 1–3 หรือขุดใน Wharf Field ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับสติ๊กเกอร์</p>
+<p class="note">เส้นทางแนะนำ 7 เควสติด <span class="rec">★</span> ใช้มอนที่ Path to Oops Wharf และ Wharf Field 1–3 หรือขุดใน Wharf Field</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -147,8 +147,6 @@ hiddenKey: "oops-hidden-v1"
 <tr><td><input aria-label="ได้สติ๊กเกอร์แล้ว" class="stk" id="w12" type="checkbox"/></td><td>Lethos - Elixir of Life? - 4</td><td class="n">5</td><td>Oops Wharf</td><td><img alt="" class="th" src="./assets/img/01e7c223980c.gif"/>Lethos</td><td>ทำ 1–3 ก่อน</td><td><img alt="" class="it" src="./assets/img/b2ace757d82a.gif"/>Turtle Medicine × 5 ← <b>Pirate Boxer B</b> Lv 86 (Path to Mermaid Palace 2)</td></tr>
 </tbody>
 </table></div>
-
-<p class="muted">Survey, Magic และ Elixir of Life ที่เป็นขั้น 1–3 วิกิไม่ได้เขียนว่าต้องทำก่อนขั้น 4 แต่ทุกโซนเป็นแบบนั้น · Sea Palace Ticket และ Sculpture of Poseidon วิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ</p>
 
 </section>
 
@@ -196,8 +194,6 @@ hiddenKey: "oops-hidden-v1"
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

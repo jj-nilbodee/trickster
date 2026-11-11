@@ -25,10 +25,9 @@ hiddenKey: "blackswamp-hidden-v1"
 
 โซนต่อจาก Rose Garden เควสกุญแจทำกับ **Pastor Tau** ที่ Swamp Town - Carbigal ต้อง<b>เลเวล 150+</b> และผ่าน Rosaline Gracia - Childhood Promise (ขั้นสุดท้ายของ Rose Garden) แล้ว
 
-- ต้องได้ **Swamp Sticker 13 ใบ** จากเควสธรรมดา ส่วนใหญ่ได้ 1 ใบในรอบที่ 5 มี Lethos - Black Swamp Treasure 4 ที่ทำรอบเดียวก็ได้ใบเลย
+- ต้องได้ **Swamp Sticker 13 ใบ** จากเควสธรรมดา
 - เตรียม **Adventurer's Book** เล่มที่ได้คืนจาก Childhood Promise ไว้ส่งในขั้น 1
-- Swamp Field 1–6 มอน Lv 164–180 ส่วน Swamp Dungeon 1–6 (เข้าจาก Swamp Field 5) มอน Lv 203–224
-- ขั้น 2 ต้องใช้ **Lotus Flower** จาก Lotus Wormhole ใน Swamp Dungeon 4–5 ยังไงก็ต้องลงดันเจี้ยนอย่างน้อยถึงชั้น 4
+- ขั้น 2 ต้องใช้ **Lotus Flower** จาก Lotus Wormhole ใน Swamp Dungeon 4–5
 
 </section>
 
@@ -77,9 +76,9 @@ hiddenKey: "blackswamp-hidden-v1"
 
 ## เควสที่ให้ Swamp Sticker
 
-มี 19 เควส ต้องการ 13 ใบ ส่วนใหญ่ทำ 5 รอบได้ 1 ใบในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 19 เควส ต้องการ 13 ใบ
 
-<p class="note">เส้นทางแนะนำ 13 เควสติด <span class="rec">★</span> ส่วนใหญ่อยู่ใน Swamp Field ใช้มอน Lv 164–180 หรือขุด มีแค่ Tau's Request 2 (Swamp Dungeon 1), Clerk Z (Swamp Dungeon 2) และ Poppuri (ขุดใน Swamp Dungeon) ที่ต้องลงดันเจี้ยนชั้นต้น ๆ เควสที่ต้องใช้ Tsetsech Honey ไม่ติดดาว เพราะต้องทำ Help the Plantation 1 ก่อนและได้น้ำผึ้งแค่ 10 ขวด ไม่พอทั้ง Honey Tea (5) และ Skin Care (10) ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับสติ๊กเกอร์</p>
+<p class="note">เส้นทางแนะนำ 13 เควสติด <span class="rec">★</span> ส่วนใหญ่อยู่ใน Swamp Field มีแค่ Tau's Request 2, Clerk Z และ Poppuri ที่ต้องลง Swamp Dungeon ชั้นต้น ๆ</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -122,7 +121,7 @@ hiddenKey: "blackswamp-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">* วิกิไม่ได้บอกจำนวนต่อรอบ นับเป็น 1 ชิ้นต่อรอบ · Remember the Chicken Warriors ต้องผ่าน Cluck Cluck Warrior - The Great Chicken War (เควสนอกโซนนี้) ก่อน · หน้า Bait for Swamp Fishing ไม่มีในวิกิ mirror เลยไม่รู้ของที่ขอ</p>
+<p class="muted">* ไม่ทราบจำนวนต่อรอบ · Remember the Chicken Warriors ต้องผ่าน Cluck Cluck Warrior - The Great Chicken War ก่อน</p>
 
 </section>
 
@@ -173,15 +172,13 @@ hiddenKey: "blackswamp-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">* วิกิไม่ได้บอกจำนวนต่อรอบ นับเป็น 1 ชิ้นต่อรอบ · Swamp Dungeon ขุดที่ความลึก 160–200 m ดิน Land · Tsetsech Honey ได้จากเควส Help the Plantation 1 (รอบละ 2) ไม่ได้อยู่ในตารางนี้ ป้าย "ส่งเควสได้" ของ Honey Tea และ Skin Care เลยไม่ได้เช็กน้ำผึ้งให้</p>
+<p class="muted">* ไม่ทราบจำนวนต่อรอบ · Swamp Dungeon ขุดที่ความลึก 160–200 m ดิน Land · Tsetsech Honey ได้จาก Help the Plantation 1 (รอบละ 2)</p>
 
 </section>
 
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

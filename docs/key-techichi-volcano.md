@@ -25,10 +25,10 @@ hiddenKey: "techichi-hidden-v1"
 
 โซนต่อจาก Snow Hill เควสกุญแจเริ่มกับ **Grandpa Tango** ที่ Techichi Volcano - Tango Cabin ต้อง<b>เลเวล 210+</b> และจบเควสกุญแจ Snow Hill แล้ว
 
-- ต้องได้ **Techichi Sticker 13 ใบ** จากเควสธรรมดา 16 เควส ทุกเควสได้ 1 ใบในรอบที่ 5
+- ต้องได้ **Techichi Sticker 13 ใบ** จากเควสธรรมดา
 - เตรียม **Adventurer's Book** เล่มที่ได้จาก Fairy Godmother - Finding Peace Again ไว้ส่งในขั้น 6
-- เข้าทาง Path to Techichi 1, 2 → Gate of Techichi วิกิแนะนำ Lv 210–240 มอนใน Techichi Field 1–4 Lv 273–312 ส่วน Black Ash Dungeon (เข้าจาก Field 3) Lv 320–367
-- ขั้น 2 กับขั้น 4 ไม่บอกเงื่อนไขในวิกิ รับไว้ตั้งแต่แรกได้เลยจะได้เก็บของไปพร้อมกัน
+- เข้าทาง Path to Techichi 1, 2 → Gate of Techichi
+- ขั้น 2 กับขั้น 4 รับไว้ตั้งแต่แรกได้เลย จะได้เก็บของไปพร้อมกัน
 
 </section>
 
@@ -98,9 +98,9 @@ hiddenKey: "techichi-hidden-v1"
 
 ## เควสที่ให้ Techichi Sticker
 
-มี 16 เควส ต้องการ 13 ใบ ทุกเควสทำ 5 รอบได้ 1 ใบในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 16 เควส ต้องการ 13 ใบ
 
-<p class="note">เส้นทางแนะนำ 13 เควสติด <span class="rec">★</span> อยู่ใน Techichi Field เกือบทั้งหมด มีแค่ Explorer Reina ที่ต้องลง Black Ash Dungeon 1, 2 ไม่ติดดาว 3 เควสใน Black Ash Dungeon ที่ต้องทำขั้นก่อนหน้าและใช้มอน Lv 333–367 ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับ</p>
+<p class="note">เส้นทางแนะนำ 13 เควสติด <span class="rec">★</span> อยู่ใน Techichi Field เกือบทั้งหมด มีแค่ Explorer Reina ที่ต้องลง Black Ash Dungeon 1, 2</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -131,8 +131,6 @@ hiddenKey: "techichi-hidden-v1"
 <tr><td><input aria-label="ได้ Techichi Sticker แล้ว" class="stk" id="w13" type="checkbox"/></td><td><span class="rec">★</span> Explorer Reina - Relics of Black Ash</td><td class="n">5</td><td>Black Ash Dungeon 4</td><td><img alt="" class="th" src="./assets/img/e20efcc4b6c3.gif"/>Explorer Reina</td><td>Lv 210+</td><td><img alt="" class="it" src="./assets/img/fd8c132b2c5e.gif"/>Artifact of Ash ← <b>Malefic Matron</b> Lv 320 (Black Ash Dungeon 1, 2) · <img alt="" class="it" src="./assets/img/cf9ec1ad065c.gif"/>Relic of Ash ← <b>Ash Soldier</b> Lv 345</td></tr>
 </tbody>
 </table></div>
-
-<p class="muted">Amethystos, Glass Slipper, Artifact of Ash, Relic of Ash, Serpentine, Spinel, Sulfur Stone (ของ Tango) และ Terrible Mask วิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ · Grandma Tango ในวิกิเขียนชื่อเควสทั้ง Tango Cabin Soup และ Tango's Soup เป็นเควสเดียวกัน</p>
 
 </section>
 
@@ -184,8 +182,6 @@ hiddenKey: "techichi-hidden-v1"
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

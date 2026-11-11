@@ -25,10 +25,9 @@ hiddenKey: "rosegarden-hidden-v1"
 
 โซนต่อจาก Ghost Blue เควสกุญแจทำกับ **Rosaline Gracia** ที่ Rose Field 1 - Stairway to Sorrow ต้อง<b>เลเวล 125+</b> และผ่าน Chief Koha - Get a Date แล้ว
 
-- ต้องได้ **Rose Garden Sticker 13 ใบ** จากเควสธรรมดา (ไม่ดรอป ไม่ขุด) ส่วนใหญ่ได้ 1 ใบในรอบที่ 5 มี 2 เควสที่ทำรอบเดียวก็ได้ใบเลย
+- ต้องได้ **Rose Garden Sticker 13 ใบ** จากเควสธรรมดา
 - เตรียม **Adventurer's Book** เล่มที่ได้คืนจาก Get a Date ไว้ส่งในขั้น 1
-- ช่วงท้ายต้องเข้า **Beast Garden**: ขุด **Rosaline's Jewel Box** ใน Rose Field ไหนก็ได้ เปิดได้ Rosaline's Story Book (A) ดับเบิลคลิกเพื่อวาร์ปเข้า Beast Garden
-- มอนใน Rose Field 1–4 อยู่ราว Lv 138–161
+- ช่วงท้ายต้องเข้า **Beast Garden**: ขุด **Rosaline's Jewel Box** ใน Rose Field เปิดได้ Rosaline's Story Book (A) ดับเบิลคลิกเพื่อวาร์ป
 
 </section>
 
@@ -85,9 +84,9 @@ hiddenKey: "rosegarden-hidden-v1"
 
 ## เควสที่ให้ Rose Garden Sticker
 
-มี 19 เควส ต้องการ 13 ใบ ส่วนใหญ่ทำ 5 รอบได้ 1 ใบในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ
+มี 19 เควส ต้องการ 13 ใบ
 
-<p class="note">เส้นทางแนะนำ 13 เควสติด <span class="rec">★</span> อยู่ใน Rose Field 1–3 และ Secret Garden of Rosetta ใช้ของจากมอน Lv 141–156 หรือขุดเอา ไม่ต้องลง Vamp Dungeon ที่มอน Lv 185+ Survey 4 และ Magic 4 ต้องทำขั้น 1–3 ให้ครบก่อน ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับสติ๊กเกอร์</p>
+<p class="note">เส้นทางแนะนำ 13 เควสติด <span class="rec">★</span> อยู่ใน Rose Field 1–3 และ Secret Garden of Rosetta ไม่ต้องลง Vamp Dungeon · Survey 4 และ Magic 4 ต้องทำขั้น 1–3 ก่อน</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -127,7 +126,7 @@ hiddenKey: "rosegarden-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">Louis Bitton กับ New Garments are Here และ Fairy Godmother กับ Breaking Contract ต้องทำคู่กัน เพราะของที่ส่งเควสหนึ่งได้จากอีกเควส · ช่องที่ไม่มีตัวเลขคือวิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ · เควสก่อนหน้าที่ยังไม่ได้ใส่รายละเอียด: King Edward - Is the Princess Safe? (ก่อน Guardian Knight 1) และ Servant Alfredo - Garden Key' Monster Quest (ได้ Garden Key) · Clever Owl ต้องมี Princess's Hair ในกระเป๋า ผมยังไม่ได้เปิดดูของที่ใช้ในเควสเหล่านั้น</p>
+<p class="muted">Louis Bitton กับ New Garments are Here และ Fairy Godmother กับ Breaking Contract ต้องทำคู่กัน · Clever Owl ต้องมี Princess's Hair ในกระเป๋า</p>
 
 </section>
 
@@ -177,15 +176,13 @@ hiddenKey: "rosegarden-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">* วิกิไม่ได้บอกจำนวนต่อรอบ นับเป็น 1 ชิ้นต่อรอบ · Rose Field 1 ขุดที่ความลึก 110–130 m ดิน Land ปนหิน · Royal Garment Set และ Horseshoe of Freedom ได้จากเควสคู่กัน ไม่ต้องตีมอน</p>
+<p class="muted">* ไม่ทราบจำนวนต่อรอบ · Rose Field 1 ขุดที่ความลึก 110–130 m ดิน Land ปนหิน · Royal Garment Set และ Horseshoe of Freedom ได้จากเควสคู่กัน</p>
 
 </section>
 
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

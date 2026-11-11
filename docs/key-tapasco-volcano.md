@@ -25,10 +25,10 @@ hiddenKey: "tapasco-hidden-v1"
 
 โซนต่อจาก Techichi Volcano เควสกุญแจเริ่มกับ **Clerk Z. Smith** ที่ Tapasco Field 1 - Net of Lava ต้อง<b>เลเวล 235+</b>
 
-- **หน้าเควส Tapasco Recommendation Sticker และ Absolute Ring หายไปจาก wiki mirror** เลยไม่รู้ว่าต้องใช้สติ๊กเกอร์กี่ใบ ตัวนับในหน้านี้นับเทียบกับทั้งหมด 14 ใบ ให้ดูจำนวนจริงในเกมตอนรับเควส
-- Tapasco Sticker ได้จากเควสธรรมดา 14 เควส ส่วนใหญ่ได้ 1 ใบในรอบที่ 5
-- เตรียม **Adventurer's Book** เล่มที่ได้จาก Techichi ไว้ (วิกิบอกว่าขั้น 1 ให้เล่มใหม่ และขั้น 7 ต้องใช้)
-- วิกิแนะนำ Lv 250–290 มอนใน Tapasco Field 1–4 Lv 289–357 คุยกับ Kochi ที่ Gate of Tapasco Volcano เพื่อเปิดวาร์ป
+- หน้าเควส Tapasco Recommendation Sticker และ Absolute Ring หายจากวิกิ เลยไม่รู้จำนวนสติ๊กเกอร์ที่ต้องใช้ ตัวนับนับเทียบกับ 14 ใบ
+- Tapasco Sticker ได้จากเควสธรรมดา 14 เควส
+- เตรียม **Adventurer's Book** เล่มที่ได้จาก Techichi ไว้
+- คุยกับ Kochi ที่ Gate of Tapasco Volcano เพื่อเปิดวาร์ป
 
 </section>
 
@@ -56,7 +56,7 @@ hiddenKey: "tapasco-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><h3>Clerk Z. Smith - Tapasco Recommendation Sticker</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 1 - Net of Lava</span><span class="chip">Lv 235+</span></div>
 <p>ส่ง <b>Tapasco Sticker</b> (หน้าเควสหาย ไม่รู้จำนวน)</p>
-<p class="muted">รางวัล: Adventurer's Book ตามที่หน้า For Their Goals เขียนไว้</p>
+<p class="muted">รางวัล: Adventurer's Book</p>
 </div>
 
 <div class="step">
@@ -107,9 +107,9 @@ hiddenKey: "tapasco-hidden-v1"
 
 ## เควสที่ให้ Tapasco Sticker
 
-มี 14 เควส ส่วนใหญ่ทำ 5 รอบได้ 1 ใบในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 14 เควส
 
-<p class="note">ติดดาว <span class="rec">★</span> ทุกเควส เพราะไม่รู้จำนวนที่ต้องใช้ ชุดที่ต่อกัน: Eliza Bath กับ Al-Hauri ให้ Body Wash และ Exfoliation Towel ไปส่ง Skipper Min · Captain Stan รอบ 5 ให้ Freezer Ticket ไปส่ง Ancient Polar Bear ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับ</p>
+<p class="note">ชุดต่อกัน: Eliza Bath กับ Al-Hauri ให้ Body Wash และ Exfoliation Towel ไปส่ง Skipper Min · Captain Stan รอบ 5 ให้ Freezer Ticket ไปส่ง Ancient Polar Bear</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -132,8 +132,6 @@ hiddenKey: "tapasco-hidden-v1"
 <tr><td><input aria-label="ได้ Tapasco Sticker แล้ว" class="stk" id="w14" type="checkbox"/></td><td><span class="rec">★</span> Burner - Burner's Secret Pt. 2</td><td class="n">5</td><td>Spicy Island</td><td><img alt="" class="th" src="./assets/img/a2dd8059e674.gif"/>Burner</td><td>ทำ Burner's Secret ก่อน</td><td><img alt="" class="it" src="./assets/img/1826494e468e.gif"/>Red Fire × 2 ← <b>Red Salamander</b> Lv 334 · <img alt="" class="it" src="./assets/img/41784fd27d41.gif"/>Blue Fire × 2 ← <b>Blue Salamander</b> Lv 339 (Field 1)</td></tr>
 </tbody>
 </table></div>
-
-<p class="muted">Therma Spa Coupon, Red Leather, Blue Leather, Tapasco Body Wash, Exfoliation Towel, Volcano Water, Salt Jar (ของ Monkey T) และ Freezer Ticket วิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ</p>
 
 </section>
 
@@ -174,8 +172,6 @@ hiddenKey: "tapasco-hidden-v1"
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

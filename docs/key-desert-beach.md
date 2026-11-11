@@ -25,9 +25,8 @@ hiddenKey: "desert-hidden-v1"
 
 โซนแรกของเควสกุญแจ เริ่มกับ **Sandman** ที่ Beach Town - Paradise ต้อง<b>เลเวล 25+</b> ไม่มีเควสกุญแจก่อนหน้า
 
-- ต้องได้ **Desert Sticker 5 ใบ** จากเควสธรรมดา ทุกเควสได้ 1 ใบในรอบที่ 5
+- ต้องได้ **Desert Sticker 5 ใบ** จากเควสธรรมดา
 - ขั้น 3 ให้ **Adventurer's Book** เล่มแรก เก็บไว้ใช้ต่อทุกโซน
-- มอนที่ต้องตีอยู่ใน Desert Beach Field 2, 3 (Lv 22–28) ส่วนของขุดอยู่ใน Desert Beach Field และ Pyramid Dungeon
 - เควสถัดไปคือ Megalopolis: Scared Poppuri ที่ Southeast Forest
 
 </section>
@@ -77,9 +76,9 @@ hiddenKey: "desert-hidden-v1"
 
 ## เควสที่ให้ Desert Sticker
 
-มี 7 เควส ต้องการ 5 ใบ ทุกเควสทำ 5 รอบได้ 1 ใบในรอบที่ 5 ของที่ระบุคือจำนวนต่อรอบ เรียงตามแมพของ NPC
+มี 7 เควส ต้องการ 5 ใบ
 
-<p class="note">เส้นทางแนะนำ 5 เควสติด <span class="rec">★</span> สามเควสต่อกันเป็นชุด: Homeless Ian ให้ Water Bucket ทุกรอบ → เอาไปส่ง Bunny Maid ได้ Filled Water Bucket ทุกรอบ → เอาไปส่ง Al-Hauri ขั้นก่อนหน้าอยู่เป็นแถวสีอ่อนเหนือเควสนั้น ติ๊กได้แต่ไม่นับ</p>
+<p class="note">เส้นทางแนะนำ 5 เควสติด <span class="rec">★</span> ชุดต่อกัน: Homeless Ian ให้ Water Bucket → Bunny Maid ให้ Filled Water Bucket → ส่ง Al-Hauri</p>
 
 <div class="tools"><button aria-pressed="false" id="hideUnstar" type="button">ซ่อนเควสที่ไม่ติดดาว</button><button hidden="" id="showAll" type="button">แสดงทั้งหมด</button></div>
 
@@ -95,8 +94,6 @@ hiddenKey: "desert-hidden-v1"
 <tr><td><input aria-label="ได้ Desert Sticker แล้ว" class="stk" id="w7" type="checkbox"/></td><td>Eliza Bath - Eliza Bath's Curiousity</td><td class="n">5</td><td>Paradise Spa</td><td><img alt="" class="th" src="./assets/img/f7627954fff0.gif"/>Eliza Bath</td><td>Lv 15+</td><td>Lucky Letter, Cursed Letter, Love Letter, Confession Letter, Farewell Letter อย่างละ 1 ← ขุดใน Field 4 - Parasol River</td></tr>
 </tbody>
 </table></div>
-
-<p class="muted">Water Bucket และ Filled Water Bucket วิกิไม่บอกจำนวน นับเป็น 1 ชิ้นต่อรอบ</p>
 
 </section>
 
@@ -123,15 +120,13 @@ hiddenKey: "desert-hidden-v1"
 </tbody>
 </table></div>
 
-<p class="muted">Water Bucket และ Filled Water Bucket ได้จากเควสอื่น ไม่ต้องตีมอน</p>
+<p class="muted">Water Bucket และ Filled Water Bucket ได้จากเควสอื่น</p>
 
 </section>
 
 <section>
 
 ## รูปจากวิกิ
-
-<p class="muted">รูปทั้งหมดดึงมาจากวิกิแล้วฝังไว้ในหน้านี้ กดการ์ดเพื่อเปิดหน้าวิกิหรือรูปต้นฉบับในแท็บใหม่</p>
 
 ### NPC
 

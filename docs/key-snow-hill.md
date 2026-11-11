@@ -248,6 +248,31 @@ hiddenKey: "snowhill-hidden-v1"
 
 <section>
 
+## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
+
+<p class="muted">ทุกเควส Lv 160+ · Cupid of Love ต้องทำต่อกันตามลำดับ 1 → 2 (รับค้างไว้) → Make a Defroster → ส่ง 2 → 3 (รับค้างไว้) → Healthy Snacks → ส่ง 3 → 4</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>รอบ</th><th>ที่อยู่</th><th>ของที่ต้องส่ง</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td>Kochi - Register Snow Hill Teleport Service</td><td class="n">1</td><td>Gate of Snow Hill</td><td>คุยกับ Kochi</td><td>เปิดวาร์ปมา Gate of Snow Hill</td></tr>
+<tr><td>Fairy Feria - Fairy Village</td><td class="n">1</td><td>Snow Hill Gift Factory</td><td>ไปคุยกับ Tacky (บันไดข้างต้นคริสต์มาส Laplanoel)<br/>ต้องผ่าน Little Chagan - Fairy at Snow Hill</td><td>ไม่มี</td></tr>
+<tr><td>Fairy Asrai - Scattered Potion Traces</td><td class="n">5</td><td>Snow Hill Gift Factory</td><td><img alt="" class="it" src="./assets/img/9cf8a4181c48.gif"/>Potion Drops × 3 ← ขุดใน Snow Field 1</td><td><img alt="" class="it" src="./assets/img/dde1739c3f2e.gif"/>1,000 Galder Coupon<br/>Miniature Snowman</td></tr>
+<tr><td>Fairy Asrai - Find the Escaped Toy Soldiers</td><td class="n">5</td><td>Snow Hill Gift Factory</td><td><img alt="" class="it" src="./assets/img/e150fd276f86.gif"/>Toy Soldier Gift Set × 3 ← <b>Toy Soldier</b></td><td><img alt="" class="it" src="./assets/img/dde1739c3f2e.gif"/>1,000 Galder Coupon<br/>Miniature Snowman</td></tr>
+<tr><td>Ancient Polar Bear - Facing Global Warming</td><td class="n">5</td><td>Snow Field 2 - Snowflake Park</td><td><img alt="" class="it" src="./assets/img/982467d52f65.gif"/>Portable AC × 5 ← ขุดใน Snow Hill Fields</td><td>รอบ 1, 3, 5: Miniature Snowman<br/>รอบ 2, 4: <img alt="" class="it" src="./assets/img/ed278090ce82.gif"/>Half Blue Potion × 10</td></tr>
+<tr><td>Xote - Cupid of Love 1</td><td class="n">1</td><td>Snow Hill Town - Laplanoel</td><td><img alt="" class="it" src="./assets/img/7d80060b4dc0.gif"/>Edelweiss × 5 ← ขุดใน Snow Hill Fields</td><td><img alt="" class="it" src="./assets/img/7d80060b4dc0.gif"/>Edelweiss × 5</td></tr>
+<tr><td>Xote - Cupid of Love 2</td><td class="n">1</td><td>Snow Hill Town - Laplanoel</td><td><img alt="" class="it" src="./assets/img/a5f4d87cc063.gif"/>Fresh Edelweiss × 5 ← รางวัลจาก Make a Defroster</td><td><img alt="" class="it" src="./assets/img/a5f4d87cc063.gif"/>Fresh Edelweiss × 5</td></tr>
+<tr><td>Inventor Gale - Make a Defroster</td><td class="n">1</td><td>Gate of Snow Hill</td><td><img alt="" class="it" src="./assets/img/982467d52f65.gif"/>Portable AC × 5 ← ขุดใน Snow Hill Fields<br/>Closed Circuit × 5 ← ขุดใน Path to Snow Hill<br/><img alt="" class="it" src="./assets/img/7d80060b4dc0.gif"/>Edelweiss × 5 ← รางวัลจาก Cupid of Love 1<br/>ต้องมี Cupid of Love 2 ค้างในสมุดเควส</td><td><img alt="" class="it" src="./assets/img/a5f4d87cc063.gif"/>Fresh Edelweiss × 5</td></tr>
+<tr><td>Xote - Cupid of Love 3</td><td class="n">1</td><td>Snow Hill Town - Laplanoel</td><td><img alt="" class="it" src="./assets/img/b6ac623b5a5b.gif"/>Edelweiss Bouquet × 5 ← รางวัลจาก Healthy Snacks for Fairies</td><td><img alt="" class="it" src="./assets/img/b6ac623b5a5b.gif"/>Edelweiss Bouquet<br/>Fairy Foot Warmer</td></tr>
+<tr><td>Primrose - Healthy Snacks for Fairies</td><td class="n">1</td><td>Laplanoel - Santa's Post Office</td><td><img alt="" class="it" src="./assets/img/ec812d0ff906.gif"/>Reindeer Milk × 5 ← รางวัลจาก Tame Reindeer - Gather Fellow Reindeer<br/><img alt="" class="it" src="./assets/img/a5f4d87cc063.gif"/>Fresh Edelweiss × 5 ← รางวัลจาก Cupid of Love 2</td><td><img alt="" class="it" src="./assets/img/b6ac623b5a5b.gif"/>Edelweiss Bouquet</td></tr>
+<tr><td>Xote - Cupid of Love 4</td><td class="n">1</td><td>Snow Hill Town - Laplanoel</td><td>เอา <img alt="" class="it" src="./assets/img/b6ac623b5a5b.gif"/>Edelweiss Bouquet ไปให้ Kyu ที่ Laplanoel</td><td>ไม่มี</td></tr>
+</tbody>
+</table></div>
+
+</section>
+
+<section>
+
 ## รูปจากวิกิ
 
 ### NPC

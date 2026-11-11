@@ -12,9 +12,9 @@ sidebar: false
 
 # คู่มือ Trickster
 
-รวมหน้าสรุปจากวิกิ แบ่งเป็นคู่มือทั่วไปกับเควสกุญแจของแต่ละโซน ทุกหน้ามีช่องติ๊กเก็บความคืบหน้า
+รวมหน้าสรุปจากวิกิ แบ่งเป็นคู่มือทั่วไป เควสกุญแจของแต่ละโซน และเควสเนื้อเรื่อง (Story / Episode) ทุกหน้ามีช่องติ๊กเก็บความคืบหน้า
 
-<nav class="toc"><a href="#guides">คู่มือ</a><a href="#key">เควสกุญแจ</a></nav>
+<nav class="toc"><a href="#guides">คู่มือ</a><a href="#key">เควสกุญแจ</a><a href="#story">เควสเนื้อเรื่อง</a></nav>
 
 </header>
 
@@ -93,6 +93,52 @@ sidebar: false
 <a class="zone" href="key-tapasco-volcano.html">
 <span class="top"><span class="name">Tapasco Volcano</span><span class="lv">LV 235+</span></span>
 <span class="facts"><span>สติ๊กเกอร์ <b>Tapasco Sticker</b> (วิกิไม่บอกจำนวน มีให้เก็บ 14)</span><span>NPC <b>Clerk Z. Smith, Blacksmith Marx</b></span></span>
+<span class="go">เปิดหน้าสรุป →</span></a></li>
+</ol>
+
+</section>
+
+<section id="story">
+
+## เควสเนื้อเรื่อง
+
+<p class="sub">Story Quest ของเกมแบ่งเป็น 7 Episode รวม 223 เควส ทำต่อกันตามลำดับ อ่านเนื้อเรื่องย่อทุกตอนและดูความคืบหน้ารวมได้ที่ <a href="story-quest.html">หน้าภาพรวมเนื้อเรื่อง</a></p>
+
+<ol>
+<li style="--c:var(--s-story)"><span class="dot">0</span>
+<a class="zone" href="episode-0.html">
+<span class="top"><span class="name">The Start of an Adventure</span><span class="lv">LV 1+</span></span>
+<span class="facts"><span><b>3 บท · 36 เควส</b></span><span>เริ่มที่ <b>Heidi</b></span></span>
+<span class="go">เปิดหน้าสรุป →</span></a></li>
+<li style="--c:var(--s-story)"><span class="dot">1</span>
+<a class="zone" href="episode-1.html">
+<span class="top"><span class="name">Secret of the Alteo Empire</span><span class="lv">LV 45+</span></span>
+<span class="facts"><span><b>3 บท · 22 เควส</b></span><span>เริ่มที่ <b>Monkey T</b></span></span>
+<span class="go">เปิดหน้าสรุป →</span></a></li>
+<li style="--c:var(--s-story)"><span class="dot">2</span>
+<a class="zone" href="episode-2.html">
+<span class="top"><span class="name">Mirage Island</span><span class="lv">LV 80+</span></span>
+<span class="facts"><span><b>3 บท · 29 เควส</b></span><span>เริ่มที่ <b>Kahlihara</b></span></span>
+<span class="go">เปิดหน้าสรุป →</span></a></li>
+<li style="--c:var(--s-story)"><span class="dot">3</span>
+<a class="zone" href="episode-3.html">
+<span class="top"><span class="name">Dreams of an Empire</span><span class="lv">LV 130+</span></span>
+<span class="facts"><span><b>4 บท · 37 เควส</b></span><span>เริ่มที่ <b>Chief Architect Amos</b></span></span>
+<span class="go">เปิดหน้าสรุป →</span></a></li>
+<li style="--c:var(--s-story)"><span class="dot">4</span>
+<a class="zone" href="episode-4.html">
+<span class="top"><span class="name">Beyond the Veil</span><span class="lv">LV 150+</span></span>
+<span class="facts"><span><b>4 บท · 25 เควส</b></span><span>เริ่มที่ <b>Coward Craven</b></span></span>
+<span class="go">เปิดหน้าสรุป →</span></a></li>
+<li style="--c:var(--s-story)"><span class="dot">5</span>
+<a class="zone" href="episode-5.html">
+<span class="top"><span class="name">Rebirth of Memories</span><span class="lv">LV 160+</span></span>
+<span class="facts"><span><b>4 บท · 32 เควส</b></span><span>เริ่มที่ <b>JOKER</b></span></span>
+<span class="go">เปิดหน้าสรุป →</span></a></li>
+<li style="--c:var(--s-story)"><span class="dot">6</span>
+<a class="zone" href="episode-6.html">
+<span class="top"><span class="name">Songs of Love and Fate</span><span class="lv">LV 200+</span></span>
+<span class="facts"><span><b>5 บท · 42 เควส</b></span><span>เริ่มที่ <b>Don Cavalier</b></span></span>
 <span class="go">เปิดหน้าสรุป →</span></a></li>
 </ol>
 

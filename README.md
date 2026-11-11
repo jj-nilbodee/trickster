@@ -10,6 +10,8 @@ docs/
   index.md                 hub (home page)
   <guide>.md               7 guides: daily quests, card quests, skill mastery, …
   key-<zone>.md            11 key-quest pages, in game order in the sidebar
+  story-quest.md           main story overview (Thai synopsis + progress from the episode pages)
+  episode-<0..6>.md        episode (story) quests, one page per episode
   assets/img/              all images, referenced as ./assets/img/<file>
   .vitepress/
     config.mts             site title, sidebar, search, base path
@@ -19,6 +21,7 @@ docs/
       behaviors-guide.js   ticks, section counters, search, hide-done for guides
       behaviors-key.js     hide rows, item totals, "ready" badges for key quests
       zones/<zone>.js      each key-quest zone's progress counter
+      behaviors-episode.js ticks, chapter counters and character picker for episode pages; progress for story-quest
       styles/              guide.css, key.css, hub.css, palettes.css (per-page colours), layout.css
 ```
 
@@ -26,6 +29,7 @@ Each page's frontmatter says which scripts run:
 
 - guides: `kind: guide`, `storageKey` (where ticks are saved in the browser), `daily: true` to reset every day
 - key quests: `kind: key`, `zone` (file in `theme/zones/`), `hiddenKey`
+- episode quests: `kind: episode`, `episode` (0–6; ticks saved under `ep<N>-ticks-v1`), and `kind: story` for the overview
 
 Text is Markdown; the interactive tables stay as HTML blocks inside the Markdown because their cells hold checkboxes.
 Ticks are saved per browser in `localStorage`, under the same keys as the old pages.

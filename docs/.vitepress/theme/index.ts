@@ -5,6 +5,7 @@ import JobsGuide from './JobsGuide.vue'
 import './styles/hub.css'
 import './styles/guide.css'
 import './styles/key.css'
+import './styles/episode.css'
 import './styles/palettes.css'
 import './styles/layout.css'
 

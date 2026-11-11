@@ -23,6 +23,18 @@ const keyQuests = [
   ['11 · Tapasco Volcano', '/key-tapasco-volcano'],
 ]
 
+// Main story: an overview page, then one page per episode.
+const story = [
+  ['ภาพรวมเนื้อเรื่อง', '/story-quest'],
+  ['Episode 0 · The Start of an Adventure', '/episode-0'],
+  ['Episode 1 · Secret of the Alteo Empire', '/episode-1'],
+  ['Episode 2 · Mirage Island', '/episode-2'],
+  ['Episode 3 · Dreams of an Empire', '/episode-3'],
+  ['Episode 4 · Beyond the Veil', '/episode-4'],
+  ['Episode 5 · Rebirth of Memories', '/episode-5'],
+  ['Episode 6 · Songs of Love and Fate', '/episode-6'],
+]
+
 const items = (list: string[][]) => list.map(([text, link]) => ({ text, link }))
 
 export default defineConfig({
@@ -46,6 +58,7 @@ export default defineConfig({
     sidebar: [
       { text: 'คู่มือ', items: items(guides) },
       { text: 'เควสกุญแจ', items: items(keyQuests) },
+      { text: 'เควสเนื้อเรื่อง (Story / Episode)', items: items(story) },
     ],
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: 'https://github.com/jj-nilbodee/trickster' }],

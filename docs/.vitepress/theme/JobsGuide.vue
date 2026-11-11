@@ -30,7 +30,7 @@ async function load(id: string) {
 onMounted(async () => {
   try { ticks.value = JSON.parse(localStorage.getItem(KEY) || '{}').t || {} } catch {}
   try { hideDone.value = localStorage.getItem(KEY + '-hide') === '1' } catch {}
-  try { collapsed.value = JSON.parse(localStorage.getItem(KEY + '-fold') || '{}') } catch {}
+  try { collapsed.value = JSON.parse(localStorage.getItem(KEY + '-fold2') || '{}') } catch {}
   const fromUrl = new URLSearchParams(location.search).get('c')
   let saved = ''
   try { saved = localStorage.getItem(KEY + '-char') || '' } catch {}
@@ -61,18 +61,18 @@ function toggle(id: string, on: boolean) {
   ticks.value = t
   try { localStorage.setItem(KEY, JSON.stringify({ t })) } catch {}
 }
-// Every section can be folded; the folded state is remembered per section id and shared by all characters.
+// Every section can be folded; the folded state is remembered per character and section ("sheep:quest").
 // Searching shows folded sections again so matches are never hidden.
 const collapsed = ref<Record<string, boolean>>({})
-const isFolded = (id: string) => !!collapsed.value[id] && !needle.value
+const isFolded = (id: string) => !!collapsed.value[char.value + ':' + id] && !needle.value
 function setFold(id: string, v: boolean) {
-  collapsed.value = { ...collapsed.value, [id]: v }
-  try { localStorage.setItem(KEY + '-fold', JSON.stringify(collapsed.value)) } catch {}
+  collapsed.value = { ...collapsed.value, [char.value + ':' + id]: v }
+  try { localStorage.setItem(KEY + '-fold2', JSON.stringify(collapsed.value)) } catch {}
 }
 
 // Jump to a section: unfold it, put it in the URL (?c=<character>#<section>) and scroll to it.
 async function go(id: string, push = true) {
-  if (collapsed.value[id]) setFold(id, false)
+  if (collapsed.value[char.value + ':' + id]) setFold(id, false)
   if (push) {
     const u = new URL(location.href)
     u.hash = id

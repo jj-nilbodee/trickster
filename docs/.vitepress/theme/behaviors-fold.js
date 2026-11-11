@@ -2,6 +2,8 @@
 // and a "#" link that copies a URL straight to it. Folded sections are remembered per page in localStorage.
 // Not foldable: short intro/info sections and the key-quest progress counter, which are always useful to see.
 var SKIP = { go: 1, tp: 1, req: 1 }
+// Sections folded until the reader opens them (their choice is then remembered).
+var FOLD_BY_DEFAULT = ['รูปจากวิกิ']
 
 export default function initFold(page, signal) {
   var KEY = 'fold:' + page, folded = {}
@@ -19,6 +21,7 @@ export default function initFold(page, signal) {
     var id = s.id || h.id || 'sec' + i
     if (!s.id && !h.id) s.id = id
     s.dataset.fold = id
+    if (!(id in folded) && FOLD_BY_DEFAULT.indexOf(h.textContent.replace(/\u200b/g, '').trim()) >= 0) s.dataset.defFold = '1'
     s.classList.add('foldable')
     var btn = document.createElement('button')
     btn.type = 'button'; btn.className = 'fold-btn'; btn.setAttribute('aria-label', 'พับหรือกางหัวข้อนี้')
@@ -29,7 +32,7 @@ export default function initFold(page, signal) {
     h.appendChild(link)
     h.addEventListener('click', function (e) {
       if (e.target.closest('a,input,label')) return
-      set(s, !folded[id])
+      set(s, !isFolded(s))
     }, { signal: signal })
     link.addEventListener('click', function (e) {
       e.preventDefault(); e.stopPropagation()
@@ -44,24 +47,25 @@ export default function initFold(page, signal) {
     apply(s)
   })
   function apply(s) {
-    var f = !!folded[s.dataset.fold]
+    var id = s.dataset.fold, f = id in folded ? !!folded[id] : !!s.dataset.defFold
     s.classList.toggle('folded', f)
     var b = s.querySelector(':scope > h2 > .fold-btn')
     b.setAttribute('aria-expanded', String(!f)); b.firstChild.textContent = f ? '▸' : '▾'
   }
-  function set(s, v) { if (v) folded[s.dataset.fold] = 1; else delete folded[s.dataset.fold]; save(); apply(s) }
+  function set(s, v) { folded[s.dataset.fold] = v ? 1 : 0; save(); apply(s) }
+  function isFolded(s) { return s.classList.contains('folded') }
   // A link to a heading (or anything inside a folded section) unfolds that section first.
   function reveal() {
     var t = decodeURIComponent(location.hash.slice(1)); if (!t) return
     var el = document.getElementById(t); var s = el && el.closest('section.foldable')
-    if (s && folded[s.dataset.fold]) { set(s, false); el.scrollIntoView() }
+    if (s && isFolded(s)) { set(s, false); el.scrollIntoView() }
   }
   reveal()
   window.addEventListener('hashchange', reveal, { signal: signal })
   root.addEventListener('click', function (e) {
     var a = e.target.closest('a[href^="#"]'); if (!a || a.classList.contains('fold-link')) return
     var el = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))
-    var s = el && el.closest('section.foldable'); if (s && folded[s.dataset.fold]) set(s, false)
+    var s = el && el.closest('section.foldable'); if (s && isFolded(s)) set(s, false)
   }, { signal: signal, capture: true })
   // While searching, show folded sections so matches are never hidden.
   var q = document.getElementById('q')

@@ -29,8 +29,5 @@
   .pg-ep .step .body { flex-direction: column }
   .pg-ep figure.map { width: 100%; max-width: 220px; flex-basis: auto }
 }
-/* hub card colour for the story section */
-.pg-hub { --s-story:#7a5410 }
-.dark .pg-hub { --s-story:#e9c27a }
 .pg-ep .wrap > section { scroll-margin-top: 270px }
 @media (max-width: 560px) { .pg-ep figure.map { max-width: 180px } }

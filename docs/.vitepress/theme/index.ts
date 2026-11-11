@@ -8,6 +8,7 @@ import './styles/key.css'
 import './styles/episode.css'
 import './styles/palettes.css'
 import './styles/layout.css'
+import './styles/theme.css'
 
 export default {
   extends: DefaultTheme,

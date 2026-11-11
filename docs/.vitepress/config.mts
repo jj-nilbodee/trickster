@@ -51,9 +51,11 @@ export default defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&family=Mitr:wght@400;500&family=Sarabun:wght@400;600&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap',
     }],
   ],
+  // Dark mode first; the theme switch still offers light.
+  appearance: 'dark',
   // Keep spaces between inline tags exactly as written in the pages.
   vue: { template: { compilerOptions: { whitespace: 'preserve' } } },
   themeConfig: {

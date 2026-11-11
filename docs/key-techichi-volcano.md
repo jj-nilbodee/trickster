@@ -53,43 +53,43 @@ hiddenKey: "techichi-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/fb52ed4dd14c.gif"/><h3>Grandpa Tango - Techichi Recommendation Sticker</h3></div>
 <div class="meta"><span class="chip">Techichi Volcano - Tango Cabin</span><span class="chip">Lv 210+</span><span class="chip">จบเควสกุญแจ Snow Hill แล้ว</span></div>
-<p>ส่ง <b>Techichi Sticker × 13</b></p>
-<p class="muted">รางวัล: Indiana's Portfolio (ใช้ขั้น 3)</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Techichi Sticker × 13</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/0c5280f25775.gif"/>Indiana's Portfolio (ใช้ขั้น 3)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/e0d3a9c1e798.gif"/><h3>Grandma Tango - Tango Cabin Soup</h3></div>
 <div class="meta"><span class="chip">Techichi Volcano - Tango Cabin</span><span class="chip">Lv 210+</span></div>
-<p>ส่ง <b>Blister Fruit × 5</b> ← <b>Dekumanus</b> Lv 312 (Field 4)</p>
-<p class="muted">รางวัล: Thermos (ใช้ขั้น 3)</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/9d7a886b9b90.gif"/><b>Blister Fruit × 5</b> ← <b>Dekumanus</b> Lv 312 (Field 4)</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/99409cd9ad64.gif"/>Thermos (ใช้ขั้น 3)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/ff14c079cda2.gif"/><h3>Indiana John - Indiana John's Theory</h3></div>
 <div class="meta"><span class="chip">Techichi Field 3</span><span class="chip">Lv 210+</span></div>
-<p>ส่ง <b>Indiana's Portfolio</b> และ <b>Thermos</b></p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/0c5280f25775.gif"/><b>Indiana's Portfolio</b> และ <img alt="" class="it" src="./assets/img/99409cd9ad64.gif"/><b>Thermos</b></p>
 <p class="muted">รางวัล: ไม่มี</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/ff14c079cda2.gif"/><h3>Indiana John - Supporting Evidence</h3></div>
 <div class="meta"><span class="chip">Techichi Field 3</span><span class="chip">Lv 210+</span></div>
-<p>ส่ง <b>Orconio Plaster Statue</b> ← <b>Orconio</b> Lv 290 · <b>Orpeo Plaster Statue</b> ← <b>Orpeo</b> Lv 299 (ทั้งคู่อยู่ Field 3)</p>
-<p class="muted">รางวัล: 10,000 Galder Coupon</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/93790eae5fef.gif"/><b>Orconio Plaster Statue</b> ← <b>Orconio</b> Lv 290 · <img alt="" class="it" src="./assets/img/ff03c1475bc0.gif"/><b>Orpeo Plaster Statue</b> ← <b>Orpeo</b> Lv 299 (ทั้งคู่อยู่ Field 3)</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><img alt="" class="npc" src="./assets/img/ff14c079cda2.gif"/><h3>Indiana John - Checking Out</h3></div>
 <div class="meta"><span class="chip">Techichi Field 3</span><span class="chip">Lv 210+</span></div>
-<p>ส่ง <b>Tough Rope × 3</b> ← <b>Ponchichi</b> Lv 286 (Field 2, 3)</p>
-<p class="muted">รางวัล: Empty Thermos, Lodging Fee Envelope (ใช้ขั้น 6)</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/3e60f40847b4.gif"/><b>Tough Rope × 3</b> ← <b>Ponchichi</b> Lv 286 (Field 2, 3)</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/99409cd9ad64.gif"/>Empty Thermos, <img alt="" class="it" src="./assets/img/f0d1722fdadc.gif"/>Lodging Fee Envelope (ใช้ขั้น 6)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k6" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 6</span><img alt="" class="npc" src="./assets/img/fb52ed4dd14c.gif"/><h3>Grandpa Tango - Grandpa Tango's Appreciation</h3></div>
 <div class="meta"><span class="chip">Techichi Volcano - Tango Cabin</span><span class="chip">Lv 210+</span></div>
-<p>ส่ง <b>Empty Thermos</b>, <b>Lodging Fee Envelope</b>, <b>Dry Wood × 5</b> (ขุดใน Techichi Field) และ <b>Adventurer's Book</b></p>
-<p class="muted">รางวัล: <b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป), Weapon Ticket I</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/99409cd9ad64.gif"/><b>Empty Thermos</b>, <img alt="" class="it" src="./assets/img/f0d1722fdadc.gif"/><b>Lodging Fee Envelope</b>, <img alt="" class="it" src="./assets/img/ce544578dbb2.gif"/><b>Dry Wood × 5</b> (ขุดใน Techichi Field) และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป), <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Ticket I</p>
 </div>
 
 </section>

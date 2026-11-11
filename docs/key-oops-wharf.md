@@ -57,14 +57,14 @@ hiddenKey: "oops-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="c1" type="checkbox"/> ทำแล้ว</label><span class="num">ก่อนเริ่ม 1</span><img alt="" class="npc" src="./assets/img/66752caff8c6.gif"/><h3>Keeper Julio - Path to Oops Wharf</h3></div>
 <div class="meta"><span class="chip">Relics Field 4 - An Altar for Sacrifice</span><span class="chip">Lv 55+</span><span class="chip">หลังผ่าน Return Gold Silk Pouch</span></div>
 <p>ไปคุยกับ <b>Keeper Julio</b> อีกครั้งที่ Gate of Oops Wharf</p>
-<p class="muted">รางวัล: 1,000 Galder Coupon</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/dde1739c3f2e.gif"/>1,000 Galder Coupon</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="c2" type="checkbox"/> ทำแล้ว</label><span class="num">ก่อนเริ่ม 2</span><img alt="" class="npc" src="./assets/img/66752caff8c6.gif"/><h3>Keeper Julio - Captain Stan at Oops Wharf</h3></div>
 <div class="meta"><span class="chip">Gate of Oops Wharf</span><span class="chip">Lv 70+</span></div>
 <p>ไปคุยกับ <b>Mighty Captain Stan</b> ที่ Oops Wharf (ต้อง Lv 70 ถึงจะคุยได้)</p>
-<p class="muted">รางวัล: 1,000 Galder Coupon</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/dde1739c3f2e.gif"/>1,000 Galder Coupon</p>
 </div>
 
 </section>
@@ -83,29 +83,29 @@ hiddenKey: "oops-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/a523e4c304a6.gif"/><h3>Skipper Min - Urgent Issue</h3></div>
 <div class="meta"><span class="chip">Oops Wharf</span><span class="chip">Lv 70+</span></div>
-<p>ส่ง <b>Oops Sticker × 7</b></p>
-<p class="muted">รางวัล: 500 Galder Coupon × 5</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Oops Sticker × 7</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/330b160b1fc4.gif"/>500 Galder Coupon × 5</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/3a7b2171a6d2.gif"/><h3>Mighty Captain Stan - Lost Ship's Log</h3></div>
 <div class="meta"><span class="chip">Oops Wharf</span><span class="chip">หลังผ่าน Urgent Issue</span></div>
-<p>ส่ง <b>Voyage Log p9</b> ← <b>Master Foe</b> Lv 84 (Wharf Field 4) · <b>Voyage Log p25</b> ← <b>Quiem</b> Lv 75 (Wharf Field 1, 3) · <b>Voyage Log p31</b> ← <b>Requi</b> Lv 72 (Wharf Field 1–3)</p>
-<p class="muted">รางวัล: 500 Galder Coupon × 5, Old Unsigned Letter</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p9</b> ← <b>Master Foe</b> Lv 84 (Wharf Field 4) · <img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p25</b> ← <b>Quiem</b> Lv 75 (Wharf Field 1, 3) · <img alt="" class="it" src="./assets/img/d04154fab670.gif"/><b>Voyage Log p31</b> ← <b>Requi</b> Lv 72 (Wharf Field 1–3)</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/330b160b1fc4.gif"/>500 Galder Coupon × 5, <img alt="" class="it" src="./assets/img/5e735ccef390.gif"/>Old Unsigned Letter</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/a523e4c304a6.gif"/><h3>Skipper Min - Min's Weakness</h3></div>
 <div class="meta"><span class="chip">Oops Wharf</span><span class="chip">หลังผ่าน Lost Ship's Log</span></div>
-<p>ส่ง <b>Nausea Drink × 5</b> และ <b>Nausea Patch × 5</b> ← ขุดใน Wharf Field 4 · <b>Adventurer's Book × 1</b></p>
-<p class="muted">รางวัล: Weapon Ticket C, <b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/51b42a8e81ae.gif"/><b>Nausea Drink × 5</b> และ <img alt="" class="it" src="./assets/img/bb9f4cfd0e51.gif"/><b>Nausea Patch × 5</b> ← ขุดใน Wharf Field 4 · <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Ticket C, <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><img alt="" class="npc" src="./assets/img/a523e4c304a6.gif"/><h3>Skipper Min - The Way to Mermaid Palace</h3></div>
 <div class="meta"><span class="chip">Oops Wharf</span><span class="chip">Lv 70+</span><span class="chip">หลังผ่าน Min's Weakness</span></div>
-<p>ซื้อ <b>Diving Gear</b> จากร้าน <b>Item Girl</b> แล้วไปคุยกับ <b>Marinel</b> ที่ Oops Wharf</p>
-<p class="muted">รางวัล: 1,000 Galder Coupon · เปิดทางไป Mermaid Palace</p>
+<p>ซื้อ <img alt="" class="it" src="./assets/img/3a73b4c19b00.gif"/><b>Diving Gear</b> จากร้าน <b>Item Girl</b> แล้วไปคุยกับ <b>Marinel</b> ที่ Oops Wharf</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/dde1739c3f2e.gif"/>1,000 Galder Coupon · เปิดทางไป Mermaid Palace</p>
 </div>
 
 </section>

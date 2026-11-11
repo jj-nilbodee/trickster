@@ -52,30 +52,30 @@ hiddenKey: "rosegarden-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/4e16d739dd21.gif"/><h3>Rosaline Gracia - Rose Garden Stickers</h3></div>
 <div class="meta"><span class="chip">Rose Field 1 - Stairway to Sorrow</span><span class="chip">Lv 125+</span><span class="chip">หลังผ่าน Chief Koha - Get a Date</span></div>
-<p>ส่ง <b>Rose Garden Sticker × 13</b> และ <b>Adventurer's Book × 1</b></p>
-<p class="muted">รางวัล: Blue Potion C × 20 · ทำครั้งเดียว</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Rose Garden Sticker × 13</b> และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/ed278090ce82.gif"/>Blue Potion C × 20 · ทำครั้งเดียว</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/1825b91e1892.gif"/><h3>Princess Rosetta - Unbroken Magic</h3></div>
 <div class="meta"><span class="chip">Beast Garden</span><span class="chip">Lv 125+</span><span class="chip">ต้องรับ Childhood Promise ค้างไว้ก่อน</span></div>
 <p>ไปรับเควส <b>Rosaline Gracia - Childhood Promise</b> ค้างไว้ แล้วเข้า Beast Garden (ขุด Rosaline's Jewel Box → Story Book (A))</p>
-<p>ส่ง <b>Rose of Love × 1</b> ได้จากการเปิด <b>Beast's Rose</b> ที่ดรอปจาก <b>Rose Bush</b> (Lv 200, Beast Garden) Rose Bush เกิดน้อย และเปิดแล้วไม่ได้ Rose of Love ทุกครั้ง อาจต้องขุด Story Book (A) หลายเล่มเพื่อเข้าซ้ำ</p>
-<p class="muted">รางวัล: Rose of True Love, Rosaline's Story Book (B)</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/174b6e5d472d.gif"/><b>Rose of Love × 1</b> ได้จากการเปิด <img alt="" class="it" src="./assets/img/174b6e5d472d.gif"/><b>Beast's Rose</b> ที่ดรอปจาก <img alt="" class="it" src="./assets/img/90b4e5ffde8f.gif"/><b>Rose Bush</b> (Lv 200, Beast Garden) Rose Bush เกิดน้อย และเปิดแล้วไม่ได้ Rose of Love ทุกครั้ง อาจต้องขุด Story Book (A) หลายเล่มเพื่อเข้าซ้ำ</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/174b6e5d472d.gif"/>Rose of True Love, <img alt="" class="it" src="./assets/img/c2f7e9bea7a7.gif"/>Rosaline's Story Book (B)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/4f089e26f232.gif"/><h3>Prince Stephano - A Happy Ending</h3></div>
 <div class="meta"><span class="chip">Beast Garden</span><span class="chip">Lv 125+</span></div>
-<p>เอา <b>Rose of True Love</b> ไปให้ NPC <b>Beast Vincento</b> ใน Beast Garden ก่อน แล้วกลับมาคุยกับ Prince Stephano อีกครั้ง</p>
-<p class="muted">รางวัล: D's Letter, 10,000 Galder Coupon × 2</p>
+<p>เอา <img alt="" class="it" src="./assets/img/174b6e5d472d.gif"/><b>Rose of True Love</b> ไปให้ NPC <b>Beast Vincento</b> ใน Beast Garden ก่อน แล้วกลับมาคุยกับ Prince Stephano อีกครั้ง</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/9c12bdd1f3b3.gif"/>D's Letter, <img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon × 2</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/4e16d739dd21.gif"/><h3>Rosaline Gracia - Childhood Promise</h3></div>
 <div class="meta"><span class="chip">Rose Field 1 - Stairway to Sorrow</span><span class="chip">หลังผ่านขั้น 1</span></div>
-<p>ส่ง <b>D's Letter</b> (จากขั้น 3) และ <b>Rosaline's Story Book (B)</b> (จากขั้น 2)</p>
-<p class="muted">รางวัล: Adventurer's Book (เก็บไว้ใช้โซนต่อไป), Weapon Exchange Ticket F</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/9c12bdd1f3b3.gif"/><b>D's Letter</b> (จากขั้น 3) และ <img alt="" class="it" src="./assets/img/c2f7e9bea7a7.gif"/><b>Rosaline's Story Book (B)</b> (จากขั้น 2)</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book (เก็บไว้ใช้โซนต่อไป), <img alt="" class="it" src="./assets/img/6d1e9906401f.gif"/>Weapon Exchange Ticket F</p>
 </div>
 
 </section>

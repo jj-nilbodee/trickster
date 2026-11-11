@@ -53,36 +53,36 @@ hiddenKey: "megalopolis-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/1552ae41ece1.gif"/><h3>Scared Poppuri - Scared Poppuri's Concern</h3></div>
 <div class="meta"><span class="chip">Southeast Forest</span><span class="chip">Lv 30+</span><span class="chip">หลังผ่าน The Miracle of Sand</span></div>
-<p>ส่ง <b>Toy Box × 1</b> ← <b>Kokebi</b> Lv 39 (Slide Cave, Root Cave)</p>
-<p class="muted">รางวัล: Poppuri Bean</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/3cbde89b134a.gif"/><b>Toy Box × 1</b> ← <b>Kokebi</b> Lv 39 (Slide Cave, Root Cave)</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/d3c55adbc7b6.gif"/>Poppuri Bean</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/1552ae41ece1.gif"/><h3>Scared Poppuri - Look for Toys</h3></div>
 <div class="meta"><span class="chip">Southeast Forest</span><span class="chip">Lv 30+</span></div>
-<p>ส่ง <b>Teddy Bear</b> ← <b>Moss Moth</b> Lv 48 · <b>Robot Model Kit</b> ← <b>Larva</b> Lv 52 · <b>Exchange Diary</b> ← <b>Sppo</b> Lv 46 · <b>Squeaky Hammer</b> ← <b>Simbatta</b> Lv 42</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/665c09371978.gif"/><b>Teddy Bear</b> ← <b>Moss Moth</b> Lv 48 · <img alt="" class="it" src="./assets/img/fac4d78ac16d.gif"/><b>Robot Model Kit</b> ← <b>Larva</b> Lv 52 · <img alt="" class="it" src="./assets/img/e17baef974ea.gif"/><b>Exchange Diary</b> ← <b>Sppo</b> Lv 46 · <img alt="" class="it" src="./assets/img/f1df33a44f22.gif"/><b>Squeaky Hammer</b> ← <b>Simbatta</b> Lv 42</p>
 <p class="muted">รางวัล: ได้ของเล่นทั้ง 4 ชิ้นคืน (ใช้ขั้น 3)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/1552ae41ece1.gif"/><h3>Artisan Poppuri - Fix Toys</h3></div>
 <div class="meta"><span class="chip">Gate of Poppuri Dungeon</span><span class="chip">Lv 30+</span></div>
-<p>ส่ง <b>Teddy Bear, Robot Model Kit, Exchange Diary, Squeaky Hammer</b> (ได้คืนจากขั้น 2) และ <b>Instant Adhesive × 4</b></p>
-<p class="muted">รางวัล: Mended Toy Box</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/665c09371978.gif"/><b>Teddy Bear, Robot Model Kit, Exchange Diary, Squeaky Hammer</b> (ได้คืนจากขั้น 2) และ <img alt="" class="it" src="./assets/img/b0edecefbf70.gif"/><b>Instant Adhesive × 4</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/3cbde89b134a.gif"/>Mended Toy Box</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/1552ae41ece1.gif"/><h3>Scared Poppuri - Poppuri Redemption</h3></div>
 <div class="meta"><span class="chip">Southeast Forest</span><span class="chip">หลังผ่าน Fix Toys</span></div>
-<p>เอา <b>Mended Toy Box</b> ไปให้ <b>Stern Poppuri</b> ที่ Poppuri Dungeon - Slide Cave ไม่ต้องกลับไปหา Scared Poppuri</p>
-<p class="muted">รางวัล: Poppuri Bean × 9</p>
+<p>เอา <img alt="" class="it" src="./assets/img/3cbde89b134a.gif"/><b>Mended Toy Box</b> ไปให้ <b>Stern Poppuri</b> ที่ Poppuri Dungeon - Slide Cave ไม่ต้องกลับไปหา Scared Poppuri</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/d3c55adbc7b6.gif"/>Poppuri Bean × 9</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><img alt="" class="npc" src="./assets/img/1552ae41ece1.gif"/><h3>Stern Poppuri - Journey to Caballa Relics</h3></div>
 <div class="meta"><span class="chip">Poppuri Dungeon - Slide Cave</span><span class="chip">หลังผ่าน Poppuri Redemption</span></div>
 <p>ไปคุยกับ <b>Wise Hen</b> ที่ Gate of Caballa Relics</p>
-<p class="muted">รางวัล: Wing Port (Caballa Relics), 10,000 Galder</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/c250eeb94cc1.gif"/>Wing Port (Caballa Relics), 10,000 Galder</p>
 </div>
 
 </section>

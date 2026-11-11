@@ -55,29 +55,29 @@ hiddenKey: "mermaid-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><img alt="" class="npc" src="./assets/img/6902c80313d0.gif"/><h3>Captain Stan - Mermaid Palace Stickers</h3></div>
 <div class="meta"><span class="chip">Gate of Mermaid Palace</span><span class="chip">Lv 80+</span><span class="chip">หลังผ่าน Min's Weakness</span></div>
-<p>ส่ง <b>Palace Proof Sticker × 7</b> และ <b>Old Picture × 1</b> ← ขุดใน Mermaid Palace Field</p>
-<p class="muted">รางวัล: Captain Stan's Log</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Palace Proof Sticker × 7</b> และ <img alt="" class="it" src="./assets/img/ffccf172a8c1.gif"/><b>Old Picture × 1</b> ← ขุดใน Mermaid Palace Field</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/e17baef974ea.gif"/>Captain Stan's Log</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><img alt="" class="npc" src="./assets/img/6902c80313d0.gif"/><h3>Captain Stan - Captain's Stan Past</h3></div>
 <div class="meta"><span class="chip">Gate of Mermaid Palace</span><span class="chip">Lv 80+</span><span class="chip">รับค้างไว้ก่อน</span></div>
-<p>ส่ง <b>Tanya's Letter</b> (ได้จากขั้น 3) รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 3</p>
-<p class="muted">รางวัล: Wep Exchange D, 10,000 Galder Coupon</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/5894d8d0d1d1.gif"/><b>Tanya's Letter</b> (ได้จากขั้น 3) รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 3</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/4ccbde810e07.gif"/>Wep Exchange D, <img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/8ee67af263ab.gif"/><h3>Mermaid Marin - Marin's Sister</h3></div>
 <div class="meta"><span class="chip">Mermaid Palace Field 4 - Rock Square</span><span class="chip">Lv 80+</span><span class="chip">ต้องมี Captain's Stan Past ค้างในสมุดเควส</span></div>
-<p>ถือ <b>Tanya's Sword</b> ← <b>Tanya</b> Lv 150 (Mermaid Dungeon 2) ไปคุยเพื่อรับเควส แล้วส่ง <b>Tanya's Sword × 1</b> และ <b>Adventurer's Book × 1</b></p>
-<p class="muted">รางวัล: Tanya's Letter → เอาไปส่งขั้น 2, <b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</p>
+<p>ถือ <img alt="" class="it" src="./assets/img/4683c3039eb3.gif"/><b>Tanya's Sword</b> ← <b>Tanya</b> Lv 150 (Mermaid Dungeon 2) ไปคุยเพื่อรับเควส แล้วส่ง <img alt="" class="it" src="./assets/img/4683c3039eb3.gif"/><b>Tanya's Sword × 1</b> และ <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book × 1</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/5894d8d0d1d1.gif"/>Tanya's Letter → เอาไปส่งขั้น 2, <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b> (เก็บไว้ใช้โซนต่อไป)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/6902c80313d0.gif"/><h3>Captain Stan - Megalo Ship's Heidi</h3></div>
 <div class="meta"><span class="chip">Gate of Mermaid Palace</span><span class="chip">Lv 80+</span><span class="chip">หลังผ่าน Captain's Stan Past</span></div>
 <p>ไปหา <b>Heidi</b> ที่ Southeast Forest ใกล้ทางเข้า Path to Ghost Blue 1 แล้วคุยด้วย</p>
-<p class="muted">รางวัล: 1,000 Galder Coupon · ต่อไปโซน Ghost Blue</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/dde1739c3f2e.gif"/>1,000 Galder Coupon · ต่อไปโซน Ghost Blue</p>
 </div>
 
 </section>

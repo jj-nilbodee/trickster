@@ -55,35 +55,35 @@ hiddenKey: "tapasco-hidden-v1"
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k1" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 1</span><h3>Clerk Z. Smith - Tapasco Recommendation Sticker</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 1 - Net of Lava</span><span class="chip">Lv 235+</span></div>
-<p>ส่ง <b>Tapasco Sticker</b> (หน้าเควสหาย ไม่รู้จำนวน)</p>
-<p class="muted">รางวัล: Adventurer's Book</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/f9c49cb43d6f.gif"/><b>Tapasco Sticker</b> (หน้าเควสหาย ไม่รู้จำนวน)</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/>Adventurer's Book</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k2" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 2</span><h3>Clerk Z. Smith - Absolute Ring</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 1 - Net of Lava</span><span class="chip">Lv 235+</span></div>
-<p>หน้าเควสหาย ไอเทม <b>Absolute Ring</b> ดรอปจาก <b>Fire Golem</b> Lv 357 (Field 1–4) น่าจะต้องใช้อันนี้ แต่ยังไม่ยืนยัน</p>
+<p>หน้าเควสหาย ไอเทม <img alt="" class="it" src="./assets/img/7d9413658bf4.gif"/><b>Absolute Ring</b> ดรอปจาก <b>Fire Golem</b> Lv 357 (Field 1–4) น่าจะต้องใช้อันนี้ แต่ยังไม่ยืนยัน</p>
 <p class="muted">รางวัล: ไม่ทราบ</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k3" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 3</span><img alt="" class="npc" src="./assets/img/01d6ac3e1c9e.gif"/><h3>Blacksmith Marx - Ptah's Secrets</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 1 - Net of Lava</span><span class="chip">Lv 235+</span><span class="chip">หลังผ่าน Absolute Ring</span></div>
-<p>ส่ง <b>Hot Iron × 2</b> และ <b>Whetstone × 2</b> ← ขุดใน Tapasco Field</p>
-<p class="muted">รางวัล: 10,000 Galder Coupon</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/02ea51e1c29a.gif"/><b>Hot Iron × 2</b> และ <img alt="" class="it" src="./assets/img/93e138993c8f.gif"/><b>Whetstone × 2</b> ← ขุดใน Tapasco Field</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/21a045bf238c.gif"/>10,000 Galder Coupon</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k4" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 4</span><img alt="" class="npc" src="./assets/img/01d6ac3e1c9e.gif"/><h3>Blacksmith Marx - Special Flame</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 1 - Net of Lava</span><span class="chip">Lv 235+</span></div>
-<p>ส่ง <b>Slag Orb × 2</b> ← <b>Fire Golem</b> Lv 357 หรือ Punisher Fire Golem Lv 383</p>
-<p class="muted">รางวัล: Polished Trickster Ring (ใช้ขั้น 5)</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/524672dedac4.gif"/><b>Slag Orb × 2</b> ← <b>Fire Golem</b> Lv 357 หรือ Punisher Fire Golem Lv 383</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/7d9413658bf4.gif"/>Polished Trickster Ring (ใช้ขั้น 5)</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><img alt="" class="npc" src="./assets/img/01d6ac3e1c9e.gif"/><h3>Blacksmith Marx - The Ring's Abilities</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 2 - Rhythm of Hammer</span><span class="chip">Lv 235+</span><span class="chip">รับค้างไว้ก่อน</span></div>
-<p>ส่ง <b>Hunter's Certificate</b> (ได้จากขั้น 6) และ <b>Polished Trickster Ring</b> รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 6</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/68514436f862.gif"/><b>Hunter's Certificate</b> (ได้จากขั้น 6) และ <img alt="" class="it" src="./assets/img/7d9413658bf4.gif"/><b>Polished Trickster Ring</b> รับเควสนี้ค้างไว้ก่อน แล้วไปทำขั้น 6</p>
 <p class="muted">รางวัล: The Trickster Ring</p>
 </div>
 
@@ -91,14 +91,14 @@ hiddenKey: "tapasco-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k6" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 6</span><img alt="" class="npc" src="./assets/img/ee27891912bb.gif"/><h3>Hunter Master - Show Me Your Skill</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 1 - Net of Lava</span><span class="chip">ต้องมี The Ring's Abilities ค้างในสมุดเควส</span></div>
 <p>ล่า <b>Fire Moth</b> Lv 289 × 30 ตัวภายใน 20 นาที (Field 1, 2)</p>
-<p class="muted">รางวัล: Hunter's Certificate → เอาไปส่งขั้น 5</p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/68514436f862.gif"/>Hunter's Certificate → เอาไปส่งขั้น 5</p>
 </div>
 
 <div class="step">
 <div class="head"><label class="done"><input class="key" id="k7" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 7</span><img alt="" class="npc" src="./assets/img/01d6ac3e1c9e.gif"/><h3>Blacksmith Marx - For Their Goals</h3></div>
 <div class="meta"><span class="chip">Tapasco Field 2 - Rhythm of Hammer</span><span class="chip">Lv 235+</span></div>
-<p>ส่ง <b>Adventurer's Book</b></p>
-<p class="muted">รางวัล: <b>Adventurer's Book</b>, Weapon Exchange Ticket J</p>
+<p>ส่ง <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b></p>
+<p class="muted">รางวัล: <img alt="" class="it" src="./assets/img/8741d52b510b.gif"/><b>Adventurer's Book</b>, <img alt="" class="it" src="./assets/img/4ccbde810e07.gif"/>Weapon Exchange Ticket J</p>
 </div>
 
 </section>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // The Jobs page: pick a character, then see its job quests, 3rd job prep and skills per job.
 // Data comes from docs/data/jobs/<id>.json. Ticks are saved in localStorage under KEY, for every character at once.
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
 
 const ORDER = ['bunny', 'buffalo', 'sheep', 'dragon', 'fox', 'lion', 'cat', 'raccoon', 'bear']
@@ -37,6 +37,8 @@ onMounted(async () => {
   char.value = ORDER.includes(fromUrl || '') ? fromUrl! : ORDER.includes(saved) ? saved : 'bunny'
   try { localStorage.setItem(KEY + '-char', char.value) } catch {}
   await load(char.value)
+  const target = decodeURIComponent(location.hash.slice(1))
+  if (target) go(target, false)
 })
 
 function pick(id: string) {
@@ -59,13 +61,39 @@ function toggle(id: string, on: boolean) {
   ticks.value = t
   try { localStorage.setItem(KEY, JSON.stringify({ t })) } catch {}
 }
-// Sections that can be folded away (only the job quests for now); the folded state is remembered.
+// Every section can be folded; the folded state is remembered per section id and shared by all characters.
+// Searching shows folded sections again so matches are never hidden.
 const collapsed = ref<Record<string, boolean>>({})
-const foldable = (s: any) => s.kind === 'quest'
-const isFolded = (s: any) => foldable(s) && !!collapsed.value[s.kind] && !needle.value
-function fold(s: any) {
-  collapsed.value = { ...collapsed.value, [s.kind]: !collapsed.value[s.kind] }
+const isFolded = (id: string) => !!collapsed.value[id] && !needle.value
+function setFold(id: string, v: boolean) {
+  collapsed.value = { ...collapsed.value, [id]: v }
   try { localStorage.setItem(KEY + '-fold', JSON.stringify(collapsed.value)) } catch {}
+}
+
+// Jump to a section: unfold it, put it in the URL (?c=<character>#<section>) and scroll to it.
+async function go(id: string, push = true) {
+  if (collapsed.value[id]) setFold(id, false)
+  if (push) {
+    const u = new URL(location.href)
+    u.hash = id
+    history.replaceState(history.state, '', u)
+  }
+  await nextTick()
+  const el = document.getElementById(id)
+  if (!el) return
+  // keep the heading clear of the sticky nav and search bar
+  const bar = document.querySelector<HTMLElement>('.jobs .bar')
+  const cover = bar ? (parseFloat(getComputedStyle(bar).top) || 0) + bar.offsetHeight : 64
+  scrollTo({ top: el.getBoundingClientRect().top + scrollY - cover - 8 })
+}
+const copied = ref('')
+function share(id: string) {
+  go(id)
+  const url = location.href
+  navigator.clipboard?.writeText(url).then(() => {
+    copied.value = id
+    setTimeout(() => { if (copied.value === id) copied.value = '' }, 1500)
+  }).catch(() => {})
 }
 watch(hideDone, (v) => { try { localStorage.setItem(KEY + '-hide', v ? '1' : '0') } catch {} })
 
@@ -92,6 +120,7 @@ const sections = computed(() => {
   }
   return out
 })
+const heads = computed(() => [{ id: 'about', title: 'ภาพรวม' }, ...sections.value])
 const allIds = computed(() => sections.value.flatMap((s) => s.rows.map((r: any) => r.id)))
 const doneCount = computed(() => allIds.value.filter((id) => ticks.value[id]).length)
 
@@ -121,19 +150,20 @@ const secDone = (s: any) => s.rows.filter((r: any) => ticks.value[r.id]).length
         <label><input v-model="hideDone" type="checkbox" /> ซ่อนที่ทำแล้ว</label><button type="button" @click="reset">ล้างติ๊ก</button>
       </div>
 
-      <nav class="toc"><a href="#about">ภาพรวม</a><a v-for="s in sections" :key="s.id" :href="'#' + s.id">{{ s.title }}</a></nav>
+      <nav class="toc"><a v-for="s in heads" :key="s.id" :href="'#' + s.id" @click.prevent="go(s.id)">{{ s.toc || s.title }}</a></nav>
 
       <section id="about">
-        <h2>{{ data.name }} <span class="m">· {{ data.stat }} · {{ data.gender }}</span></h2>
+        <h2 class="fh"><button type="button" class="fold" :aria-expanded="!isFolded('about')" @click="setFold('about', !isFolded('about'))"><span class="chev" aria-hidden="true">{{ isFolded('about') ? '▸' : '▾' }}</span>{{ data.name }} <span class="m">· {{ data.stat }} · {{ data.gender }}</span></button><a class="link" href="#about" :title="'คัดลอกลิงก์มาหัวข้อนี้'" @click.prevent="share('about')">{{ copied === 'about' ? 'คัดลอกลิงก์แล้ว' : '#' }}</a></h2>
+        <div v-show="!isFolded('about')">
         <div class="box" v-html="html(data.about)"></div>
         <p v-if="data.note" class="sub warn">{{ data.note }}</p>
         <p class="sub">ที่มา: <a v-for="s in data.source" :key="s[1]" :href="s[1]" target="_blank" rel="noopener">{{ s[0] }}</a></p>
+        </div>
       </section>
 
       <section v-for="s in sections" :id="s.id" :key="data.id + s.id" :class="{ nomatch: needle && !s.rows.some(match) }">
-        <h2 v-if="foldable(s)"><button type="button" class="fold" :aria-expanded="!isFolded(s)" @click="fold(s)"><span class="chev" aria-hidden="true">{{ isFolded(s) ? '▸' : '▾' }}</span>{{ s.title }} <span class="cnt" :class="{ full: secDone(s) === s.rows.length && s.rows.length }">{{ secDone(s) }} / {{ s.rows.length }}</span><span class="hint">{{ isFolded(s) ? 'แสดง' : 'ซ่อน' }}</span></button></h2>
-        <h2 v-else><img v-if="s.icon" :src="img(s.icon)" alt="" class="it" />{{ s.title }} <span class="cnt" :class="{ full: secDone(s) === s.rows.length && s.rows.length }">{{ secDone(s) }} / {{ s.rows.length }}</span></h2>
-        <div v-show="!isFolded(s)">
+        <h2 class="fh"><button type="button" class="fold" :aria-expanded="!isFolded(s.id)" @click="setFold(s.id, !isFolded(s.id))"><span class="chev" aria-hidden="true">{{ isFolded(s.id) ? '▸' : '▾' }}</span><img v-if="s.icon" :src="img(s.icon)" alt="" class="it" />{{ s.title }} <span class="cnt" :class="{ full: secDone(s) === s.rows.length && s.rows.length }">{{ secDone(s) }} / {{ s.rows.length }}</span></button><a class="link" :href="'#' + s.id" title="คัดลอกลิงก์มาหัวข้อนี้" @click.prevent="share(s.id)">{{ copied === s.id ? 'คัดลอกลิงก์แล้ว' : '#' }}</a></h2>
+        <div v-show="!isFolded(s.id)">
         <p class="sub">{{ s.sub }}</p>
 
         <table v-if="s.kind === 'quest'"><thead><tr><th></th><th>เควส</th><th>ที่</th><th>ต้องทำ</th><th>ได้</th></tr></thead><tbody>
@@ -187,7 +217,8 @@ const secDone = (s: any) => s.rows.filter((r: any) => ticks.value[r.id]).length
 .pg-guide .jobs h2 button.fold { all: unset; display: inline-flex; align-items: baseline; gap: 6px; cursor: pointer; font: inherit; color: inherit }
 .pg-guide .jobs h2 button.fold:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px }
 .pg-guide .jobs h2 .chev { width: 1em; color: var(--accent) }
-.pg-guide .jobs h2 .hint { font-size: 13px; font-weight: 400; color: var(--muted) }
-.pg-guide .jobs h2 button.fold:hover .hint { color: var(--accent) }
+.pg-guide .jobs h2.fh { display: flex; align-items: baseline; gap: 10px }
+.pg-guide .jobs h2 a.link { font-size: 14px; font-weight: 400; color: var(--muted); text-decoration: none; opacity: .6 }
+.pg-guide .jobs h2:hover a.link, .pg-guide .jobs h2 a.link:focus-visible { opacity: 1; color: var(--accent) }
 .pg-guide .jobs td.nm .tag { margin-left: 6px }
 </style>

@@ -17,8 +17,6 @@ hiddenKey: "ghostblue-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Category: Ghost Blue Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Ghost_Blue_Quest.html) และหน้าเควส/มอนที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า (แก้ล่าสุดราวปี 2010–2014) และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

@@ -18,8 +18,6 @@ episode: 2
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Episode 2 Quests](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Episode_2_Quests.html) อ่านเนื้อเรื่องย่อทุกตอนได้ที่หน้า [Story Quest](./story-quest.md)
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

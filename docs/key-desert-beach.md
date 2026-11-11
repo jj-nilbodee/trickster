@@ -17,8 +17,6 @@ hiddenKey: "desert-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Sandman - Desert Sticker](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Sandman_-_Desert_Sticker.html), [Category Desert Beach Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Desert_Beach_Quest.html) และหน้าเควส/มอน/แมพที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

@@ -17,8 +17,6 @@ hiddenKey: "blackswamp-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Pastor Tau - Swamp Stickers](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Pastor_Tau_-_Swamp_Stickers.html), [Category Black Swamp Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Black_Swamp_Quest.html) และหน้าเควส/มอน/แมพที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า (แก้ล่าสุดราวปี 2011–2012) และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

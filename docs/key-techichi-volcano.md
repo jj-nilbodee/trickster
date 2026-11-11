@@ -17,8 +17,6 @@ hiddenKey: "techichi-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Grandpa Tango - Techichi Recommendation Sticker](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Grandpa_Tango_-_Techichi_Recommendation_Sticker.html), [Category Techichi Volcano Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Techichi_Volcano_Quest.html) และหน้าเควส/มอน/แมพที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

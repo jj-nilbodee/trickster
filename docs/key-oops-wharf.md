@@ -17,8 +17,6 @@ hiddenKey: "oops-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Skipper Min - Urgent Issue](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Skipper_Min_-_Urgent_Issue.html), [Category Oops Wharf Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Oops_Wharf_Quest.html) และหน้าเควส/มอน/แมพที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

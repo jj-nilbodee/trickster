@@ -17,8 +17,6 @@ hiddenKey: "caballa-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Fortune Teller - Caballa Stickers](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Fortune_Teller_-_Caballa_Stickers.html), [Category Caballa Relics Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Caballa_Relics_Quest.html) และหน้าเควส/มอน/แมพที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

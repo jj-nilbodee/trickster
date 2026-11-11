@@ -17,8 +17,6 @@ hiddenKey: "rosegarden-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Rosaline Gracia - Rose Garden Stickers](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Rosaline_Gracia_-_Rose_Garden_Stickers.html), [Rose Garden Sticker](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Rose_Garden_Sticker.html) และหน้าเควส/มอนที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า (แก้ล่าสุดราวปี 2011–2012) และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

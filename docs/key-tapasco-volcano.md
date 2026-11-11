@@ -17,8 +17,6 @@ hiddenKey: "tapasco-hidden-v1"
 
 สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Category Tapasco Volcano](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Tapasco_Volcano.html), [Category Tapasco Volcano Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Tapasco_Volcano_Quest.html) และหน้าเควส/มอน/แมพที่ลิงก์ไป
 
-<p class="muted">วิกินี้เป็นข้อมูลเก่า และตัววิกิเตือนเองว่าบางส่วนอาจไม่ตรงกับเซิร์ฟ LifeTO ปัจจุบัน</p>
-
 </header>
 
 <section>

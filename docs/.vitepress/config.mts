@@ -6,6 +6,9 @@ const guides = [
   ['อาชีพ', '/jobs'],
   ['Tower of Chaos', '/tower-of-chaos'],
   ['แมพเก็บเลเวล', '/leveling-maps'],
+  ['บอส', '/bosses'],
+  ['Guardian', '/guardian'],
+  ['สเตตัส', '/stats'],
 ]
 
 // In the order the game unlocks them.

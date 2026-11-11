@@ -32,3 +32,9 @@
 .dark .pg[data-page="jobs"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#8fd6a3; --done:#7fd19b; --warn:#f0b35a }
 .pg:is([data-page="story-quest"],[data-page^="episode-"]) { --surface:#ffffff; --fg:#231e17; --muted:#6b6152; --line:#e2d9c6; --accent:#7a5410; --ghost:#2f5f9a; --chip:#efe7d3 }
 .dark .pg:is([data-page="story-quest"],[data-page^="episode-"]) { --surface:#1e1a14; --fg:#efe7d8; --muted:#b2a68f; --line:#3a3226; --accent:#e9c27a; --ghost:#93bdf2; --chip:#2a241b }
+.pg[data-page="bosses"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#9a3412; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="bosses"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#f4a37a; --done:#7fd19b; --warn:#f0b35a }
+.pg[data-page="guardian"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#0f766e; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="guardian"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#7fd3c4; --done:#7fd19b; --warn:#f0b35a }
+.pg[data-page="stats"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#2f5d8a; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="stats"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#9cc4ef; --done:#7fd19b; --warn:#f0b35a }

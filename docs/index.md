@@ -28,6 +28,9 @@ sidebar: false
 <a class="g" href="jobs.html" style="--c:var(--g-jobs)"><span class="name">อาชีพ</span><span class="lv">9 ตัวละคร · 35 อาชีพ</span><span class="d">เควสเปลี่ยนอาชีพ 2 และ 3, สกิลทุกอาชีพ, ของฝึก Mastery รวม Bear (Paula)</span></a>
 <a class="g" href="tower-of-chaos.html" style="--c:var(--g-chaos)"><span class="name">Tower of Chaos</span><span class="lv">72 ชั้น</span><span class="d">ทางเข้า, เควสขอบัตร, วาร์ป, เลเวลมอนแต่ละช่วง</span></a>
 <a class="g" href="leveling-maps.html" style="--c:var(--g-level)"><span class="name">แมพเก็บเลเวล</span><span class="lv">253 แมพ</span><span class="d">ทุกโซนเรียงตามเลเวลมอน</span></a>
+<a class="g" href="bosses.html" style="--c:var(--g-boss)"><span class="name">บอส</span><span class="lv">10 บอส · Lv 71–730</span><span class="d">ทางเข้า ด่านทดสอบ จุดอ่อน และยูนีคที่ดรอป</span></a>
+<a class="g" href="guardian.html" style="--c:var(--g-guardian)"><span class="name">Guardian</span><span class="lv">28 ขั้นตอน · Lv 65–180</span><span class="d">Card Identification, เลี้ยงไข่ Soul Seed, ปลุก Guardian, Mind's Eye</span></a>
+<a class="g" href="stats.html" style="--c:var(--g-stats)"><span class="name">สเตตัส</span><span class="lv">12 สเตตัส</span><span class="d">แต่ละตัวมีผลกับอะไร และกราฟตัวละครทำงานยังไง</span></a>
 </div>
 
 </section>

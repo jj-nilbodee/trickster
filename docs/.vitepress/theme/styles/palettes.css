@@ -2,16 +2,10 @@
 .dark .pg[data-page="daily-quests"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#f2b07a; --done:#7fd19b; --warn:#f0b35a }
 .pg[data-page="card-girl-quests"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#7a3fa0; --done:#2f7a4a; --warn:#9a5b00 }
 .dark .pg[data-page="card-girl-quests"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#cfa3ef; --done:#7fd19b; --warn:#f0b35a }
-.pg[data-page="skill-mastery-items"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#1f6f8b; --done:#2f7a4a; --warn:#9a5b00 }
-.dark .pg[data-page="skill-mastery-items"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#8fd0e8; --done:#7fd19b; --warn:#f0b35a }
-.pg[data-page="job-advancement"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#2c6e3f; --done:#2f7a4a; --warn:#9a5b00 }
-.dark .pg[data-page="job-advancement"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#8fd6a3; --done:#7fd19b; --warn:#f0b35a }
 .pg[data-page="tower-of-chaos"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#8a2f4a; --done:#2f7a4a; --warn:#9a5b00 }
 .dark .pg[data-page="tower-of-chaos"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#f09ab4; --done:#7fd19b; --warn:#f0b35a }
 .pg[data-page="leveling-maps"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#5a4fb0; --done:#2f7a4a; --warn:#9a5b00 }
 .dark .pg[data-page="leveling-maps"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#b3abf5; --done:#7fd19b; --warn:#f0b35a }
-.pg[data-page="bear-paula"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#b03a5b; --done:#2f7a4a; --warn:#9a5b00 }
-.dark .pg[data-page="bear-paula"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#ff9db8; --done:#7fd19b; --warn:#f0b35a }
 .pg[data-page="key-desert-beach"] { --surface:#ffffff; --fg:#2a2118; --muted:#6e6252; --line:#e3d9c8; --accent:#a0561c; --ghost:#2f6f8f; --chip:#efe5d4 }
 .dark .pg[data-page="key-desert-beach"] { --surface:#211b14; --fg:#efe6d8; --muted:#b3a58f; --line:#3a3125; --accent:#f0a865; --ghost:#86c3df; --chip:#2c241a }
 .pg[data-page="key-megalopolis"] { --surface:#ffffff; --fg:#1f2418; --muted:#5f6852; --line:#d9dfcd; --accent:#5b7a1e; --ghost:#9a4a8c; --chip:#e6ecd9 }

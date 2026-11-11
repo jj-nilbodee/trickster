@@ -69,7 +69,7 @@ daily: false
 
 <h2>ชั้นและเลเวลมอน <span class="cnt"></span></h2>
 
-<p class="sub">ติ๊กเมื่อผ่านช่วงนั้นแล้ว เลเวลคือเลเวลมอนปกติในช่วงชั้น ไม่รวมมอนอัญเชิญ</p>
+<p class="sub">เลเวลคือเลเวลมอนปกติในช่วงชั้น ไม่รวมมอนอัญเชิญ</p>
 
 <table><thead><tr><th></th><th>ช่วงชั้น</th><th>ชั้นพักก่อนหน้า</th><th>เลเวลมอน</th><th>มอนในช่วงนี้</th></tr></thead><tbody>
 <tr><td class="ck"><input aria-label="ทำแล้ว" id="f1" type="checkbox"/></td><td class="nm" data-l="ช่วงชั้น"><span style="white-space:nowrap">ชั้น 2–6</span></td><td data-l="ชั้นพักก่อนหน้า">ชั้น 1 <span class="m">· ทางเข้า</span></td><td class="nw" data-l="เลเวลมอน">Lv 102–127</td><td data-l="มอนในช่วงนี้">Corrupt Scarab, Win64 Worm, Chaos Scarab, Corrupt Nephthys, Chaos Nephthys, Corrupt Thief Mole, Chaos Thief Mole, Corrupt Chocho …</td></tr>
@@ -96,7 +96,7 @@ daily: false
 
 </section>
 
-<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Tower_of_Chaos.html" rel="noopener" target="_blank">Category: Tower of Chaos</a> และ <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tower_of_Chaos_Entrance_(1st_Floor).html" rel="noopener" target="_blank">Tower of Chaos Entrance</a> ติ๊กเก็บไว้ในเบราว์เซอร์ที่เปิดหน้านี้เท่านั้น</footer>
+<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Tower_of_Chaos.html" rel="noopener" target="_blank">Category: Tower of Chaos</a> และ <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Tower_of_Chaos_Entrance_(1st_Floor).html" rel="noopener" target="_blank">Tower of Chaos Entrance</a></footer>
 
 </div>
 

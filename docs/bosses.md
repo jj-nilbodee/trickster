@@ -31,7 +31,7 @@ daily: false
 
 <h2>บอสทั้งหมด <span class="cnt"></span></h2>
 
-<p class="sub">ติ๊กเมื่อล่าแล้ว "จำกัดเลเวล" คือเลเวลตัวละครที่เข้าด่านได้ ส่วน "เกิดใหม่" นับจากที่บอสตัวก่อนตาย</p>
+<p class="sub">"จำกัดเลเวล" คือเลเวลตัวละครที่เข้าด่านได้ ส่วน "เกิดใหม่" นับจากที่บอสตัวก่อนตาย</p>
 
 <table><thead><tr><th></th><th>บอส</th><th>ทางเข้า</th><th>จำกัดเลเวล · เกิดใหม่</th><th>จุดอ่อน / ต้านทาน</th><th>ยูนีคที่ดรอป</th></tr></thead><tbody>
 <tr><td class="ck"><input aria-label="ล่าแล้ว" id="b0" type="checkbox"/></td><td class="nm" data-l="บอส"><img alt="" class="sp" src="./assets/img/22e6392c42d2.gif"/>Tutankhamen <span class="m">Lv 71 · Magic · Desert Beach</span></td><td data-l="ทางเข้า">ให้ <b>Apron</b> กับ Rosemary ที่ Pyramid Dungeon 5 แล้วโชว์ <b>Subject's Earrings + Subject's Mask</b> (ไม่หาย) กับ Bastet ที่ Pyramid Dungeon 6 - Hall of the Queen</td><td data-l="จำกัดเลเวล · เกิดใหม่">Lv 1–90 · 20 นาที</td><td data-l="จุดอ่อน / ต้านทาน">แพ้ กายภาพ, ปืน · ต้าน เวท, ลม, แสง</td><td data-l="ยูนีค">Pharaoh Hat, Golden Sword, Golden Lion Shield <span class="m">(Lv 35)</span></td></tr>
@@ -173,7 +173,7 @@ daily: false
 
 </section>
 
-<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Boss_Monsters.html" rel="noopener" target="_blank">Category: Boss Monsters</a> และ <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Mad_Ray.html" rel="noopener" target="_blank">Mad Ray</a> เทียบกับบล็อก <a href="http://guwnteen.blogspot.com/2011/05/trickster_02.html" rel="noopener" target="_blank">guwnteen: บอสทุกตัวในเกม</a> ติ๊กเก็บไว้ในเบราว์เซอร์ที่เปิดหน้านี้เท่านั้น</footer>
+<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Boss_Monsters.html" rel="noopener" target="_blank">Category: Boss Monsters</a> และ <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Mad_Ray.html" rel="noopener" target="_blank">Mad Ray</a> เทียบกับบล็อก <a href="http://guwnteen.blogspot.com/2011/05/trickster_02.html" rel="noopener" target="_blank">guwnteen: บอสทุกตัวในเกม</a></footer>
 
 </div>
 

@@ -31,7 +31,7 @@ episode: 4
 <ul>
 <li>เริ่มที่ <b>Coward Craven</b> (Underground Dev Room - Underground Passage 4) ต้องเลเวล 150+ และจบ Episode 3 แล้ว</li>
 <li>เควสต่อกันเป็นสาย ทำเรียงตามลำดับในหน้านี้ ส่งเควสหนึ่งแล้วเควสถัดไปจะเปิดให้รับ</li>
-<li>ติ๊ก "ทำแล้ว" เมื่อส่งเควสแล้ว ระบบจำการติ๊กไว้ในเบราว์เซอร์นี้ กดชื่อบทเพื่อพับหรือกาง</li>
+<li>กดชื่อบทเพื่อพับหรือกาง</li>
 </ul>
 
 <nav class="toc"><a href="#ch-1">บท 1 · Company Invitation</a><a href="#ch-2">บท 2 · Development Diary</a><a href="#ch-3">บท 3 · The Ghost of Dev Room</a><a href="#ch-bonus">โบนัส</a></nav>

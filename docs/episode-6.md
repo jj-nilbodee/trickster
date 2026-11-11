@@ -31,7 +31,7 @@ episode: 6
 <ul>
 <li>เริ่มที่ <b>Don Cavalier</b> (The Sarcophagus) ต้องเลเวล 200+ และจบ Episode 5 แล้ว</li>
 <li>เควสต่อกันเป็นสาย ทำเรียงตามลำดับในหน้านี้ ส่งเควสหนึ่งแล้วเควสถัดไปจะเปิดให้รับ</li>
-<li>ติ๊ก "ทำแล้ว" เมื่อส่งเควสแล้ว ระบบจำการติ๊กไว้ในเบราว์เซอร์นี้ กดชื่อบทเพื่อพับหรือกาง</li>
+<li>กดชื่อบทเพื่อพับหรือกาง</li>
 </ul>
 
 <nav class="toc"><a href="#ch-1">บท 1 · Alteo Doomsday</a><a href="#ch-2">บท 2 · Nefertiti and Enkicladus</a><a href="#ch-3">บท 3 · Rosaline and Don Danihen</a><a href="#ch-4">บท 4 · Pastor Tau and Chagan</a><a href="#ch-bonus">โบนัส</a></nav>

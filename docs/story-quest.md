@@ -15,7 +15,7 @@ outline: false
 
 <p class="lead">เควสเนื้อเรื่องของ Trickster แบ่งเป็น 7 Episode รวม 223 เควส ทำต่อกันเป็นสายตั้งแต่ลงทะเบียนที่ Coral Beach จนถึงตอนจบที่ Alteo</p>
 
-สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Story](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Story.html) และ [Category Episode Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Episode_Quest.html) ความคืบหน้าในหน้านี้ดึงมาจากที่ติ๊กไว้ในหน้า Episode แต่ละหน้า
+สรุปจากวิกิ ggFTW (ฉบับ mirror ของ LifeTO) หน้า [Story](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Story.html) และ [Category Episode Quest](https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Episode_Quest.html)
 
 </header>
 

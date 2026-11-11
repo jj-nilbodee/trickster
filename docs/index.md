@@ -12,7 +12,7 @@ sidebar: false
 
 # คู่มือ Trickster ✦
 
-<p>เควส เช็กลิสต์ และของที่ต้องหา สรุปจากวิกิ ggFTW ติ๊กเก็บไว้ในเครื่องได้ทุกหน้า</p>
+<p>เควส เช็กลิสต์ และของที่ต้องหา สรุปจากวิกิ ggFTW</p>
 
 <div class="parade" aria-hidden="true"><img alt="" src="./assets/img/c069c79e94f1.gif"/><img alt="" src="./assets/img/5bf894da6010.gif"/><img alt="" src="./assets/img/98f91c6bc845.gif"/><img alt="" src="./assets/img/3f62f467dd99.gif"/><img alt="" src="./assets/img/5e6dcac9fe0a.gif"/><img alt="" src="./assets/img/cafacf3fb4b4.gif"/><img alt="" src="./assets/img/8644907cd882.gif"/><img alt="" src="./assets/img/dc39bcb1d908.gif"/><img alt="" src="./assets/img/c5ae3bdf457f.gif"/><img alt="" src="./assets/img/a1619cb9bda3.gif"/></div>
 
@@ -25,7 +25,7 @@ sidebar: false
 <h2 id="guides-h"><img alt="" src="./assets/img/f7112159994d.gif"/>คู่มือ</h2>
 
 <div class="grid">
-<a class="g" href="daily-quests.html" style="--c:var(--g-daily)"><img alt="" class="pic" src="./assets/img/b729caa79c35.gif"/><span class="tx"><span class="name">เควสรายวัน</span><span class="lv">80 เควส · ติ๊กรีเซ็ตทุกวัน</span></span><span class="d">เดลี่ประจำเมือง, Julio, Shadow World, แผนที่สมบัติ</span></a>
+<a class="g" href="daily-quests.html" style="--c:var(--g-daily)"><img alt="" class="pic" src="./assets/img/b729caa79c35.gif"/><span class="tx"><span class="name">เควสรายวัน</span><span class="lv">80 เควส · รีเซ็ตทุกวัน</span></span><span class="d">เดลี่ประจำเมือง, Julio, Shadow World, แผนที่สมบัติ</span></a>
 <a class="g" href="card-girl-quests.html" style="--c:var(--g-cards)"><img alt="" class="pic" src="./assets/img/4adcf3a2f2a2.gif"/><span class="tx"><span class="name">เควสการ์ด</span><span class="lv">53 เควส · 11 โซน</span></span><span class="d">Card Girl พร้อมเฉลยการ์ดและมอนที่ดรอป</span></a>
 <a class="g" href="jobs.html" style="--c:var(--g-jobs)"><img alt="" class="pic" src="./assets/img/5bf894da6010.gif"/><span class="tx"><span class="name">อาชีพ</span><span class="lv">9 ตัวละคร · 35 อาชีพ</span></span><span class="d">เควสเปลี่ยนอาชีพ 2 และ 3, สกิลทุกอาชีพ, ของฝึก Mastery รวม Bear (Paula)</span></a>
 <a class="g" href="tower-of-chaos.html" style="--c:var(--g-chaos)"><img alt="" class="pic" src="./assets/img/079962c93d7a.gif"/><span class="tx"><span class="name">Tower of Chaos</span><span class="lv">72 ชั้น</span></span><span class="d">ทางเข้า, เควสขอบัตร, วาร์ป, เลเวลมอนแต่ละช่วง</span></a>

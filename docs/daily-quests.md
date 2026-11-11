@@ -15,7 +15,7 @@ daily: true
 
 # เควสรายวัน (Daily)
 
-<p class="lead">รวมเควสที่ทำได้วันละครั้ง แยกเป็นกลุ่ม ติ๊กในหน้านี้จะล้างเองเมื่อขึ้นวันใหม่ ใช้เป็นเช็กลิสต์ประจำวันได้</p>
+<p class="lead">รวมเควสที่ทำได้วันละครั้ง แยกเป็นกลุ่ม</p>
 
 <ul class="notes"><li>เลือกทำเฉพาะกลุ่มที่เลเวลถึง ใช้ช่องค้นหาพิมพ์ชื่อโซนเพื่อดูเฉพาะเควสในโซนนั้น</li><li>วิกิบันทึกของที่ขอไว้ซีซันเดียว ในเกมอาจขอของอีกอย่าง</li></ul>
 
@@ -25,7 +25,7 @@ daily: true
 <input id="q" placeholder="ค้นโซน NPC หรือไอเทม" type="search"/>
 <span class="prog" id="prog"><span class="track"><span class="fill"></span></span><span class="n"></span></span>
 <label><input id="hidedone" type="checkbox"/> ซ่อนที่ทำแล้ว</label><button id="reset" type="button">ล้างติ๊ก</button>
-<span class="daily">ติ๊กจะรีเซ็ตเองทุกวัน (ตามเวลาเครื่อง)</span>
+<span class="daily">รีเซ็ตทุกวัน</span>
 </div>
 
 <nav class="toc"><a href="#town">ประจำเมือง</a><a href="#julio">Julio / Yuri</a><a href="#shadow">Shadow World</a><a href="#maps">แผนที่สมบัติ</a><a href="#chaos">Requiem</a></nav>
@@ -165,7 +165,7 @@ daily: true
 
 </section>
 
-<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Daily_Quest.html" rel="noopener" target="_blank">Category: Daily Quest</a> และ <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shadow_World_Quests_Guide.html" rel="noopener" target="_blank">Shadow World Quests Guide</a> ติ๊กเก็บไว้ในเบราว์เซอร์ที่เปิดหน้านี้เท่านั้น</footer>
+<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Daily_Quest.html" rel="noopener" target="_blank">Category: Daily Quest</a> และ <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Shadow_World_Quests_Guide.html" rel="noopener" target="_blank">Shadow World Quests Guide</a></footer>
 
 </div>
 

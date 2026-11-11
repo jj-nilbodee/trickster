@@ -203,7 +203,7 @@ daily: false
 
 </section>
 
-<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Card_Quest.html" rel="noopener" target="_blank">Category: Card Quest</a> ติ๊กเก็บไว้ในเบราว์เซอร์ที่เปิดหน้านี้เท่านั้น</footer>
+<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO <a href="https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Category_Card_Quest.html" rel="noopener" target="_blank">Category: Card Quest</a></footer>
 
 </div>
 

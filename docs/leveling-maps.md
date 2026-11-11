@@ -344,7 +344,7 @@ daily: false
 
 </section>
 
-<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO หน้า Category ของแต่ละโซน ติ๊กเก็บไว้ในเบราว์เซอร์ที่เปิดหน้านี้เท่านั้น</footer>
+<footer>สรุปจากวิกิ ggFTW ฉบับ mirror ของ LifeTO หน้า Category ของแต่ละโซน</footer>
 
 </div>
 

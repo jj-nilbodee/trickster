@@ -31,7 +31,7 @@ episode: 1
 <ul>
 <li>เริ่มที่ <b>Monkey T</b> (Gate of Caballa Relics) ต้องเลเวล 45+ และจบ Episode 0 แล้ว</li>
 <li>เควสต่อกันเป็นสาย ทำเรียงตามลำดับในหน้านี้ ส่งเควสหนึ่งแล้วเควสถัดไปจะเปิดให้รับ</li>
-<li>ติ๊ก "ทำแล้ว" เมื่อส่งเควสแล้ว ระบบจำการติ๊กไว้ในเบราว์เซอร์นี้ กดชื่อบทเพื่อพับหรือกาง</li>
+<li>กดชื่อบทเพื่อพับหรือกาง</li>
 </ul>
 
 <nav class="toc"><a href="#ch-1">บท 1 · Nefertiti's Necklace</a><a href="#ch-2">บท 2 · Unknown Ancient Box</a><a href="#ch-3">บท 3 · Harkon Searchers</a></nav>

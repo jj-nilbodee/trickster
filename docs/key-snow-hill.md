@@ -45,7 +45,7 @@ hiddenKey: "snowhill-hidden-v1"
 
 <div class="bar"><div id="fill"></div></div>
 
-<p class="muted">ติ๊กเควสในตารางเมื่อได้สติ๊กเกอร์แล้ว (ส่วนใหญ่คือทำครบ 5 รอบ) และติ๊กขั้นเควสกุญแจเมื่อส่งแล้ว ระบบจำการติ๊กไว้ในเบราว์เซอร์นี้ <button id="reset" type="button">ล้างทั้งหมด</button></p>
+<p class="muted"><button id="reset" type="button">ล้างทั้งหมด</button></p>
 
 </section>
 
@@ -117,7 +117,6 @@ hiddenKey: "snowhill-hidden-v1"
 <div class="head"><label class="done"><input class="key" id="k5" type="checkbox"/> ทำแล้ว</label><span class="num">ขั้น 5</span><h3>ผสม Fixed Remote</h3></div>
 <div class="meta"><span class="chip">Gate of Snow Hill</span><span class="chip">Inventor Gale</span></div>
 <p>ผสม <b>Satisfaction Guarantee + Broken Remote + Remote Part A + Remote Part B + Remote Part C</b> (ได้คืนจากขั้น 2) กับ <b>Inventor Gale</b> ได้ <b>Fixed Remote</b></p>
-<p class="muted">ไม่ใช่เควส แต่ใส่ไว้ให้ติ๊กตามลำดับ</p>
 </div>
 
 <div class="step">
@@ -193,7 +192,6 @@ hiddenKey: "snowhill-hidden-v1"
 
 ## จุดขุดและมอน เรียงตามแมพ
 
-ติ๊กช่องซ้ายเมื่อหาของแถวนั้นครบแล้ว เควสที่ของในตารางนี้ครบทุกแถวจะขึ้นป้าย "ของครบ ส่งเควสได้" ในตารางเควสข้างบน เมื่อติ๊กเควสว่าทำเสร็จ จำนวนในตารางนี้จะหักของเควสนั้นออกเอง และถ้าไม่เหลือเควสที่ต้องใช้ แถวจะขึ้นว่าทำเควสแล้ว เควสที่ซ่อนไว้จะไม่นับในจำนวนรวม
 
 <div class="tbl"><table>
 <thead><tr><th>ครบแล้ว</th><th>แมพ</th><th>ขุด / มอน</th><th>ไอเทม</th><th>จำนวนรวม</th><th>ใช้ในเควส</th></tr></thead>

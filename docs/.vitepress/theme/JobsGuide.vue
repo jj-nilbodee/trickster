@@ -116,7 +116,7 @@ const sections = computed(() => {
   ]
   for (const t of d.tiers) {
     out.push({ id: 'sk' + t.key, title: t.title, kind: 'skill', rows: t.skills, icon: t.icon,
-      sub: (t.sub ? t.sub + ' · ' : '') + 'ติ๊กเมื่อสกิลถึง Mastery แล้ว' })
+      sub: t.sub || '' })
   }
   return out
 })

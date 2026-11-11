@@ -1,0 +1,19 @@
+/* Fit the guide pages into the VitePress layout. */
+[hidden]:not([hidden=until-found i]) { display: none !important }
+.pg { --bg: var(--vp-c-bg); background: transparent; }
+.pg img { max-width: 100% }
+.pg .header-anchor { display: none }
+
+/* Guide tables are wide: use the full width next to the sidebar. */
+.VPDoc .container, .VPDoc .content, .VPDoc .content-container { max-width: none !important }
+.VPDoc { padding-top: 8px !important }
+.pg:not(.pg-hub) .wrap { max-width: 1100px; padding-inline: 0; padding-top: 8px }
+
+/* Sticky bars sit below the VitePress top bar instead of under it. */
+.pg-guide .bar, .pg-key .counter { top: var(--vp-nav-height) }
+@media (max-width: 959px) {
+  .pg-guide .bar, .pg-key .counter { top: 49px }
+}
+
+/* VitePress makes every img a block; the pages expect inline icons next to text. */
+.pg img { display: inline; vertical-align: middle }

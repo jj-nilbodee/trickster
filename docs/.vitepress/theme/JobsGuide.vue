@@ -30,6 +30,7 @@ async function load(id: string) {
 onMounted(async () => {
   try { ticks.value = JSON.parse(localStorage.getItem(KEY) || '{}').t || {} } catch {}
   try { hideDone.value = localStorage.getItem(KEY + '-hide') === '1' } catch {}
+  try { collapsed.value = JSON.parse(localStorage.getItem(KEY + '-fold') || '{}') } catch {}
   const fromUrl = new URLSearchParams(location.search).get('c')
   let saved = ''
   try { saved = localStorage.getItem(KEY + '-char') || '' } catch {}
@@ -57,6 +58,14 @@ function toggle(id: string, on: boolean) {
   else delete t[id]
   ticks.value = t
   try { localStorage.setItem(KEY, JSON.stringify({ t })) } catch {}
+}
+// Sections that can be folded away (only the job quests for now); the folded state is remembered.
+const collapsed = ref<Record<string, boolean>>({})
+const foldable = (s: any) => s.kind === 'quest'
+const isFolded = (s: any) => foldable(s) && !!collapsed.value[s.kind] && !needle.value
+function fold(s: any) {
+  collapsed.value = { ...collapsed.value, [s.kind]: !collapsed.value[s.kind] }
+  try { localStorage.setItem(KEY + '-fold', JSON.stringify(collapsed.value)) } catch {}
 }
 watch(hideDone, (v) => { try { localStorage.setItem(KEY + '-hide', v ? '1' : '0') } catch {} })
 
@@ -122,7 +131,9 @@ const secDone = (s: any) => s.rows.filter((r: any) => ticks.value[r.id]).length
       </section>
 
       <section v-for="s in sections" :id="s.id" :key="data.id + s.id" :class="{ nomatch: needle && !s.rows.some(match) }">
-        <h2><img v-if="s.icon" :src="img(s.icon)" alt="" class="it" />{{ s.title }} <span class="cnt" :class="{ full: secDone(s) === s.rows.length && s.rows.length }">{{ secDone(s) }} / {{ s.rows.length }}</span></h2>
+        <h2 v-if="foldable(s)"><button type="button" class="fold" :aria-expanded="!isFolded(s)" @click="fold(s)"><span class="chev" aria-hidden="true">{{ isFolded(s) ? '▸' : '▾' }}</span>{{ s.title }} <span class="cnt" :class="{ full: secDone(s) === s.rows.length && s.rows.length }">{{ secDone(s) }} / {{ s.rows.length }}</span><span class="hint">{{ isFolded(s) ? 'แสดง' : 'ซ่อน' }}</span></button></h2>
+        <h2 v-else><img v-if="s.icon" :src="img(s.icon)" alt="" class="it" />{{ s.title }} <span class="cnt" :class="{ full: secDone(s) === s.rows.length && s.rows.length }">{{ secDone(s) }} / {{ s.rows.length }}</span></h2>
+        <div v-show="!isFolded(s)">
         <p class="sub">{{ s.sub }}</p>
 
         <table v-if="s.kind === 'quest'"><thead><tr><th></th><th>เควส</th><th>ที่</th><th>ต้องทำ</th><th>ได้</th></tr></thead><tbody>
@@ -156,6 +167,7 @@ const secDone = (s: any) => s.rows.filter((r: any) => ticks.value[r.id]).length
             <td data-l="ได้จาก">{{ r.source }}</td>
           </tr>
         </tbody></table>
+        </div>
       </section>
     </template>
   </div>
@@ -172,5 +184,10 @@ const secDone = (s: any) => s.rows.filter((r: any) => ticks.value[r.id]).length
 .pg-guide .jobs h2 img.it { margin-right: 6px }
 .pg-guide .jobs .sub.warn { color: var(--warn) }
 .pg-guide .jobs .sub a + a { margin-left: 8px }
+.pg-guide .jobs h2 button.fold { all: unset; display: inline-flex; align-items: baseline; gap: 6px; cursor: pointer; font: inherit; color: inherit }
+.pg-guide .jobs h2 button.fold:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px }
+.pg-guide .jobs h2 .chev { width: 1em; color: var(--accent) }
+.pg-guide .jobs h2 .hint { font-size: 13px; font-weight: 400; color: var(--muted) }
+.pg-guide .jobs h2 button.fold:hover .hint { color: var(--accent) }
 .pg-guide .jobs td.nm .tag { margin-left: 6px }
 </style>

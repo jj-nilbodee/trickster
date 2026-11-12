@@ -7,6 +7,7 @@ import { useData } from 'vitepress'
 import initGuide from './behaviors-guide.js'
 import initKeyRows from './behaviors-key.js'
 import initFold from './behaviors-fold.js'
+import initFilter from './behaviors-filter.js'
 import initEpisode, { initStory } from './behaviors-episode.js'
 
 const zones = import.meta.glob<{ default: () => void }>('./zones/*.js', { eager: true })
@@ -25,6 +26,7 @@ onMounted(() => {
   if (fm.kind === 'story') initStory()
   const page = document.querySelector<HTMLElement>('.pg[data-page]')?.dataset.page
   if (page && ['guide', 'key', 'episode', 'story'].includes(fm.kind)) initFold(page, controller.signal)
+  if (page) initFilter(page, controller.signal)
 })
 onBeforeUnmount(() => controller?.abort())
 </script>

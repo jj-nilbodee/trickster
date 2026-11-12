@@ -24,3 +24,11 @@
 .pg section.foldable > h2 .fold-link { margin-left: 10px; font-size: 14px; font-weight: 400; color: var(--muted); text-decoration: none; opacity: .6 }
 .pg section.foldable > h2:hover .fold-link, .pg section.foldable > h2 .fold-link:focus-visible { opacity: 1; color: var(--accent) }
 .pg .wrap:not(.searching) section.folded > :not(h2) { display: none !important }
+
+/* Quest-type filter on town pages (behaviors-filter.js). */
+.pg .qfilter { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 }
+.pg .qfilter .lb { font-size: .85rem; color: var(--muted); margin-right: 2px }
+.pg .qfilter button { font: inherit; font-size: .85rem; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer }
+.pg .qfilter button:hover { border-color: var(--accent) }
+.pg .qfilter button.on { background: var(--accent); border-color: var(--accent); color: var(--surface) }
+.pg section.qf-hide { display: none !important }

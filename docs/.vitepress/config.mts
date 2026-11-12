@@ -25,6 +25,7 @@ const keyQuests = [
   ['9 · Snow Hill', '/key-snow-hill'],
   ['10 · Techichi Volcano', '/key-techichi-volcano'],
   ['11 · Tapasco Volcano', '/key-tapasco-volcano'],
+  ['Abyss', '/town-abyss'],
 ]
 
 // Main story: an overview page, then one page per episode.
@@ -63,7 +64,7 @@ export default defineConfig({
     nav: [{ text: 'หน้ารวม', link: '/' }],
     sidebar: [
       { text: 'คู่มือ', items: items(guides) },
-      { text: 'เควสกุญแจ', items: items(keyQuests) },
+      { text: 'เควสตามเมือง', items: items(keyQuests) },
       { text: 'เควสเนื้อเรื่อง (Story / Episode)', items: items(story) },
     ],
     search: { provider: 'local' },

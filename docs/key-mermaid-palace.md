@@ -19,6 +19,8 @@ hiddenKey: "mermaid-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="story">เนื้อเรื่อง</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -46,7 +48,7 @@ hiddenKey: "mermaid-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 4 ขั้น
 
@@ -82,7 +84,7 @@ hiddenKey: "mermaid-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Palace Proof Sticker
 
@@ -121,7 +123,7 @@ hiddenKey: "mermaid-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -156,7 +158,28 @@ hiddenKey: "mermaid-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="story">
+
+## เควสเนื้อเรื่องในโซน
+
+<p class="muted">เควสจากหน้า Episode ที่อยู่ในโซนนี้ เรียงตามลำดับเนื้อเรื่อง กดเลขตอนเพื่อไปอ่านต่อในหน้า Episode</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>ตอน</th><th>ที่อยู่</th><th>ต้องทำ</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td><img alt="" class="it" src="./assets/img/b232a6ab886b.gif"/>Explorer Reina - Reina's Preparation<br/><span class="tag">Lv 52+</span></td><td class="n"><a href="./episode-1#q-e1-19">Episode 1 · 3.2</a></td><td>Path to Mermaid Palace 1</td><td><img alt="" class="it" src="./assets/img/2ac8f80228e7.gif"/>Power Plan Battery × 5<br/><span class="m">Power Plan Battery ดรอปจาก Pirate Boxer B (Lv 86)</span></td><td>500 Galder Coupon × 5 · EXP 363,639 / TM 429,317</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/b232a6ab886b.gif"/>Explorer Reina - Reina's Exploration<br/><span class="tag">Lv 52+</span></td><td class="n"><a href="./episode-1#q-e1-20">Episode 1 · 3.3</a></td><td>Path to Mermaid Palace 1</td><td><img alt="" class="it" src="./assets/img/3e589e808a63.gif"/>Harkon Ornament × 3<br/><span class="m">Harkon Ornament ได้จากการเปิด <img alt="" class="it" src="./assets/img/07ccd4d2c072.gif"/>Harkon Heirloom หรือขุดที่ Techichi Volcano Fields</span></td><td>Special Polisher · EXP 363,639 / TM 429,317</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/3f62f467dd99.gif"/>Fairy Nono - Fairy in a Harkon<br/><span class="tag">Lv 52+</span></td><td class="n"><a href="./episode-1#q-e1-21">Episode 1 · 3.4</a></td><td>Path to Mermaid Palace 2</td><td><img alt="" class="it" src="./assets/img/e3f190903ed3.gif"/>Silk Handkerchief, <img alt="" class="it" src="./assets/img/ac0ea2b1c437.gif"/>Special Polisher, <img alt="" class="it" src="./assets/img/0692e666edc9.gif"/>Volcano Water<br/><span class="m">Silk Handkerchief และ Volcano Water ได้จากเควส Tango's Love · Special Polisher ได้จากเควส Reina's Exploration</span></td><td>Nono's Note · EXP 363,639 / TM 429,317</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/3f62f467dd99.gif"/>Fairy Nono - Fairy's Favor<br/><span class="tag">Lv 52+</span><br/><span class="tag">ผ่านเควส Fairy in a Harkon and have Volcano Water แล้ว · Silk Handkerchief · Special Polisher in inventory</span></td><td class="n"><a href="./episode-1#q-e1-22">Episode 1 · 3.5</a></td><td>Path to Mermaid Palace 2</td><td><img alt="" class="it" src="./assets/img/9b5bb3c1775e.gif"/>Transparent Medicine, <img alt="" class="it" src="./assets/img/b8a212ed4af9.gif"/>Nono's Note<br/><span class="m">Transparent Medicine ผสม (Compound) จาก 1x <img alt="" class="it" src="./assets/img/c881331206bd.gif"/>Harkon Shard + 2x <img alt="" class="it" src="./assets/img/d3c55adbc7b6.gif"/>Super Bean Shell + 1x <img alt="" class="it" src="./assets/img/55b1db81bbe8.gif"/>Fairy's Drink กับ Compounder Paul ที่ Oops Wharf · Nono's Note ได้จากเควส Fairy in a Harkon · Harkon Shard ได้จากการเปิด Harkon Heirloom · Super Bean Shell ดรอปจาก Super Golden Mole (Lv 80) · Fairy's Drink ขุดได้ที่ Path to Mermaid Palace 1 / 2</span></td><td>Nono Ring · EXP 1,818,198 / TM 2,146,586</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/c99737243012.gif"/>Kahlihara - Kahlihara's Request<br/><span class="tag">Lv 80+</span></td><td class="n"><a href="./episode-2#q-e2-1">Episode 2 · 1.1</a></td><td>Gate of Mermaid Dungeon</td><td><img alt="" class="it" src="./assets/img/4683c3039eb3.gif"/>Tanya's Sword<br/><span class="m">Tanya's Sword ดรอปจาก Tanya (Lv 150)</span></td><td>Sword of Vengeance · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/c99737243012.gif"/>Kahlihara - The Sword Deal<br/><span class="tag">Lv 80+</span></td><td class="n"><a href="./episode-2#q-e2-2">Episode 2 · 1.2</a></td><td>Gate of Mermaid Dungeon</td><td><img alt="" class="it" src="./assets/img/f45aa14e1fac.gif"/>Tear Soaked Check<br/><span class="m">Tear Soaked Check ได้จากเควส Don Giuvanni - Man's Tears</span></td><td>Voucher of Promise, Kahlihara Card · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/aed20c0551d5.gif"/>Blacksmith Marx - Marx's Sheath<br/><span class="tag">Lv 80+</span><br/><span class="tag">รับเควส Don Giuvanni - Knife's New Owner ค้างไว้</span></td><td class="n"><a href="./episode-2#q-e2-6">Episode 2 · 1.6</a></td><td>Gate of Mermaid Dungeon</td><td><img alt="" class="it" src="./assets/img/a913e5f80fee.gif"/>Black <img alt="" class="it" src="./assets/img/b5c5efe7f7c5.gif"/>Pearl × 3, Pearl × 3, <img alt="" class="it" src="./assets/img/98188617aa79.gif"/>Sturdy Scale × 3<br/><span class="m">Black Pearl, Pearl ขุดได้ที่ Mermaid Palace Fields และ Mermaid Dungeon · Sturdy Scale ดรอปจาก Merman Aqu (Lv 86)</span></td><td>Scabbard, Blacksmith Marx Card · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/c99737243012.gif"/>Kahlihara - Witch's Deadly Poison<br/><span class="tag">Lv 80+</span></td><td class="n"><a href="./episode-2#q-e2-19">Episode 2 · 3.3</a></td><td>Gate of Mermaid Dungeon</td><td><img alt="" class="it" src="./assets/img/477e748ba628.gif"/>Voucher of Promise, <img alt="" class="it" src="./assets/img/4976fa977df8.gif"/>Fabilsag's Stinger × 5, <img alt="" class="it" src="./assets/img/1418120d7748.gif"/>Venomous Canine × 5<br/><span class="m">Voucher of Promise ได้จากเควส The Sword Deal · Fabilsag's Stinger ดรอปจาก Fabilsag G (Lv 110) · Venomous Canine ดรอปจาก Uraeus (Lv 34)</span></td><td>Witch's Deadly Poison, Kahlihara Card · EXP 506,800 / TM 967,950</td></tr>
+</tbody></table></div>
+
+</section>
+
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

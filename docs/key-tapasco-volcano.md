@@ -19,6 +19,8 @@ hiddenKey: "tapasco-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -46,7 +48,7 @@ hiddenKey: "tapasco-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 7 ขั้น
 
@@ -104,7 +106,7 @@ hiddenKey: "tapasco-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Tapasco Sticker
 
@@ -136,7 +138,7 @@ hiddenKey: "tapasco-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -170,7 +172,7 @@ hiddenKey: "tapasco-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

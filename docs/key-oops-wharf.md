@@ -19,6 +19,8 @@ hiddenKey: "oops-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="story">เนื้อเรื่อง</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -47,7 +49,7 @@ hiddenKey: "oops-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## ก่อนเริ่ม: เควสของ Keeper Julio
 
@@ -69,7 +71,7 @@ hiddenKey: "oops-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 5 ขั้น
 
@@ -110,7 +112,7 @@ hiddenKey: "oops-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Oops Sticker
 
@@ -150,7 +152,7 @@ hiddenKey: "oops-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -191,7 +193,29 @@ hiddenKey: "oops-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="story">
+
+## เควสเนื้อเรื่องในโซน
+
+<p class="muted">เควสจากหน้า Episode ที่อยู่ในโซนนี้ เรียงตามลำดับเนื้อเรื่อง กดเลขตอนเพื่อไปอ่านต่อในหน้า Episode</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>ตอน</th><th>ที่อยู่</th><th>ต้องทำ</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td><img alt="" class="it" src="./assets/img/f88ceab84085.gif"/>Skipper Min - Skipper Min's Sightings<br/><span class="tag">Lv 50+</span></td><td class="n"><a href="./episode-1#q-e1-13">Episode 1 · 2.2</a></td><td>Gate of Oops Wharf</td><td><img alt="" class="it" src="./assets/img/3e60f40847b4.gif"/>Thick Rope × 3, <img alt="" class="it" src="./assets/img/1bdaf9d9e511.gif"/>Piece of Lumber × 5<br/><span class="m">Thick Rope ขุดได้ที่ Oops Wharf Fields · Piece of Lumber ดรอปจาก Black Foe (Lv 79) และขุดได้ที่ Oops Wharf Fields</span></td><td>Weird Piece 1 · EXP 331,296 / TM 376,990</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/e15044be52e9.gif"/>Shaman Girl Jia - Jia's Deja Vu<br/><span class="tag">Lv 50+</span></td><td class="n"><a href="./episode-1#q-e1-14">Episode 1 · 2.3</a></td><td>Wharf Field 4 - Chrono Wharf</td><td><img alt="" class="it" src="./assets/img/02028594da37.gif"/>Bell Cluster × 2<br/><span class="m">Bell Cluster ดรอปจาก Crow (Lv 88)</span></td><td>Weird Piece 2 · EXP 331,296 / TM 376,990</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/c054af0b95b4.gif"/>Vagabond Eloy - Eloy's Tale<br/><span class="tag">Lv 50+</span></td><td class="n"><a href="./episode-1#q-e1-15">Episode 1 · 2.4</a></td><td>Oops Wharf</td><td><img alt="" class="it" src="./assets/img/799b2dc46e73.gif"/>Baby Powder × 3<br/><span class="m">Baby Powder ดรอปจาก Quiem (Lv 75)</span></td><td>Weird Piece 3 · EXP 331,296 / TM 376,990</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/98f91c6bc845.gif"/>Tango - Tango's Love<br/><span class="tag">Lv 52+</span><br/><span class="tag">ผ่านเควส Box's Identity แล้ว</span></td><td class="n"><a href="./episode-1#q-e1-18">Episode 1 · 3.1</a></td><td>Gate of Oops Wharf</td><td><img alt="" class="it" src="./assets/img/eef515b6a98d.gif"/>Harkon Necklace<br/><span class="m">Harkon Necklace ได้จากการเปิด Harkon Heirloom</span></td><td>Silk Handkerchief, Volcano Water × 3 · EXP 363,639 / TM 429,317</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/3779b38bc457.gif"/>Rosaline Gracia - Rosaline's Worry<br/><span class="tag">Lv 80+</span><br/><span class="tag">รับเควส Kahlihara - The Sword Deal ค้างไว้</span></td><td class="n"><a href="./episode-2#q-e2-3">Episode 2 · 1.3</a></td><td>Oops Wharf</td><td><img alt="" class="it" src="./assets/img/4683c3039eb3.gif"/>Sword of Vengeance<br/><span class="m">Sword of Vengeance ได้จากเควส Kahlihara's Request</span></td><td>Sword of Vengeance, Nefertiti's Portrait · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/3779b38bc457.gif"/>Rosaline Gracia - Fate of the Portrait<br/><span class="tag">Lv 80+</span></td><td class="n"><a href="./episode-2#q-e2-4">Episode 2 · 1.4</a></td><td>Oops Wharf</td><td><img alt="" class="it" src="./assets/img/9c12bdd1f3b3.gif"/>Robin's Letter<br/><span class="m">Robin's Letter ได้จากเควส Love Hunter Robin - Robin's Acceptance</span></td><td>Art Stone Rod · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/09680559b945.gif"/>Don Giuvanni - Knife's New Owner<br/><span class="tag">Lv 80+</span><br/><span class="tag">ผ่านเควส Rosaline Gracia - Fate of the Portrait and have Kahlihara - The Sword Deal in quest log แล้ว</span></td><td class="n"><a href="./episode-2#q-e2-7">Episode 2 · 1.7</a></td><td>Oops Wharf</td><td><img alt="" class="it" src="./assets/img/4683c3039eb3.gif"/>Sword of Vengeance, <img alt="" class="it" src="./assets/img/58aaad474b0b.gif"/>Scabbard<br/><span class="m">Sword of Vengeance ได้จากเควส Rosaline's Worry · Scabbard ได้จากเควส Marx's Sheath</span></td><td>Blank Check · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/09680559b945.gif"/>Don Giuvanni - Man's Tears<br/><span class="tag">Lv 80+</span><br/><span class="tag">ผ่านเควส Marx Sheath's แล้ว</span></td><td class="n"><a href="./episode-2#q-e2-8">Episode 2 · 1.8</a></td><td>Oops Wharf</td><td><img alt="" class="it" src="./assets/img/76e81993b1fc.gif"/>Giuvanni's Tear, <img alt="" class="it" src="./assets/img/09d02709cc73.gif"/>Blank Check<br/><span class="m">รับเควสแล้ว Don Giuvanni จะวาร์ปไป Don Giuvanni's Secret Room ซึ่งมี Don Giuvanni (มอน) รออยู่ · Giuvanni's Tear ดรอปจาก Don Giuvanni (Lv 150) · Blank Check ได้จากเควส Don Giuvanni - Knife's New Owner</span></td><td>Tear Soaked Check · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/09680559b945.gif"/>Don Giuvanni - Writing on the Knife<br/><span class="tag">Lv 80+</span><br/><span class="tag">ผ่านเควส Kahlihara - The Sword Deal แล้ว · can only be done during nighttime</span></td><td class="n"><a href="./episode-2#q-e2-9">Episode 2 · 1.9</a></td><td>Oops Wharf</td><td><img alt="" class="it" src="./assets/img/7aac2eb8349a.gif"/>Decoded Document<br/><span class="m">Decoded Document ได้จากเควส Indiana John - Clay Tablet Discovered</span></td><td>Cruise Ticket, Don Giuvanni's Mask · EXP 7,095,200 / TM 13,551,300</td></tr>
+</tbody></table></div>
+
+</section>
+
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

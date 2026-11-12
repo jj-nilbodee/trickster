@@ -19,6 +19,8 @@ hiddenKey: "rosegarden-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -45,7 +47,7 @@ hiddenKey: "rosegarden-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 4 ขั้น
 
@@ -80,7 +82,7 @@ hiddenKey: "rosegarden-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Rose Garden Sticker
 
@@ -130,7 +132,7 @@ hiddenKey: "rosegarden-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -180,7 +182,7 @@ hiddenKey: "rosegarden-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

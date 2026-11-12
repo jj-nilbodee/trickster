@@ -12,19 +12,23 @@ const guides = [
   ['สเตตัส', '/stats'],
 ]
 
-// In the order the game unlocks them.
+// Town pages in the order the game opens them; key-* pages also hold that town's key quest.
 const keyQuests = [
-  ['1 · Desert Beach', '/key-desert-beach'],
-  ['2 · Megalopolis', '/key-megalopolis'],
-  ['3 · Caballa Relics', '/key-caballa-relics'],
-  ['4 · Oops Wharf', '/key-oops-wharf'],
-  ['5 · Mermaid Palace', '/key-mermaid-palace'],
-  ['6 · Ghost Blue', '/key-ghost-blue'],
-  ['7 · Rose Garden', '/key-rose-garden'],
-  ['8 · Black Swamp', '/key-black-swamp'],
-  ['9 · Snow Hill', '/key-snow-hill'],
-  ['10 · Techichi Volcano', '/key-techichi-volcano'],
-  ['11 · Tapasco Volcano', '/key-tapasco-volcano'],
+  ['Coral Beach', '/town-coral-beach'],
+  ['Desert Beach', '/key-desert-beach'],
+  ['Megalopolis', '/key-megalopolis'],
+  ['Caballa Relics', '/key-caballa-relics'],
+  ['Oops Wharf', '/key-oops-wharf'],
+  ['Mermaid Palace', '/key-mermaid-palace'],
+  ['Mirage Island', '/town-mirage-island'],
+  ['Ghost Blue', '/key-ghost-blue'],
+  ['Rose Garden', '/key-rose-garden'],
+  ['Black Swamp', '/key-black-swamp'],
+  ['Underground Dev Room', '/town-underground-dev-room'],
+  ['Snow Hill', '/key-snow-hill'],
+  ['Techichi Volcano', '/key-techichi-volcano'],
+  ['Tapasco Volcano', '/key-tapasco-volcano'],
+  ['Alteo Empire', '/town-alteo-empire'],
   ['Abyss', '/town-abyss'],
 ]
 

@@ -19,6 +19,8 @@ hiddenKey: "megalopolis-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="story">เนื้อเรื่อง</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -46,7 +48,7 @@ hiddenKey: "megalopolis-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 5 ขั้น
 
@@ -87,7 +89,7 @@ hiddenKey: "megalopolis-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Instant Adhesive
 
@@ -116,7 +118,7 @@ hiddenKey: "megalopolis-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -147,7 +149,21 @@ hiddenKey: "megalopolis-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="story">
+
+## เควสเนื้อเรื่องในโซน
+
+<p class="muted">เควสจากหน้า Episode ที่อยู่ในโซนนี้ เรียงตามลำดับเนื้อเรื่อง กดเลขตอนเพื่อไปอ่านต่อในหน้า Episode</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>ตอน</th><th>ที่อยู่</th><th>ต้องทำ</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td><img alt="" class="it" src="./assets/img/3779b38bc457.gif"/>Rosaline Gracia - Rosaline's Document<br/><span class="tag">Lv 45+</span></td><td class="n"><a href="./episode-1#q-e1-11">Episode 1 · 1.11</a></td><td>Megalopolis Square</td><td><img alt="" class="it" src="./assets/img/c9c2421d1091.gif"/>Honey Tea, <img alt="" class="it" src="./assets/img/1a5a4c8e7539.gif"/>Nefertiti's Portrait<br/><span class="m"><img alt="" class="it" src="./assets/img/fb3a6287a907.gif"/>Honey Tea ผสม (Compound) จาก 1x Honey + 2x <img alt="" class="it" src="./assets/img/1ba4a65faaa2.gif"/>Royal Jelly + 2x <img alt="" class="it" src="./assets/img/0ee1f94490e8.gif"/>Distilled Water กับ Compounder Paul ที่ Megalopolis Square และ Relics Town - Azteca · Nefertiti's Portrait ได้จากเควส Old Artist - Old Artist's Needs · Honey และ Royal Jelly ดรอปจาก Forest Wasp (Lv 47) · Distilled Water ซื้อได้ตามร้านค้าทั่วไป</span></td><td>Unknown Old Document · EXP 1,288,065 / TM 606,262</td></tr>
+</tbody></table></div>
+
+</section>
+
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

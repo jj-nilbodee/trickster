@@ -19,6 +19,8 @@ hiddenKey: "caballa-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="story">เนื้อเรื่อง</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -46,7 +48,7 @@ hiddenKey: "caballa-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 4 ขั้น
 
@@ -84,7 +86,7 @@ hiddenKey: "caballa-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Caballa Sticker
 
@@ -116,7 +118,7 @@ hiddenKey: "caballa-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -140,7 +142,35 @@ hiddenKey: "caballa-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="story">
+
+## เควสเนื้อเรื่องในโซน
+
+<p class="muted">เควสจากหน้า Episode ที่อยู่ในโซนนี้ เรียงตามลำดับเนื้อเรื่อง กดเลขตอนเพื่อไปอ่านต่อในหน้า Episode</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>ตอน</th><th>ที่อยู่</th><th>ต้องทำ</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td><img alt="" class="it" src="./assets/img/d7dbd1708243.gif"/>Monkey T - Honest Monkey T<br/><span class="tag">Lv 45+</span></td><td class="n"><a href="./episode-1#q-e1-1">Episode 1 · 1.1</a></td><td>Gate of Caballa Relics</td><td><img alt="" class="it" src="./assets/img/8b350f212dfa.gif"/>50 Galder Coupon × 5<br/><span class="m">50 Galder Coupon ขุดได้หลายแมพ โดยเฉพาะ Mirage Island Fields และดันเจี้ยนแถวนั้น</span></td><td>Faded Necklace · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a1aa9ad73861.gif"/>Old Artist - Old Artist's Request<br/><span class="tag">Lv 45+</span><br/><span class="tag">ตอนกลางวัน</span><br/><span class="tag">มี Faded Necklace ในกระเป๋า</span></td><td class="n"><a href="./episode-1#q-e1-2">Episode 1 · 1.2</a></td><td>Relics Field 1 - Atlas</td><td><img alt="" class="it" src="./assets/img/93137b029b0b.gif"/>Ginseng Tea, <img alt="" class="it" src="./assets/img/1be3ce7ca130.gif"/>Faded Necklace<br/><span class="m"><img alt="" class="it" src="./assets/img/198dd5eabc63.gif"/>Ginseng Tea ผสม (Compound) จาก 2x Ginseng + 1x <img alt="" class="it" src="./assets/img/fb3a6287a907.gif"/>Honey + 1x <img alt="" class="it" src="./assets/img/0ee1f94490e8.gif"/>Distilled Water กับ Compounder Paul ที่ Megalopolis Square หรือ Relics Town - Azteca · Faded Necklace ได้จากเควส Monkey Business · Ginseng ขุดได้ที่ Southeast Forest / Southwest Forest · Honey ดรอปจาก Forest Wasp (Lv 47) · Distilled Water ซื้อได้ตามร้านค้าทั่วไป</span></td><td>Empty Container · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a1aa9ad73861.gif"/>Old Artist - Old Artist's Needs<br/><span class="tag">Lv 45+</span></td><td class="n"><a href="./episode-1#q-e1-3">Episode 1 · 1.3</a></td><td>Relics Field 1 - Atlas</td><td><img alt="" class="it" src="./assets/img/d81db66e8d78.gif"/>Fully-Filled Container<br/><span class="m">Fully-Filled Container ได้จากเควส Sabrina's Sacred Water</span></td><td>Nefertiti's Portrait, Mermaid Babe's Portrait · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/389bafe03e95.gif"/>Guide Sabrina - Sabrina's Sacred Water<br/><span class="tag">Lv 45+</span><br/><span class="tag">รับเควส Old Artist's Needs ค้างไว้</span></td><td class="n"><a href="./episode-1#q-e1-4">Episode 1 · 1.4</a></td><td>Relics Town - Azteca</td><td><img alt="" class="it" src="./assets/img/fe2aab8b08f9.gif"/>Empty Container, <img alt="" class="it" src="./assets/img/bfccee9ab827.gif"/>Gold × 5, <img alt="" class="it" src="./assets/img/5883fe83e5e5.gif"/>Golden Egg<br/><span class="m">Empty Container ได้จากเควส Old Artist's Request · Gold ดรอปจาก Mimic (Lv 61) · Golden Egg ขุดได้ที่ Caballa Relics Fields</span></td><td>Fully-Filled Container · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a1aa9ad73861.gif"/>Old Artist - Help Old Artist<br/><span class="tag">Lv 45+</span><br/><span class="tag">ผ่านเควส Old Artist's Needs แล้ว</span></td><td class="n"><a href="./episode-1#q-e1-5">Episode 1 · 1.5</a></td><td>Relics Field 1 - Atlas</td><td><img alt="" class="it" src="./assets/img/2690cbb6bd80.gif"/>Chuu~ Check<br/><span class="m">Chuu~ Check ได้จากเควส Model Mermaid Babe - A Mirror for the Beauty</span></td><td>Restored Necklace · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a436d59c5f5c.gif"/>Model Mermaid Babe - Mermaid Babe's Complaint<br/><span class="tag">Lv 45+</span><br/><span class="tag">รับเควส Help Old Artist ค้างไว้</span></td><td class="n"><a href="./episode-1#q-e1-6">Episode 1 · 1.6</a></td><td>Relics Field 1 - Atlas</td><td><img alt="" class="it" src="./assets/img/a601451c5d64.gif"/>Mermaid Babe's Portrait, <img alt="" class="it" src="./assets/img/c0e28be48343.gif"/>Antique Mirror<br/><span class="m">Mermaid Babe's Portrait ได้จากเควส Old Artist's Needs · Antique Mirror ได้จากเควส Antique Mirror!</span></td><td>Antique Mirror · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/d7dbd1708243.gif"/>Monkey T - Antique Mirror!<br/><span class="tag">Lv 45+</span><br/><span class="tag">รับเควส Mermaid Babe's Complaint ค้างไว้</span></td><td class="n"><a href="./episode-1#q-e1-7">Episode 1 · 1.7</a></td><td>Gate of Caballa Relics</td><td><img alt="" class="it" src="./assets/img/330b160b1fc4.gif"/>500 Galder Coupon × 2<br/><span class="m">500 Galder Coupon ได้จากหลายเควส ขุดได้หลายที่ และมอนหลายตัวดรอป แมพที่แนะนำคือ Gate of Ghost Blue</span></td><td>Antique Mirror · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a436d59c5f5c.gif"/>Model Mermaid Babe - A Mirror for the Beauty<br/><span class="tag">Lv 45+</span><br/><span class="tag">ผ่านเควส Mermaid Babe's Complaint แล้ว</span></td><td class="n"><a href="./episode-1#q-e1-8">Episode 1 · 1.8</a></td><td>Relics Field 1 - Atlas</td><td><img alt="" class="it" src="./assets/img/c0e28be48343.gif"/>Fantastic Hand Mirror<br/><span class="m">Fantastic Hand Mirror ได้จากเควส Louis the Great</span></td><td>Chuu~ Check · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/651919592970.gif"/>Louis Bitton - Louis the Great<br/><span class="tag">Lv 45+</span><br/><span class="tag">รับเควส A Mirror for the Beauty ค้างไว้</span></td><td class="n"><a href="./episode-1#q-e1-9">Episode 1 · 1.9</a></td><td>Relics Town - Azteca</td><td><img alt="" class="it" src="./assets/img/c0e28be48343.gif"/>Antique Mirror, <img alt="" class="it" src="./assets/img/5bc0914a1f57.gif"/>Fantastic Powder<br/><span class="m">Antique Mirror ได้จากเควส Mermaid Babe's Complaint · Fantastic Powder ขุดได้ที่ Relics Field 4 - An Altar for Sacrifice</span></td><td>Fantastic Hand Mirror · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/5191ab78c2f7.gif"/>Love Hunter Robin - Necklace's Owner<br/><span class="tag">Lv 45+</span><br/><span class="tag">ผ่านเควส Help Old Artist แล้ว · มี Restored Necklace ในกระเป๋า</span></td><td class="n"><a href="./episode-1#q-e1-10">Episode 1 · 1.10</a></td><td>Path to Caballa Relics</td><td><img alt="" class="it" src="./assets/img/e9700acf4622.gif"/>Restored Necklace<br/><span class="m">Restored Necklace ได้จากเควส Help Old Artist</span></td><td>Aquamarine Pendant · EXP 257,613 / TM 121,252</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/046d1c9e193a.gif"/>Indiana John - Weird Box<br/><span class="tag">Lv 50+</span><br/><span class="tag">ผ่านเควส Rosaline's Document แล้ว</span></td><td class="n"><a href="./episode-1#q-e1-12">Episode 1 · 2.1</a></td><td>Caballa Relics Dungeon 1</td><td><img alt="" class="it" src="./assets/img/f308b06a35bb.gif"/>Weird Piece 1, <img alt="" class="it" src="./assets/img/f308b06a35bb.gif"/>Weird Piece 2, <img alt="" class="it" src="./assets/img/dd289df99304.gif"/>Weird Piece 3<br/><span class="m">Weird Piece 1 ได้จากเควส Min's Tale · Weird Piece 2 ได้จากเควส Jia's New Vibe · Weird Piece 3 ได้จากเควส Eloy's Tale</span></td><td>Completed Box Key, Soil Attribute Stone, Light Attribute Stone · EXP 331,296 / TM 376,990</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/046d1c9e193a.gif"/>Indiana John - Box's Identity<br/><span class="tag">Lv 50+</span><br/><span class="tag">ผ่านเควส Weird Box แล้ว</span></td><td class="n"><a href="./episode-1#q-e1-16">Episode 1 · 2.5</a></td><td>Caballa Relics Dungeon 1</td><td><img alt="" class="it" src="./assets/img/68514436f862.gif"/>Doc from Weird Box, <img alt="" class="it" src="./assets/img/3ac8463d7d10.gif"/>Lamplight × 2<br/><span class="m">Doc from Weird Box ได้จาก Weird Box · Lamplight ดรอปจาก Naranjo (Lv 84)</span></td><td>Memo from Weird Box · EXP 1,656,480 / TM 1,884,952</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/51b2ea49ba7a.gif"/>Weird Box - VENDETTA<br/><span class="tag">Lv 50+</span><br/><span class="tag">รับเควส Box's Identity ค้างไว้</span></td><td class="n"><a href="./episode-1#q-e1-17">Episode 1 · 2.6</a></td><td>Caballa Relics Dungeon 1</td><td>ตอบคำถามให้ถูก<br/><span class="m">คำตอบที่ถูกคือ "Vendetta" ถ้าเลือกข้ออื่นจะโดนวาร์ปออกไป</span></td><td>Doc from Weird Box</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/5191ab78c2f7.gif"/>Love Hunter Robin - Robin's Acceptance<br/><span class="tag">Lv 80+</span><br/><span class="tag">รับเควส Fate of the Portrait ค้างไว้</span></td><td class="n"><a href="./episode-2#q-e2-5">Episode 2 · 1.5</a></td><td>Path to Caballa Relics</td><td><img alt="" class="it" src="./assets/img/1a5a4c8e7539.gif"/>Nefertiti's Portrait, <img alt="" class="it" src="./assets/img/0457ced0a69a.gif"/>Dark Cloth × 3<br/><span class="m">Nefertiti's Portrait ได้จากเควส Rosaline's Worry · Dark Cloth ดรอปจาก Crow (Lv 88)</span></td><td>Robin's Letter · EXP 506,800 / TM 967,950</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/046d1c9e193a.gif"/>Indiana John - Clay Tablet Discovered<br/><span class="tag">Lv 80+</span><br/><span class="tag">รับเควส Don Giuvanni - Writing on the Knife ค้างไว้</span></td><td class="n"><a href="./episode-2#q-e2-10">Episode 2 · 1.10</a></td><td>Relics Field 2 - Hand of Giant</td><td><img alt="" class="it" src="./assets/img/cb2d6772d94f.gif"/>Clay Tablet × 5<br/><span class="m">Clay Tablet ขุดได้ที่ Caballa Relics Fields</span></td><td>Decoded Document, Indiana John Card · EXP 506,800 / TM 967,950</td></tr>
+</tbody></table></div>
+
+</section>
+
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

@@ -19,6 +19,8 @@ hiddenKey: "desert-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="story">เนื้อเรื่อง</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -45,7 +47,7 @@ hiddenKey: "desert-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 3 ขั้น
 
@@ -72,7 +74,7 @@ hiddenKey: "desert-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Desert Sticker
 
@@ -97,7 +99,7 @@ hiddenKey: "desert-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -124,7 +126,46 @@ hiddenKey: "desert-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="story">
+
+## เควสเนื้อเรื่องในโซน
+
+<p class="muted">เควสจากหน้า Episode ที่อยู่ในโซนนี้ เรียงตามลำดับเนื้อเรื่อง กดเลขตอนเพื่อไปอ่านต่อในหน้า Episode</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>ตอน</th><th>ที่อยู่</th><th>ต้องทำ</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td><img alt="" class="it" src="./assets/img/09680559b945.gif"/>Don Giuvanni - Don Giuvanni's Training Pt. 1<br/><span class="tag">Lv 13+</span><br/><span class="tag">ผ่านเควส Lifeguard Bean - Meet Don Giuvanni แล้ว</span></td><td class="n"><a href="./episode-0#q-e0-11">Episode 0 · 2.1</a></td><td>Gate of Desert Beach</td><td><img alt="" class="it" src="./assets/img/1d78df18fa8f.gif"/>Drilling for Dummies<br/><span class="m">Drilling for Dummies ได้จากเควส Driller Marky - Master Drilling!</span></td><td>Oasis Water × 5, Distilled Water × 5, Empty Potion Bottle × 5, Drilling for Dummies · EXP 21,763 / TM 21,763</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/5bf894da6010.gif"/>Driller Marky - Master Drilling!<br/><span class="tag">Lv 13+</span></td><td class="n"><a href="./episode-0#q-e0-12">Episode 0 · 2.2</a></td><td>Gate of Desert Beach</td><td><img alt="" class="it" src="./assets/img/96d3d94ba892.gif"/>Tanning Oil × 2<br/><span class="m">Tanning Oil ขุดได้ที่ Gate of Desert Beach</span></td><td>Peng, Drilling for Dummies · EXP 21,763 / TM 21,763</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/09680559b945.gif"/>Don Giuvanni - Meet Officer Robert<br/><span class="tag">ผ่านเควส Don Giuvanni - Don Giuvanni's Training Pt. 1 แล้ว</span></td><td class="n"><a href="./episode-0#q-e0-13">Episode 0 · 2.3</a></td><td>Gate of Desert Beach</td><td>ไปคุยกับ Officer Robert<br/><span class="m">Officer Robert อยู่ที่ Beach Town - Paradise</span></td><td>Oasis Water × 5, Distilled Water × 5, Empty Potion Bottle × 5 · EXP 21,763 / TM 21,763</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/06a8816e44e0.gif"/>Officer Robert - Don Giuvanni's Training Pt. 2</td><td class="n"><a href="./episode-0#q-e0-14">Episode 0 · 2.4</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/c1151698563b.gif"/>Desert Potion<br/><span class="m">Desert Potion ผสม (Compound) จาก <img alt="" class="it" src="./assets/img/0692e666edc9.gif"/>Oasis Water + <img alt="" class="it" src="./assets/img/0ee1f94490e8.gif"/>Distilled Water + <img alt="" class="it" src="./assets/img/d01fbbfcf02d.gif"/>Empty Potion Bottle กับ Compounder Paul ที่ Paradise Shop · Oasis Water, Distilled Water, และ Empty Potion Bottle ได้จากเควส Don Giuvanni's Training Pt. 1 และ Meet Officer Robert</span></td><td>Hard Scales × 5, Life Vest · EXP 21,763 / TM 21,763</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/06a8816e44e0.gif"/>Officer Robert - Don's Push - 3rd Stage</td><td class="n"><a href="./episode-0#q-e0-15">Episode 0 · 2.5</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/a127a6bcafc7.gif"/>Nate's Certification<br/><span class="m">Nate's Certification ได้จากเควส Let's Try Maturing Compounding!</span></td><td>Pink Potion B × 20, Blue Potion B × 20, Wooden Sword · EXP 21,763 / TM 21,763</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/8b7b9e77b77b.gif"/>Alchemist Nate - Let's Try Maturing Compounding!<br/><span class="tag">รับเควส Officer Robert - Don's Push - 3rd Stage ค้างไว้</span></td><td class="n"><a href="./episode-0#q-e0-16">Episode 0 · 2.6</a></td><td>Paradise Shop</td><td>ผสม <img alt="" class="it" src="./assets/img/4fdcdb9f27cc.gif"/>Life Vest กับ <img alt="" class="it" src="./assets/img/98188617aa79.gif"/>Hard Scales (Mature Compound)<br/><span class="m">Life Vest และ Hard Scales ได้จากเควส Don Giuvanni's Training Pt. 2</span></td><td>Mature Compounding Guide, Nate's Certification · EXP 21,763 / TM 21,763</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/06a8816e44e0.gif"/>Officer Robert - Don's Push - 4th Stage<br/><span class="tag">ผ่านเควส Officer Robert - Don's Push - 3rd Stage แล้ว</span></td><td class="n"><a href="./episode-0#q-e0-17">Episode 0 · 2.7</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/e2948eff5466.gif"/>Refining Guide, Wooden Sword ที่ตีบวก +1 แล้ว<br/><span class="m">Refining Guide ได้จากเควส Blacksmith Marx - Learn to Refine!</span></td><td>Refining Guide, Hologram Port, Beginner's Scroll of Revival × 5 · EXP 87,054 / TM 43,527</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/aed20c0551d5.gif"/>Blacksmith Marx - Learn to Refine!<br/><span class="tag">รับเควส Officer Robert - Don's Push - 4th Stage ค้างไว้</span></td><td class="n"><a href="./episode-0#q-e0-18">Episode 0 · 2.8</a></td><td>Paradise Shop</td><td><img alt="" class="it" src="./assets/img/5fedf0b90f51.gif"/>Bronze Fragment × 7<br/><span class="m">Bronze Fragment ขุดได้ที่ 1st Mining Lot of Crystal Copper</span></td><td>Refining Guide, Bronze Fragment × 7, Wooden Sword · EXP 21,763 / TM 21,763</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/414303e42def.gif"/>Andrew - Meet the Natives!<br/><span class="tag">Lv 20+</span><br/><span class="tag">ผ่านเควส Officer Robert - Don's Push - 4th Stage แล้ว</span></td><td class="n"><a href="./episode-0#q-e0-19">Episode 0 · 3.1</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/df9f95d27699.gif"/>Heart Gem × 8<br/><span class="m">Heart Gem ได้จากเควสของคนในเมือง 8 คน คนละ 1 เม็ด แต่ละคนมี 2 เควส ทำได้แบบเดียวตามตัวละคร: Steve Ryu, Don Giuvanni, Clever Owl, Kristoffer J., Dorothy, Officer Tera, Old Artist และ Rosemary (อยู่ในบทนี้ด้านล่าง)</span></td><td>Health Charm, Wing Port (Paradise) × 10 · EXP 176,960 / TM 50,160</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/fb10a3227bb1.gif"/>Steve Ryu - Helping Confess<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Bunny</span></td><td class="n"><a href="./episode-0#q-e0-20">Episode 0 · 3.2</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/51ecab71293d.gif"/>Bouquet × 3<br/><span class="m">Bouquet ดรอปจาก Hula Octopus (Lv 25)</span></td><td>Bunny Card, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/fb10a3227bb1.gif"/>Steve Ryu - Wacky Confession<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Bunny</span></td><td class="n"><a href="./episode-0#q-e0-21">Episode 0 · 3.2</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/aa7491659e90.gif"/>Handkerchief of Challenge<br/><span class="m">Handkerchief of Challenge ได้จากเควส Mermaid Babe - The Mark of Love! · ตอนรับเควสนี้ Steve Ryu จะให้ Written Challenge มา</span></td><td>Bouquet, Heart Gem, Baby Bunny, Strong Ring · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a7d85024bd5c.gif"/>Mermaid Babe - The Mark of Love!<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Bunny</span><br/><span class="tag">รับเควส Steve Ryu - Wacky Confession ค้างไว้</span></td><td class="n"><a href="./episode-0#q-e0-22">Episode 0 · 3.2</a></td><td>Desert Beach Field 2 - Sand Palace</td><td><img alt="" class="it" src="./assets/img/a95c342b9cbe.gif"/>Red Lipstick × 3, <img alt="" class="it" src="./assets/img/e3f190903ed3.gif"/>Written Challenge<br/><span class="m">Red Lipstick ขุดได้ที่ Desert Beach Field 2 - Sand Palace · Written Challenge ได้ตอนรับเควส Steve Ryu - Wacky Confession</span></td><td>Handkerchief of Challenge · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/09680559b945.gif"/>Don Giuvanni - A Famous Model's Picture<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Cat</span></td><td class="n"><a href="./episode-0#q-e0-23">Episode 0 · 3.3</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/59c43e669d4b.gif"/>Jenny's Photo B<br/><span class="m">Jenny's Photo B ขุดได้ที่ Desert Beach Field 1 - Delta Island</span></td><td>Cat Card, Blue Potion B × 10, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/09680559b945.gif"/>Don Giuvanni - Enemies in a Place like this?<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Cat</span></td><td class="n"><a href="./episode-0#q-e0-24">Episode 0 · 3.3</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/d5543d5c1e03.gif"/>Clam Meat × 3<br/><span class="m">Clam Meat ดรอปจาก Shell Trap (Lv 19)</span></td><td>Director's Letter, Kitten, Heart Gem, Solid Ring · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/c5ae3bdf457f.gif"/>Clever Owl - The Owl's Worry<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Sheep</span></td><td class="n"><a href="./episode-0#q-e0-25">Episode 0 · 3.4</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/9a71e9a4f09b.gif"/>Golden Mole Feather × 3<br/><span class="m">Golden Mole Feather ดรอปจาก Golden Mole (Lv 20)</span></td><td>Sheep Card, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/c5ae3bdf457f.gif"/>Clever Owl - The Owl from that Time<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Sheep</span></td><td class="n"><a href="./episode-0#q-e0-26">Episode 0 · 3.4</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/1f61e4ccc328.gif"/>Magic Sealed Letter<br/><span class="m">Magic Sealed Letter ขุดได้ที่ Desert Beach Field 1 - Delta Island</span></td><td>Unsealed Letter, Lamb, Heart Gem, Smart Ring · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/3e7d05281293.gif"/>Kristoffer J. - Weird Fisherman<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Fox</span></td><td class="n"><a href="./episode-0#q-e0-27">Episode 0 · 3.5</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/a25076523b2f.gif"/>Salt × 3<br/><span class="m">Salt ขุดได้ที่ Desert Beach Field 1 - Delta Island</span></td><td>Salted Dry Fish × 20, Fox Card, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/3e7d05281293.gif"/>Kristoffer J. - Fished Up Scroll<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Fox</span></td><td class="n"><a href="./episode-0#q-e0-28">Episode 0 · 3.5</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/dd96a461afb9.gif"/>Earthworm × 3<br/><span class="m">Earthworm ดรอปจาก Golden Mole (Lv 20)</span></td><td>Envelope with Photo, Fox Pup, Heart Gem, Accurate Ring · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/d2be890094de.gif"/>Dorothy - A Present for a Sick Friend (1)<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Lion</span></td><td class="n"><a href="./episode-0#q-e0-29">Episode 0 · 3.6</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/e779992e5d7d.gif"/>Scorpion Jerky × 3<br/><span class="m">Scorpion Jerky ดรอปจาก Sea Scorpion (Lv 22)</span></td><td>Lion Card, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/d2be890094de.gif"/>Dorothy - Guardian of Dreams<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Lion</span></td><td class="n"><a href="./episode-0#q-e0-30">Episode 0 · 3.6</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/1aaea2702df4.gif"/>Twinkle Star × 3<br/><span class="m">Twinkle Star ดรอปจาก Fanta Slime (Lv 18)</span></td><td>Lion Cub, Child's Letter, Heart Gem, Accurate Ring · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/0feb6c0bc714.gif"/>Officer Tera - Help Keep the Peace<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Buffalo</span></td><td class="n"><a href="./episode-0#q-e0-31">Episode 0 · 3.7</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/d6c2e61991ce.gif"/>Illegal CD × 3<br/><span class="m">Illegal CD ดรอปจาก Grumpy Octopus (Lv 29)</span></td><td>500 Galder Coupon, Buffalo Card, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/0feb6c0bc714.gif"/>Officer Tera - An Unexpected Encounter<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Buffalo</span></td><td class="n"><a href="./episode-0#q-e0-32">Episode 0 · 3.7</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/d6c2e61991ce.gif"/>Illegal CD × 3<br/><span class="m">Illegal CD ดรอปจาก Grumpy Octopus (Lv 29)</span></td><td>500 Galder Coupon, Buffalo Calf, Heart Gem, Strong Ring · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a1aa9ad73861.gif"/>Old Artist - Cherishing Destinies<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Dragon</span></td><td class="n"><a href="./episode-0#q-e0-33">Episode 0 · 3.8</a></td><td>Desert Beach Field 2 - Sand Palace</td><td><img alt="" class="it" src="./assets/img/88b30cb3981c.gif"/>Paper, <img alt="" class="it" src="./assets/img/24d15eaab3f8.gif"/>Color Pencils × 2<br/><span class="m">Paper ขุดได้ที่ Desert Beach Field 2 - Sand Palace หรือซื้อที่ Gate of Desert Beach Shop หรือ Paradise Shop · Color Pencils ดรอปจาก Fanta Fish (Lv 21)</span></td><td>Postcard, Dragon Card, Pink Potion B × 10, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/a1aa9ad73861.gif"/>Old Artist - The Painter from Notre Dame<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Dragon</span></td><td class="n"><a href="./episode-0#q-e0-34">Episode 0 · 3.8</a></td><td>Desert Beach Field 2 - Sand Palace</td><td><img alt="" class="it" src="./assets/img/88b30cb3981c.gif"/>Paper, <img alt="" class="it" src="./assets/img/24d15eaab3f8.gif"/>Color Pencils × 2<br/><span class="m">Paper ขุดได้ที่ Desert Beach Field 2 - Sand Palace หรือซื้อที่ Gate of Desert Beach Shop หรือ Paradise Shop · Color Pencils ดรอปจาก Fanta Fish (Lv 21)</span></td><td>Postcard, Dragon Whelp, Heart Gem, Smart Ring · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/0ee802dd4f80.gif"/>Rosemary - Lookin' Good!<br/><span class="tag">Lv 20+</span><br/><span class="tag">ทุกตัวละครยกเว้น Raccoon</span></td><td class="n"><a href="./episode-0#q-e0-35">Episode 0 · 3.9</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/5e0a4211bdf9.gif"/>Swimsuit × 2<br/><span class="m">Swimsuit ขุดได้ที่ Desert Beach Field 2 - Sand Palace</span></td><td>Raccoon Card, Heart Gem · EXP 35,392 / TM 10,032</td></tr>
+<tr><td><img alt="" class="it" src="./assets/img/0ee802dd4f80.gif"/>Rosemary - Runaway Student<br/><span class="tag">Lv 20+</span><br/><span class="tag">เฉพาะ Raccoon</span></td><td class="n"><a href="./episode-0#q-e0-36">Episode 0 · 3.9</a></td><td>Beach Town - Paradise</td><td><img alt="" class="it" src="./assets/img/37fc325dba99.gif"/>Pen × 2, <img alt="" class="it" src="./assets/img/88b30cb3981c.gif"/>Paper × 2<br/><span class="m">Pen ดรอปจาก Fanta Fish (Lv 21) · Paper ขุดได้ที่ Desert Beach Field 2 หรือซื้อที่ Gate of Desert Beach Shop หรือ Paradise Shop</span></td><td>Signed Agreement, Raccoon Cub, Heart Gem, Solid Ring · EXP 35,392 / TM 10,032</td></tr>
+</tbody></table></div>
+
+</section>
+
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

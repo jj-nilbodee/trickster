@@ -42,3 +42,11 @@
 .dark .pg[data-page="skill-quests"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#cfa3ef; --done:#7fd19b; --warn:#f0b35a }
 .pg[data-page="town-abyss"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#e4eaf0; --accent:#1f5f8a; --done:#2f7a4a; --warn:#9a5b00 }
 .dark .pg[data-page="town-abyss"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#232a31; --accent:#8cc4f2; --done:#7fd19b; --warn:#f0b35a }
+.pg[data-page="town-coral-beach"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#b0602a; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="town-coral-beach"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#f2b48a; --done:#7fd19b; --warn:#f0b35a }
+.pg[data-page="town-mirage-island"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#2f7a6b; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="town-mirage-island"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#86d6c4; --done:#7fd19b; --warn:#f0b35a }
+.pg[data-page="town-underground-dev-room"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#5a5f6e; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="town-underground-dev-room"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#b9bfd0; --done:#7fd19b; --warn:#f0b35a }
+.pg[data-page="town-alteo-empire"] { --surface:#ffffff; --fg:#1d1f22; --muted:#5d6268; --line:#dcdad4; --chip:#eceae4; --accent:#8a6a1f; --done:#2f7a4a; --warn:#9a5b00 }
+.dark .pg[data-page="town-alteo-empire"] { --surface:#1b1d20; --fg:#e8e6e1; --muted:#a3a7ac; --line:#30333a; --chip:#25282d; --accent:#e8c877; --done:#7fd19b; --warn:#f0b35a }

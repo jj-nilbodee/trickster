@@ -19,6 +19,8 @@ hiddenKey: "blackswamp-hidden-v1"
 
 </header>
 
+<div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="key">เควสกุญแจ / สติ๊กเกอร์</button><button type="button" data-t="story">เนื้อเรื่อง</button><button type="button" data-t="town">เควสอื่น</button></div>
+
 <section>
 
 ## ภาพรวม
@@ -45,7 +47,7 @@ hiddenKey: "blackswamp-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสกุญแจ 3 ขั้น
 
@@ -72,7 +74,7 @@ hiddenKey: "blackswamp-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## เควสที่ให้ Swamp Sticker
 
@@ -125,7 +127,7 @@ hiddenKey: "blackswamp-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="key">
 
 ## จุดขุดและมอน เรียงตามแมพ
 
@@ -176,7 +178,21 @@ hiddenKey: "blackswamp-hidden-v1"
 
 </section>
 
-<section>
+<section data-qt="story">
+
+## เควสเนื้อเรื่องในโซน
+
+<p class="muted">เควสจากหน้า Episode ที่อยู่ในโซนนี้ เรียงตามลำดับเนื้อเรื่อง กดเลขตอนเพื่อไปอ่านต่อในหน้า Episode</p>
+
+<div class="tbl"><table>
+<thead><tr><th>เควส</th><th>ตอน</th><th>ที่อยู่</th><th>ต้องทำ</th><th>รางวัล</th></tr></thead>
+<tbody>
+<tr><td><img alt="" class="it" src="./assets/img/1da7039b2d71.gif"/>Farmer Tsetsech - Memory of a Student<br/><span class="tag">Lv 160+</span></td><td class="n"><a href="./episode-5#q-e5-32">Episode 5 · โบนัส 8</a></td><td>Swamp Town - Carbigal</td><td><img alt="" class="it" src="./assets/img/346084c9b449.gif"/>Don Danihen's Picture<br/><span class="m">Don Danihen's Picture ได้จากเควส Atropos - Third Prophecy</span></td><td>Half Pink Potion × 20, Half Blue Potion × 20 · EXP 3,005,726</td></tr>
+</tbody></table></div>
+
+</section>
+
+<section data-qt="town">
 
 ## เควสอื่นในโซน (ไม่ให้สติ๊กเกอร์)
 

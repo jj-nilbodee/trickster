@@ -583,7 +583,7 @@
      "prereq": "Pouch of Pain Lv M",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 5",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "ทำเควส Explorer Reina - Ancient Liquid"
+     "source": "ทำเควส <a href=\"./skill-quests#q-liquid\">Explorer Reina - Ancient Liquid</a>"
     },
     {
      "id": "fox-3p-Hide",
@@ -609,7 +609,7 @@
      "prereq": "Shuriken Master Lv 1, Hide Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 5",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "ทำเควส Explorer Reina - Poisonous Crafts"
+     "source": "ทำเควส <a href=\"./skill-quests#q-crafts\">Explorer Reina - Poisonous Crafts</a>"
     },
     {
      "id": "fox-3p-StrongMind",
@@ -648,7 +648,7 @@
      "prereq": "Sudden Attack Lv M",
      "mastery": "Fire Golem Card × 5",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     }
    ]
   },
@@ -670,7 +670,7 @@
      "prereq": "Gun Carrier Lv 1",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
      "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-PowerShot",
@@ -683,7 +683,7 @@
      "prereq": "Gun Booster Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
      "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-ShootingSpree",
@@ -696,7 +696,7 @@
      "prereq": "Power Shot Lv 7",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-LuckyFist",
@@ -709,7 +709,7 @@
      "prereq": "Lucky Seven Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1ba4a65faaa2.gif\"/><b>Royal Jelly</b> × 55",
      "masteryFrom": "Forest Wasp Lv 47 <span class=\"m\">· Southwest Forest</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-KeenSense",
@@ -722,7 +722,7 @@
      "prereq": "Lucky Seven Lv 1, Gun Booster Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f7d7711695ea.gif\"/><b>Old Hand Knife</b> × 8",
      "masteryFrom": "Maiden Ghost Lv 104 <span class=\"m\">· Phantom School - 2F Chilly Hallway, Phantom School 2-2</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-Lockon",
@@ -735,7 +735,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
      "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-DoubleShot",
@@ -748,7 +748,7 @@
      "prereq": "Power Shot Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
      "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-ShieldBreaker",
@@ -761,7 +761,7 @@
      "prereq": "Lucky Seven Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     },
     {
      "id": "fox-3h-LegTraining",
@@ -774,7 +774,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 4",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Inventor Gale"
     }
    ]
   }

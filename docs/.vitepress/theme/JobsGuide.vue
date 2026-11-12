@@ -189,12 +189,12 @@ const secDone = (s: any) => s.rows.filter((r: any) => ticks.value[r.id]).length
         <table v-else><thead><tr><th></th><th>สกิล</th><th>TM</th><th>ทำอะไร</th><th>ต้องมีก่อน</th><th>ของฝึก Mastery</th><th>ได้จาก</th></tr></thead><tbody>
           <tr v-for="r in s.rows" v-show="visible(r)" :key="r.id" :class="{ done: ticks[r.id] }">
             <td class="ck"><input :id="r.id" type="checkbox" aria-label="ทำแล้ว" :checked="!!ticks[r.id]" @change="toggle(r.id, ($event.target as HTMLInputElement).checked)" /></td>
-            <td class="nm" data-l="สกิล"><img v-if="r.icon" :src="img(r.icon)" alt="" class="it" /><a :href="r.wiki" target="_blank" rel="noopener">{{ r.name }}</a></td>
+            <td class="nm" data-l="สกิล"><img v-if="r.icon" :src="img(r.icon)" alt="" class="it" /><a v-if="r.wiki" :href="r.wiki" target="_blank" rel="noopener">{{ r.name }}</a><span v-else>{{ r.name }}</span></td>
             <td class="nw" data-l="TM">{{ r.tm ?? '–' }}</td>
             <td data-l="ทำอะไร"><span v-html="html(r.does)"></span> <span v-if="r.type" class="m">· {{ r.type }}</span></td>
             <td data-l="ต้องมีก่อน">{{ r.prereq || '–' }}</td>
             <td data-l="ของฝึก Mastery"><span v-html="html(r.mastery)"></span><span v-if="r.masteryFrom" class="m"><br />หาจาก <span v-html="html(r.masteryFrom)"></span></span></td>
-            <td data-l="ได้จาก">{{ r.source }}</td>
+            <td data-l="ได้จาก" v-html="html(r.source)"></td>
           </tr>
         </tbody></table>
         </div>

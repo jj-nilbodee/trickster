@@ -4,6 +4,7 @@ const guides = [
   ['เควสรายวัน', '/daily-quests'],
   ['เควสการ์ด', '/card-girl-quests'],
   ['อาชีพ', '/jobs'],
+  ['เควสสกิล', '/skill-quests'],
   ['Tower of Chaos', '/tower-of-chaos'],
   ['แมพเก็บเลเวล', '/leveling-maps'],
   ['บอส', '/bosses'],

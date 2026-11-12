@@ -804,7 +804,7 @@
      "prereq": "Mana Shield Lv M",
      "mastery": "Regent Orc Card × 5",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     },
     {
      "id": "sheep-3p-AquaBomb",
@@ -830,7 +830,7 @@
      "prereq": "Water Shield Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
      "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
-     "source": "ดรอปจาก Icicler (Lv 228)"
+     "source": "ดรอปจาก Icicler (Lv 228) <span class=\"m\">· Snow Field 4</span>"
     },
     {
      "id": "sheep-3p-UndinesGarden",
@@ -843,7 +843,7 @@
      "prereq": "Seal of Water",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
      "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
-     "source": "ดรอปจาก Legendary Siremaid (Lv 130)"
+     "source": "ดรอปจาก Legendary Siremaid (Lv 130) <span class=\"m\">· Mirage Island Dungeon 1</span>"
     },
     {
      "id": "sheep-3p-StaffofThunder",
@@ -869,7 +869,7 @@
      "prereq": "Thunder Shield Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
      "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
-     "source": "ดรอปจาก Bone Magician (Lv 231)"
+     "source": "ดรอปจาก Bone Magician (Lv 231) <span class=\"m\">· Vamp Dungeon 4/5</span>"
     },
     {
      "id": "sheep-3p-RaionsSpace",
@@ -882,7 +882,7 @@
      "prereq": "Seal of Thunder",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
      "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
-     "source": "ดรอปจาก Electric Snail (Lv 164)"
+     "source": "ดรอปจาก Electric Snail (Lv 164) <span class=\"m\">· Swamp Field 1/2 + Path</span>"
     },
     {
      "id": "sheep-3p-DragonStorm",
@@ -908,7 +908,7 @@
      "prereq": "Fire Shield Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
      "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
-     "source": "ดรอปจาก Aabon (Lv 307)"
+     "source": "ดรอปจาก Aabon (Lv 307) <span class=\"m\">· Techichi Field 4</span>"
     },
     {
      "id": "sheep-3p-SalamandersTerritory",
@@ -921,7 +921,7 @@
      "prereq": "Seal of Fire",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
      "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
-     "source": "ดรอปจาก Fire Moth (Lv 289)"
+     "source": "ดรอปจาก Fire Moth (Lv 289) <span class=\"m\">· Tapasco Field 1/2</span>"
     },
     {
      "id": "sheep-3p-Earthquake",
@@ -947,7 +947,7 @@
      "prereq": "Earth Shield Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
      "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
-     "source": "ดรอปจาก Laki (Lv 278)"
+     "source": "ดรอปจาก Laki (Lv 278) <span class=\"m\">· Techichi Field 1/2</span>"
     },
     {
      "id": "sheep-3p-GnomesDomain",
@@ -960,7 +960,7 @@
      "prereq": "Seal of Earth",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
      "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
-     "source": "ดรอปจาก Kilimanjaro (Lv 273)"
+     "source": "ดรอปจาก Kilimanjaro (Lv 273) <span class=\"m\">· Techichi Field 1 + Path</span>"
     },
     {
      "id": "sheep-3p-RagingStorm",
@@ -986,7 +986,7 @@
      "prereq": "Wind Shield Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/599d31e55dea.gif\"/><b>Purple Worm Card</b> × 5",
      "masteryFrom": "Purple Worm Lv 215 <span class=\"m\">· Swamp Dungeon 4 - Marshy Garden</span>",
-     "source": "ดรอปจาก Mister Freaks (Lv 191)"
+     "source": "ดรอปจาก Mister Freaks (Lv 191) <span class=\"m\">· Vamp Dungeon 2</span>"
     },
     {
      "id": "sheep-3p-SylphsPlayground",
@@ -999,7 +999,7 @@
      "prereq": "Seal of Wind",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
      "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
-     "source": "ดรอปจาก Moss Moth (Lv 48)"
+     "source": "ดรอปจาก Moss Moth (Lv 48) <span class=\"m\">· Poppuri Dungeon</span>"
     }
    ]
   },
@@ -1021,7 +1021,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-LightPact",
@@ -1034,7 +1034,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-ArrowofLight",
@@ -1047,7 +1047,7 @@
      "prereq": "Light Pact",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/cfc4fe059116.gif\"/><b>Requi Card</b> × 2",
      "masteryFrom": "Requi Lv 72 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 2 - Devil Crow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-CatastropheHeal",
@@ -1060,7 +1060,7 @@
      "prereq": "Light Pact , Cure Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
      "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-OathofLight",
@@ -1073,7 +1073,7 @@
      "prereq": "Light Pact",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-LightShield",
@@ -1086,7 +1086,7 @@
      "prereq": "Light Pact , Mana Shield Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-BasicHealing",
@@ -1099,7 +1099,7 @@
      "prereq": "Light Pact , Catastrophe Heal Lv 1",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-LightWave",
@@ -1112,7 +1112,7 @@
      "prereq": "Light Pact Mana Ring Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/953a8a6cdcb2.gif\"/><b>Swamp Shark's Fin</b> × 25",
      "masteryFrom": "Swamp Shark Lv 176 <span class=\"m\">· Swamp Field 3 - Maze of Forest, Swamp Field 5 - Further Maze of Forest</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-RadiantStrike",
@@ -1125,7 +1125,7 @@
      "prereq": "Arrow of Light Lv 10, Mana Storm Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/5a2e0766a3ed.gif\"/><b>Silk Thread</b> × 7",
      "masteryFrom": "Arachne Lv 178 <span class=\"m\">· Swamp Field 4 - Dark Omen, Swamp Field 6 - Lake of Illusion</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-HeartsGrace",
@@ -1138,7 +1138,7 @@
      "prereq": "Catastrophe Heal Lv 10, Aura of Mana Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-ShieldofHeaven",
@@ -1151,7 +1151,7 @@
      "prereq": "Light Shield Lv M",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e6dfabb65f4.gif\"/><b>Slithis Card</b> × 5",
      "masteryFrom": "Slithis Lv 203 <span class=\"m\">· Swamp Dungeon 1 - Marshy Trail</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-DarkPact",
@@ -1164,7 +1164,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-Hellfire",
@@ -1177,7 +1177,7 @@
      "prereq": "Dark Pact",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/ea8eece90014.gif\"/><b>Chibcha Card</b> × 2",
      "masteryFrom": "Chibcha Lv 73 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 3</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-WickedFlame",
@@ -1190,7 +1190,7 @@
      "prereq": "Hellfire Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
      "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-BloodTestament",
@@ -1203,7 +1203,7 @@
      "prereq": "Dark Pact",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-DarkDistractor",
@@ -1216,7 +1216,7 @@
      "prereq": "Dark Pact , Hinder Snare",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-DarkLance",
@@ -1229,7 +1229,7 @@
      "prereq": "Dark Pact , Mana Arrow Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/635e1eaebaa2.gif\"/><b>Fried Egg</b> × 26",
      "masteryFrom": "Egg Specter Lv 94 <span class=\"m\">· Phantom School 2-1, Phantom School 2-2</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-DarkBarrier",
@@ -1242,7 +1242,7 @@
      "prereq": "Dark Pact , Mana Shield Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/9c699df1b870.gif\"/><b>Malachite</b> × 10",
      "masteryFrom": "ขุด ใน Caballa Relics Dungeon",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-GravityCrush",
@@ -1255,7 +1255,7 @@
      "prereq": "Dark Pact , Mana Storm Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/b3a9ce7cdfbe.gif\"/><b>Aristocratic Fan</b> × 7",
      "masteryFrom": "Madam Chiffon Lv 150 <span class=\"m\">· Rose Field 3 - Maze of Blue Rose</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     },
     {
      "id": "sheep-3h-WitheringDisease",
@@ -1268,7 +1268,7 @@
      "prereq": "Dark Pact , Gravity Crush Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/558dc7bc3be3.gif\"/><b>Captain Charman Card</b> × 4",
      "masteryFrom": "Captain Charman Lv 142 <span class=\"m\">· Rose Field 2 - Maze of Black Rose</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Magician Louie"
     }
    ]
   }

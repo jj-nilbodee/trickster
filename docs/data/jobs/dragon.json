@@ -732,7 +732,7 @@
      "prereq": "Dark Barrier Lv M, Fear Lv 1",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/3c99378ecd97.gif\"/><b>L. Wormhole Card</b> × 5",
      "masteryFrom": "L. Wormhole",
-     "source": "ทำเควส Fortune Teller - Dark Commando"
+     "source": "ทำเควส <a href=\"./skill-quests#q-commando\">Fortune Teller - Dark Commando</a>"
     },
     {
      "id": "dragon-3p-GhostlyWhisper",
@@ -758,7 +758,7 @@
      "prereq": "Ghostly Whisper Lv M",
      "mastery": "Reggae Orc Card × 5",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     }
    ]
   },
@@ -806,7 +806,7 @@
      "prereq": "Oath of Light Lv M",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/92f4e107279f.gif\"/><b>Slug G Card</b> × 5",
      "masteryFrom": "Slug G Lv 224 <span class=\"m\">· Swamp Dungeon 6 - Suu's Muddy Pool</span>",
-     "source": "ทำเควส Magician Louie - Power of Faith"
+     "source": "ทำเควส <a href=\"./skill-quests#q-faith\">Magician Louie - Power of Faith</a>"
     },
     {
      "id": "dragon-3p-CelestialStrike",
@@ -819,7 +819,7 @@
      "prereq": "Light Wave Lv 5, Radiant Strike Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/92f4e107279f.gif\"/><b>Slug G Card</b> × 5",
      "masteryFrom": "Slug G Lv 224 <span class=\"m\">· Swamp Dungeon 6 - Suu's Muddy Pool</span>",
-     "source": "ทำเควส Magician Louie - Ancient Legacy"
+     "source": "ทำเควส <a href=\"./skill-quests#q-legacy\">Magician Louie - Ancient Legacy</a>"
     },
     {
      "id": "dragon-3p-RefreshingDew",
@@ -832,7 +832,7 @@
      "prereq": "Sacred Oath Lv M",
      "mastery": "Skelefish Card × 5",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     }
    ]
   },
@@ -854,7 +854,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
      "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-SealofWater",
@@ -867,7 +867,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-SealofThunder",
@@ -880,7 +880,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-SealofFire",
@@ -893,7 +893,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-SealofEarth",
@@ -906,7 +906,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-SealofWind",
@@ -919,7 +919,7 @@
      "prereq": "–",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-DripBomb",
@@ -932,7 +932,7 @@
      "prereq": "Seal of Water",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/13dbfb9f6d15.gif\"/><b>Lima Card</b> × 2",
      "masteryFrom": "Lima Lv 70 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-IceyShackles",
@@ -945,7 +945,7 @@
      "prereq": "Seal of Water",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-WaterWeb",
@@ -958,7 +958,7 @@
      "prereq": "Mana Web Lv 1, Drip Bomb Lv 10",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-WaterShield",
@@ -971,7 +971,7 @@
      "prereq": "Seal of Water Mana Shield Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-ShardoftheGlacier",
@@ -984,7 +984,7 @@
      "prereq": "Seal of Water Mana Arrow Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
      "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-ElectroAttack",
@@ -997,7 +997,7 @@
      "prereq": "Seal of Thunder",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/13dbfb9f6d15.gif\"/><b>Lima Card</b> × 2",
      "masteryFrom": "Lima Lv 70 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-Thunderbolt",
@@ -1010,7 +1010,7 @@
      "prereq": "Seal of Thunder",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-Electroshock",
@@ -1023,7 +1023,7 @@
      "prereq": "Electro Attack Lv 10",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-ThunderShield",
@@ -1036,7 +1036,7 @@
      "prereq": "Seal of Thunder Mana Shield Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4826ac9397ce.gif\"/><b>Ball Joint</b> × 9",
      "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-TeslaField",
@@ -1049,7 +1049,7 @@
      "prereq": "Electro Attack Lv 10, Mana Arrow Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/96a194995664.gif\"/><b>Madam Chiffon Card</b> × 3",
      "masteryFrom": "Madam Chiffon Lv 150 <span class=\"m\">· Rose Field 3 - Maze of Blue Rose</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-WhirlwindBlaze",
@@ -1062,7 +1062,7 @@
      "prereq": "Seal of Fire",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/13dbfb9f6d15.gif\"/><b>Lima Card</b> × 2",
      "masteryFrom": "Lima Lv 70 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-ScorchingEarth",
@@ -1075,7 +1075,7 @@
      "prereq": "Seal of Fire",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-Incinerate",
@@ -1088,7 +1088,7 @@
      "prereq": "Seal of Fire Mana Ring Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
      "masteryFrom": "Officer Surapat",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-FireShield",
@@ -1101,7 +1101,7 @@
      "prereq": "Seal of Fire Mana Shield Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/0022c1f88955.gif\"/><b>Colored Paper</b> × 9",
      "masteryFrom": "Chameleon Frog Lv 169 <span class=\"m\">· Swamp Field 2 - Beaver's Swamp, Swamp Field 4 - Dark Omen</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-PhoenixRising",
@@ -1114,7 +1114,7 @@
      "prereq": "Incinerate Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4c0f95f84f01.gif\"/><b>Captain Arman Card</b> × 3",
      "masteryFrom": "Captain Arman Lv 145 <span class=\"m\">· Rose Field 2 - Maze of Black Rose</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-CleavingTerra",
@@ -1127,7 +1127,7 @@
      "prereq": "Seal of Earth",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/13dbfb9f6d15.gif\"/><b>Lima Card</b> × 2",
      "masteryFrom": "Lima Lv 70 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-DeadlyFen",
@@ -1140,7 +1140,7 @@
      "prereq": "Seal of Earth",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-SummonBoulder",
@@ -1153,7 +1153,7 @@
      "prereq": "Seal of Earth Mana Ring Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
      "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-EarthShield",
@@ -1166,7 +1166,7 @@
      "prereq": "Seal of Earth Mana Shield Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-BotulismCloud",
@@ -1179,7 +1179,7 @@
      "prereq": "Seal of Earth Mana Web Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-WindBlade",
@@ -1192,7 +1192,7 @@
      "prereq": "Seal of Wind",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/13dbfb9f6d15.gif\"/><b>Lima Card</b> × 2",
      "masteryFrom": "Lima Lv 70 <span class=\"m\">· Caballa Relics Dungeon 1, Caballa Relics Dungeon 2</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-TornadoBlast",
@@ -1205,7 +1205,7 @@
      "prereq": "Seal of Wind",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-Whirlwind",
@@ -1218,7 +1218,7 @@
      "prereq": "Seal of Wind Mana Storm Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
      "masteryFrom": "Officer Surapat",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-WindShield",
@@ -1231,7 +1231,7 @@
      "prereq": "Seal of Wind Mana Shield Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     },
     {
      "id": "dragon-3h-RazorGale",
@@ -1244,7 +1244,7 @@
      "prereq": "Wind Blade Lv 10, Mana Ring Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/558dc7bc3be3.gif\"/><b>Captain Charman Card</b> × 3",
      "masteryFrom": "Captain Charman Lv 142 <span class=\"m\">· Rose Field 2 - Maze of Black Rose</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Bard La Fimmel"
     }
    ]
   }

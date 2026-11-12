@@ -518,7 +518,7 @@
      "prereq": "Burning Rave Lv M, Counter Punch Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/96a194995664.gif\"/><b>Madam Chiffon Card</b> × 5",
      "masteryFrom": "Madam Chiffon Lv 150 <span class=\"m\">· Rose Field 3 - Maze of Blue Rose</span>",
-     "source": "ทำเควส Boxer Jeanne - Fist of Will"
+     "source": "ทำเควส <a href=\"./skill-quests#q-fist\">Boxer Jeanne - Fist of Will</a>"
     },
     {
      "id": "bunny-3p-MegaFlashCut",
@@ -544,7 +544,7 @@
      "prereq": "Flaming Fist Lv M",
      "mastery": "Blue Salamander Card × 5",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     }
    ]
   },
@@ -566,7 +566,7 @@
      "prereq": "Shockwave Lv 1",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-Lacerator",
@@ -579,7 +579,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
      "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-Berserker",
@@ -592,7 +592,7 @@
      "prereq": "Pumping Heart Lv 7",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-PiercingWave",
@@ -605,7 +605,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 18",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-AuraofHaste",
@@ -618,7 +618,7 @@
      "prereq": "Hyper Beat Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/36f302553a8e.gif\"/><b>Squishy Mud</b> × 8",
      "masteryFrom": "Walking Tadpole Lv 166 <span class=\"m\">· Swamp Field 1 - Black Hole</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-TidalSlash",
@@ -631,7 +631,7 @@
      "prereq": "Lacerator Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
      "masteryFrom": "Officer Surapat",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-EarthquakeBlade",
@@ -644,7 +644,7 @@
      "prereq": "Piercing Wave Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
      "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-BlazingStrike",
@@ -657,7 +657,7 @@
      "prereq": "Aura of Haste Lv 1",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7df1bc192294.gif\"/><b>Mingo Toy</b> × 24",
      "masteryFrom": "Mingo Lv 171 <span class=\"m\">· Swamp Field 3 - Maze of Forest</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-InfernoBlade",
@@ -670,7 +670,7 @@
      "prereq": "Piercing Wave Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     },
     {
      "id": "bunny-3h-TempestStrike",
@@ -683,7 +683,7 @@
      "prereq": "Lacerator Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 4",
      "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Warrior Kei"
     }
    ]
   }

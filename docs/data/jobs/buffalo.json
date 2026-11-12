@@ -544,7 +544,7 @@
      "prereq": "Tempest Strike Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/96a194995664.gif\"/><b>Madam Chiffon Card</b> × 5",
      "masteryFrom": "Madam Chiffon Lv 150 <span class=\"m\">· Rose Field 3 - Maze of Blue Rose</span>",
-     "source": "ดรอปจาก Iron Knight (Lv 203)"
+     "source": "ดรอปจาก Iron Knight (Lv 203) <span class=\"m\">· Vamp Dungeon 2/3</span>"
     },
     {
      "id": "buffalo-3p-ChiSword",
@@ -557,7 +557,7 @@
      "prereq": "Piercing Wave Lv M",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 5",
      "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
-     "source": "ทำเควส Warrior Kei - Fight With Your Soul!"
+     "source": "ทำเควส <a href=\"./skill-quests#q-soul\">Warrior Kei - Fight With Your Soul!</a>"
     },
     {
      "id": "buffalo-3p-ChakraBalance",
@@ -570,7 +570,7 @@
      "prereq": "Chi Sword",
      "mastery": "Krybeth Card × 5",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     }
    ]
   },
@@ -592,7 +592,7 @@
      "prereq": "Shockwave Lv 10",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-Dash",
@@ -605,7 +605,7 @@
      "prereq": "Hyper Beat Lv 1",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-Uppercut",
@@ -618,7 +618,7 @@
      "prereq": "Upper Smash Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
      "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-QuadPunch",
@@ -631,7 +631,7 @@
      "prereq": "Burning Rave Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-CounterPunch",
@@ -644,7 +644,7 @@
      "prereq": "Uppercut Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/fe5725472b79.gif\"/><b>Silver-Colored Mantle</b> × 7",
      "masteryFrom": "Captain Arman Lv 145 <span class=\"m\">· Rose Field 2 - Maze of Black Rose</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-EagleEye",
@@ -657,7 +657,7 @@
      "prereq": "Bull's Eye Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/2e57fc47050c.gif\"/><b>Officer Surapat Card</b> × 3",
      "masteryFrom": "Officer Surapat",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-Guard",
@@ -670,7 +670,7 @@
      "prereq": "Hyper Beat Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
      "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-TetraPunch",
@@ -683,7 +683,7 @@
      "prereq": "Quad Punch Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7e6dfabb65f4.gif\"/><b>Slithis Card</b> × 4",
      "masteryFrom": "Slithis Lv 203 <span class=\"m\">· Swamp Dungeon 1 - Marshy Trail</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     },
     {
      "id": "buffalo-3h-DesperateRally",
@@ -696,7 +696,7 @@
      "prereq": "Burning Rave Lv M",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/7d5a86edd214.gif\"/><b>Dancer Isabelle Card</b> × 3",
      "masteryFrom": "Dancer Isabelle Lv 141 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Boxer Jeanne"
     }
    ]
   }

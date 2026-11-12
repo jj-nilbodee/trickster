@@ -560,6 +560,19 @@
      "source": "เปิด Card Pack Ken"
     },
     {
+     "id": "lion-3p-SniperShot",
+     "name": "Sniper Shot",
+     "icon": null,
+     "wiki": "",
+     "tm": 140,
+     "does": "สกิลใหม่ (Custom) ของเซิฟ PlayTrickster",
+     "type": "",
+     "prereq": "–",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Feoh"
+    },
+    {
      "id": "lion-3p-SharpSense",
      "name": "Sharp Sense",
      "icon": "img/jobs/7282466ea04b.jpg",
@@ -583,7 +596,7 @@
      "prereq": "Revealing Eye Lv M",
      "mastery": "Phantom Dame Card × 5",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     },
     {
      "id": "lion-3p-BunkerRelease",
@@ -596,7 +609,20 @@
      "prereq": "Bunker Lv 10",
      "mastery": "ฝึกไม่ได้",
      "masteryFrom": "",
-     "source": "ดรอปจากมอน Tower of Chaos ชั้น 36 ขึ้นไป"
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
+    },
+    {
+     "id": "lion-3p-MissileBarrage",
+     "name": "Missile Barrage",
+     "icon": null,
+     "wiki": "",
+     "tm": 240,
+     "does": "สกิลใหม่ (Custom) ของเซิฟ PlayTrickster",
+     "type": "",
+     "prereq": "–",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "เปิด Card Pack Thorn"
     }
    ]
   },
@@ -618,7 +644,7 @@
      "prereq": "Shuriken Master Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
      "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-ItemDetector",
@@ -631,7 +657,7 @@
      "prereq": "Invincible Drilling Sixth Sense Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/c690ce2f9b2b.gif\"/><b>Quiem Card</b> × 2",
      "masteryFrom": "Quiem Lv 75 <span class=\"m\">· Wharf Field 1 - Haunted Town, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-AuraofLuck",
@@ -644,7 +670,7 @@
      "prereq": "Lucky Seven Lv 7",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1dd2cc1df8f8.gif\"/><b>Crow Card</b> × 3",
      "masteryFrom": "Crow Lv 88 <span class=\"m\">· Wharf Field 2 - Devil Crow, Wharf Field 3 - Phantom Park</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-ChainofKnives",
@@ -657,7 +683,7 @@
      "prereq": "Precise Pitch Lv 5",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-GasMask",
@@ -670,7 +696,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/a0cbcbeeb75a.gif\"/><b>Officer Okto Card</b> × 3",
      "masteryFrom": "Okto Lv 129 <span class=\"m\">· Mermaid Dungeon 2 - Legend of the Sea</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-Landmine",
@@ -683,7 +709,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-StickyIcky",
@@ -696,7 +722,7 @@
      "prereq": "Sticky Foot Lv 10, Armor Destructor Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/9d4d54246853.gif\"/><b>Red Woolen Yarn</b> × 7",
      "masteryFrom": "Snowkid Lv 198 <span class=\"m\">· Snow Field 1 - Merry Christmas</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-LightningRod",
@@ -709,7 +735,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
      "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-PouchofPain",
@@ -722,7 +748,7 @@
      "prereq": "Heavy Carrier Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/e97dd38a03db.gif\"/><b>Red Rosary</b> × 8",
      "masteryFrom": "Ugly Corpse Lv 119 <span class=\"m\">· Phantom School 2-4</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     },
     {
      "id": "lion-3h-FanofKnives",
@@ -735,7 +761,7 @@
      "prereq": "Precise Pitch Lv M",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1666028c9018.gif\"/><b>Cobra Flower Card</b> × 4",
      "masteryFrom": "Cobra Flower Lv 210 <span class=\"m\">· Swamp Dungeon 2 - Marshy Pool, Swamp Dungeon 3 - Marshy Vacant Lot</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Explorer Reina"
     }
    ]
   }

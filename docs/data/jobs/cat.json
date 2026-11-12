@@ -558,6 +558,19 @@
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/92f4e107279f.gif\"/><b>Slug G Card</b> × 5",
      "masteryFrom": "Slug G Lv 224 <span class=\"m\">· Swamp Dungeon 6 - Suu's Muddy Pool</span>",
      "source": "เปิด Card Pack Rad"
+    },
+    {
+     "id": "cat-3p-BeastsInstinct",
+     "name": "Beast's Instinct",
+     "icon": "img/jobs/sq-125.webp",
+     "wiki": "https://wikimirror.lifeto.co/wiki.ggftw.com/trickster/Beast's_Instinct.html",
+     "tm": 240,
+     "does": "เพิ่มค่าสถานะจากบัฟแปลงร่าง Evolution · Base AP จาก ×2.5 เป็น ×6.0",
+     "type": "บัฟ",
+     "prereq": "–",
+     "mastery": "–",
+     "masteryFrom": "",
+     "source": "ดรอปจากมอน Tower of Chaos ชั้น 38 ขึ้นไป"
     }
    ]
   },
@@ -579,7 +592,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/4363296fbed8.gif\"/><b>Ironclad Turtle Card</b> × 2",
      "masteryFrom": "Ironclad Turtle Lv 68 <span class=\"m\">· Path to Oops Wharf</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     },
     {
      "id": "cat-3h-SuperHips",
@@ -592,7 +605,7 @@
      "prereq": "Dodge Master Lv 10",
      "mastery": "–",
      "masteryFrom": "",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     },
     {
      "id": "cat-3h-Bodyguard",
@@ -605,7 +618,7 @@
      "prereq": "Physical Training Lv 1",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/67a3bf69fd40.gif\"/><b>Black Foe Card</b> × 2",
      "masteryFrom": "Black Foe Lv 79 <span class=\"m\">· Wharf Field 4 - Chrono Wharf</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     },
     {
      "id": "cat-3h-ImpellingRage",
@@ -618,7 +631,7 @@
      "prereq": "–",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     },
     {
      "id": "cat-3h-FuriousGalderThrow",
@@ -631,7 +644,7 @@
      "prereq": "Galder Thrower Lv M",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
      "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     },
     {
      "id": "cat-3h-FluxCapacitor",
@@ -644,7 +657,7 @@
      "prereq": "Physical Training Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/f31902e10d2e.gif\"/><b>Dancer Michel Card</b> × 3",
      "masteryFrom": "Dancer Michel Lv 138 <span class=\"m\">· Rose Field 1 - Stairway to Sorrow</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     },
     {
      "id": "cat-3h-OnePair",
@@ -657,7 +670,7 @@
      "prereq": "Card Strike Lv 10",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/1073bf13f8c4.gif\"/><b>Chele Card</b> × 3",
      "masteryFrom": "Chele Lv 117 <span class=\"m\">· Mermaid Dungeon 1 - Underworld</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     },
     {
      "id": "cat-3h-LadyLuck",
@@ -670,7 +683,7 @@
      "prereq": "One Pair Lv 1",
      "mastery": "<img alt=\"\" class=\"it\" src=\"img/jobs/bee5ab3a0d0d.gif\"/><b>Maid Lydia Card</b> × 3",
      "masteryFrom": "Maid Lydia Lv 185 <span class=\"m\">· Vamp Dungeon 1 - Banquet of the Vamp, Vamp Dungeon 2 - Banquet of the Dead</span>",
-     "source": "–"
+     "source": "ซื้อการ์ดจาก Card Master Taniel"
     }
    ]
   }

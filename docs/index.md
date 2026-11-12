@@ -18,7 +18,7 @@ sidebar: false
 
 </header>
 
-<nav class="toc"><a href="#guides">คู่มือ</a><a href="#key">เควสกุญแจ</a><a href="#story">เควสเนื้อเรื่อง</a></nav>
+<nav class="toc"><a href="#guides">คู่มือ</a><a href="#key">เควสตามเมือง</a><a href="#story">เควสเนื้อเรื่อง</a></nav>
 
 <section id="guides">
 
@@ -40,22 +40,27 @@ sidebar: false
 
 <section id="key">
 
-<h2 id="key-h"><img alt="" src="./assets/img/1aaea2702df4.gif"/>เควสกุญแจ</h2>
+<h2 id="key-h"><img alt="" src="./assets/img/1aaea2702df4.gif"/>เควสตามเมือง</h2>
 
-<p class="sub">ทำตามลำดับเลข แต่ละโซนต้องผ่านเควสกุญแจของโซนก่อนหน้าก่อน</p>
+<p class="sub">ทุกเควสของแต่ละเมือง เรียงตามลำดับที่เกมเปิด เมืองที่มี 🔑 มีเควสกุญแจด้วย ทำตามเลขกุญแจ เพราะต้องผ่านเควสกุญแจของเมืองก่อนหน้าก่อน</p>
 
 <div class="tiles">
-<a class="t" href="key-desert-beach.html" style="--c:var(--z-desert)"><img alt="" class="pic" src="./assets/img/95226e303086.gif"/><span class="tx"><span class="nm"><span class="n">1</span>Desert Beach</span><span class="f">LV 25+ · Desert Sticker × 5</span></span></a>
-<a class="t" href="key-megalopolis.html" style="--c:var(--z-mega)"><img alt="" class="pic" src="./assets/img/1552ae41ece1.gif"/><span class="tx"><span class="nm"><span class="n">2</span>Megalopolis</span><span class="f">LV 30+ · Instant Adhesive × 4</span></span></a>
-<a class="t" href="key-caballa-relics.html" style="--c:var(--z-caballa)"><img alt="" class="pic" src="./assets/img/8a1bcd0cb8ba.gif"/><span class="tx"><span class="nm"><span class="n">3</span>Caballa Relics</span><span class="f">LV 55+ · Caballa Sticker × 10</span></span></a>
-<a class="t" href="key-oops-wharf.html" style="--c:var(--z-oops)"><img alt="" class="pic" src="./assets/img/66752caff8c6.gif"/><span class="tx"><span class="nm"><span class="n">4</span>Oops Wharf</span><span class="f">LV 70+ · Oops Sticker × 7</span></span></a>
-<a class="t" href="key-mermaid-palace.html" style="--c:var(--z-mermaid)"><img alt="" class="pic" src="./assets/img/6902c80313d0.gif"/><span class="tx"><span class="nm"><span class="n">5</span>Mermaid Palace</span><span class="f">LV 80+ · Palace Proof Sticker × 7</span></span></a>
-<a class="t" href="key-ghost-blue.html" style="--c:var(--z-ghost)"><img alt="" class="pic" src="./assets/img/51b567298e0b.gif"/><span class="tx"><span class="nm"><span class="n">6</span>Ghost Blue</span><span class="f">LV 100+ · Ghost Sticker × 10</span></span></a>
-<a class="t" href="key-rose-garden.html" style="--c:var(--z-rose)"><img alt="" class="pic" src="./assets/img/4e16d739dd21.gif"/><span class="tx"><span class="nm"><span class="n">7</span>Rose Garden</span><span class="f">LV 125+ · Rose Garden Sticker × 13</span></span></a>
-<a class="t" href="key-black-swamp.html" style="--c:var(--z-swamp)"><img alt="" class="pic" src="./assets/img/b59f101fff83.gif"/><span class="tx"><span class="nm"><span class="n">8</span>Black Swamp</span><span class="f">LV 150+ · Swamp Sticker × 13</span></span></a>
-<a class="t" href="key-snow-hill.html" style="--c:var(--z-snow)"><img alt="" class="pic" src="./assets/img/524d79b6e57b.gif"/><span class="tx"><span class="nm"><span class="n">9</span>Snow Hill</span><span class="f">LV 170+ · Snow Hill Sticker × 14</span></span></a>
-<a class="t" href="key-techichi-volcano.html" style="--c:var(--z-techichi)"><img alt="" class="pic" src="./assets/img/fb52ed4dd14c.gif"/><span class="tx"><span class="nm"><span class="n">10</span>Techichi Volcano</span><span class="f">LV 210+ · Techichi Sticker × 13</span></span></a>
-<a class="t" href="key-tapasco-volcano.html" style="--c:var(--z-tapasco)"><img alt="" class="pic" src="./assets/img/01d6ac3e1c9e.gif"/><span class="tx"><span class="nm"><span class="n">11</span>Tapasco Volcano</span><span class="f">LV 235+ · Tapasco Sticker</span></span></a>
+<a class="t" href="town-coral-beach.html" style="--c:var(--z-coral)"><img alt="" class="pic" src="./assets/img/c069c79e94f1.gif"/><span class="tx"><span class="nm">Coral Beach</span><span class="f">LV 1+ · 22 เควส</span></span></a>
+<a class="t has-key" href="key-desert-beach.html" style="--c:var(--z-desert)"><img alt="" class="pic" src="./assets/img/95226e303086.gif"/><span class="tx"><span class="nm">Desert Beach</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 1 · LV 25+ · Desert Sticker × 5</span></span></a>
+<a class="t has-key" href="key-megalopolis.html" style="--c:var(--z-mega)"><img alt="" class="pic" src="./assets/img/1552ae41ece1.gif"/><span class="tx"><span class="nm">Megalopolis</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 2 · LV 30+ · Instant Adhesive × 4</span></span></a>
+<a class="t has-key" href="key-caballa-relics.html" style="--c:var(--z-caballa)"><img alt="" class="pic" src="./assets/img/8a1bcd0cb8ba.gif"/><span class="tx"><span class="nm">Caballa Relics</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 3 · LV 55+ · Caballa Sticker × 10</span></span></a>
+<a class="t has-key" href="key-oops-wharf.html" style="--c:var(--z-oops)"><img alt="" class="pic" src="./assets/img/66752caff8c6.gif"/><span class="tx"><span class="nm">Oops Wharf</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 4 · LV 70+ · Oops Sticker × 7</span></span></a>
+<a class="t has-key" href="key-mermaid-palace.html" style="--c:var(--z-mermaid)"><img alt="" class="pic" src="./assets/img/6902c80313d0.gif"/><span class="tx"><span class="nm">Mermaid Palace</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 5 · LV 80+ · Palace Proof Sticker × 7</span></span></a>
+<a class="t" href="town-mirage-island.html" style="--c:var(--z-mirage)"><img alt="" class="pic" src="./assets/img/afbcadc4c8ed.gif"/><span class="tx"><span class="nm">Mirage Island</span><span class="f">LV 80+ · 73 เควส</span></span></a>
+<a class="t has-key" href="key-ghost-blue.html" style="--c:var(--z-ghost)"><img alt="" class="pic" src="./assets/img/51b567298e0b.gif"/><span class="tx"><span class="nm">Ghost Blue</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 6 · LV 100+ · Ghost Sticker × 10</span></span></a>
+<a class="t has-key" href="key-rose-garden.html" style="--c:var(--z-rose)"><img alt="" class="pic" src="./assets/img/4e16d739dd21.gif"/><span class="tx"><span class="nm">Rose Garden</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 7 · LV 125+ · Rose Garden Sticker × 13</span></span></a>
+<a class="t has-key" href="key-black-swamp.html" style="--c:var(--z-swamp)"><img alt="" class="pic" src="./assets/img/b59f101fff83.gif"/><span class="tx"><span class="nm">Black Swamp</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 8 · LV 150+ · Swamp Sticker × 13</span></span></a>
+<a class="t" href="town-underground-dev-room.html" style="--c:var(--z-udr)"><img alt="" class="pic" src="./assets/img/68aca0c47cc1.gif"/><span class="tx"><span class="nm">Underground Dev Room</span><span class="f">LV 150+ · 74 เควส</span></span></a>
+<a class="t has-key" href="key-snow-hill.html" style="--c:var(--z-snow)"><img alt="" class="pic" src="./assets/img/524d79b6e57b.gif"/><span class="tx"><span class="nm">Snow Hill</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 9 · LV 170+ · Snow Hill Sticker × 14</span></span></a>
+<a class="t has-key" href="key-techichi-volcano.html" style="--c:var(--z-techichi)"><img alt="" class="pic" src="./assets/img/fb52ed4dd14c.gif"/><span class="tx"><span class="nm">Techichi Volcano</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 10 · LV 210+ · Techichi Sticker × 13</span></span></a>
+<a class="t has-key" href="key-tapasco-volcano.html" style="--c:var(--z-tapasco)"><img alt="" class="pic" src="./assets/img/01d6ac3e1c9e.gif"/><span class="tx"><span class="nm">Tapasco Volcano</span><span class="f"><span aria-label="มีเควสกุญแจ" class="kicon" role="img">🔑</span>กุญแจ 11 · LV 235+ · Tapasco Sticker</span></span></a>
+<a class="t" href="town-alteo-empire.html" style="--c:var(--z-alteo)"><img alt="" class="pic" src="./assets/img/6c3128739b0d.gif"/><span class="tx"><span class="nm">Alteo Empire</span><span class="f">LV 200+ · 54 เควส</span></span></a>
+<a class="t" href="town-abyss.html" style="--c:var(--z-abyss)"><img alt="" class="pic" src="./assets/img/39ce87e5dc99.gif"/><span class="tx"><span class="nm">Abyss</span><span class="f">LV 290+ · 28 เควส</span></span></a>
 </div>
 
 </section>

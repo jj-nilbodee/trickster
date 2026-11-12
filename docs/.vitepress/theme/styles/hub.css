@@ -40,6 +40,8 @@ html:not(.dark) .pg-hub a.g, html:not(.dark) .pg-hub a.t { border-color:var(--li
   .pg-hub .parade img { height:48px }
 }
 
-.pg-hub a.t.has-key { border-color:color-mix(in srgb, var(--c) 45%, transparent) }
+.pg-hub a.t.has-key { border-color:color-mix(in srgb, var(--c) 45%, transparent); animation:hub-glow 3.2s ease-in-out infinite }
+@keyframes hub-glow { 0%,100% { box-shadow:0 0 4px color-mix(in srgb, var(--c) 20%, transparent) } 50% { box-shadow:0 0 12px color-mix(in srgb, var(--c) 45%, transparent) } }
+@media (prefers-reduced-motion: reduce) { .pg-hub a.t.has-key { animation:none; box-shadow:0 0 8px color-mix(in srgb, var(--c) 30%, transparent) } }
 .pg-hub a.t.has-key:hover { border-color:var(--c) }
 .pg-hub .kicon { font-size:.8rem; margin-right:3px }

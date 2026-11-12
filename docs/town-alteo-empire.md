@@ -25,7 +25,6 @@ daily: false
 
 <div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="story">เนื้อเรื่อง</button><button type="button" data-t="town">เควสในเมือง</button><button type="button" data-t="hunt">ล่ามอน</button></div>
 
-<nav class="toc"><a href="#story">เควสเนื้อเรื่อง</a><a href="#town">เควสในเมือง</a><a href="#hunt">เควสล่ามอนจำกัดเวลา</a></nav>
 
 <section data-c="" data-qt="story" id="story">
 

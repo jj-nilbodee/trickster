@@ -25,7 +25,6 @@ daily: false
 
 <div class="qfilter"><span class="lb">ประเภท</span><button type="button" data-t="all">ทั้งหมด</button><button type="button" data-t="town">เควสในเมือง</button><button type="button" data-t="hunt">ล่ามอน</button><button type="button" data-t="daily">รายวัน</button><button type="button" data-t="shadow">Shadow World</button><button type="button" data-t="warp">วาร์ป</button></div>
 
-<nav class="toc"><a href="#town">เควสของคนในเมือง</a><a href="#hunt">เควสล่ามอนจำกัดเวลา</a><a href="#daily">เควสรายวัน</a><a href="#series">เควสซีรีส์ (มีในหลายเมือง)</a><a href="#shadow">เควส Shadow World</a><a href="#warp">วาร์ป</a></nav>
 
 <section data-c="" data-qt="town" id="town">
 

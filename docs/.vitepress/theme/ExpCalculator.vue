@@ -14,6 +14,7 @@ const level = ref<number | null>(null)
 const mode = ref<'pct' | 'num'>('pct')
 const cur = ref('')
 const perRun = ref('')
+const perRun2 = ref('')
 const target = ref(MAX)
 const perDay = ref('')
 
@@ -31,14 +32,15 @@ onMounted(() => {
       mode.value = s.mode === 'num' ? 'num' : 'pct'
       cur.value = s.cur ?? ''
       perRun.value = s.perRun ?? ''
+      perRun2.value = s.perRun2 ?? ''
       target.value = s.target ?? MAX
       perDay.value = s.perDay ?? ''
     }
   } catch {}
 })
-watch([level, mode, cur, perRun, target, perDay], () => {
+watch([level, mode, cur, perRun, perRun2, target, perDay], () => {
   try {
-    localStorage.setItem(KEY, JSON.stringify({ level: level.value, mode: mode.value, cur: cur.value, perRun: perRun.value, target: target.value, perDay: perDay.value }))
+    localStorage.setItem(KEY, JSON.stringify({ level: level.value, mode: mode.value, cur: cur.value, perRun: perRun.value, perRun2: perRun2.value, target: target.value, perDay: perDay.value }))
   } catch {}
 })
 
@@ -59,7 +61,10 @@ const result = computed(() => {
   for (let i = lv + 1; i < tg; i++) left += EXP[i]
   const usesEst = Array.from({ length: tg - lv }, (_, k) => lv + k).some((i) => EST.has(i))
 
-  const run = num(perRun.value)
+  // One round = turning in every quest filled in (they can be done at the same time).
+  const q1 = perRun.value.trim() === '' ? 0 : num(perRun.value)
+  const q2 = perRun2.value.trim() === '' ? 0 : num(perRun2.value)
+  const run = q1 + q2
   if (!Number.isFinite(run) || run <= 0) return { left, usesEst }
   const runs = Math.ceil(left / run)
   const pd = num(perDay.value)
@@ -97,8 +102,13 @@ const showSteps = ref(false)
         <span v-if="level && EXP[level]" class="m">เลเวล {{ level }} → {{ level + 1 }} ใช้ {{ fmt(EXP[level]) }} EXP<template v-if="EST.has(level)"> (ประมาณจากสูตร)</template></span>
       </div>
       <label>
-        <span class="l">EXP ที่ได้ต่อการส่งเควส 1 รอบ</span>
+        <span class="l">EXP เควสที่ 1 (ต่อการส่ง 1 ครั้ง)</span>
         <input v-model="perRun" inputmode="numeric" placeholder="ดูจากหน้าต่างเควสในเกม" />
+      </label>
+      <label>
+        <span class="l">EXP เควสที่ 2 <span class="m">(ถ้าทำ 2 เควสพร้อมกัน)</span></span>
+        <input v-model="perRun2" inputmode="numeric" placeholder="เว้นว่างได้ถ้าทำเควสเดียว" />
+        <span v-if="num(perRun) > 0 && num(perRun2) > 0" class="m">1 รอบ = ส่งทั้ง 2 เควส ได้รวม {{ fmt(num(perRun) + num(perRun2)) }} EXP</span>
       </label>
       <label>
         <span class="l">เลเวลเป้าหมาย</span>
@@ -116,7 +126,7 @@ const showSteps = ref(false)
         <div v-if="result.runs !== undefined" class="big">
           อีก <b>{{ fmt(result.runs) }}</b> รอบ ถึงเลเวล {{ target }}
         </div>
-        <div v-else class="big sm">ใส่ EXP ต่อรอบเพื่อคำนวณจำนวนรอบ</div>
+        <div v-else class="big sm">ใส่ EXP ของเควสเพื่อคำนวณจำนวนรอบ</div>
         <ul class="facts">
           <li>EXP ที่ยังขาด <b>{{ fmt(result.left) }}</b></li>
           <li v-if="result.days">ถ้าส่งวันละ {{ perDay }} รอบ ใช้ประมาณ <b>{{ fmt(result.days) }}</b> วัน</li>

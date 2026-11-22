@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import PageBehavior from './PageBehavior.vue'
 import JobsGuide from './JobsGuide.vue'
+import ExpCalculator from './ExpCalculator.vue'
 import './styles/hub.css'
 import './styles/guide.css'
 import './styles/key.css'
@@ -15,5 +16,6 @@ export default {
   enhanceApp({ app }) {
     app.component('PageBehavior', PageBehavior)
     app.component('JobsGuide', JobsGuide)
+    app.component('ExpCalculator', ExpCalculator)
   },
 } satisfies Theme

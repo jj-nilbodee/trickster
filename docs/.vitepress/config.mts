@@ -7,6 +7,7 @@ const guides = [
   ['เควสสกิล', '/skill-quests'],
   ['Tower of Chaos', '/tower-of-chaos'],
   ['แมพเก็บเลเวล', '/leveling-maps'],
+  ['คำนวณ EXP', '/exp-calculator'],
   ['บอส', '/bosses'],
   ['Guardian', '/guardian'],
   ['สเตตัส', '/stats'],

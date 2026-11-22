@@ -17,6 +17,8 @@ const perRun = ref('')
 const perRun2 = ref('')
 const target = ref(MAX)
 const perDay = ref('')
+const orbs = ref('')
+const orbCost = ref('50')
 
 const num = (s: string) => {
   const v = Number(String(s).replace(/[,\s]/g, ''))
@@ -35,12 +37,14 @@ onMounted(() => {
       perRun2.value = s.perRun2 ?? ''
       target.value = s.target ?? MAX
       perDay.value = s.perDay ?? ''
+      orbs.value = s.orbs ?? ''
+      orbCost.value = s.orbCost ?? '50'
     }
   } catch {}
 })
-watch([level, mode, cur, perRun, perRun2, target, perDay], () => {
+watch([level, mode, cur, perRun, perRun2, target, perDay, orbs, orbCost], () => {
   try {
-    localStorage.setItem(KEY, JSON.stringify({ level: level.value, mode: mode.value, cur: cur.value, perRun: perRun.value, perRun2: perRun2.value, target: target.value, perDay: perDay.value }))
+    localStorage.setItem(KEY, JSON.stringify({ level: level.value, mode: mode.value, cur: cur.value, perRun: perRun.value, perRun2: perRun2.value, target: target.value, perDay: perDay.value, orbs: orbs.value, orbCost: orbCost.value }))
   } catch {}
 })
 
@@ -77,7 +81,25 @@ const result = computed(() => {
     steps.push({ lv: i, runs: Math.ceil(acc / run), est: EST.has(i - 1) })
     if (i < tg) acc += EXP[i]
   }
-  return { left, usesEst, runs, days, steps, over: runs * run - left }
+  // Orbs: every turn-in of either quest costs `cost` orbs from the same pile.
+  const quests = [q1, q2].filter((q) => q > 0)
+  const big = Math.max(...quests)
+  const expFor = (t: number) => (quests.length === 2 ? Math.floor(t / 2) * run + (t % 2) * big : t * run)
+  let turnIns = Math.ceil(left / run) * quests.length
+  if (quests.length === 2 && expFor(turnIns - 1) >= left) turnIns -= 1
+  const cost = num(orbCost.value)
+  const owned = orbs.value.trim() === '' ? NaN : num(orbs.value)
+  let orb = null as null | { can: number; exp: number; lv: number; pct: number; more: number; reach: boolean }
+  if (Number.isFinite(cost) && cost > 0) {
+    const have0 = Number.isFinite(owned) && owned >= 0 ? owned : 0
+    const can = Math.floor(have0 / cost)
+    const exp = expFor(can)
+    // Walk up the levels with the EXP those turn-ins give.
+    let l = lv, e = have + exp
+    while (l < tg && e >= EXP[l]) { e -= EXP[l]; l++ }
+    orb = { can, exp, lv: l, pct: l < MAX ? (e / EXP[l]) * 100 : 0, more: Math.max(0, turnIns * cost - have0), reach: l >= tg }
+  }
+  return { left, usesEst, runs, days, steps, over: expFor(turnIns) - left, turnIns, two: quests.length === 2, orb, ownedSet: Number.isFinite(owned) }
 })
 
 const showSteps = ref(false)
@@ -110,6 +132,16 @@ const showSteps = ref(false)
         <input v-model="perRun2" inputmode="numeric" placeholder="เว้นว่างได้ถ้าทำเควสเดียว" />
         <span v-if="num(perRun) > 0 && num(perRun2) > 0" class="m">1 รอบ = ส่งทั้ง 2 เควส ได้รวม {{ fmt(num(perRun) + num(perRun2)) }} EXP</span>
       </label>
+      <div class="row2">
+        <label>
+          <span class="l">ลูกแก้วที่มีตอนนี้</span>
+          <input v-model="orbs" inputmode="numeric" placeholder="เช่น 1,230" />
+        </label>
+        <label>
+          <span class="l">ใช้ต่อการส่ง 1 ครั้ง</span>
+          <input v-model="orbCost" inputmode="numeric" />
+        </label>
+      </div>
       <label>
         <span class="l">เลเวลเป้าหมาย</span>
         <input v-model.number="target" type="number" inputmode="numeric" min="2" :max="MAX" />
@@ -130,8 +162,19 @@ const showSteps = ref(false)
         <ul class="facts">
           <li>EXP ที่ยังขาด <b>{{ fmt(result.left) }}</b></li>
           <li v-if="result.days">ถ้าส่งวันละ {{ perDay }} รอบ ใช้ประมาณ <b>{{ fmt(result.days) }}</b> วัน</li>
-          <li v-if="result.runs !== undefined">รอบสุดท้ายจะเกินมา {{ fmt(result.over) }} EXP</li>
+          <li v-if="result.two">รวมส่งเควส {{ fmt(result.turnIns) }} ครั้ง (รอบละ 2 เควส)</li>
+          <li v-if="result.orb">ใช้ลูกแก้วทั้งหมด {{ fmt(result.turnIns * num(orbCost)) }} ลูก</li>
+          <li v-if="result.runs !== undefined">ครั้งสุดท้ายจะเกินมา {{ fmt(result.over) }} EXP</li>
         </ul>
+        <div v-if="result.orb && result.ownedSet" class="orb">
+          <div class="h">จากลูกแก้วที่มี {{ fmt(num(orbs)) }} ลูก</div>
+          <ul class="facts">
+            <li>ส่งเควสได้ <b>{{ fmt(result.orb.can) }}</b> ครั้ง<template v-if="result.two"> ({{ fmt(Math.floor(result.orb.can / 2)) }} รอบเต็ม<template v-if="result.orb.can % 2"> กับอีก 1 เควส</template>)</template> ได้ {{ fmt(result.orb.exp) }} EXP</li>
+            <li v-if="result.orb.reach">พอถึงเลเวล {{ target }} แล้ว</li>
+            <li v-else>ส่งหมดแล้วจะอยู่เลเวล <b>{{ result.orb.lv }}</b> ({{ result.orb.pct.toFixed(2) }}%)</li>
+            <li v-if="!result.orb.reach">ต้องหาลูกแก้วเพิ่มอีก <b>{{ fmt(result.orb.more) }}</b> ลูก ถึงจะถึงเลเวล {{ target }}</li>
+          </ul>
+        </div>
         <p v-if="result.usesEst" class="m warn">เลเวล 352–399 วิกิไม่ได้ลงตัวเลขไว้ ใช้สูตรเดียวกับตารางคำนวณแทน (สูตรนี้ตรงกับเลเวล 391 ที่วิกิมีตัวเลข)</p>
       </template>
     </div>
@@ -178,4 +221,7 @@ const showSteps = ref(false)
 .pg-guide .expc tr { display: table-row; border: 0; border-radius: 0; margin: 0; padding: 0; background: none }
 .pg-guide .expc td, .pg-guide .expc th { display: table-cell; padding: 6px 10px; border-top: 1px solid var(--line) }
 }
+.pg-guide .expc .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: end }
+.pg-guide .expc .orb { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 4px }
+.pg-guide .expc .orb .h { font-weight: 600 }
 </style>

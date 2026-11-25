@@ -67,6 +67,10 @@ class FakeDiscord implements DiscordApi {
   async editReply(_a: string, _t: string, message: object) {
     this.replies.push(message);
   }
+  posted: { channel: string; message: any }[] = [];
+  async createMessage(channel: string, message: object) {
+    this.posted.push({ channel, message });
+  }
 }
 
 function setup(roleMode: Deps["roleMode"] = "character") {
@@ -212,6 +216,96 @@ group("commands", () => {
       deps,
     );
     expect((h.response as any).data.choices.map((c: any) => c.value)).toEqual(["Shaman", "Magician", "Dark Lord", "Wizard"]);
+  });
+});
+
+function component(custom_id: string, values?: string[], user = "u1", member: object = {}) {
+  return {
+    type: 3,
+    token: "tok",
+    application_id: "app",
+    guild_id: "g1",
+    member: { user: { id: user }, nick: null, roles: [] as string[], ...member },
+    data: { custom_id, values },
+  };
+}
+
+function modal(custom_id: string, fields: Record<string, string>, user = "u1") {
+  return {
+    type: 5,
+    token: "tok",
+    application_id: "app",
+    guild_id: "g1",
+    member: { user: { id: user }, nick: null, roles: [] as string[] },
+    data: { custom_id, components: Object.entries(fields).map(([custom_id, value]) => ({ components: [{ custom_id, value }] })) },
+  };
+}
+
+group("button panel", () => {
+  it("/panel posts a message with buttons in the channel", async () => {
+    const { deps, discord } = setup();
+    await run(deps, { ...command("panel", {}), channel_id: "c1" });
+    expect(discord.posted[0].channel).toBe("c1");
+    const ids = discord.posted[0].message.components.flatMap((r: any) => r.components.map((b: any) => b.custom_id));
+    expect(ids).toEqual(["panel:register", "panel:level", "panel:profile", "panel:party", "panel:roster"]);
+    expect(COMMANDS.find((c) => c.name === "panel")).toMatchObject({ default_member_permissions: "32" });
+  });
+
+  it("register: character menu > job menu > form > saved", async () => {
+    const { deps, store, discord } = setup();
+    const step1: any = (await handleInteraction(component("panel:register") as any, deps)).response;
+    expect(step1.data.flags).toBe(EPHEMERAL);
+    expect(step1.data.components[0].components[0].options).toHaveLength(9);
+
+    const step2: any = (await handleInteraction(component("reg:char", ["dragon"]) as any, deps)).response;
+    expect(step2.type).toBe(7);
+    expect(step2.data.components[0].components[0].options.map((o: any) => o.value)).toContain("Priest");
+
+    const step3: any = (await handleInteraction(component("reg:job:dragon", ["Dark Lord"]) as any, deps)).response;
+    expect(step3.type).toBe(9);
+    expect(step3.data.custom_id).toBe("modal:reg:dragon:Dark Lord");
+
+    const done = await run(deps, modal("modal:reg:dragon:Dark Lord", { name: " Mingo ", level: "150" }));
+    expect(done.response).toEqual({ type: 6 });
+    expect(store.rows[0]).toMatchObject({ name: "Mingo", job: "Dark Lord", level: 150 });
+    expect(discord.nicks.u1).toBe("Mingo");
+    expect(discord.replies[0].content).toContain("ลงทะเบียนแล้ว");
+    expect(discord.replies[0].components).toEqual([]);
+
+    // Opening the form again fills in the saved name and level
+    const again: any = (await handleInteraction(component("reg:job:dragon", ["Priest"]) as any, deps)).response;
+    expect(again.data.components.map((r: any) => r.components[0].value)).toEqual(["Mingo", "150"]);
+  });
+
+  it("rejects a bad level in the form", async () => {
+    const { deps, store } = setup();
+    const h: any = await handleInteraction(modal("modal:reg:dragon:Priest", { name: "Mingo", level: "abc" }) as any, deps);
+    expect(h.response.data.content).toContain("เลเวลต้องเป็นตัวเลข");
+    expect(store.rows).toHaveLength(0);
+  });
+
+  it("level and party forms", async () => {
+    const { deps, discord } = setup();
+    await run(deps, modal("modal:reg:dragon:Priest", { name: "Mingo", level: "150" }, "u1"));
+    await run(deps, modal("modal:reg:bunny:Champion", { name: "Sppo", level: "120" }, "u2"));
+    await run(deps, modal("modal:level", { level: "Lv.155" }, "u1"));
+    discord.replies = [];
+    await run(deps, modal("modal:party", { who: "priest", min: "150", max: "" }));
+    expect(discord.replies[0].embeds[0].description).toContain("Mingo");
+    expect(discord.replies[0].embeds[0].description).toContain("Lv.155");
+    expect(discord.replies[0].embeds[0].description).not.toContain("Sppo");
+    await run(deps, modal("modal:party", { who: "bunny", min: "", max: "" }));
+    expect(discord.replies[1].embeds[0].description).toContain("Sppo");
+    const bad: any = await handleInteraction(modal("modal:party", { who: "pikachu", min: "", max: "" }) as any, deps);
+    expect(bad.response.data.content).toContain("ไม่รู้จัก");
+  });
+
+  it("profile and roster buttons", async () => {
+    const { deps, discord } = setup();
+    await run(deps, component("panel:profile"));
+    expect(discord.replies[0].content).toContain("ยังไม่ได้ลงทะเบียน");
+    await run(deps, component("panel:roster"));
+    expect(discord.replies[1].embeds[0].description).toContain("ยังไม่มีใคร");
   });
 });
 

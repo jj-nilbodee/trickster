@@ -3,12 +3,15 @@ import { webcrypto } from "node:crypto";
 const API = "https://discord.com/api/v10";
 
 // Interaction and response types (https://discord.com/developers/docs/interactions/receiving-and-responding)
-export const InteractionType = { PING: 1, APPLICATION_COMMAND: 2, AUTOCOMPLETE: 4 } as const;
+export const InteractionType = { PING: 1, APPLICATION_COMMAND: 2, MESSAGE_COMPONENT: 3, AUTOCOMPLETE: 4, MODAL_SUBMIT: 5 } as const;
 export const ResponseType = {
   PONG: 1,
   MESSAGE: 4,
   DEFERRED_MESSAGE: 5,
+  DEFERRED_UPDATE: 6,
+  UPDATE_MESSAGE: 7,
   AUTOCOMPLETE_RESULT: 8,
+  MODAL: 9,
 } as const;
 export const EPHEMERAL = 1 << 6;
 const MANAGE_NICKNAMES = 1n << 27n;
@@ -76,6 +79,7 @@ export interface DiscordApi {
   addRole(guildId: string, userId: string, roleId: string): Promise<void>;
   removeRole(guildId: string, userId: string, roleId: string): Promise<void>;
   editReply(appId: string, token: string, message: object): Promise<void>;
+  createMessage(channelId: string, message: object): Promise<void>;
 }
 
 export class DiscordRest implements DiscordApi {
@@ -107,5 +111,8 @@ export class DiscordRest implements DiscordApi {
   }
   async editReply(appId: string, token: string, message: object) {
     await this.call("PATCH", `/webhooks/${appId}/${token}/messages/@original`, message, undefined, false);
+  }
+  async createMessage(channelId: string, message: object) {
+    await this.call("POST", `/channels/${channelId}/messages`, message);
   }
 }

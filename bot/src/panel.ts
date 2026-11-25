@@ -155,7 +155,7 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
               components: [
                 textInput("name", "ชื่อตัวละครในเกม", { value: m?.name }),
                 textInput("level", "เลเวลตอนนี้", { max: 3, value: m ? String(m.level) : undefined }),
-                textInput("build", "สายที่เล่น", { max: 40, value: m?.build || undefined, placeholder: "เช่น สาย Power, AP/DA" }),
+                textInput("build", "สายที่เล่น", { max: 40, value: m?.build || undefined, placeholder: "เช่น สายตรง สายผสม น้ำ ไฟฟ้า" }),
               ],
             },
           },

@@ -49,7 +49,7 @@ export const COMMANDS = [
       { type: STRING, name: "name", description: "ชื่อตัวละครในเกม", required: true, min_length: 1, max_length: 32 },
       characterOption(true),
       levelOption("level", "เลเวลตอนนี้", true),
-      { type: STRING, name: "build", description: "สายที่เล่น เช่น สาย Power, AP/DA", required: true, min_length: 1, max_length: 40 },
+      { type: STRING, name: "build", description: "สายที่เล่น เช่น สายตรง สายผสม น้ำ ไฟฟ้า", required: true, min_length: 1, max_length: 40 },
     ],
   },
   {

@@ -7,7 +7,7 @@ export interface Member {
   char_id: string;
   job: string;
   level: number;
-  /** สายที่เล่น: free text, e.g. "สาย Power" */
+  /** สายที่เล่น: free text, e.g. "สายตรง", "น้ำ" */
   build: string;
 }
 

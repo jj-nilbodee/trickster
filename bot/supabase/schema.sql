@@ -7,6 +7,7 @@ create table if not exists public.members (
   char_id    text        not null,          -- bunny, dragon, fox, ...
   job        text        not null,          -- Priest, Dark Lord, ...
   level      integer     not null check (level between 1 and 999),
+  build      text        not null default '',  -- สายที่เล่น
   updated_at timestamptz not null default now(),
   primary key (guild_id, user_id)
 );

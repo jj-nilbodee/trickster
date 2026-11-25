@@ -80,7 +80,7 @@ export function deferred(
 
 export function describe(m: Member): string {
   const c = CHARACTERS[m.char_id];
-  return `${STAT_EMOJI[c.stat]} **${m.name}** · ${c.name} · Lv.${m.level}`;
+  return `${STAT_EMOJI[c.stat]} **${m.name}** · ${c.name}${m.build ? ` (${m.build})` : ""} · Lv.${m.level}`;
 }
 
 export function roleNameFor(m: Member): string {
@@ -138,7 +138,7 @@ export async function registerAction(
   d: Deps,
   guildId: string,
   me: GuildMember,
-  input: { name: string; charId: string; level: number },
+  input: { name: string; charId: string; level: number; build: string },
 ): Promise<Reply> {
   const userId = me.user!.id;
   const name = input.name.trim();
@@ -151,6 +151,7 @@ export async function registerAction(
       char_id: input.charId,
       job: "", // jobs are no longer asked for; column kept for old rows and a possible return
       level: input.level,
+      build: input.build.trim(),
     });
   } catch (e) {
     if (!(e instanceof NameTaken)) throw e;
@@ -177,7 +178,7 @@ export async function rosterAction(d: Deps, guildId: string): Promise<Reply> {
   const fields = Object.entries(CHARACTERS).flatMap(([id, c]) => {
     const ms = members.filter((m) => m.char_id === id);
     if (!ms.length) return [];
-    let value = ms.map((m) => `${m.name} · Lv.${m.level}`).join("\n");
+    let value = ms.map((m) => `${m.name}${m.build ? ` (${m.build})` : ""} · Lv.${m.level}`).join("\n");
     if (value.length > 1024) value = value.slice(0, 1000).replace(/\n[^\n]*$/, "") + "\n…";
     return [{ name: `${STAT_EMOJI[c.stat]} ${c.name} (${ms.length})`, value, inline: true }];
   });

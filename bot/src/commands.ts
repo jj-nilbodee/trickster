@@ -49,6 +49,7 @@ export const COMMANDS = [
       { type: STRING, name: "name", description: "ชื่อตัวละครในเกม", required: true, min_length: 1, max_length: 32 },
       characterOption(true),
       levelOption("level", "เลเวลตอนนี้", true),
+      { type: STRING, name: "build", description: "สายที่เล่น เช่น สาย Power, AP/DA", required: true, min_length: 1, max_length: 40 },
     ],
   },
   {
@@ -115,7 +116,8 @@ export async function handleInteraction(i: Interaction, d: Deps): Promise<Handle
       const charId = opt<string>("character")!;
       const name = opt<string>("name")!;
       const level = opt<number>("level")!;
-      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, level }));
+      const build = opt<string>("build") ?? "";
+      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, level, build }));
     }
     case "level":
       return deferred(i, d, () => levelAction(d, guildId, userId, opt<number>("level")!));

@@ -155,6 +155,7 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
               components: [
                 textInput("name", "ชื่อตัวละครในเกม", { value: m?.name }),
                 textInput("level", "เลเวลตอนนี้", { max: 3, value: m ? String(m.level) : undefined }),
+                textInput("build", "สายที่เล่น", { max: 40, value: m?.build || undefined, placeholder: "เช่น สาย Power, AP/DA" }),
               ],
             },
           },
@@ -168,11 +169,13 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
       const charId = id.slice("modal:reg:".length).split(":")[0];
       const name = (field(i, "name") ?? "").trim();
       const level = parseLevel(field(i, "level"));
+      const build = (field(i, "build") ?? "").trim();
       if (!CHARACTERS[charId]) return { response: msg("ข้อมูลไม่ครบ กดลงทะเบียนใหม่อีกครั้ง") };
       if (!name) return { response: msg("ต้องใส่ชื่อตัวละคร") };
+      if (!build) return { response: msg("ต้องใส่สายที่เล่น") };
       if (typeof level !== "number") return { response: msg(`เลเวลต้องเป็นตัวเลข 1–${MAX_LEVEL}`) };
       // The form came from the step-by-step message, so replace that message with the result
-      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, level }), { update: true });
+      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, level, build }), { update: true });
     }
     if (id === "modal:level") {
       const level = parseLevel(field(i, "level"));

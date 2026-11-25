@@ -7,6 +7,8 @@ export interface Member {
   char_id: string;
   job: string;
   level: number;
+  /** สายที่เล่น: free text, e.g. "สาย Power" */
+  build: string;
 }
 
 export interface Filters {
@@ -31,7 +33,7 @@ export interface Store {
   search(guildId: string, f?: Filters): Promise<Member[]>;
 }
 
-const COLS = "guild_id,user_id,name,char_id,job,level";
+const COLS = "guild_id,user_id,name,char_id,job,level,build";
 
 export class SupabaseStore implements Store {
   private sb: SupabaseClient;

@@ -67,6 +67,10 @@ class FakeDiscord implements DiscordApi {
   async editReply(_a: string, _t: string, message: object) {
     this.replies.push(message);
   }
+  registered: object[][] = [];
+  async registerCommands(_app: string, commands: object[]) {
+    this.registered.push(commands);
+  }
   posted: { channel: string; message: any }[] = [];
   async createMessage(channel: string, message: object) {
     this.posted.push({ channel, message });
@@ -134,7 +138,10 @@ group("signature", () => {
 group("commands", () => {
   it("answers Discord's ping", async () => {
     const { deps } = setup();
-    expect((await handleInteraction({ type: 1 } as any, deps)).response).toEqual({ type: 1 });
+    const { deps: d2, discord } = setup();
+    const h = await run(d2, { type: 1, application_id: "app" });
+    expect(h.response).toEqual({ type: 1 });
+    expect(discord.registered[0]).toHaveLength(COMMANDS.length); // slash commands registered on ping
   });
 
   it("/register saves, renames and swaps the job role", async () => {

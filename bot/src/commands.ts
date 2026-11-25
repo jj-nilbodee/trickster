@@ -127,7 +127,14 @@ function autocomplete(i: Interaction): Handled {
 }
 
 export async function handleInteraction(i: Interaction, d: Deps): Promise<Handled> {
-  if (i.type === InteractionType.PING) return { response: { type: ResponseType.PONG } };
+  if (i.type === InteractionType.PING) {
+    // Discord pings when the Interactions Endpoint URL is saved: use that moment to (re)register the slash commands
+    return {
+      response: { type: ResponseType.PONG },
+      after: () =>
+        d.discord.registerCommands(i.application_id, COMMANDS).catch((e) => console.error("registering commands failed", e)),
+    };
+  }
   if (i.type === InteractionType.AUTOCOMPLETE) return autocomplete(i);
   if (!i.data) return { response: msg("ไม่รู้จักคำสั่งนี้") };
   if (!i.guild_id || !i.member?.user) return { response: msg("ใช้คำสั่งนี้ได้ในเซิร์ฟเวอร์เท่านั้น") };

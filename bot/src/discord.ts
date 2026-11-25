@@ -80,6 +80,8 @@ export interface DiscordApi {
   removeRole(guildId: string, userId: string, roleId: string): Promise<void>;
   editReply(appId: string, token: string, message: object): Promise<void>;
   createMessage(channelId: string, message: object): Promise<void>;
+  /** Replace the app's global slash command list. */
+  registerCommands(appId: string, commands: object[]): Promise<void>;
 }
 
 export class DiscordRest implements DiscordApi {
@@ -114,5 +116,8 @@ export class DiscordRest implements DiscordApi {
   }
   async createMessage(channelId: string, message: object) {
     await this.call("POST", `/channels/${channelId}/messages`, message);
+  }
+  async registerCommands(appId: string, commands: object[]) {
+    await this.call("PUT", `/applications/${appId}/commands`, commands);
   }
 }

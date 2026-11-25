@@ -15,7 +15,6 @@ function getDeps() {
   deps ??= {
     store: new SupabaseStore(env("SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY")),
     discord: new DiscordRest(env("DISCORD_BOT_TOKEN")),
-    roleMode: process.env.ROLE_MODE === "job" ? "job" : "character",
   };
   return deps;
 }

@@ -1,6 +1,6 @@
 // The button panel: a permanent message with buttons, posted by an admin with /panel.
 // Buttons open menus and forms so members don't need to type slash commands.
-import { CHARACTERS, MAX_LEVEL, STAT_EMOJI, allJobs, findJob } from "./jobs.js";
+import { CHARACTERS, MAX_LEVEL, STAT_EMOJI } from "./jobs.js";
 import type { Filters, Member } from "./db.js";
 import {
   deferred,
@@ -32,9 +32,9 @@ export function panelMessage() {
         title: "🃏 ลงทะเบียนตัวละครกิลด์",
         color: 0xf1c40f,
         description: [
-          "**📝 ลงทะเบียน / แก้ไข** เลือกตัวละครกับอาชีพ แล้วกรอกชื่อและเลเวล บอทจะเปลี่ยนชื่อในเซิร์ฟเวอร์เป็นชื่อตัวละคร และให้ role อาชีพ",
+          "**📝 ลงทะเบียน / แก้ไข** เลือกตัวละคร แล้วกรอกชื่อและเลเวล บอทจะเปลี่ยนชื่อในเซิร์ฟเวอร์เป็นชื่อตัวละคร และให้ role อาชีพ",
           "**⬆️ อัปเดตเลเวล** แก้เลเวลอย่างเดียว",
-          "**🔍 หาปาร์ตี้** ค้นสมาชิกตามตัวละคร อาชีพ หรือช่วงเลเวล",
+          "**🔍 หาปาร์ตี้** ค้นสมาชิกตามตัวละคร หรือช่วงเลเวล",
           "",
           "ผลลัพธ์จะเห็นแค่คนที่กดเท่านั้น",
         ].join("\n"),
@@ -65,11 +65,6 @@ const ephemeralMessage = (content: string, components: object[]) => ({
   type: ResponseType.MESSAGE,
   data: { content, flags: EPHEMERAL, components },
 });
-const updateMessage = (content: string, components: object[]) => ({
-  type: ResponseType.UPDATE_MESSAGE,
-  data: { content, components },
-});
-
 const textInput = (custom_id: string, label: string, o: { required?: boolean; max?: number; value?: string; placeholder?: string } = {}) => ({
   type: ACTION_ROW,
   components: [
@@ -96,27 +91,9 @@ function characterSelect(customId: string, placeholder: string) {
         placeholder,
         options: Object.entries(CHARACTERS).map(([id, c]) => ({
           label: c.name,
-          description: `สาย ${c.stat} · ${c.jobs.join(", ")}`.slice(0, 100),
+          description: `สาย ${c.stat}`,
           value: id,
           emoji: { name: STAT_EMOJI[c.stat] },
-        })),
-      },
-    ],
-  };
-}
-
-function jobSelect(charId: string) {
-  return {
-    type: ACTION_ROW,
-    components: [
-      {
-        type: STRING_SELECT,
-        custom_id: `reg:job:${charId}`,
-        placeholder: "เลือกอาชีพตอนนี้",
-        options: CHARACTERS[charId].jobs.map((j, idx) => ({
-          label: j,
-          description: idx === 0 ? "อาชีพขั้น 1" : idx === 1 ? "อาชีพขั้น 2" : "อาชีพขั้น 3",
-          value: j,
         })),
       },
     ],
@@ -136,14 +113,12 @@ function parseLevel(text: string | undefined): number | undefined | "bad" {
   return Number.isInteger(n) && n >= 1 && n <= MAX_LEVEL ? n : "bad";
 }
 
-/** "Dragon" -> { charId: dragon }, "priest" -> { job: Priest }. */
-function parseCharOrJob(text: string | undefined): Filters | "bad" {
+/** "Dragon" -> { charId: dragon }. */
+function parseChar(text: string | undefined): Filters | "bad" {
   const t = (text ?? "").trim().toLowerCase();
   if (!t) return {};
   const char = Object.entries(CHARACTERS).find(([, c]) => c.name.toLowerCase() === t);
   if (char) return { charId: char[0] };
-  const job = allJobs().find(([, j]) => j.toLowerCase() === t);
-  if (job) return { job: job[1] };
   return "bad";
 }
 
@@ -161,7 +136,7 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
   if (i.type === InteractionType.MESSAGE_COMPONENT) {
     switch (id) {
       case "panel:register":
-        return { response: ephemeralMessage("**ขั้นที่ 1/3** เลือกตัวละคร", [characterSelect("reg:char", "เลือกตัวละคร")]) };
+        return { response: ephemeralMessage("**ขั้นที่ 1/2** เลือกตัวละคร", [characterSelect("reg:char", "เลือกตัวละคร")]) };
       case "panel:level": {
         const m = await quickGet(d, guildId, userId);
         return {
@@ -185,7 +160,7 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
               custom_id: "modal:party",
               title: "หาปาร์ตี้",
               components: [
-                textInput("who", "ตัวละครหรืออาชีพ (ว่างไว้ = ทุกคน)", { required: false, placeholder: "เช่น Dragon หรือ Priest" }),
+                textInput("who", "ตัวละคร (ว่างไว้ = ทุกคน)", { required: false, placeholder: "เช่น Dragon, Fox, Bunny" }),
                 textInput("min", "เลเวลต่ำสุด (ว่างไว้ได้)", { required: false, max: 3 }),
                 textInput("max", "เลเวลสูงสุด (ว่างไว้ได้)", { required: false, max: 3 }),
               ],
@@ -197,45 +172,34 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
       case "reg:char": {
         const charId = i.data?.values?.[0] ?? "";
         if (!CHARACTERS[charId]) return { response: msg("เลือกตัวละครใหม่อีกครั้ง") };
+        const m = await quickGet(d, guildId, userId);
         return {
-          response: updateMessage(`**ขั้นที่ 2/3** ${CHARACTERS[charId].name}: เลือกอาชีพ`, [
-            jobSelect(charId),
-            characterSelect("reg:char", "เปลี่ยนตัวละคร"),
-          ]),
+          response: {
+            type: ResponseType.MODAL,
+            data: {
+              custom_id: `modal:reg:${charId}`,
+              title: `ขั้นที่ 2/2 ลงทะเบียน ${CHARACTERS[charId].name}`.slice(0, 45),
+              components: [
+                textInput("name", "ชื่อตัวละครในเกม", { value: m?.name }),
+                textInput("level", "เลเวลตอนนี้", { max: 3, value: m ? String(m.level) : undefined }),
+              ],
+            },
+          },
         };
       }
-    }
-    if (id.startsWith("reg:job:")) {
-      const charId = id.slice("reg:job:".length);
-      const job = findJob(charId, i.data?.values?.[0] ?? "");
-      if (!job) return { response: msg("เลือกอาชีพใหม่อีกครั้ง") };
-      const m = await quickGet(d, guildId, userId);
-      return {
-        response: {
-          type: ResponseType.MODAL,
-          data: {
-            custom_id: `modal:reg:${charId}:${job}`,
-            title: `ขั้นที่ 3/3 ${CHARACTERS[charId].name} ${job}`.slice(0, 45),
-            components: [
-              textInput("name", "ชื่อตัวละครในเกม", { value: m?.name }),
-              textInput("level", "เลเวลตอนนี้", { max: 3, value: m ? String(m.level) : undefined }),
-            ],
-          },
-        },
-      };
     }
   }
 
   if (i.type === InteractionType.MODAL_SUBMIT) {
     if (id.startsWith("modal:reg:")) {
-      const [charId, job] = id.slice("modal:reg:".length).split(":");
+      const charId = id.slice("modal:reg:".length).split(":")[0];
       const name = (field(i, "name") ?? "").trim();
       const level = parseLevel(field(i, "level"));
-      if (!CHARACTERS[charId] || !findJob(charId, job ?? "")) return { response: msg("ข้อมูลไม่ครบ กดลงทะเบียนใหม่อีกครั้ง") };
+      if (!CHARACTERS[charId]) return { response: msg("ข้อมูลไม่ครบ กดลงทะเบียนใหม่อีกครั้ง") };
       if (!name) return { response: msg("ต้องใส่ชื่อตัวละคร") };
       if (typeof level !== "number") return { response: msg(`เลเวลต้องเป็นตัวเลข 1–${MAX_LEVEL}`) };
       // The form came from the step-by-step message, so replace that message with the result
-      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, job, level }), { update: true });
+      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, level }), { update: true });
     }
     if (id === "modal:level") {
       const level = parseLevel(field(i, "level"));
@@ -243,10 +207,10 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
       return deferred(i, d, () => levelAction(d, guildId, userId, level));
     }
     if (id === "modal:party") {
-      const who = parseCharOrJob(field(i, "who"));
+      const who = parseChar(field(i, "who"));
       const minLevel = parseLevel(field(i, "min"));
       const maxLevel = parseLevel(field(i, "max"));
-      if (who === "bad") return { response: msg("ไม่รู้จักตัวละครหรืออาชีพนี้ ลองพิมพ์เช่น Dragon, Fox, Priest, Dark Lord") };
+      if (who === "bad") return { response: msg("ไม่รู้จักตัวละครนี้ ลองพิมพ์เช่น Dragon, Fox, Bunny") };
       if (minLevel === "bad" || maxLevel === "bad") return { response: msg(`เลเวลต้องเป็นตัวเลข 1–${MAX_LEVEL}`) };
       return deferred(i, d, () => partyAction(d, guildId, { ...who, minLevel, maxLevel }));
     }

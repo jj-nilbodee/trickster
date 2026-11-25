@@ -6,8 +6,6 @@ import { DiscordError, EPHEMERAL, ResponseType, type DiscordApi } from "./discor
 export interface Deps {
   store: Store;
   discord: DiscordApi;
-  /** "character" = role per character (Dragon, Fox, ...); "job" = role per job (Priest, Dark Lord, ...) */
-  roleMode: "character" | "job";
 }
 
 export interface Handled {
@@ -82,14 +80,14 @@ export function deferred(
 
 export function describe(m: Member): string {
   const c = CHARACTERS[m.char_id];
-  return `${STAT_EMOJI[c.stat]} **${m.name}** · ${c.name} ${m.job} · Lv.${m.level}`;
+  return `${STAT_EMOJI[c.stat]} **${m.name}** · ${c.name} · Lv.${m.level}`;
 }
 
-export function roleNameFor(m: Member, mode: Deps["roleMode"]): string {
-  return mode === "job" ? m.job : CHARACTERS[m.char_id].name;
+export function roleNameFor(m: Member): string {
+  return CHARACTERS[m.char_id].name;
 }
 
-/** Rename the member and swap their job role. Returns warnings for anything that failed. */
+/** Rename the member and swap their character role. Returns warnings for anything that failed. */
 export async function applyRoleAndNick(
   d: Deps,
   guildId: string,
@@ -113,7 +111,7 @@ export async function applyRoleAndNick(
     }
   }
 
-  const want = roleNameFor(m, d.roleMode);
+  const want = roleNameFor(m);
   let role = guild.roles.find((r) => r.name === want);
   if (!role) {
     try {
@@ -131,7 +129,7 @@ export async function applyRoleAndNick(
     if (role && !current.roles.includes(role.id)) await d.discord.addRole(guildId, userId, role.id);
   } catch (e) {
     if (!(e instanceof DiscordError) || e.status !== 403) throw e;
-    warnings.push(`ให้ role ${want} ไม่ได้ ต้องลาก role ของบอทให้อยู่สูงกว่า role อาชีพใน Server Settings > Roles`);
+    warnings.push(`ให้ role ${want} ไม่ได้ ต้องลาก role ของบอทให้อยู่สูงกว่า role ตัวละครใน Server Settings > Roles`);
   }
   return warnings;
 }
@@ -140,7 +138,7 @@ export async function registerAction(
   d: Deps,
   guildId: string,
   me: GuildMember,
-  input: { name: string; charId: string; job: string; level: number },
+  input: { name: string; charId: string; level: number },
 ): Promise<Reply> {
   const userId = me.user!.id;
   const name = input.name.trim();
@@ -151,7 +149,7 @@ export async function registerAction(
       user_id: userId,
       name,
       char_id: input.charId,
-      job: input.job,
+      job: "", // jobs are no longer asked for; column kept for old rows and a possible return
       level: input.level,
     });
   } catch (e) {
@@ -178,7 +176,6 @@ export async function partyAction(d: Deps, guildId: string, f: Filters): Promise
   const found = await d.store.search(guildId, f);
   const parts = [
     f.charId && CHARACTERS[f.charId]?.name,
-    f.job,
     f.minLevel || f.maxLevel ? `Lv.${f.minLevel ?? 1}–${f.maxLevel ?? MAX_LEVEL}` : undefined,
   ].filter(Boolean);
   const title = "หาปาร์ตี้" + (parts.length ? `: ${parts.join(" · ")}` : "");
@@ -203,7 +200,7 @@ export async function rosterAction(d: Deps, guildId: string): Promise<Reply> {
   const fields = Object.entries(CHARACTERS).flatMap(([id, c]) => {
     const ms = members.filter((m) => m.char_id === id);
     if (!ms.length) return [];
-    let value = ms.map((m) => `${m.name} · ${m.job} · Lv.${m.level}`).join("\n");
+    let value = ms.map((m) => `${m.name} · Lv.${m.level}`).join("\n");
     if (value.length > 1024) value = value.slice(0, 1000).replace(/\n[^\n]*$/, "") + "\n…";
     return [{ name: `${STAT_EMOJI[c.stat]} ${c.name} (${ms.length})`, value, inline: true }];
   });

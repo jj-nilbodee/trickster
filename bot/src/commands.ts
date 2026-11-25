@@ -1,4 +1,4 @@
-import { CHARACTERS, MAX_LEVEL, allJobs, findJob } from "./jobs.js";
+import { CHARACTERS, MAX_LEVEL } from "./jobs.js";
 import { InteractionType, ResponseType, hasManageNicknames } from "./discord.js";
 import {
   deferred,
@@ -31,13 +31,6 @@ const characterOption = (required: boolean) => ({
   required,
   choices: Object.entries(CHARACTERS).map(([id, c]) => ({ name: `${c.name} (${c.stat})`, value: id })),
 });
-const jobOption = (required: boolean) => ({
-  type: STRING,
-  name: "job",
-  description: required ? "อาชีพตอนนี้" : "อาชีพ",
-  required,
-  autocomplete: true,
-});
 const levelOption = (name: string, description: string, required: boolean) => ({
   type: INTEGER,
   name,
@@ -52,12 +45,11 @@ const GUILD_ONLY = { contexts: [0], dm_permission: false };
 export const COMMANDS = [
   {
     name: "register",
-    description: "ลงทะเบียนตัวละคร บอทจะเปลี่ยนชื่อในเซิร์ฟเวอร์และให้ role อาชีพ",
+    description: "ลงทะเบียนตัวละคร บอทจะเปลี่ยนชื่อในเซิร์ฟเวอร์และให้ role ตัวละคร",
     ...GUILD_ONLY,
     options: [
       { type: STRING, name: "name", description: "ชื่อตัวละครในเกม", required: true, min_length: 1, max_length: 32 },
       characterOption(true),
-      jobOption(true),
       levelOption("level", "เลเวลตอนนี้", true),
     ],
   },
@@ -75,11 +67,10 @@ export const COMMANDS = [
   },
   {
     name: "party",
-    description: "หาสมาชิกสำหรับจัดปาร์ตี้ ตามตัวละคร อาชีพ หรือช่วงเลเวล",
+    description: "หาสมาชิกสำหรับจัดปาร์ตี้ ตามตัวละคร หรือช่วงเลเวล",
     ...GUILD_ONLY,
     options: [
       characterOption(false),
-      jobOption(false),
       levelOption("min_level", "เลเวลต่ำสุด", false),
       levelOption("max_level", "เลเวลสูงสุด", false),
       { type: BOOLEAN, name: "show_all", description: "ให้ทุกคนในห้องเห็นผลลัพธ์ (ค่าเริ่มต้น: เห็นคนเดียว)", required: false },
@@ -113,19 +104,6 @@ export const COMMANDS = [
 
 // ---------- Handling ----------
 
-function autocomplete(i: Interaction): Handled {
-  const opts = i.data?.options ?? [];
-  const charId = opts.find((o) => o.name === "character")?.value as string | undefined;
-  const current = String(opts.find((o) => o.focused)?.value ?? "").toLowerCase();
-  const pairs: [string, string][] =
-    charId && CHARACTERS[charId] ? CHARACTERS[charId].jobs.map((j) => [charId, j]) : allJobs();
-  const choices = pairs
-    .map(([cid, job]) => ({ name: charId ? job : `${job} (${CHARACTERS[cid].name})`, value: job }))
-    .filter((c) => c.name.toLowerCase().includes(current))
-    .slice(0, 25);
-  return { response: { type: ResponseType.AUTOCOMPLETE_RESULT, data: { choices } } };
-}
-
 export async function handleInteraction(i: Interaction, d: Deps): Promise<Handled> {
   if (i.type === InteractionType.PING) {
     // Discord pings when the Interactions Endpoint URL is saved: use that moment to (re)register the slash commands
@@ -135,7 +113,6 @@ export async function handleInteraction(i: Interaction, d: Deps): Promise<Handle
         d.discord.registerCommands(i.application_id, COMMANDS).catch((e) => console.error("registering commands failed", e)),
     };
   }
-  if (i.type === InteractionType.AUTOCOMPLETE) return autocomplete(i);
   if (!i.data) return { response: msg("ไม่รู้จักคำสั่งนี้") };
   if (!i.guild_id || !i.member?.user) return { response: msg("ใช้คำสั่งนี้ได้ในเซิร์ฟเวอร์เท่านั้น") };
   if (i.type === InteractionType.MESSAGE_COMPONENT || i.type === InteractionType.MODAL_SUBMIT) return handlePanel(i, d);
@@ -149,15 +126,9 @@ export async function handleInteraction(i: Interaction, d: Deps): Promise<Handle
   switch (i.data.name) {
     case "register": {
       const charId = opt<string>("character")!;
-      const job = findJob(charId, opt<string>("job")!);
-      if (!job) {
-        return {
-          response: msg(`${CHARACTERS[charId].name} ไม่มีอาชีพ **${opt<string>("job")}** เลือกได้: ${CHARACTERS[charId].jobs.join(", ")}`),
-        };
-      }
       const name = opt<string>("name")!;
       const level = opt<number>("level")!;
-      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, job, level }));
+      return deferred(i, d, () => registerAction(d, guildId, me, { name, charId, level }));
     }
     case "level":
       return deferred(i, d, () => levelAction(d, guildId, userId, opt<number>("level")!));
@@ -166,7 +137,6 @@ export async function handleInteraction(i: Interaction, d: Deps): Promise<Handle
     case "party": {
       const f = {
         charId: opt<string>("character"),
-        job: opt<string>("job"),
         minLevel: opt<number>("min_level"),
         maxLevel: opt<number>("max_level"),
       };

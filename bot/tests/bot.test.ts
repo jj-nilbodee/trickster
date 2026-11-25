@@ -77,10 +77,10 @@ class FakeDiscord implements DiscordApi {
   }
 }
 
-function setup(roleMode: Deps["roleMode"] = "character") {
+function setup() {
   const store = new MemoryStore();
   const discord = new FakeDiscord();
-  return { store, discord, deps: { store, discord, roleMode } as Deps };
+  return { store, discord, deps: { store, discord } as Deps };
 }
 
 function command(name: string, options: Record<string, unknown>, user = "u1", member: object = {}) {
@@ -144,54 +144,46 @@ group("commands", () => {
     expect(discord.registered[0]).toHaveLength(COMMANDS.length); // slash commands registered on ping
   });
 
-  it("/register saves, renames and swaps the job role", async () => {
+  it("/register saves, renames and swaps the character role", async () => {
     const { deps, store, discord } = setup();
-    const h = await run(deps, command("register", { name: "Mingo", character: "dragon", job: "priest", level: 150 }, "u1", { roles: ["r-bunny", "r-admin"] }));
+    const h = await run(deps, command("register", { name: "Mingo", character: "dragon", level: 150 }, "u1", { roles: ["r-bunny", "r-admin"] }));
     expect(h.response).toEqual({ type: 5, data: { flags: EPHEMERAL } });
-    expect(store.rows[0]).toMatchObject({ name: "Mingo", char_id: "dragon", job: "Priest", level: 150 });
+    expect(store.rows[0]).toMatchObject({ name: "Mingo", char_id: "dragon", job: "", level: 150 });
     expect(discord.nicks.u1).toBe("Mingo");
     expect(discord.roles.map((r) => r.name)).toContain("Dragon");
     expect(discord.replies[0].content).toContain("ลงทะเบียนแล้ว");
   });
 
-  it("removes old job roles and keeps other roles", async () => {
+  it("removes the old character role and keeps other roles", async () => {
     const { deps, discord } = setup();
     discord.memberRoles.u1 = ["r-bunny", "r-admin"];
-    const m: Member = { guild_id: "g1", user_id: "u1", name: "Mingo", char_id: "dragon", job: "Priest", level: 150 };
+    const m: Member = { guild_id: "g1", user_id: "u1", name: "Mingo", char_id: "dragon", job: "", level: 150 };
     const warnings = await applyRoleAndNick(deps, "g1", "u1", { roles: ["r-bunny", "r-admin"], nick: null }, m);
     expect(warnings).toEqual([]);
     expect(discord.memberRoles.u1.sort()).toEqual(["r-admin", "r-dragon"]);
   });
 
-  it("job role mode uses the job name", async () => {
-    const { deps, discord } = setup("job");
-    await run(deps, command("register", { name: "Mingo", character: "dragon", job: "Dark Lord", level: 150 }));
-    expect(discord.memberRoles.u1).toEqual(["r-dark lord"]);
-  });
-
   it("warns instead of failing when it cannot rename", async () => {
     const { deps, discord } = setup();
-    await run(deps, command("register", { name: "Boss", character: "fox", job: "Explorer", level: 99 }, "owner"));
+    await run(deps, command("register", { name: "Boss", character: "fox", level: 99 }, "owner"));
     expect(discord.replies[0].content).toContain("เจ้าของเซิร์ฟเวอร์");
     discord.forbidNick = true;
-    await run(deps, command("register", { name: "Sppo", character: "bunny", job: "Boxer", level: 99 }, "u2"));
+    await run(deps, command("register", { name: "Sppo", character: "bunny", level: 99 }, "u2"));
     expect(discord.replies[1].content).toContain("Manage Nicknames");
   });
 
-  it("rejects a wrong job and a taken name", async () => {
+  it("rejects a taken name", async () => {
     const { deps, store, discord } = setup();
-    const bad = await handleInteraction(command("register", { name: "X", character: "dragon", job: "Boxer", level: 1 }) as any, deps);
-    expect((bad.response as any).data.content).toContain("ไม่มีอาชีพ");
-    await run(deps, command("register", { name: "Mingo", character: "dragon", job: "Priest", level: 1 }, "u1"));
-    await run(deps, command("register", { name: "mingo", character: "fox", job: "Explorer", level: 1 }, "u2"));
+    await run(deps, command("register", { name: "Mingo", character: "dragon", level: 1 }, "u1"));
+    await run(deps, command("register", { name: "mingo", character: "fox", level: 1 }, "u2"));
     expect(discord.replies[1].content).toContain("มีคนลงทะเบียนไว้แล้ว");
     expect(store.rows).toHaveLength(1);
   });
 
   it("/party filters and /level updates", async () => {
     const { deps, discord } = setup();
-    await run(deps, command("register", { name: "Mingo", character: "dragon", job: "Priest", level: 150 }, "u1"));
-    await run(deps, command("register", { name: "Sppo", character: "bunny", job: "Champion", level: 120 }, "u2"));
+    await run(deps, command("register", { name: "Mingo", character: "dragon", level: 150 }, "u1"));
+    await run(deps, command("register", { name: "Sppo", character: "bunny", level: 120 }, "u2"));
     await run(deps, command("level", { level: 130 }, "u2"));
     discord.replies = [];
     const h = await run(deps, command("party", { min_level: 100, max_level: 140, show_all: true }));
@@ -206,7 +198,7 @@ group("commands", () => {
 
   it("/unregister: only admins can remove others", async () => {
     const { deps, store, discord } = setup();
-    await run(deps, command("register", { name: "Mingo", character: "dragon", job: "Priest", level: 150 }, "u1"));
+    await run(deps, command("register", { name: "Mingo", character: "dragon", level: 150 }, "u1"));
     const denied = await handleInteraction(command("unregister", { member: "u1" }, "u2") as any, deps);
     expect((denied.response as any).data.content).toContain("เฉพาะแอดมิน");
     const admin = command("unregister", { member: "u1" }, "u2", { permissions: String(1n << 27n) }) as any;
@@ -216,14 +208,6 @@ group("commands", () => {
     expect(discord.nicks.u1).toBeNull();
   });
 
-  it("job autocomplete follows the chosen character", async () => {
-    const { deps } = setup();
-    const h = await handleInteraction(
-      { type: 4, data: { name: "register", options: [{ name: "character", value: "dragon" }, { name: "job", value: "A", focused: true }] } } as any,
-      deps,
-    );
-    expect((h.response as any).data.choices.map((c: any) => c.value)).toEqual(["Shaman", "Magician", "Dark Lord", "Wizard"]);
-  });
 });
 
 function component(custom_id: string, values?: string[], user = "u1", member: object = {}) {
@@ -258,46 +242,43 @@ group("button panel", () => {
     expect(COMMANDS.find((c) => c.name === "panel")).toMatchObject({ default_member_permissions: "32" });
   });
 
-  it("register: character menu > job menu > form > saved", async () => {
+  it("register: character menu > form > saved", async () => {
     const { deps, store, discord } = setup();
     const step1: any = (await handleInteraction(component("panel:register") as any, deps)).response;
     expect(step1.data.flags).toBe(EPHEMERAL);
     expect(step1.data.components[0].components[0].options).toHaveLength(9);
 
     const step2: any = (await handleInteraction(component("reg:char", ["dragon"]) as any, deps)).response;
-    expect(step2.type).toBe(7);
-    expect(step2.data.components[0].components[0].options.map((o: any) => o.value)).toContain("Priest");
+    expect(step2.type).toBe(9);
+    expect(step2.data.custom_id).toBe("modal:reg:dragon");
 
-    const step3: any = (await handleInteraction(component("reg:job:dragon", ["Dark Lord"]) as any, deps)).response;
-    expect(step3.type).toBe(9);
-    expect(step3.data.custom_id).toBe("modal:reg:dragon:Dark Lord");
-
-    const done = await run(deps, modal("modal:reg:dragon:Dark Lord", { name: " Mingo ", level: "150" }));
+    const done = await run(deps, modal("modal:reg:dragon", { name: " Mingo ", level: "150" }));
     expect(done.response).toEqual({ type: 6 });
-    expect(store.rows[0]).toMatchObject({ name: "Mingo", job: "Dark Lord", level: 150 });
+    expect(store.rows[0]).toMatchObject({ name: "Mingo", char_id: "dragon", level: 150 });
     expect(discord.nicks.u1).toBe("Mingo");
+    expect(discord.roles.map((r) => r.name)).toContain("Dragon");
     expect(discord.replies[0].content).toContain("ลงทะเบียนแล้ว");
     expect(discord.replies[0].components).toEqual([]);
 
     // Opening the form again fills in the saved name and level
-    const again: any = (await handleInteraction(component("reg:job:dragon", ["Priest"]) as any, deps)).response;
+    const again: any = (await handleInteraction(component("reg:char", ["fox"]) as any, deps)).response;
     expect(again.data.components.map((r: any) => r.components[0].value)).toEqual(["Mingo", "150"]);
   });
 
   it("rejects a bad level in the form", async () => {
     const { deps, store } = setup();
-    const h: any = await handleInteraction(modal("modal:reg:dragon:Priest", { name: "Mingo", level: "abc" }) as any, deps);
+    const h: any = await handleInteraction(modal("modal:reg:dragon", { name: "Mingo", level: "abc" }) as any, deps);
     expect(h.response.data.content).toContain("เลเวลต้องเป็นตัวเลข");
     expect(store.rows).toHaveLength(0);
   });
 
   it("level and party forms", async () => {
     const { deps, discord } = setup();
-    await run(deps, modal("modal:reg:dragon:Priest", { name: "Mingo", level: "150" }, "u1"));
-    await run(deps, modal("modal:reg:bunny:Champion", { name: "Sppo", level: "120" }, "u2"));
+    await run(deps, modal("modal:reg:dragon", { name: "Mingo", level: "150" }, "u1"));
+    await run(deps, modal("modal:reg:bunny", { name: "Sppo", level: "120" }, "u2"));
     await run(deps, modal("modal:level", { level: "Lv.155" }, "u1"));
     discord.replies = [];
-    await run(deps, modal("modal:party", { who: "priest", min: "150", max: "" }));
+    await run(deps, modal("modal:party", { who: "dragon", min: "150", max: "" }));
     expect(discord.replies[0].embeds[0].description).toContain("Mingo");
     expect(discord.replies[0].embeds[0].description).toContain("Lv.155");
     expect(discord.replies[0].embeds[0].description).not.toContain("Sppo");

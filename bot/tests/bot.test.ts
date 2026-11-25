@@ -180,20 +180,15 @@ group("commands", () => {
     expect(store.rows).toHaveLength(1);
   });
 
-  it("/party filters and /level updates", async () => {
+  it("/level updates and /roster lists", async () => {
     const { deps, discord } = setup();
     await run(deps, command("register", { name: "Mingo", character: "dragon", level: 150 }, "u1"));
     await run(deps, command("register", { name: "Sppo", character: "bunny", level: 120 }, "u2"));
     await run(deps, command("level", { level: 130 }, "u2"));
     discord.replies = [];
-    const h = await run(deps, command("party", { min_level: 100, max_level: 140, show_all: true }));
-    expect(h.response).toEqual({ type: 5, data: { flags: 0 } });
-    const embed = discord.replies[0].embeds[0];
-    expect(embed.description).toContain("Sppo");
-    expect(embed.description).not.toContain("Mingo");
-    expect(embed.description).toContain("Lv.130");
     await run(deps, command("roster", {}));
-    expect(discord.replies[1].embeds[0].fields).toHaveLength(2);
+    expect(discord.replies[0].embeds[0].fields[0].value).toContain("Sppo · Lv.130");
+    expect(discord.replies[0].embeds[0].fields).toHaveLength(2);
   });
 
   it("/unregister: only admins can remove others", async () => {
@@ -238,7 +233,7 @@ group("button panel", () => {
     await run(deps, { ...command("panel", {}), channel_id: "c1" });
     expect(discord.posted[0].channel).toBe("c1");
     const ids = discord.posted[0].message.components.flatMap((r: any) => r.components.map((b: any) => b.custom_id));
-    expect(ids).toEqual(["panel:register", "panel:level", "panel:profile", "panel:party", "panel:roster"]);
+    expect(ids).toEqual(["panel:register", "panel:level", "panel:profile", "panel:roster"]);
     expect(COMMANDS.find((c) => c.name === "panel")).toMatchObject({ default_member_permissions: "32" });
   });
 
@@ -272,20 +267,12 @@ group("button panel", () => {
     expect(store.rows).toHaveLength(0);
   });
 
-  it("level and party forms", async () => {
+  it("level form", async () => {
     const { deps, discord } = setup();
     await run(deps, modal("modal:reg:dragon", { name: "Mingo", level: "150" }, "u1"));
     await run(deps, modal("modal:reg:bunny", { name: "Sppo", level: "120" }, "u2"));
     await run(deps, modal("modal:level", { level: "Lv.155" }, "u1"));
-    discord.replies = [];
-    await run(deps, modal("modal:party", { who: "dragon", min: "150", max: "" }));
-    expect(discord.replies[0].embeds[0].description).toContain("Mingo");
-    expect(discord.replies[0].embeds[0].description).toContain("Lv.155");
-    expect(discord.replies[0].embeds[0].description).not.toContain("Sppo");
-    await run(deps, modal("modal:party", { who: "bunny", min: "", max: "" }));
-    expect(discord.replies[1].embeds[0].description).toContain("Sppo");
-    const bad: any = await handleInteraction(modal("modal:party", { who: "pikachu", min: "", max: "" }) as any, deps);
-    expect(bad.response.data.content).toContain("ไม่รู้จัก");
+    expect(discord.replies.at(-1).content).toContain("Lv.155");
   });
 
   it("profile and roster buttons", async () => {

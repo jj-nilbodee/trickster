@@ -1,12 +1,11 @@
 // The button panel: a permanent message with buttons, posted by an admin with /panel.
 // Buttons open menus and forms so members don't need to type slash commands.
 import { CHARACTERS, MAX_LEVEL, STAT_EMOJI } from "./jobs.js";
-import type { Filters, Member } from "./db.js";
+import type { Member } from "./db.js";
 import {
   deferred,
   levelAction,
   msg,
-  partyAction,
   profileAction,
   registerAction,
   rosterAction,
@@ -34,7 +33,6 @@ export function panelMessage() {
         description: [
           "**📝 ลงทะเบียน / แก้ไข** เลือกตัวละคร แล้วกรอกชื่อและเลเวล บอทจะเปลี่ยนชื่อในเซิร์ฟเวอร์เป็นชื่อตัวละคร และให้ role อาชีพ",
           "**⬆️ อัปเดตเลเวล** แก้เลเวลอย่างเดียว",
-          "**🔍 หาปาร์ตี้** ค้นสมาชิกตามตัวละคร หรือช่วงเลเวล",
           "",
           "ผลลัพธ์จะเห็นแค่คนที่กดเท่านั้น",
         ].join("\n"),
@@ -52,7 +50,6 @@ export function panelMessage() {
       {
         type: ACTION_ROW,
         components: [
-          { type: BUTTON, style: PRIMARY, label: "หาปาร์ตี้", emoji: { name: "🔍" }, custom_id: "panel:party" },
           { type: BUTTON, style: SECONDARY, label: "รายชื่อกิลด์", emoji: { name: "📋" }, custom_id: "panel:roster" },
         ],
       },
@@ -113,15 +110,6 @@ function parseLevel(text: string | undefined): number | undefined | "bad" {
   return Number.isInteger(n) && n >= 1 && n <= MAX_LEVEL ? n : "bad";
 }
 
-/** "Dragon" -> { charId: dragon }. */
-function parseChar(text: string | undefined): Filters | "bad" {
-  const t = (text ?? "").trim().toLowerCase();
-  if (!t) return {};
-  const char = Object.entries(CHARACTERS).find(([, c]) => c.name.toLowerCase() === t);
-  if (char) return { charId: char[0] };
-  return "bad";
-}
-
 function field(i: Interaction, id: string): string | undefined {
   for (const row of i.data?.components ?? []) for (const c of row.components) if (c.custom_id === id) return c.value;
   return undefined;
@@ -152,21 +140,6 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
       }
       case "panel:profile":
         return deferred(i, d, () => profileAction(d, guildId, userId, userId));
-      case "panel:party":
-        return {
-          response: {
-            type: ResponseType.MODAL,
-            data: {
-              custom_id: "modal:party",
-              title: "หาปาร์ตี้",
-              components: [
-                textInput("who", "ตัวละคร (ว่างไว้ = ทุกคน)", { required: false, placeholder: "เช่น Dragon, Fox, Bunny" }),
-                textInput("min", "เลเวลต่ำสุด (ว่างไว้ได้)", { required: false, max: 3 }),
-                textInput("max", "เลเวลสูงสุด (ว่างไว้ได้)", { required: false, max: 3 }),
-              ],
-            },
-          },
-        };
       case "panel:roster":
         return deferred(i, d, () => rosterAction(d, guildId));
       case "reg:char": {
@@ -205,14 +178,6 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
       const level = parseLevel(field(i, "level"));
       if (typeof level !== "number") return { response: msg(`เลเวลต้องเป็นตัวเลข 1–${MAX_LEVEL}`) };
       return deferred(i, d, () => levelAction(d, guildId, userId, level));
-    }
-    if (id === "modal:party") {
-      const who = parseChar(field(i, "who"));
-      const minLevel = parseLevel(field(i, "min"));
-      const maxLevel = parseLevel(field(i, "max"));
-      if (who === "bad") return { response: msg("ไม่รู้จักตัวละครนี้ ลองพิมพ์เช่น Dragon, Fox, Bunny") };
-      if (minLevel === "bad" || maxLevel === "bad") return { response: msg(`เลเวลต้องเป็นตัวเลข 1–${MAX_LEVEL}`) };
-      return deferred(i, d, () => partyAction(d, guildId, { ...who, minLevel, maxLevel }));
     }
   }
 

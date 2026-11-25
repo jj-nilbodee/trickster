@@ -1,6 +1,6 @@
 // What the bot does, shared by slash commands (commands.ts) and the button panel (panel.ts).
 import { CHARACTERS, MANAGED_ROLE_NAMES, MAX_LEVEL, STAT_COLOUR, STAT_EMOJI } from "./jobs.js";
-import { NameTaken, type Filters, type Member, type Store } from "./db.js";
+import { NameTaken, type Member, type Store } from "./db.js";
 import { DiscordError, EPHEMERAL, ResponseType, type DiscordApi } from "./discord.js";
 
 export interface Deps {
@@ -170,29 +170,6 @@ export async function profileAction(d: Deps, guildId: string, userId: string, ta
   const m = await d.store.get(guildId, target);
   if (!m) return { content: `${target === userId ? "คุณ" : `<@${target}>`} ยังไม่ได้ลงทะเบียน` };
   return { content: `${describe(m)}\n<@${m.user_id}>` };
-}
-
-export async function partyAction(d: Deps, guildId: string, f: Filters): Promise<Reply> {
-  const found = await d.store.search(guildId, f);
-  const parts = [
-    f.charId && CHARACTERS[f.charId]?.name,
-    f.minLevel || f.maxLevel ? `Lv.${f.minLevel ?? 1}–${f.maxLevel ?? MAX_LEVEL}` : undefined,
-  ].filter(Boolean);
-  const title = "หาปาร์ตี้" + (parts.length ? `: ${parts.join(" · ")}` : "");
-  if (!found.length) return { content: "", embeds: [{ title, color: 0xf1c40f, description: "ไม่พบสมาชิกที่ตรงเงื่อนไข" }] };
-  let text = "";
-  let shown = 0;
-  for (const m of found) {
-    const line = `${describe(m)} <@${m.user_id}>\n`;
-    if (text.length + line.length > 3900) break;
-    text += line;
-    shown++;
-  }
-  if (shown < found.length) text += `…และอีก ${found.length - shown} คน`;
-  return {
-    content: "",
-    embeds: [{ title, color: 0xf1c40f, description: text, footer: { text: `ทั้งหมด ${found.length} คน` } }],
-  };
 }
 
 export async function rosterAction(d: Deps, guildId: string): Promise<Reply> {

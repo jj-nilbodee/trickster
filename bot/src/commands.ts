@@ -4,7 +4,6 @@ import {
   deferred,
   levelAction,
   msg,
-  partyAction,
   profileAction,
   registerAction,
   rosterAction,
@@ -21,7 +20,6 @@ export { applyRoleAndNick, describe, type Deps, type Handled } from "./actions.j
 
 const STRING = 3,
   INTEGER = 4,
-  BOOLEAN = 5,
   USER = 6;
 
 const characterOption = (required: boolean) => ({
@@ -64,17 +62,6 @@ export const COMMANDS = [
     description: "ดูตัวละครที่ลงทะเบียนไว้",
     ...GUILD_ONLY,
     options: [{ type: USER, name: "member", description: "สมาชิกที่อยากดู (ว่างไว้ = ตัวเอง)", required: false }],
-  },
-  {
-    name: "party",
-    description: "หาสมาชิกสำหรับจัดปาร์ตี้ ตามตัวละคร หรือช่วงเลเวล",
-    ...GUILD_ONLY,
-    options: [
-      characterOption(false),
-      levelOption("min_level", "เลเวลต่ำสุด", false),
-      levelOption("max_level", "เลเวลสูงสุด", false),
-      { type: BOOLEAN, name: "show_all", description: "ให้ทุกคนในห้องเห็นผลลัพธ์ (ค่าเริ่มต้น: เห็นคนเดียว)", required: false },
-    ],
   },
   {
     name: "roster",
@@ -134,14 +121,6 @@ export async function handleInteraction(i: Interaction, d: Deps): Promise<Handle
       return deferred(i, d, () => levelAction(d, guildId, userId, opt<number>("level")!));
     case "profile":
       return deferred(i, d, () => profileAction(d, guildId, userId, opt<string>("member") ?? userId));
-    case "party": {
-      const f = {
-        charId: opt<string>("character"),
-        minLevel: opt<number>("min_level"),
-        maxLevel: opt<number>("max_level"),
-      };
-      return deferred(i, d, () => partyAction(d, guildId, f), { ephemeral: !opt<boolean>("show_all") });
-    }
     case "roster":
       return deferred(i, d, () => rosterAction(d, guildId));
     case "panel": {

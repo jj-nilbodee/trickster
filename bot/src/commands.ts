@@ -4,6 +4,7 @@ import {
   deferred,
   levelAction,
   msg,
+  partyLinkResponse,
   profileAction,
   registerAction,
   rosterAction,
@@ -70,6 +71,11 @@ export const COMMANDS = [
     ...GUILD_ONLY,
   },
   {
+    name: "party",
+    description: "เปิดหน้าเว็บจัดปาร์ตี้",
+    ...GUILD_ONLY,
+  },
+  {
     name: "panel",
     description: "ตั้งแผงปุ่มลงทะเบียนถาวรในช่องนี้ (สำหรับแอดมิน)",
     ...GUILD_ONLY,
@@ -125,6 +131,8 @@ export async function handleInteraction(i: Interaction, d: Deps): Promise<Handle
       return deferred(i, d, () => profileAction(d, guildId, userId, opt<string>("member") ?? userId));
     case "roster":
       return deferred(i, d, () => rosterAction(d, guildId));
+    case "party":
+      return { response: partyLinkResponse(d, i) };
     case "panel": {
       const channelId = i.channel_id!;
       return deferred(i, d, async () => {

@@ -6,6 +6,7 @@ import {
   deferred,
   levelAction,
   msg,
+  partyLinkResponse,
   profileAction,
   registerAction,
   rosterAction,
@@ -31,8 +32,9 @@ export function panelMessage() {
         title: "🃏 ลงทะเบียนตัวละครกิลด์",
         color: 0xf1c40f,
         description: [
-          "**📝 ลงทะเบียน / แก้ไข** เลือกตัวละคร แล้วกรอกชื่อและเลเวล บอทจะเปลี่ยนชื่อในเซิร์ฟเวอร์เป็นชื่อตัวละคร และให้ role อาชีพ",
+          "**📝 ลงทะเบียน / แก้ไข** เลือกตัวละคร แล้วกรอกชื่อและเลเวล บอทจะเปลี่ยนชื่อในเซิร์ฟเวอร์เป็นชื่อตัวละคร และให้ role ตัวละคร",
           "**⬆️ อัปเดตเลเวล** แก้เลเวลอย่างเดียว",
+          "**🎉 จัดปาร์ตี้** เปิดหน้าเว็บจัดปาร์ตี้จากรายชื่อคนที่ลงทะเบียน แล้วประกาศลงช่องนี้",
           "",
           "ผลลัพธ์จะเห็นแค่คนที่กดเท่านั้น",
         ].join("\n"),
@@ -51,6 +53,7 @@ export function panelMessage() {
         type: ACTION_ROW,
         components: [
           { type: BUTTON, style: SECONDARY, label: "รายชื่อกิลด์", emoji: { name: "📋" }, custom_id: "panel:roster" },
+          { type: BUTTON, style: PRIMARY, label: "จัดปาร์ตี้", emoji: { name: "🎉" }, custom_id: "panel:party" },
         ],
       },
     ],
@@ -142,6 +145,8 @@ export async function handlePanel(i: Interaction, d: Deps): Promise<Handled> {
         return deferred(i, d, () => profileAction(d, guildId, userId, userId));
       case "panel:roster":
         return deferred(i, d, () => rosterAction(d, guildId));
+      case "panel:party":
+        return { response: partyLinkResponse(d, i) };
       case "reg:char": {
         const charId = i.data?.values?.[0] ?? "";
         if (!CHARACTERS[charId]) return { response: msg("เลือกตัวละครใหม่อีกครั้ง") };

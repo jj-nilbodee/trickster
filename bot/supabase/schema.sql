@@ -20,3 +20,16 @@ create index if not exists members_guild_level on public.members (guild_id, leve
 -- RLS stays on with no policies so the public anon key cannot read or change anything.
 -- When the guild web app is built, add read policies here.
 alter table public.members enable row level security;
+
+-- Parties made on the party web page (/party)
+create table if not exists public.parties (
+  id         uuid        primary key default gen_random_uuid(),
+  guild_id   text        not null,
+  name       text        not null,
+  note       text        not null default '',
+  members    text[]      not null default '{}',   -- Discord user ids, in slot order
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create index if not exists parties_guild on public.parties (guild_id, created_at);
+alter table public.parties enable row level security;

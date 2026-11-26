@@ -1,11 +1,14 @@
 // What the bot does, shared by slash commands (commands.ts) and the button panel (panel.ts).
 import { CHARACTERS, MANAGED_ROLE_NAMES, MAX_LEVEL, STAT_COLOUR, STAT_EMOJI } from "./jobs.js";
 import { NameTaken, type Member, type Store } from "./db.js";
+import { LINK_HOURS } from "./partylink.js";
 import { DiscordError, EPHEMERAL, ResponseType, type DiscordApi } from "./discord.js";
 
 export interface Deps {
   store: Store;
   discord: DiscordApi;
+  /** Makes a personal, signed link to the party web page. Missing in tests that don't need it. */
+  partyUrl?: (c: { guildId: string; userId: string; channelId: string }) => string;
 }
 
 export interface Handled {
@@ -212,4 +215,18 @@ export async function unregisterAction(
     if (!(e instanceof DiscordError) || e.status !== 403) throw e;
   }
   return { content: `ลบข้อมูลของ <@${target}> แล้ว` };
+}
+
+/** Ephemeral reply with a button that opens the party web page. */
+export function partyLinkResponse(d: Deps, i: Interaction) {
+  if (!d.partyUrl || !i.channel_id) return msg("หน้าจัดปาร์ตี้ยังไม่พร้อมใช้งาน");
+  const url = d.partyUrl({ guildId: i.guild_id!, userId: i.member!.user!.id, channelId: i.channel_id });
+  return {
+    type: ResponseType.MESSAGE,
+    data: {
+      content: `ลิงก์นี้ใช้ได้ ${LINK_HOURS} ชั่วโมง และเป็นของคุณคนเดียว อย่าส่งต่อให้คนนอกกิลด์\nกด "ประกาศ" ในหน้าเว็บ บอทจะโพสต์ปาร์ตี้ลงช่องนี้`,
+      flags: EPHEMERAL,
+      components: [{ type: 1, components: [{ type: 2, style: 5, label: "เปิดหน้าจัดปาร์ตี้", emoji: { name: "🎉" }, url }] }],
+    },
+  };
 }

@@ -233,7 +233,7 @@ group("button panel", () => {
     await run(deps, { ...command("panel", {}), channel_id: "c1" });
     expect(discord.posted[0].channel).toBe("c1");
     const ids = discord.posted[0].message.components.flatMap((r: any) => r.components.map((b: any) => b.custom_id));
-    expect(ids).toEqual(["panel:register", "panel:level", "panel:profile", "panel:roster"]);
+    expect(ids).toEqual(["panel:register", "panel:level", "panel:profile", "panel:roster", "panel:party"]);
     expect(COMMANDS.find((c) => c.name === "panel")).toMatchObject({ default_member_permissions: "32" });
   });
 

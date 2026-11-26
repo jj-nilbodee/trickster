@@ -3,6 +3,7 @@ import { waitUntil } from "@vercel/functions";
 import { handleInteraction } from "../src/commands.js";
 import { SupabaseStore } from "../src/db.js";
 import { DiscordRest, verifySignature } from "../src/discord.js";
+import { linkKey, signLink } from "../src/partylink.js";
 
 function env(name: string): string {
   const v = process.env[name];
@@ -11,11 +12,16 @@ function env(name: string): string {
 }
 
 let deps: Parameters<typeof handleInteraction>[1] | undefined;
-function getDeps() {
-  deps ??= {
-    store: new SupabaseStore(env("SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY")),
-    discord: new DiscordRest(env("DISCORD_BOT_TOKEN")),
-  };
+function getDeps(origin: string) {
+  if (!deps) {
+    const key = linkKey(env("DISCORD_BOT_TOKEN"));
+    deps = {
+      store: new SupabaseStore(env("SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY")),
+      discord: new DiscordRest(env("DISCORD_BOT_TOKEN")),
+      // The page lives on the same site Discord calls, e.g. https://trickster-guild-bot.vercel.app/party
+      partyUrl: (c) => `${process.env.PUBLIC_URL || origin}/party?t=${signLink(key, c)}`,
+    };
+  }
   return deps;
 }
 
@@ -29,7 +35,7 @@ export async function POST(request: Request): Promise<Response> {
   );
   if (!ok) return new Response("invalid request signature", { status: 401 });
 
-  const { response, after } = await handleInteraction(JSON.parse(body), getDeps());
+  const { response, after } = await handleInteraction(JSON.parse(body), getDeps(new URL(request.url).origin));
   if (after) waitUntil(after());
   return Response.json(response);
 }

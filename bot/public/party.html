@@ -79,6 +79,29 @@ input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); ou
 .bar .in { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
 .bar .txt { flex: 1; min-width: 0; font-size: 14px; }
 .bar .txt b { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.layout { display: flex; flex-direction: column; }
+.board { order: 1; } .pool { order: 2; }
+.pool-hint { display: none; }
+.party.drop { border-style: dashed; border-color: var(--accent); background: var(--accent-soft); }
+.member[draggable=true], .slot[draggable=true] { cursor: grab; }
+.dragging { opacity: .4; }
+@media (min-width: 900px) {
+  header, main { max-width: 1400px; }
+  .layout { display: grid; grid-template-columns: 340px 1fr; gap: 20px; align-items: start; }
+  .pool { order: 0; position: sticky; top: 0; max-height: 100vh; overflow-y: auto; padding-bottom: 16px; }
+  .pool h2 { margin-top: 8px; }
+  .board h2 { margin-top: 8px; }
+  .members { grid-template-columns: 1fr; }
+  .chips { flex-wrap: wrap; overflow: visible; }
+  .pool-hint { display: block; font-size: 13px; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+  .pool-hint b { color: var(--ink); }
+  .bar { display: none !important; }
+  body { padding-bottom: 24px; }
+  .party { cursor: pointer; }
+  .party input, .party button { cursor: auto; }
+  .party button { cursor: pointer; }
+  .pick-btn { display: none; }
+}
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: 90px; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 10; max-width: calc(100% - 32px); }
 .toast.show { opacity: 1; }
 .msg { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 20px; text-align: center; }
@@ -109,6 +132,7 @@ let active = null;          // id of the party being filled
 const filter = { char: "", q: "", hideTaken: false };
 const pending = new Map();  // party id -> timer
 const app = document.getElementById("app");
+const desktop = () => matchMedia("(min-width: 900px)").matches;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const byId = () => new Map(data.members.map((m) => [m.user_id, m]));
@@ -166,7 +190,7 @@ function partyCard(p) {
     if (!u) { slots.push(`<li class="slot empty">ว่าง</li>`); continue; }
     const m = members.get(u);
     const ch = m && data.characters[m.char_id];
-    slots.push(`<li class="slot">${m ? icon(m.char_id) : ""}
+    slots.push(`<li class="slot" draggable="true" data-user="${esc(u)}" data-from="${p.id}">${m ? icon(m.char_id) : ""}
       <span class="who"><b>${esc(m ? m.name : "(ลบข้อมูลแล้ว)")}</b>
       <span class="meta">${m ? `<span class="stat-${ch.stat}">${esc(ch.name)}</span> · <span class="lv">Lv.${m.level}</span>${m.build ? " · " + esc(m.build) : ""}` : ""}</span></span>
       <button class="x" data-act="remove" data-party="${p.id}" data-user="${esc(u)}" aria-label="เอาออก">×</button></li>`);
@@ -184,7 +208,7 @@ function partyCard(p) {
     <ul class="slots">${slots.join("")}</ul>
     <div class="stats">${stats}</div>
     <div class="row">
-      <button class="${isActive ? "" : "primary"}" data-act="pick" data-party="${p.id}">${isActive ? "เลือกเสร็จแล้ว" : `เพิ่มคน (${p.members.length}/${data.partySize})`}</button>
+      <button class="pick-btn ${isActive ? "" : "primary"}" data-act="pick" data-party="${p.id}">${isActive ? "เลือกเสร็จแล้ว" : `เพิ่มคน (${p.members.length}/${data.partySize})`}</button>
       <button data-act="announce" data-party="${p.id}" ${p.members.length ? "" : "disabled"}>📣 ประกาศใน Discord</button>
     </div>
     <div class="row" style="justify-content:space-between;align-items:center">
@@ -206,7 +230,7 @@ function memberList() {
     const ch = data.characters[m.char_id];
     const tags = partiesOf(m.user_id).map((p) => p.name);
     const inActive = act && act.members.includes(m.user_id);
-    return `<button class="member${inActive ? " in" : ""}" data-act="add" data-user="${esc(m.user_id)}">
+    return `<button class="member${inActive ? " in" : ""}" data-act="add" data-user="${esc(m.user_id)}" draggable="true">
       ${icon(m.char_id)}
       <span class="who"><b>${esc(m.name)}${m.user_id === data.me ? " (คุณ)" : ""}</b>
       <span class="meta"><span class="stat-${ch.stat}">${esc(ch.name)}</span>${m.build ? " · " + esc(m.build) : ""}</span>
@@ -225,17 +249,24 @@ function render() {
       const n = data.members.filter((m) => m.char_id === id).length;
       return `<button class="chip" data-char="${id}" aria-pressed="${filter.char === id}">${icon(id)}${esc(c.name)} ${n}</button>`;
     })).join("");
-  app.innerHTML = `
+  if (desktop() && !active && data.parties.length) active = data.parties[0].id;
+  const actP = data.parties.find((p) => p.id === active);
+  app.innerHTML = `<div class="layout">
+   <section class="board">
     <h2>ปาร์ตี้ <span class="sub">(สูงสุด ${data.partySize} คน)</span></h2>
     <div class="parties">${data.parties.map(partyCard).join("")}
       <button class="new-party" data-act="new">+ สร้างปาร์ตี้ใหม่</button></div>
+   </section>
+   <section class="pool">
     <h2>สมาชิก</h2>
     <div class="filters">
+      <div class="pool-hint">${actP ? `คลิกชื่อเพื่อเพิ่มเข้า <b>${esc(actP.name)}</b> (${actP.members.length}/${data.partySize}) หรือลากชื่อไปวางในปาร์ตี้ไหนก็ได้` : "สร้างปาร์ตี้ก่อน แล้วลากชื่อไปวาง"}</div>
       <input type="search" id="q" placeholder="ค้นหาชื่อหรือสาย เช่น น้ำ" value="${esc(filter.q)}" aria-label="ค้นหา">
       <div class="chips">${chips}</div>
       <label class="check"><input type="checkbox" id="hide" ${filter.hideTaken ? "checked" : ""}> ซ่อนคนที่อยู่ในปาร์ตี้แล้ว</label>
     </div>
-    <div class="members">${memberList()}</div>`;
+    <div class="members">${memberList()}</div>
+   </section></div>`;
   const act = data.parties.find((p) => p.id === active);
   document.getElementById("bar").classList.toggle("show", !!act);
   if (act) document.getElementById("barName").textContent = `${act.name} (${act.members.length}/${data.partySize})`;
@@ -277,6 +308,10 @@ function scheduleSave(p, delay = 600) {
 }
 
 app.addEventListener("click", async (ev) => {
+  const card = ev.target.closest(".party");
+  if (card && desktop() && !ev.target.closest("button, input") && active !== card.dataset.party) {
+    active = card.dataset.party; render(); return;
+  }
   const chip = ev.target.closest(".chip");
   if (chip) { filter.char = chip.dataset.char; render(); return; }
   const b = ev.target.closest("[data-act]");
@@ -351,6 +386,50 @@ app.addEventListener("input", (ev) => {
 app.addEventListener("change", (ev) => {
   if (ev.target.id === "hide") { filter.hideTaken = ev.target.checked; renderMembersOnly(); }
 });
+// Drag a member (or a filled slot) onto a party
+let drag = null;
+app.addEventListener("dragstart", (ev) => {
+  const el = ev.target.closest("[data-user][draggable=true]");
+  if (!el) return;
+  drag = { user: el.dataset.user, from: el.dataset.from || null };
+  ev.dataTransfer.effectAllowed = "move";
+  ev.dataTransfer.setData("text/plain", drag.user);
+  el.classList.add("dragging");
+});
+app.addEventListener("dragend", (ev) => {
+  ev.target.closest?.(".dragging")?.classList.remove("dragging");
+  app.querySelectorAll(".party.drop").forEach((e) => e.classList.remove("drop"));
+  drag = null;
+});
+app.addEventListener("dragover", (ev) => {
+  const card = ev.target.closest(".party");
+  if (!card || !drag) return;
+  ev.preventDefault();
+  app.querySelectorAll(".party.drop").forEach((e) => e !== card && e.classList.remove("drop"));
+  card.classList.add("drop");
+});
+app.addEventListener("dragleave", (ev) => {
+  const card = ev.target.closest(".party");
+  if (card && !card.contains(ev.relatedTarget)) card.classList.remove("drop");
+});
+app.addEventListener("drop", (ev) => {
+  const card = ev.target.closest(".party");
+  if (!card || !drag) return;
+  ev.preventDefault();
+  const to = data.parties.find((p) => p.id === card.dataset.party);
+  const from = drag.from && data.parties.find((p) => p.id === drag.from);
+  const u = drag.user;
+  drag = null;
+  if (!to || to === from) { render(); return; }
+  if (to.members.includes(u)) { toast("อยู่ในปาร์ตี้นี้แล้ว"); render(); return; }
+  if (to.members.length >= data.partySize) { toast(`ปาร์ตี้เต็มแล้ว (${data.partySize} คน)`); render(); return; }
+  to.members.push(u);
+  if (from) { from.members = from.members.filter((x) => x !== u); scheduleSave(from, 300); }
+  active = to.id;
+  render();
+  scheduleSave(to, 300);
+});
+
 document.getElementById("barDone").addEventListener("click", () => { active = null; render(); });
 
 if (!T) fatal("เปิดหน้านี้จากปุ่ม \"จัดปาร์ตี้\" ใน Discord");

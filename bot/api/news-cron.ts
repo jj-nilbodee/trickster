@@ -1,7 +1,7 @@
 // Called every 10 minutes by Supabase pg_cron (see supabase/schema.sql). Posts new playtrickster.com news to Discord.
 import { timingSafeEqual } from "node:crypto";
 import { DiscordRest } from "../src/discord.js";
-import { SupabaseNewsStore, checkNews, fetchNews } from "../src/news.js";
+import { SupabaseNewsStore, fetchNews, runNewsCheck } from "../src/news.js";
 
 function env(name: string): string {
   const v = process.env[name];
@@ -17,7 +17,7 @@ export async function POST(request: Request): Promise<Response> {
   const given = request.headers.get("x-cron-secret") ?? "";
   if (!secret || !same(given, secret)) return new Response("forbidden", { status: 403 });
   try {
-    const result = await checkNews(store, new DiscordRest(env("DISCORD_BOT_TOKEN")), await fetchNews());
+    const result = await runNewsCheck(store, new DiscordRest(env("DISCORD_BOT_TOKEN")), () => fetchNews());
     return Response.json(result);
   } catch (e) {
     console.error("news check failed", e);

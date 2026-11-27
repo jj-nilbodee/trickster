@@ -78,6 +78,9 @@ export interface NewsStore {
   channels(): Promise<{ guild_id: string; channel_id: string }[]>;
   setChannel(guildId: string, channelId: string | null): Promise<void>;
   cronSecret(): Promise<string | null>;
+  /** How many checks in a row failed, and whether the channels were already warned. */
+  health(): Promise<{ failures: number; alerted: boolean }>;
+  setHealth(h: { failures: number; alerted: boolean }): Promise<void>;
 }
 
 export class SupabaseNewsStore implements NewsStore {
@@ -111,6 +114,20 @@ export class SupabaseNewsStore implements NewsStore {
       ? this.sb.from("news_channels").upsert({ guild_id: guildId, channel_id: channelId }, { onConflict: "guild_id" })
       : this.sb.from("news_channels").delete().eq("guild_id", guildId);
     const { error } = await q;
+    if (error) throw error;
+  }
+  async health() {
+    const { data, error } = await this.sb.from("app_secrets").select("value").eq("name", "news_health").maybeSingle();
+    if (error) throw error;
+    try {
+      const h = JSON.parse((data?.value as string) ?? "{}");
+      return { failures: Number(h.failures) || 0, alerted: !!h.alerted };
+    } catch {
+      return { failures: 0, alerted: false };
+    }
+  }
+  async setHealth(h: { failures: number; alerted: boolean }) {
+    const { error } = await this.sb.from("app_secrets").upsert({ name: "news_health", value: JSON.stringify(h) }, { onConflict: "name" });
     if (error) throw error;
   }
   async cronSecret() {
@@ -158,4 +175,49 @@ export async function checkNews(store: NewsStore, discord: DiscordApi, items: Ne
   // Remember everything on the page (including what was over the per-run limit) so nothing repeats
   await store.markSeen(urls);
   return { found: items.length, posted: fresh.length, channels: channels.length };
+}
+
+/** Warn the news channels after this many failed checks in a row (10 minutes apart). */
+export const ALERT_AFTER = 3;
+
+async function tellChannels(store: NewsStore, discord: DiscordApi, content: string) {
+  for (const c of await store.channels()) {
+    try {
+      await discord.createMessage(c.channel_id, { content, allowed_mentions: { parse: [] } });
+    } catch (e) {
+      console.error("posting news alert failed", c.channel_id, e);
+    }
+  }
+}
+
+/**
+ * One scheduled run: fetch, post new stories, and keep track of failures.
+ * A page with no stories counts as a failure too, since a block or a redesign often looks like that.
+ */
+export async function runNewsCheck(store: NewsStore, discord: DiscordApi, fetchItems: () => Promise<NewsItem[]>) {
+  const h = await store.health();
+  let items: NewsItem[] = [];
+  let problem = "";
+  try {
+    items = await fetchItems();
+    if (!items.length) problem = "หน้าเว็บไม่มีข่าวให้อ่าน (อาจโดนบล็อก หรือเว็บเปลี่ยนหน้าตา)";
+  } catch (e) {
+    problem = `เปิดหน้าเว็บไม่ได้ (${String((e as Error)?.message ?? e).slice(0, 120)})`;
+  }
+
+  if (problem) {
+    const failures = h.failures + 1;
+    let alerted = h.alerted;
+    if (failures >= ALERT_AFTER && !alerted) {
+      await tellChannels(store, discord,
+        `⚠️ บอทดึงข่าวจาก playtrickster.com/news ไม่ได้ติดกัน ${failures} รอบ (${failures * 10} นาที)\nสาเหตุ: ${problem}\nบอทจะลองใหม่ทุก 10 นาที และจะแจ้งอีกครั้งเมื่อกลับมาดึงได้`);
+      alerted = true;
+    }
+    await store.setHealth({ failures, alerted });
+    return { ok: false, problem, failures, alerted };
+  }
+
+  if (h.alerted) await tellChannels(store, discord, "✅ บอทกลับมาดึงข่าวจาก playtrickster.com ได้ปกติแล้ว");
+  if (h.failures || h.alerted) await store.setHealth({ failures: 0, alerted: false });
+  return { ok: true, ...(await checkNews(store, discord, items)) };
 }

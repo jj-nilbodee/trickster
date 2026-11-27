@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe as group, expect, it } from "vitest";
-import { checkNews, parseNews, type NewsItem, type NewsStore } from "../src/news.js";
+import { checkNews, parseNews, runNewsCheck, type NewsItem, type NewsStore } from "../src/news.js";
 import { handleInteraction, type Deps } from "../src/commands.js";
 
 const html = readFileSync(new URL("./news-page.html", import.meta.url), "utf8");
@@ -14,6 +14,9 @@ class MemNews implements NewsStore {
   async channels() { return [...this.ch].map(([guild_id, channel_id]) => ({ guild_id, channel_id })); }
   async setChannel(g: string, c: string | null) { c ? this.ch.set(g, c) : this.ch.delete(g); }
   async cronSecret() { return "s"; }
+  h = { failures: 0, alerted: false };
+  async health() { return this.h; }
+  async setHealth(h: any) { this.h = h; }
 }
 const discord = () => ({ posted: [] as any[], async createMessage(c: string, m: any) { this.posted.push({ c, m }); } });
 
@@ -64,5 +67,24 @@ group("news", () => {
     h = await handleInteraction(cmd("off") as any, deps);
     await h.after?.();
     expect(news.ch.size).toBe(0);
+  });
+
+  it("warns the channels once after 3 failed checks and again when it recovers", async () => {
+    const store = new MemNews();
+    store.ch.set("g", "c1");
+    const d = discord();
+    const blocked = async () => { throw new Error("news page answered 403"); };
+    await runNewsCheck(store, d as any, blocked);
+    await runNewsCheck(store, d as any, async () => []); // empty page counts too
+    expect(d.posted).toHaveLength(0);
+    await runNewsCheck(store, d as any, blocked);
+    expect(d.posted).toHaveLength(1);
+    expect(d.posted[0].m.content).toContain("ไม่ได้ติดกัน 3 รอบ");
+    await runNewsCheck(store, d as any, blocked);
+    expect(d.posted).toHaveLength(1); // no repeat
+    const r = await runNewsCheck(store, d as any, async () => parseNews(html));
+    expect(r.ok).toBe(true);
+    expect(d.posted[1].m.content).toContain("ปกติแล้ว");
+    expect(store.h).toEqual({ failures: 0, alerted: false });
   });
 });

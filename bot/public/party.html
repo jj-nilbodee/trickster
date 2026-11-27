@@ -204,7 +204,6 @@ function partyCard(p) {
   const isActive = active === p.id;
   return `<section class="party${isActive ? " active" : ""}" data-party="${p.id}">
     <input type="text" class="name" value="${esc(p.name)}" maxlength="40" data-field="name" data-party="${p.id}" aria-label="ชื่อปาร์ตี้">
-    <input type="text" class="note" value="${esc(p.note)}" maxlength="100" placeholder="เวลา / ที่ไป เช่น ToC วันเสาร์ 3 ทุ่ม" data-field="note" data-party="${p.id}" aria-label="หมายเหตุ">
     <ul class="slots">${slots.join("")}</ul>
     <div class="stats">${stats}</div>
     <div class="row">

@@ -158,7 +158,7 @@ export function announcement(party: Party, byId: Map<string, Member>, by: string
       {
         title: `🎉 ${party.name}`,
         color: 0xf1c40f,
-        description: [party.note && `📌 ${party.note}`, ...slots, open > 0 ? `\nว่างอีก ${open} ที่` : ""]
+        description: [...slots, open > 0 ? `\nว่างอีก ${open} ที่` : ""]
           .filter(Boolean)
           .join("\n"),
         footer: { text: "จัดจากหน้าเว็บจัดปาร์ตี้" },

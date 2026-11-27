@@ -33,3 +33,26 @@ create table if not exists public.parties (
 );
 create index if not exists parties_guild on public.parties (guild_id, created_at);
 alter table public.parties enable row level security;
+
+-- News relay: playtrickster.com/news -> Discord (/news picks the channel)
+create table if not exists public.news_seen (url text primary key, seen_at timestamptz not null default now());
+create table if not exists public.news_channels (guild_id text primary key, channel_id text not null);
+create table if not exists public.app_secrets (name text primary key, value text not null);
+alter table public.news_seen enable row level security;
+alter table public.news_channels enable row level security;
+alter table public.app_secrets enable row level security;
+insert into public.app_secrets (name, value)
+values ('news_cron', encode(extensions.gen_random_bytes(24), 'hex'))
+on conflict (name) do nothing;
+
+-- Every 10 minutes, call the bot (change the URL to your Vercel domain).
+-- Vercel's free plan only runs its own crons once a day, so Supabase does the timing.
+create extension if not exists pg_cron;
+create extension if not exists pg_net;
+select cron.schedule('trickster-news', '*/10 * * * *', $$
+  select net.http_post(
+    url := 'https://trickster-guild-bot.vercel.app/api/news-cron',
+    headers := jsonb_build_object('Content-Type', 'application/json',
+      'x-cron-secret', (select value from public.app_secrets where name = 'news_cron')),
+    body := '{}'::jsonb)
+$$);

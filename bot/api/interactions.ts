@@ -4,6 +4,7 @@ import { handleInteraction } from "../src/commands.js";
 import { SupabaseStore } from "../src/db.js";
 import { DiscordRest, verifySignature } from "../src/discord.js";
 import { linkKey, signLink } from "../src/partylink.js";
+import { SupabaseNewsStore, fetchNews } from "../src/news.js";
 
 function env(name: string): string {
   const v = process.env[name];
@@ -19,6 +20,8 @@ function getDeps(origin: string) {
       store: new SupabaseStore(env("SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY")),
       discord: new DiscordRest(env("DISCORD_BOT_TOKEN")),
       // The page lives on the same site Discord calls, e.g. https://trickster-guild-bot.vercel.app/party
+      news: new SupabaseNewsStore(env("SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY")),
+      fetchNews: () => fetchNews(),
       partyUrl: (c) => `${process.env.PUBLIC_URL || origin}/party?t=${signLink(key, c)}`,
     };
   }

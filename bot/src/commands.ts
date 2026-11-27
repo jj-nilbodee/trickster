@@ -4,6 +4,7 @@ import {
   deferred,
   levelAction,
   msg,
+  newsAction,
   partyLinkResponse,
   profileAction,
   registerAction,
@@ -76,6 +77,24 @@ export const COMMANDS = [
     ...GUILD_ONLY,
   },
   {
+    name: "news",
+    description: "ตั้งช่องนี้ให้บอทโพสต์ข่าวใหม่จาก playtrickster.com (สำหรับแอดมิน)",
+    ...GUILD_ONLY,
+    default_member_permissions: String(1 << 5), // Manage Server
+    options: [
+      {
+        type: STRING,
+        name: "mode",
+        description: "เปิดหรือปิด (ว่างไว้ = เปิดในช่องนี้)",
+        required: false,
+        choices: [
+          { name: "เปิด โพสต์ข่าวในช่องนี้", value: "on" },
+          { name: "ปิด", value: "off" },
+        ],
+      },
+    ],
+  },
+  {
     name: "panel",
     description: "ตั้งแผงปุ่มลงทะเบียนถาวรในช่องนี้ (สำหรับแอดมิน)",
     ...GUILD_ONLY,
@@ -131,6 +150,11 @@ export async function handleInteraction(i: Interaction, d: Deps): Promise<Handle
       return deferred(i, d, () => profileAction(d, guildId, userId, opt<string>("member") ?? userId));
     case "roster":
       return deferred(i, d, () => rosterAction(d, guildId));
+    case "news": {
+      const channelId = i.channel_id!;
+      const on = opt<string>("mode") !== "off";
+      return deferred(i, d, () => newsAction(d, guildId, channelId, on));
+    }
     case "party":
       return { response: partyLinkResponse(d, i) };
     case "panel": {

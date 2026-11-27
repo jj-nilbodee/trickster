@@ -2,6 +2,7 @@
 import { CHARACTERS, MANAGED_ROLE_NAMES, MAX_LEVEL, STAT_COLOUR, STAT_EMOJI } from "./jobs.js";
 import { NameTaken, type Member, type Store } from "./db.js";
 import { LINK_HOURS } from "./partylink.js";
+import { newsMessage, type NewsItem, type NewsStore } from "./news.js";
 import { DiscordError, EPHEMERAL, ResponseType, type DiscordApi } from "./discord.js";
 
 export interface Deps {
@@ -9,6 +10,9 @@ export interface Deps {
   discord: DiscordApi;
   /** Makes a personal, signed link to the party web page. Missing in tests that don't need it. */
   partyUrl?: (c: { guildId: string; userId: string; channelId: string }) => string;
+  /** Where news from playtrickster.com goes. Missing in tests that don't need it. */
+  news?: NewsStore;
+  fetchNews?: () => Promise<NewsItem[]>;
 }
 
 export interface Handled {
@@ -229,4 +233,25 @@ export function partyLinkResponse(d: Deps, i: Interaction) {
       components: [{ type: 1, components: [{ type: 2, style: 5, label: "เปิดหน้าจัดปาร์ตี้", emoji: { name: "🎉" }, url }] }],
     },
   };
+}
+
+export async function newsAction(d: Deps, guildId: string, channelId: string, on: boolean): Promise<Reply> {
+  if (!d.news) return { content: "ระบบข่าวยังไม่พร้อมใช้งาน" };
+  if (!on) {
+    await d.news.setChannel(guildId, null);
+    return { content: "ปิดการโพสต์ข่าวแล้ว" };
+  }
+  await d.news.setChannel(guildId, channelId);
+  let sample = "";
+  try {
+    const latest = (await d.fetchNews?.())?.[0];
+    if (latest) {
+      await d.discord.createMessage(channelId, newsMessage(latest));
+      sample = "\nโพสต์ข่าวล่าสุดให้ดูเป็นตัวอย่างแล้ว";
+    }
+  } catch (e) {
+    console.error("sample news failed", e);
+    sample = "\n⚠️ โพสต์ตัวอย่างไม่ได้ ตรวจว่าบอทมีสิทธิ์ Send Messages และ Embed Links ในช่องนี้";
+  }
+  return { content: `ตั้งช่องนี้เป็นช่องข่าวแล้ว ✅ บอทจะเช็ก playtrickster.com/news ทุก 10 นาที ถ้ามีข่าวใหม่จะโพสต์ที่นี่${sample}` };
 }

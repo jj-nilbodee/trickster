@@ -29,7 +29,10 @@ function setup() {
   }));
   const store = { search: async (g: string) => members.filter((m) => m.guild_id === g) } as unknown as Store;
   const posted: any[] = [];
-  const discord = { createMessage: async (channel: string, message: any) => { posted.push({ channel, message }); } } as any;
+  const discord = {
+    createMessage: async (channel: string, message: any) => { posted.push({ channel, message }); },
+    createMessageWithFile: async (channel: string, message: any, file: any) => { posted.push({ channel, message, file }); },
+  } as any;
   const parties = new MemParties();
   const d: PartyDeps = { store, parties, discord, linkKey: key };
   return { d, parties, posted, t: signLink(key, claims) };
@@ -83,6 +86,23 @@ group("party api", () => {
     expect(posted[1].channel).toBe("777");
     expect(await partyAction(d, { t, action: "delete", id: party.id })).toEqual({ deleted: true });
     expect(parties.rows).toHaveLength(0);
+  });
+});
+
+group("announce all", () => {
+  it("posts one picture for every party with members, tagging them, without the announcer", async () => {
+    const { d, t, posted } = setup();
+    await partyAction(d, { t, action: "save", party: { name: "A", members: ["a", "b"] } });
+    await partyAction(d, { t, action: "save", party: { name: "B", members: ["b", "c"] } });
+    await partyAction(d, { t, action: "save", party: { name: "Empty", members: [] } });
+    const png = Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]), Buffer.alloc(20)]).toString("base64");
+    expect(await partyAction(d, { t, action: "announce_all", image: "data:image/png;base64," + png })).toEqual({ announced: 2 });
+    expect(posted[0].channel).toBe("333");
+    expect(posted[0].message.allowed_mentions.users).toEqual(["a", "b", "c"]);
+    expect(posted[0].message.content).toContain("2 ปาร์ตี้");
+    expect(posted[0].message.content).not.toContain("222");
+    expect(posted[0].file.name).toBe("parties.png");
+    await expect(partyAction(d, { t, action: "announce_all", image: Buffer.from("nope").toString("base64") })).rejects.toMatchObject({ status: 400 });
   });
 });
 

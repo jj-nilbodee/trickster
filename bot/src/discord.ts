@@ -80,6 +80,8 @@ export interface DiscordApi {
   removeRole(guildId: string, userId: string, roleId: string): Promise<void>;
   editReply(appId: string, token: string, message: object): Promise<void>;
   createMessage(channelId: string, message: object): Promise<void>;
+  /** Post a message with one attached file (e.g. a PNG). */
+  createMessageWithFile(channelId: string, message: object, file: { name: string; type: string; data: Uint8Array }): Promise<void>;
   /** Replace the app's global slash command list. */
   registerCommands(appId: string, commands: object[]): Promise<void>;
 }
@@ -116,6 +118,17 @@ export class DiscordRest implements DiscordApi {
   }
   async createMessage(channelId: string, message: object) {
     await this.call("POST", `/channels/${channelId}/messages`, message);
+  }
+  async createMessageWithFile(channelId: string, message: object, file: { name: string; type: string; data: Uint8Array }) {
+    const form = new FormData();
+    form.append("payload_json", JSON.stringify({ ...message, attachments: [{ id: 0, filename: file.name }] }));
+    form.append("files[0]", new Blob([file.data], { type: file.type }), file.name);
+    const res = await fetch(`${API}/channels/${channelId}/messages`, {
+      method: "POST",
+      headers: { Authorization: `Bot ${this.botToken}` },
+      body: form,
+    });
+    if (!res.ok) throw new DiscordError(res.status, await res.text());
   }
   async registerCommands(appId: string, commands: object[]) {
     await this.call("PUT", `/applications/${appId}/commands`, commands);

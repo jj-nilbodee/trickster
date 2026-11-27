@@ -138,6 +138,23 @@ export async function partyAction(d: PartyDeps, body: any) {
       if (!id) throw new ApiError(400, "ไม่พบปาร์ตี้");
       return { deleted: await d.parties.delete(c.guildId, id) };
     }
+    case "announce_all": {
+      // The page draws every party with members into one picture; the bot posts it and tags everyone in it
+      const png = decodePng(body.image);
+      const parties = (await d.parties.list(c.guildId)).filter((p) => p.members.length);
+      if (!parties.length) throw new ApiError(400, "ยังไม่มีปาร์ตี้ที่มีคน");
+      const users = [...new Set(parties.flatMap((p) => p.members))];
+      const channel = (await d.parties.announceChannel?.(c.guildId)) || c.channelId;
+      await d.discord.createMessageWithFile(
+        channel,
+        {
+          content: `📣 **จัดปาร์ตี้แล้ว ${parties.length} ปาร์ตี้**\n${users.map((u) => `<@${u}>`).join(" ")}`.slice(0, 2000),
+          allowed_mentions: { users: users.slice(0, 100) },
+        },
+        { name: "parties.png", type: "image/png", data: png },
+      );
+      return { announced: parties.length };
+    }
     case "announce": {
       if (!id) throw new ApiError(400, "ไม่พบปาร์ตี้");
       const party = await d.parties.get(c.guildId, id);
@@ -145,7 +162,7 @@ export async function partyAction(d: PartyDeps, body: any) {
       const byId = new Map((await d.store.search(c.guildId)).map((m) => [m.user_id, m]));
       // A fixed party channel wins; otherwise post where the link was made
       const channel = (await d.parties.announceChannel?.(c.guildId)) || c.channelId;
-      await d.discord.createMessage(channel, announcement(party, byId, c.userId));
+      await d.discord.createMessage(channel, announcement(party, byId));
       return { announced: true };
     }
     default:
@@ -153,7 +170,16 @@ export async function partyAction(d: PartyDeps, body: any) {
   }
 }
 
-export function announcement(party: Party, byId: Map<string, Member>, by: string) {
+const MAX_IMAGE = 3 * 1024 * 1024;
+export function decodePng(b64: unknown): Uint8Array {
+  if (typeof b64 !== "string" || b64.length > MAX_IMAGE * 1.4) throw new ApiError(400, "รูปใหญ่เกินไป");
+  const buf = Buffer.from(b64.replace(/^data:image\/png;base64,/, ""), "base64");
+  const sig = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
+  if (buf.length < 8 || buf.length > MAX_IMAGE || !sig.every((v, i) => buf[i] === v)) throw new ApiError(400, "รูปไม่ถูกต้อง");
+  return new Uint8Array(buf);
+}
+
+export function announcement(party: Party, byId: Map<string, Member>) {
   const slots = party.members.map((u, i) => {
     const m = byId.get(u);
     if (!m) return `${i + 1}. <@${u}>`;
@@ -171,7 +197,6 @@ export function announcement(party: Party, byId: Map<string, Member>, by: string
           .filter(Boolean)
           .join("\n"),
         footer: { text: "จัดจากหน้าเว็บจัดปาร์ตี้" },
-        fields: [{ name: "ประกาศโดย", value: `<@${by}>`, inline: true }],
       },
     ],
     // Ping only the party members, and the person who announced it is named in the text

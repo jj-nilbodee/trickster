@@ -72,6 +72,7 @@ class FakeDiscord implements DiscordApi {
     this.registered.push(commands);
   }
   posted: { channel: string; message: any }[] = [];
+  async createMessageWithFile() {}
   async createMessage(channel: string, message: object) {
     this.posted.push({ channel, message });
   }

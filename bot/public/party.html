@@ -90,6 +90,9 @@ input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); ou
 .layout { display: flex; flex-direction: column; }
 .board { order: 1; } .pool { order: 2; }
 .pool-hint { display: none; }
+.board-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.board-head h2 { margin-bottom: 10px; }
+.board-head button { margin: 12px 0 10px; }
 .party.drop { border-style: dashed; border-color: var(--accent); background: var(--accent-soft); }
 .member[draggable=true], .slot[draggable=true] { cursor: grab; }
 .dragging { opacity: .4; }
@@ -108,7 +111,7 @@ input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); ou
   .party { cursor: pointer; }
   .party input, .party button { cursor: auto; }
   .party button { cursor: pointer; }
-  .pick-btn { display: none; }
+  .pick-row { display: none; }
 }
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: 90px; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 10; max-width: calc(100% - 32px); }
 .toast.show { opacity: 1; }
@@ -218,9 +221,8 @@ function partyCard(p) {
     </div>
     <ul class="slots">${slots.join("")}</ul>
     ${stats ? `<div class="stats">${stats}</div>` : ""}
-    <div class="row">
+    <div class="row pick-row">
       <button class="pick-btn ${isActive ? "" : "primary"}" data-act="pick" data-party="${p.id}">${isActive ? "เสร็จแล้ว" : "เพิ่มคน"}</button>
-      <button data-act="announce" data-party="${p.id}" ${p.members.length ? "" : "disabled"}>📣 ประกาศ</button>
     </div>
     <span class="saved" id="saved-${p.id}"></span>
   </section>`;
@@ -261,7 +263,10 @@ function render() {
   const actP = data.parties.find((p) => p.id === active);
   app.innerHTML = `<div class="layout">
    <section class="board">
-    <h2>ปาร์ตี้ <span class="sub">(สูงสุด ${data.partySize} คน)</span></h2>
+    <div class="board-head">
+      <h2>ปาร์ตี้ <span class="sub">(สูงสุด ${data.partySize} คน)</span></h2>
+      <button class="primary" data-act="announce-all" ${data.parties.some((p) => p.members.length) ? "" : "disabled"}>📣 ประกาศทุกปาร์ตี้ลง Discord</button>
+    </div>
     <div class="parties">${data.parties.map(partyCard).join("")}
       <button class="new-party" data-act="new">+ สร้างปาร์ตี้ใหม่</button></div>
    </section>
@@ -358,15 +363,27 @@ app.addEventListener("click", async (ev) => {
       render();
       scheduleSave(p, 300);
       break;
-    case "announce":
+    case "announce-all": {
+      const ready = data.parties.filter((x) => x.members.length);
+      if (!confirm(`ส่งรูป ${ready.length} ปาร์ตี้ลง Discord และแท็กทุกคนในปาร์ตี้?`)) return;
       b.disabled = true;
+      const label = b.textContent;
+      b.textContent = "กำลังส่ง…";
       try {
-        if (pending.has(p.id)) { clearTimeout(pending.get(p.id)); pending.delete(p.id); await api("POST", { action: "save", party: p }); }
-        await api("POST", { action: "announce", id: p.id });
-        toast("ประกาศใน Discord แล้ว");
+        // Save anything still waiting first, so the picture matches what is stored
+        for (const [id, timer] of [...pending]) {
+          clearTimeout(timer); pending.delete(id);
+          const q = data.parties.find((x) => x.id === id);
+          if (q) await api("POST", { action: "save", party: q });
+        }
+        const image = await drawParties(ready);
+        const { announced } = await api("POST", { action: "announce_all", image });
+        toast(`ส่ง ${announced} ปาร์ตี้ลง Discord แล้ว`);
       } catch (e) { toast(e.message); }
       b.disabled = false;
+      b.textContent = label;
       break;
+    }
     case "delete":
       if (!confirm(`ลบ "${p.name}"?`)) return;
       try {
@@ -394,6 +411,72 @@ app.addEventListener("input", (ev) => {
 app.addEventListener("change", (ev) => {
   if (ev.target.id === "hide") { filter.hideTaken = ev.target.checked; renderMembersOnly(); }
 });
+// ---------- Picture of all parties, for Discord ----------
+const STAT_HEX = { Power: "#e74c3c", Magic: "#a66bbe", Sense: "#2ecc71", Charm: "#f178b4" };
+const imgCache = {};
+function loadImg(src) {
+  return imgCache[src] ??= new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; });
+}
+function fit(ctx, text, max) {
+  if (ctx.measureText(text).width <= max) return text;
+  while (text.length > 1 && ctx.measureText(text + "…").width > max) text = text.slice(0, -1);
+  return text + "…";
+}
+async function drawParties(parties) {
+  const members = byId();
+  const S = 2, CW = 340, PAD = 20, GAP = 16, ROW = 44, HEAD = 46;
+  const cols = Math.min(3, parties.length);
+  const rowsOf = (p) => Math.max(p.members.length, 1);
+  const lines = [];
+  for (let i = 0; i < parties.length; i += cols) lines.push(parties.slice(i, i + cols));
+  const lineH = lines.map((l) => HEAD + Math.max(...l.map(rowsOf)) * ROW + 14);
+  const W = PAD * 2 + cols * CW + (cols - 1) * GAP;
+  const H = 64 + lineH.reduce((a, b) => a + b, 0) + (lines.length - 1) * GAP + PAD;
+  const cv = document.createElement("canvas");
+  cv.width = W * S; cv.height = H * S;
+  const ctx = cv.getContext("2d");
+  ctx.scale(S, S);
+  ctx.imageSmoothingEnabled = false;
+  const font = (w, px) => `${w} ${px}px system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", "Leelawadee UI", Tahoma, sans-serif`;
+  ctx.fillStyle = "#1e1f22"; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = "#f1c40f"; ctx.font = font(700, 22); ctx.textBaseline = "middle";
+  ctx.fillText("🎉 ปาร์ตี้กิลด์", PAD, 34);
+  ctx.fillStyle = "#949ba4"; ctx.font = font(400, 13); ctx.textAlign = "right";
+  ctx.fillText(new Date().toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" }), W - PAD, 34);
+  ctx.textAlign = "left";
+  const icons = {};
+  for (const id of Object.keys(data.characters)) icons[id] = await loadImg(`/icons/${id}.png`);
+  let y = 64;
+  lines.forEach((line, li) => {
+    line.forEach((p, ci) => {
+      const x = PAD + ci * (CW + GAP), h = lineH[li];
+      ctx.fillStyle = "#2b2d31"; ctx.beginPath(); ctx.roundRect(x, y, CW, h, 10); ctx.fill();
+      ctx.fillStyle = "#f1c40f"; ctx.beginPath(); ctx.roundRect(x, y, 4, h, [10, 0, 0, 10]); ctx.fill();
+      ctx.fillStyle = "#f2f3f5"; ctx.font = font(700, 17);
+      ctx.fillText(fit(ctx, p.name, CW - 80), x + 16, y + 24);
+      ctx.fillStyle = "#949ba4"; ctx.font = font(400, 13); ctx.textAlign = "right";
+      ctx.fillText(`${p.members.length}/${data.partySize}`, x + CW - 14, y + 24); ctx.textAlign = "left";
+      p.members.forEach((u, i) => {
+        const m = members.get(u), ry = y + HEAD + i * ROW;
+        if (!m) return;
+        const ch = data.characters[m.char_id];
+        ctx.fillStyle = "#313338"; ctx.beginPath(); ctx.roundRect(x + 10, ry, CW - 20, ROW - 6, 8); ctx.fill();
+        if (icons[m.char_id]) ctx.drawImage(icons[m.char_id], x + 14, ry + 3, 32, 32);
+        ctx.fillStyle = "#f2f3f5"; ctx.font = font(700, 15);
+        const name = fit(ctx, m.name, 130);
+        ctx.fillText(name, x + 54, ry + 19);
+        let nx = x + 54 + ctx.measureText(name).width + 8;
+        ctx.font = font(500, 13); ctx.fillStyle = STAT_HEX[ch.stat];
+        ctx.fillText(ch.name, nx, ry + 19); nx += ctx.measureText(ch.name).width + 6;
+        ctx.fillStyle = "#b5bac1";
+        ctx.fillText(fit(ctx, `Lv.${m.level}${m.build ? " · " + m.build : ""}`, x + CW - 18 - nx), nx, ry + 19);
+      });
+    });
+    y += lineH[li] + GAP;
+  });
+  return cv.toDataURL("image/png");
+}
+
 // Drag a member (or a filled slot) onto a party
 let drag = null;
 app.addEventListener("dragstart", (ev) => {

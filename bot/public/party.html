@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>จัดปาร์ตี้กิลด์</title>
+<link rel="icon" href="/icons/bunny.png">
+<style>
+:root {
+  --bg: #f4f1ea; --card: #fffdf8; --ink: #2a2620; --muted: #7a7266; --line: #e3ddd0;
+  --accent: #c98a00; --accent-ink: #fff; --accent-soft: #fff3d1; --danger: #c0392b; --ok: #2e8b57;
+  --Power: #e74c3c; --Magic: #9b59b6; --Sense: #27ae60; --Charm: #e0609f;
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 14px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17161a; --card: #222127; --ink: #eeeae3; --muted: #a39d93; --line: #35333b;
+    --accent: #f1c40f; --accent-ink: #1b1a16; --accent-soft: #3a3320; --danger: #ff6b5b; --ok: #4cc38a;
+    --shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif; padding-bottom: 96px; }
+header { padding: 18px 16px 8px; max-width: 960px; margin: 0 auto; }
+h1 { font-size: 22px; margin: 0; }
+h2 { font-size: 17px; margin: 22px 0 10px; display: flex; align-items: center; gap: 8px; }
+.sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; border: 1px solid var(--line); background: var(--card); border-radius: 10px; padding: 8px 12px; min-height: 40px; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+button.ghost { background: transparent; border-color: transparent; color: var(--muted); }
+button.danger { color: var(--danger); }
+button:disabled { opacity: .5; cursor: default; }
+input[type=text], input[type=search] { width: 100%; border: 1px solid var(--line); background: var(--bg); border-radius: 10px; padding: 8px 10px; min-height: 40px; }
+input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.icon { width: 32px; height: 32px; image-rendering: pixelated; flex: none; border-radius: 8px; background: var(--bg); }
+
+.parties { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); align-items: start; }
+.party { background: var(--card); border: 2px solid var(--line); border-radius: 12px; padding: 8px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 5px; font-size: 14px; }
+.party .head { display: flex; align-items: center; gap: 4px; }
+.party .count { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.icon-btn { min-height: 30px; width: 30px; padding: 0; border: none; background: transparent; font-size: 14px; opacity: .6; }
+.icon-btn:hover { opacity: 1; }
+.party .row > button { min-height: 32px; padding: 4px 8px; font-size: 13px; border-radius: 8px; }
+.party .icon { width: 24px; height: 24px; border-radius: 6px; }
+.party.active { border-color: var(--accent); }
+.party .name { font-weight: 700; font-size: 15px; border-color: transparent; background: transparent; padding: 2px 4px; min-height: 30px; flex: 1; min-width: 0; }
+.party .name:hover, .party .name:focus { border-color: var(--line); background: var(--bg); }
+.party .note { font-size: 13px; }
+.slots { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+.slot { display: flex; align-items: center; gap: 6px; padding: 2px 2px 2px 4px; border-radius: 8px; background: var(--bg); min-height: 32px; }
+.slot.empty { border: 1px dashed var(--line); background: transparent; color: var(--muted); justify-content: center; font-size: 12px; min-height: 26px; }
+.slot .who { display: flex; align-items: baseline; gap: 6px; }
+.slot .who b { flex: none; max-width: 55%; }
+.slot .who { flex: 1; min-width: 0; }
+.slot .who b { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.slot .meta { font-size: 11px; min-width: 0; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
+.slot .x { min-height: 28px; width: 28px; padding: 0; border: none; background: transparent; color: var(--muted); font-size: 18px; }
+.stats { display: flex; gap: 4px; flex-wrap: wrap; font-size: 11px; color: var(--muted); }
+.pill { border-radius: 999px; padding: 1px 8px; border: 1px solid var(--line); }
+.row { display: flex; gap: 6px; flex-wrap: wrap; }
+.row > button { flex: 1; }
+.saved { font-size: 11px; color: var(--muted); min-height: 14px; line-height: 14px; }
+.new-party { align-self: start; border: 2px dashed var(--line); background: transparent; border-radius: 14px; min-height: 60px; color: var(--muted); font-weight: 600; }
+
+.filters { display: flex; flex-direction: column; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 2; }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.chip { display: flex; align-items: center; gap: 4px; padding: 4px 10px 4px 4px; border-radius: 999px; white-space: nowrap; min-height: 40px; }
+.chip .icon { width: 28px; height: 28px; }
+.chip[aria-pressed=true] { background: var(--accent-soft); border-color: var(--accent); }
+.check { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.members { display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.member { display: flex; align-items: center; gap: 10px; text-align: left; padding: 6px 10px 6px 6px; background: var(--card); width: 100%; }
+.member .who { flex: 1; min-width: 0; }
+.member .who b { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.member .meta { font-size: 12px; color: var(--muted); display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.member .tag { font-size: 11px; color: var(--accent); }
+.member.in { border-color: var(--accent); background: var(--accent-soft); }
+.lv { font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat-Power { color: var(--Power); } .stat-Magic { color: var(--Magic); } .stat-Sense { color: var(--Sense); } .stat-Charm { color: var(--Charm); }
+
+.bar { position: fixed; left: 0; right: 0; bottom: 0; background: var(--card); border-top: 1px solid var(--line); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: none; z-index: 5; box-shadow: 0 -4px 14px rgba(0,0,0,.08); }
+.bar.show { display: block; }
+.bar .in { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+.bar .txt { flex: 1; min-width: 0; font-size: 14px; }
+.bar .txt b { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.layout { display: flex; flex-direction: column; }
+.board { order: 1; } .pool { order: 2; }
+.pool-hint { display: none; }
+.board-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.board-head h2 { margin-bottom: 10px; }
+.board-head button { margin: 12px 0 10px; }
+.party.drop { border-style: dashed; border-color: var(--accent); background: var(--accent-soft); }
+.member[draggable=true], .slot[draggable=true] { cursor: grab; }
+.dragging { opacity: .4; }
+@media (min-width: 900px) {
+  header, main { max-width: 1400px; }
+  .layout { display: grid; grid-template-columns: 340px 1fr; gap: 20px; align-items: start; }
+  .pool { order: 0; position: sticky; top: 0; max-height: 100vh; overflow-y: auto; padding-bottom: 16px; }
+  .pool h2 { margin-top: 8px; }
+  .board h2 { margin-top: 8px; }
+  .members { grid-template-columns: 1fr; }
+  .chips { flex-wrap: wrap; overflow: visible; }
+  .pool-hint { display: block; font-size: 13px; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+  .pool-hint b { color: var(--ink); }
+  .bar { display: none !important; }
+  body { padding-bottom: 24px; }
+  .party { cursor: pointer; }
+  .party input, .party button { cursor: auto; }
+  .party button { cursor: pointer; }
+  .pick-row { display: none; }
+}
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: 90px; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 10; max-width: calc(100% - 32px); }
+.toast.show { opacity: 1; }
+.msg { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 20px; text-align: center; }
+.empty-text { color: var(--muted); font-size: 14px; padding: 8px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🎉 จัดปาร์ตี้กิลด์</h1>
+  <div class="sub" id="sub">กำลังโหลด…</div>
+</header>
+<main id="app"></main>
+<div class="bar" id="bar"><div class="in">
+  <div class="txt"><span class="sub">แตะชื่อด้านบนเพื่อเพิ่มเข้า</span><b id="barName"></b></div>
+  <button class="primary" id="barDone">เสร็จ</button>
+</div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const token = new URLSearchParams(location.search).get("t") || "";
+// Keep the token out of the address bar history shown to others, but keep it working on reload
+try { sessionStorage.setItem("party-t", token || sessionStorage.getItem("party-t") || ""); } catch {}
+const T = token || (() => { try { return sessionStorage.getItem("party-t") || ""; } catch { return ""; } })();
+
+const STAT_TH = { Power: "Power", Magic: "Magic", Sense: "Sense", Charm: "Charm" };
+let data = null;            // { me, partySize, characters, members, parties }
+let active = null;          // id of the party being filled
+const filter = { char: "", q: "", hideTaken: false };
+const pending = new Map();  // party id -> timer
+const app = document.getElementById("app");
+const desktop = () => matchMedia("(min-width: 900px)").matches;
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const byId = () => new Map(data.members.map((m) => [m.user_id, m]));
+const icon = (charId) => `<img class="icon" src="/icons/${esc(charId)}.png" alt="">`;
+
+function toast(text) {
+  const t = document.getElementById("toast");
+  t.textContent = text; t.classList.add("show");
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => t.classList.remove("show"), 2200);
+}
+
+async function api(method, body) {
+  const res = await fetch("/api/party" + (method === "GET" ? "?t=" + encodeURIComponent(T) : ""), {
+    method, headers: { "Content-Type": "application/json" }, body: body ? JSON.stringify({ t: T, ...body }) : undefined,
+  });
+  const json = await res.json().catch(() => ({ error: "เชื่อมต่อไม่ได้" }));
+  if (!res.ok) throw Object.assign(new Error(json.error || "เกิดข้อผิดพลาด"), { status: res.status });
+  return json;
+}
+
+function fatal(text) {
+  document.getElementById("sub").textContent = "";
+  document.getElementById("bar").classList.remove("show");
+  app.innerHTML = `<div class="msg">${esc(text)}</div>`;
+}
+
+async function load(quiet) {
+  try {
+    const fresh = await api("GET");
+    // Don't overwrite a party that is waiting to be saved
+    if (data) for (const id of pending.keys()) {
+      const local = data.parties.find((p) => p.id === id);
+      const i = fresh.parties.findIndex((p) => p.id === id);
+      if (local && i >= 0) fresh.parties[i] = local;
+    }
+    data = fresh;
+    if (active && !data.parties.some((p) => p.id === active)) active = null;
+    const left = Math.max(0, Math.round((data.expires * 1000 - Date.now()) / 3600000));
+    document.getElementById("sub").textContent = `สมาชิกที่ลงทะเบียน ${data.members.length} คน · ลิงก์ใช้ได้อีกประมาณ ${left} ชม.`;
+    render();
+  } catch (e) {
+    if (!quiet || e.status === 401) fatal(e.message);
+  }
+}
+
+function partiesOf(userId) {
+  return data.parties.filter((p) => p.members.includes(userId));
+}
+
+function partyCard(p) {
+  const members = byId();
+  const slots = [];
+  for (let i = 0; i < data.partySize; i++) {
+    const u = p.members[i];
+    if (!u) { slots.push(`<li class="slot empty">ว่าง</li>`); continue; }
+    const m = members.get(u);
+    const ch = m && data.characters[m.char_id];
+    slots.push(`<li class="slot" draggable="true" data-user="${esc(u)}" data-from="${p.id}">${m ? icon(m.char_id) : ""}
+      <span class="who"><b>${esc(m ? m.name : "(ลบข้อมูลแล้ว)")}</b>
+      <span class="meta">${m ? `<span class="stat-${ch.stat}">${esc(ch.name)}</span> · <span class="lv">Lv.${m.level}</span>${m.build ? " · " + esc(m.build) : ""}` : ""}</span></span>
+      <button class="x" data-act="remove" data-party="${p.id}" data-user="${esc(u)}" aria-label="เอาออก">×</button></li>`);
+  }
+  const ms = p.members.map((u) => members.get(u)).filter(Boolean);
+  const count = {};
+  for (const m of ms) { const s = data.characters[m.char_id].stat; count[s] = (count[s] || 0) + 1; }
+  const avg = ms.length ? Math.round(ms.reduce((a, m) => a + m.level, 0) / ms.length) : 0;
+  const stats = Object.entries(count).map(([s, n]) => `<span class="pill stat-${s}">${STAT_TH[s]} ${n}</span>`).join("")
+    + (ms.length ? `<span class="pill">เลเวลเฉลี่ย ${avg}</span>` : "");
+  const isActive = active === p.id;
+  return `<section class="party${isActive ? " active" : ""}" data-party="${p.id}">
+    <div class="head">
+      <input type="text" class="name" value="${esc(p.name)}" maxlength="40" data-field="name" data-party="${p.id}" aria-label="ชื่อปาร์ตี้">
+      <span class="count">${p.members.length}/${data.partySize}</span>
+      <button class="icon-btn danger" data-act="delete" data-party="${p.id}" aria-label="ลบปาร์ตี้" title="ลบปาร์ตี้">🗑</button>
+    </div>
+    <ul class="slots">${slots.join("")}</ul>
+    ${stats ? `<div class="stats">${stats}</div>` : ""}
+    <div class="row pick-row">
+      <button class="pick-btn ${isActive ? "" : "primary"}" data-act="pick" data-party="${p.id}">${isActive ? "เสร็จแล้ว" : "เพิ่มคน"}</button>
+    </div>
+    <span class="saved" id="saved-${p.id}"></span>
+  </section>`;
+}
+
+function memberList() {
+  const q = filter.q.trim().toLowerCase();
+  const act = data.parties.find((p) => p.id === active);
+  const list = data.members
+    .filter((m) => !filter.char || m.char_id === filter.char)
+    .filter((m) => !q || m.name.toLowerCase().includes(q) || (m.build || "").toLowerCase().includes(q))
+    .filter((m) => !filter.hideTaken || (act && act.members.includes(m.user_id)) || partiesOf(m.user_id).length === 0);
+  if (!list.length) return `<div class="empty-text">${data.members.length ? "ไม่มีสมาชิกที่ตรงกับตัวกรอง" : "ยังไม่มีใครลงทะเบียน ให้สมาชิกกดปุ่มลงทะเบียนใน Discord ก่อน"}</div>`;
+  return list.map((m) => {
+    const ch = data.characters[m.char_id];
+    const tags = partiesOf(m.user_id).map((p) => p.name);
+    const inActive = act && act.members.includes(m.user_id);
+    return `<button class="member${inActive ? " in" : ""}" data-act="add" data-user="${esc(m.user_id)}" draggable="true">
+      ${icon(m.char_id)}
+      <span class="who"><b>${esc(m.name)}${m.user_id === data.me ? " (คุณ)" : ""}</b>
+      <span class="meta"><span class="stat-${ch.stat}">${esc(ch.name)}</span>${m.build ? " · " + esc(m.build) : ""}</span>
+      ${tags.length ? `<span class="tag">อยู่ใน: ${esc(tags.join(", "))}</span>` : ""}</span>
+      <span class="lv">Lv.${m.level}</span>
+    </button>`;
+  }).join("");
+}
+
+function render() {
+  const focus = document.activeElement;
+  const keep = focus && focus.dataset && focus.dataset.field ? { party: focus.dataset.party, field: focus.dataset.field, pos: focus.selectionStart } : null;
+  const searchFocused = focus && focus.id === "q";
+  const chips = [`<button class="chip" data-char="" aria-pressed="${!filter.char}" style="padding-left:12px">ทั้งหมด</button>`]
+    .concat(Object.entries(data.characters).map(([id, c]) => {
+      const n = data.members.filter((m) => m.char_id === id).length;
+      return `<button class="chip" data-char="${id}" aria-pressed="${filter.char === id}">${icon(id)}${esc(c.name)} ${n}</button>`;
+    })).join("");
+  if (desktop() && !active && data.parties.length) active = data.parties[0].id;
+  const actP = data.parties.find((p) => p.id === active);
+  app.innerHTML = `<div class="layout">
+   <section class="board">
+    <div class="board-head">
+      <h2>ปาร์ตี้ <span class="sub">(สูงสุด ${data.partySize} คน)</span></h2>
+      <button class="primary" data-act="announce-all" ${data.parties.some((p) => p.members.length) ? "" : "disabled"}>📣 ประกาศทุกปาร์ตี้ลง Discord</button>
+    </div>
+    <div class="parties">${data.parties.map(partyCard).join("")}
+      <button class="new-party" data-act="new">+ สร้างปาร์ตี้ใหม่</button></div>
+   </section>
+   <section class="pool">
+    <h2>สมาชิก</h2>
+    <div class="filters">
+      <div class="pool-hint">${actP ? `คลิกชื่อเพื่อเพิ่มเข้า <b>${esc(actP.name)}</b> (${actP.members.length}/${data.partySize}) หรือลากชื่อไปวางในปาร์ตี้ไหนก็ได้` : "สร้างปาร์ตี้ก่อน แล้วลากชื่อไปวาง"}</div>
+      <input type="search" id="q" placeholder="ค้นหาชื่อหรือสาย เช่น น้ำ" value="${esc(filter.q)}" aria-label="ค้นหา">
+      <div class="chips">${chips}</div>
+      <label class="check"><input type="checkbox" id="hide" ${filter.hideTaken ? "checked" : ""}> ซ่อนคนที่อยู่ในปาร์ตี้แล้ว</label>
+    </div>
+    <div class="members">${memberList()}</div>
+   </section></div>`;
+  const act = data.parties.find((p) => p.id === active);
+  document.getElementById("bar").classList.toggle("show", !!act);
+  if (act) document.getElementById("barName").textContent = `${act.name} (${act.members.length}/${data.partySize})`;
+  if (keep) {
+    const el = app.querySelector(`[data-party="${keep.party}"][data-field="${keep.field}"]`);
+    if (el) { el.focus(); try { el.setSelectionRange(keep.pos, keep.pos); } catch {} }
+  } else if (searchFocused) {
+    const el = document.getElementById("q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length);
+  }
+}
+
+function renderMembersOnly() {
+  const box = app.querySelector(".members");
+  if (box) box.innerHTML = memberList();
+}
+
+function setStatus(id, text) {
+  const el = document.getElementById("saved-" + id);
+  if (el) el.textContent = text;
+}
+
+function scheduleSave(p, delay = 600) {
+  clearTimeout(pending.get(p.id));
+  setStatus(p.id, "กำลังบันทึก…");
+  pending.set(p.id, setTimeout(async () => {
+    try {
+      const { party } = await api("POST", { action: "save", party: p });
+      pending.delete(p.id);
+      const i = data.parties.findIndex((x) => x.id === p.id);
+      if (i >= 0 && !pending.has(p.id)) data.parties[i] = { ...data.parties[i], updated_at: party.updated_at };
+      setStatus(p.id, "บันทึกแล้ว ✓");
+    } catch (e) {
+      pending.delete(p.id);
+      setStatus(p.id, "บันทึกไม่สำเร็จ");
+      toast(e.message);
+      if (e.status === 404) load();
+    }
+  }, delay));
+}
+
+app.addEventListener("click", async (ev) => {
+  const card = ev.target.closest(".party");
+  if (card && desktop() && !ev.target.closest("button, input") && active !== card.dataset.party) {
+    active = card.dataset.party; render(); return;
+  }
+  const chip = ev.target.closest(".chip");
+  if (chip) { filter.char = chip.dataset.char; render(); return; }
+  const b = ev.target.closest("[data-act]");
+  if (!b) return;
+  const p = data.parties.find((x) => x.id === b.dataset.party);
+  switch (b.dataset.act) {
+    case "new": {
+      b.disabled = true;
+      try {
+        const { party } = await api("POST", { action: "save", party: { name: `ปาร์ตี้ ${data.parties.length + 1}`, note: "", members: [] } });
+        data.parties.push(party);
+        active = party.id;
+        render();
+        document.querySelector(`.party[data-party="${party.id}"]`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+      } catch (e) { toast(e.message); b.disabled = false; }
+      break;
+    }
+    case "pick":
+      active = active === p.id ? null : p.id;
+      render();
+      if (active) document.querySelector(".filters")?.scrollIntoView({ behavior: "smooth" });
+      break;
+    case "add": {
+      const target = data.parties.find((x) => x.id === active);
+      if (!target) { toast(data.parties.length ? "กด \"เพิ่มคน\" ที่ปาร์ตี้ก่อน" : "สร้างปาร์ตี้ก่อน แล้วค่อยเลือกคน"); return; }
+      const u = b.dataset.user;
+      if (target.members.includes(u)) target.members = target.members.filter((x) => x !== u);
+      else if (target.members.length >= data.partySize) { toast(`ปาร์ตี้เต็มแล้ว (${data.partySize} คน)`); return; }
+      else target.members.push(u);
+      render();
+      scheduleSave(target, 300);
+      break;
+    }
+    case "remove":
+      p.members = p.members.filter((x) => x !== b.dataset.user);
+      render();
+      scheduleSave(p, 300);
+      break;
+    case "announce-all": {
+      const ready = data.parties.filter((x) => x.members.length);
+      if (!confirm(`ส่งรูป ${ready.length} ปาร์ตี้ลง Discord และแท็กทุกคนในปาร์ตี้?`)) return;
+      b.disabled = true;
+      const label = b.textContent;
+      b.textContent = "กำลังส่ง…";
+      try {
+        // Save anything still waiting first, so the picture matches what is stored
+        for (const [id, timer] of [...pending]) {
+          clearTimeout(timer); pending.delete(id);
+          const q = data.parties.find((x) => x.id === id);
+          if (q) await api("POST", { action: "save", party: q });
+        }
+        const image = await drawParties(ready);
+        const { announced } = await api("POST", { action: "announce_all", image });
+        toast(`ส่ง ${announced} ปาร์ตี้ลง Discord แล้ว`);
+      } catch (e) { toast(e.message); }
+      b.disabled = false;
+      b.textContent = label;
+      break;
+    }
+    case "delete":
+      if (!confirm(`ลบ "${p.name}"?`)) return;
+      try {
+        clearTimeout(pending.get(p.id)); pending.delete(p.id);
+        await api("POST", { action: "delete", id: p.id });
+        data.parties = data.parties.filter((x) => x.id !== p.id);
+        if (active === p.id) active = null;
+        render();
+      } catch (e) { toast(e.message); }
+      break;
+  }
+});
+
+app.addEventListener("input", (ev) => {
+  const el = ev.target;
+  if (el.id === "q") { filter.q = el.value; renderMembersOnly(); return; }
+  if (el.dataset.field) {
+    const p = data.parties.find((x) => x.id === el.dataset.party);
+    if (!p) return;
+    p[el.dataset.field] = el.value;
+    if (el.dataset.field === "name" && active === p.id) document.getElementById("barName").textContent = `${p.name} (${p.members.length}/${data.partySize})`;
+    scheduleSave(p, 900);
+  }
+});
+app.addEventListener("change", (ev) => {
+  if (ev.target.id === "hide") { filter.hideTaken = ev.target.checked; renderMembersOnly(); }
+});
+// ---------- Picture of all parties, for Discord ----------
+const STAT_HEX = { Power: "#e74c3c", Magic: "#a66bbe", Sense: "#2ecc71", Charm: "#f178b4" };
+const imgCache = {};
+function loadImg(src) {
+  return imgCache[src] ??= new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; });
+}
+function fit(ctx, text, max) {
+  if (ctx.measureText(text).width <= max) return text;
+  while (text.length > 1 && ctx.measureText(text + "…").width > max) text = text.slice(0, -1);
+  return text + "…";
+}
+async function drawParties(parties) {
+  const members = byId();
+  const S = 2, CW = 340, PAD = 20, GAP = 16, ROW = 44, HEAD = 46;
+  const cols = Math.min(3, parties.length);
+  const rowsOf = (p) => Math.max(p.members.length, 1);
+  const lines = [];
+  for (let i = 0; i < parties.length; i += cols) lines.push(parties.slice(i, i + cols));
+  const lineH = lines.map((l) => HEAD + Math.max(...l.map(rowsOf)) * ROW + 14);
+  const W = PAD * 2 + cols * CW + (cols - 1) * GAP;
+  const H = 64 + lineH.reduce((a, b) => a + b, 0) + (lines.length - 1) * GAP + PAD;
+  const cv = document.createElement("canvas");
+  cv.width = W * S; cv.height = H * S;
+  const ctx = cv.getContext("2d");
+  ctx.scale(S, S);
+  ctx.imageSmoothingEnabled = false;
+  const font = (w, px) => `${w} ${px}px system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", "Leelawadee UI", Tahoma, sans-serif`;
+  ctx.fillStyle = "#1e1f22"; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = "#f1c40f"; ctx.font = font(700, 22); ctx.textBaseline = "middle";
+  ctx.fillText("🎉 ปาร์ตี้กิลด์", PAD, 34);
+  ctx.fillStyle = "#949ba4"; ctx.font = font(400, 13); ctx.textAlign = "right";
+  ctx.fillText(new Date().toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" }), W - PAD, 34);
+  ctx.textAlign = "left";
+  const icons = {};
+  for (const id of Object.keys(data.characters)) icons[id] = await loadImg(`/icons/${id}.png`);
+  let y = 64;
+  lines.forEach((line, li) => {
+    line.forEach((p, ci) => {
+      const x = PAD + ci * (CW + GAP), h = lineH[li];
+      ctx.fillStyle = "#2b2d31"; ctx.beginPath(); ctx.roundRect(x, y, CW, h, 10); ctx.fill();
+      ctx.fillStyle = "#f1c40f"; ctx.beginPath(); ctx.roundRect(x, y, 4, h, [10, 0, 0, 10]); ctx.fill();
+      ctx.fillStyle = "#f2f3f5"; ctx.font = font(700, 17);
+      ctx.fillText(fit(ctx, p.name, CW - 80), x + 16, y + 24);
+      ctx.fillStyle = "#949ba4"; ctx.font = font(400, 13); ctx.textAlign = "right";
+      ctx.fillText(`${p.members.length}/${data.partySize}`, x + CW - 14, y + 24); ctx.textAlign = "left";
+      p.members.forEach((u, i) => {
+        const m = members.get(u), ry = y + HEAD + i * ROW;
+        if (!m) return;
+        const ch = data.characters[m.char_id];
+        ctx.fillStyle = "#313338"; ctx.beginPath(); ctx.roundRect(x + 10, ry, CW - 20, ROW - 6, 8); ctx.fill();
+        if (icons[m.char_id]) ctx.drawImage(icons[m.char_id], x + 14, ry + 3, 32, 32);
+        ctx.fillStyle = "#f2f3f5"; ctx.font = font(700, 15);
+        const name = fit(ctx, m.name, 130);
+        ctx.fillText(name, x + 54, ry + 19);
+        let nx = x + 54 + ctx.measureText(name).width + 8;
+        ctx.font = font(500, 13); ctx.fillStyle = STAT_HEX[ch.stat];
+        ctx.fillText(ch.name, nx, ry + 19); nx += ctx.measureText(ch.name).width + 6;
+        ctx.fillStyle = "#b5bac1";
+        ctx.fillText(fit(ctx, `Lv.${m.level}${m.build ? " · " + m.build : ""}`, x + CW - 18 - nx), nx, ry + 19);
+      });
+    });
+    y += lineH[li] + GAP;
+  });
+  return cv.toDataURL("image/png");
+}
+
+// Drag a member (or a filled slot) onto a party
+let drag = null;
+app.addEventListener("dragstart", (ev) => {
+  const el = ev.target.closest("[data-user][draggable=true]");
+  if (!el) return;
+  drag = { user: el.dataset.user, from: el.dataset.from || null };
+  ev.dataTransfer.effectAllowed = "move";
+  ev.dataTransfer.setData("text/plain", drag.user);
+  el.classList.add("dragging");
+});
+app.addEventListener("dragend", (ev) => {
+  ev.target.closest?.(".dragging")?.classList.remove("dragging");
+  app.querySelectorAll(".party.drop").forEach((e) => e.classList.remove("drop"));
+  drag = null;
+});
+app.addEventListener("dragover", (ev) => {
+  const card = ev.target.closest(".party");
+  if (!card || !drag) return;
+  ev.preventDefault();
+  app.querySelectorAll(".party.drop").forEach((e) => e !== card && e.classList.remove("drop"));
+  card.classList.add("drop");
+});
+app.addEventListener("dragleave", (ev) => {
+  const card = ev.target.closest(".party");
+  if (card && !card.contains(ev.relatedTarget)) card.classList.remove("drop");
+});
+app.addEventListener("drop", (ev) => {
+  const card = ev.target.closest(".party");
+  if (!card || !drag) return;
+  ev.preventDefault();
+  const to = data.parties.find((p) => p.id === card.dataset.party);
+  const from = drag.from && data.parties.find((p) => p.id === drag.from);
+  const u = drag.user;
+  drag = null;
+  if (!to || to === from) { render(); return; }
+  if (to.members.includes(u)) { toast("อยู่ในปาร์ตี้นี้แล้ว"); render(); return; }
+  if (to.members.length >= data.partySize) { toast(`ปาร์ตี้เต็มแล้ว (${data.partySize} คน)`); render(); return; }
+  to.members.push(u);
+  if (from) { from.members = from.members.filter((x) => x !== u); scheduleSave(from, 300); }
+  active = to.id;
+  render();
+  scheduleSave(to, 300);
+});
+
+document.getElementById("barDone").addEventListener("click", () => { active = null; render(); });
+
+if (!T) fatal("เปิดหน้านี้จากปุ่ม \"จัดปาร์ตี้\" ใน Discord");
+else {
+  load();
+  // Pick up changes other members made, unless someone is typing here
+  setInterval(() => {
+    const typing = document.activeElement && document.activeElement.dataset && document.activeElement.dataset.field;
+    if (!document.hidden && !typing && pending.size === 0) load(true);
+  }, 15000);
+}
+</script>
+</body>
+</html>

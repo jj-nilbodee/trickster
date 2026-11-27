@@ -228,7 +228,7 @@ export function partyLinkResponse(d: Deps, i: Interaction) {
   return {
     type: ResponseType.MESSAGE,
     data: {
-      content: `ลิงก์นี้ใช้ได้ ${LINK_HOURS} ชั่วโมง และเป็นของคุณคนเดียว อย่าส่งต่อให้คนนอกกิลด์\nกด "ประกาศ" ในหน้าเว็บ บอทจะโพสต์ปาร์ตี้ลงช่องนี้`,
+      content: `ลิงก์นี้ใช้ได้ ${LINK_HOURS} ชั่วโมง และเป็นของคุณคนเดียว อย่าส่งต่อให้คนนอกกิลด์\nกด "ประกาศ" ในหน้าเว็บ บอทจะโพสต์ปาร์ตี้ลงช่องประกาศปาร์ตี้ของกิลด์`,
       flags: EPHEMERAL,
       components: [{ type: 1, components: [{ type: 2, style: 5, label: "เปิดหน้าจัดปาร์ตี้", emoji: { name: "🎉" }, url }] }],
     },

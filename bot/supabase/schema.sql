@@ -56,3 +56,7 @@ select cron.schedule('trickster-news', '*/10 * * * *', $$
       'x-cron-secret', (select value from public.app_secrets where name = 'news_cron')),
     body := '{}'::jsonb)
 $$);
+
+-- Optional fixed channel for party announcements (otherwise the channel the link came from)
+create table if not exists public.party_channels (guild_id text primary key, channel_id text not null);
+alter table public.party_channels enable row level security;

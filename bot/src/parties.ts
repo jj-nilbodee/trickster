@@ -26,6 +26,8 @@ export interface PartyStore {
   /** Insert when id is empty, otherwise update that party. */
   save(p: Omit<Party, "id"> & { id?: string }): Promise<Party>;
   delete(guildId: string, id: string): Promise<boolean>;
+  /** The server's fixed channel for party announcements, if one is set. */
+  announceChannel?(guildId: string): Promise<string | null>;
 }
 
 const COLS = "id,guild_id,name,note,members,updated_at";
@@ -54,6 +56,11 @@ export class SupabasePartyStore implements PartyStore {
     const { data, error } = await q.select(COLS).single();
     if (error) throw error;
     return data as Party;
+  }
+  async announceChannel(guildId: string) {
+    const { data, error } = await this.sb.from("party_channels").select("channel_id").eq("guild_id", guildId).maybeSingle();
+    if (error) throw error;
+    return (data?.channel_id as string | undefined) ?? null;
   }
   async delete(guildId: string, id: string) {
     const { data, error } = await this.sb.from("parties").delete().eq("guild_id", guildId).eq("id", id).select("id");
@@ -136,7 +143,9 @@ export async function partyAction(d: PartyDeps, body: any) {
       const party = await d.parties.get(c.guildId, id);
       if (!party) throw new ApiError(404, "ปาร์ตี้นี้ถูกลบไปแล้ว");
       const byId = new Map((await d.store.search(c.guildId)).map((m) => [m.user_id, m]));
-      await d.discord.createMessage(c.channelId, announcement(party, byId, c.userId));
+      // A fixed party channel wins; otherwise post where the link was made
+      const channel = (await d.parties.announceChannel?.(c.guildId)) || c.channelId;
+      await d.discord.createMessage(channel, announcement(party, byId, c.userId));
       return { announced: true };
     }
     default:

@@ -10,6 +10,8 @@ const claims = { guildId: "111", userId: "222", channelId: "333" };
 class MemParties implements PartyStore {
   rows: Party[] = [];
   n = 0;
+  fixed: string | null = null;
+  async announceChannel() { return this.fixed; }
   async list(g: string) { return this.rows.filter((p) => p.guild_id === g); }
   async get(g: string, id: string) { return this.rows.find((p) => p.guild_id === g && p.id === id) ?? null; }
   async save(p: any) {
@@ -76,6 +78,9 @@ group("party api", () => {
     expect(posted[0].message.allowed_mentions).toEqual({ users: ["a", "b"] });
     expect(posted[0].message.embeds[0].description).toContain("Na");
     expect(posted[0].message.embeds[0].description).toContain("ว่างอีก 4 ที่");
+    parties.fixed = "777";
+    await partyAction(d, { t, action: "announce", id: party.id });
+    expect(posted[1].channel).toBe("777");
     expect(await partyAction(d, { t, action: "delete", id: party.id })).toEqual({ deleted: true });
     expect(parties.rows).toHaveLength(0);
   });

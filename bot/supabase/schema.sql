@@ -60,3 +60,17 @@ $$);
 -- Optional fixed channel for party announcements (otherwise the channel the link came from)
 create table if not exists public.party_channels (guild_id text primary key, channel_id text not null);
 alter table public.party_channels enable row level security;
+
+-- Dummy characters for the party page: stand-ins that aren't registered members.
+-- A party slot holding one stores "dummy:<id>" in parties.members.
+create table if not exists public.party_dummies (
+  id         uuid        primary key default gen_random_uuid(),
+  guild_id   text        not null,
+  name       text        not null,
+  char_id    text        not null,
+  level      integer     not null check (level between 1 and 999),
+  build      text        not null default '',
+  created_at timestamptz not null default now()
+);
+create index if not exists party_dummies_guild on public.party_dummies (guild_id, created_at);
+alter table public.party_dummies enable row level security;

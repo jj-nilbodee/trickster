@@ -11,6 +11,10 @@ class MemParties implements PartyStore {
   rows: Party[] = [];
   n = 0;
   fixed: string | null = null;
+  dummies: any[] = [];
+  async listDummies(g: string) { return this.dummies.filter((x) => x.guild_id === g); }
+  async addDummy(x: any) { const r = { ...x, id: `00000000-0000-4000-9000-${String(++this.n).padStart(12, "0")}` }; this.dummies.push(r); return r; }
+  async deleteDummy(g: string, id: string) { const n = this.dummies.length; this.dummies = this.dummies.filter((x) => !(x.guild_id === g && x.id === id)); return this.dummies.length < n; }
   async announceChannel() { return this.fixed; }
   async list(g: string) { return this.rows.filter((p) => p.guild_id === g); }
   async get(g: string, id: string) { return this.rows.find((p) => p.guild_id === g && p.id === id) ?? null; }
@@ -103,6 +107,42 @@ group("announce all", () => {
     expect(posted[0].message.content).not.toContain("222");
     expect(posted[0].file.name).toBe("parties.png");
     await expect(partyAction(d, { t, action: "announce_all", image: Buffer.from("nope").toString("base64") })).rejects.toMatchObject({ status: 400 });
+  });
+});
+
+group("dummy characters", () => {
+  it("adds a dummy, places it like a member, never pings it, and removes it from parties when deleted", async () => {
+    const { d, t, posted, parties } = setup();
+    await expect(partyAction(d, { t, action: "add_dummy", dummy: { name: " ", char_id: "fox", level: 50 } })).rejects.toMatchObject({ status: 400 });
+    await expect(partyAction(d, { t, action: "add_dummy", dummy: { name: "X", char_id: "nope", level: 50 } })).rejects.toMatchObject({ status: 400 });
+    await expect(partyAction(d, { t, action: "add_dummy", dummy: { name: "X", char_id: "fox", level: 0 } })).rejects.toMatchObject({ status: 400 });
+    const { member } = (await partyAction(d, { t, action: "add_dummy", dummy: { name: " Friend ", char_id: "fox", level: "88", build: "ปืน" } })) as any;
+    expect(member).toMatchObject({ name: "Friend", char_id: "fox", level: 88, build: "ปืน", dummy: true });
+    expect(member.user_id).toMatch(/^dummy:/);
+
+    const loaded = await loadParties(d, t);
+    expect(loaded.members).toHaveLength(8);
+    expect(loaded.members.at(-1)).toMatchObject({ user_id: member.user_id, dummy: true });
+    // Another server can't use it
+    const other = signLink(key, { ...claims, guildId: "999" });
+    expect((await loadParties(d, other)).members).toHaveLength(0);
+
+    const party = ((await partyAction(d, { t, action: "save", party: { name: "P", members: ["a", member.user_id, "dummy:00000000-0000-4000-9000-000000000999"] } })) as any).party as Party;
+    expect(party.members).toEqual(["a", member.user_id]);
+
+    await partyAction(d, { t, action: "announce", id: party.id });
+    const msg = posted[0].message;
+    expect(msg.allowed_mentions.users).toEqual(["a"]);
+    expect(msg.content).not.toContain("dummy");
+    expect(msg.embeds[0].description).toContain("**Friend** · Fox (ปืน) · Lv.88 (dummy)");
+
+    const png = Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]), Buffer.alloc(20)]).toString("base64");
+    await partyAction(d, { t, action: "announce_all", image: png });
+    expect(posted[1].message.allowed_mentions.users).toEqual(["a"]);
+
+    expect(await partyAction(d, { t, action: "delete_dummy", id: member.user_id.slice(6) })).toEqual({ deleted: true });
+    expect(parties.rows[0].members).toEqual(["a"]);
+    expect(parties.dummies).toHaveLength(0);
   });
 });
 

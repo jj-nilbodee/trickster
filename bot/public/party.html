@@ -79,6 +79,17 @@ input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); ou
 .member .meta { font-size: 12px; color: var(--muted); display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .member .tag { font-size: 11px; color: var(--accent); }
 .member.in { border-color: var(--accent); background: var(--accent-soft); }
+.member-wrap { display: flex; gap: 4px; align-items: stretch; }
+.member-wrap .member { flex: 1; min-width: 0; }
+.member-wrap .del { min-height: 0; width: 36px; padding: 0; color: var(--muted); }
+.badge { font-size: 10px; font-weight: 600; color: var(--muted); border: 1px dashed var(--muted); border-radius: 6px; padding: 0 4px; margin-left: 4px; vertical-align: 1px; flex: none; }
+.slot .badge { margin-left: 0; align-self: center; }
+.dummy-toggle { width: 100%; margin-bottom: 8px; border-style: dashed; color: var(--muted); font-weight: 600; background: transparent; }
+.dummy-form { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px; margin-bottom: 10px; display: grid; gap: 8px; grid-template-columns: 1fr 1fr; }
+.dummy-form .full { grid-column: 1 / -1; }
+.dummy-form label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--muted); }
+.dummy-form input, .dummy-form select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 8px; min-height: 38px; width: 100%; }
+.dummy-form .hint { font-size: 12px; color: var(--muted); }
 .lv { font-weight: 700; font-variant-numeric: tabular-nums; }
 .stat-Power { color: var(--Power); } .stat-Magic { color: var(--Magic); } .stat-Sense { color: var(--Sense); } .stat-Charm { color: var(--Charm); }
 
@@ -140,6 +151,8 @@ const T = token || (() => { try { return sessionStorage.getItem("party-t") || ""
 const STAT_TH = { Power: "Power", Magic: "Magic", Sense: "Sense", Charm: "Charm" };
 let data = null;            // { me, partySize, characters, members, parties }
 let active = null;          // id of the party being filled
+// Form for a dummy character: a stand-in that isn't registered, e.g. a friend outside Discord
+const dummyDraft = { open: false, name: "", char_id: "", level: "", build: "" };
 const filter = { char: "", q: "", hideTaken: false };
 const pending = new Map();  // party id -> timer
 const app = document.getElementById("app");
@@ -147,6 +160,7 @@ const desktop = () => matchMedia("(min-width: 900px)").matches;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const byId = () => new Map(data.members.map((m) => [m.user_id, m]));
+const badge = (m) => (m && m.dummy ? `<span class="badge">dummy</span>` : "");
 const icon = (charId) => `<img class="icon" src="/icons/${esc(charId)}.png" alt="">`;
 
 function toast(text) {
@@ -182,7 +196,8 @@ async function load(quiet) {
     data = fresh;
     if (active && !data.parties.some((p) => p.id === active)) active = null;
     const left = Math.max(0, Math.round((data.expires * 1000 - Date.now()) / 3600000));
-    document.getElementById("sub").textContent = `สมาชิกที่ลงทะเบียน ${data.members.length} คน · ลิงก์ใช้ได้อีกประมาณ ${left} ชม.`;
+    const dummies = data.members.filter((m) => m.dummy).length;
+    document.getElementById("sub").textContent = `สมาชิกที่ลงทะเบียน ${data.members.length - dummies} คน${dummies ? ` · dummy ${dummies} ตัว` : ""} · ลิงก์ใช้ได้อีกประมาณ ${left} ชม.`;
     render();
   } catch (e) {
     if (!quiet || e.status === 401) fatal(e.message);
@@ -202,7 +217,7 @@ function partyCard(p) {
     const m = members.get(u);
     const ch = m && data.characters[m.char_id];
     slots.push(`<li class="slot" draggable="true" data-user="${esc(u)}" data-from="${p.id}">${m ? icon(m.char_id) : ""}
-      <span class="who"><b>${esc(m ? m.name : "(ลบข้อมูลแล้ว)")}</b>
+      <span class="who"><b>${esc(m ? m.name : "(ลบข้อมูลแล้ว)")}</b>${badge(m)}
       <span class="meta">${m ? `<span class="stat-${ch.stat}">${esc(ch.name)}</span> · <span class="lv">Lv.${m.level}</span>${m.build ? " · " + esc(m.build) : ""}` : ""}</span></span>
       <button class="x" data-act="remove" data-party="${p.id}" data-user="${esc(u)}" aria-label="เอาออก">×</button></li>`);
   }
@@ -235,18 +250,20 @@ function memberList() {
     .filter((m) => !filter.char || m.char_id === filter.char)
     .filter((m) => !q || m.name.toLowerCase().includes(q) || (m.build || "").toLowerCase().includes(q))
     .filter((m) => !filter.hideTaken || (act && act.members.includes(m.user_id)) || partiesOf(m.user_id).length === 0);
-  if (!list.length) return `<div class="empty-text">${data.members.length ? "ไม่มีสมาชิกที่ตรงกับตัวกรอง" : "ยังไม่มีใครลงทะเบียน ให้สมาชิกกดปุ่มลงทะเบียนใน Discord ก่อน"}</div>`;
+  if (!list.length) return `<div class="empty-text">${data.members.length ? "ไม่มีสมาชิกที่ตรงกับตัวกรอง" : "ยังไม่มีใครลงทะเบียน ให้สมาชิกกดปุ่มลงทะเบียนใน Discord ก่อน หรือเพิ่มตัวละคร dummy ด้านบน"}</div>`;
   return list.map((m) => {
     const ch = data.characters[m.char_id];
     const tags = partiesOf(m.user_id).map((p) => p.name);
     const inActive = act && act.members.includes(m.user_id);
-    return `<button class="member${inActive ? " in" : ""}" data-act="add" data-user="${esc(m.user_id)}" draggable="true">
+    const btn = `<button class="member${inActive ? " in" : ""}" data-act="add" data-user="${esc(m.user_id)}" draggable="true">
       ${icon(m.char_id)}
-      <span class="who"><b>${esc(m.name)}${m.user_id === data.me ? " (คุณ)" : ""}</b>
+      <span class="who"><b>${esc(m.name)}${m.user_id === data.me ? " (คุณ)" : ""}${badge(m)}</b>
       <span class="meta"><span class="stat-${ch.stat}">${esc(ch.name)}</span>${m.build ? " · " + esc(m.build) : ""}</span>
       ${tags.length ? `<span class="tag">อยู่ใน: ${esc(tags.join(", "))}</span>` : ""}</span>
       <span class="lv">Lv.${m.level}</span>
     </button>`;
+    if (!m.dummy) return btn;
+    return `<div class="member-wrap">${btn}<button class="del danger" data-act="delete-dummy" data-user="${esc(m.user_id)}" aria-label="ลบตัวละคร dummy" title="ลบตัวละคร dummy">🗑</button></div>`;
   }).join("");
 }
 
@@ -272,6 +289,7 @@ function render() {
    </section>
    <section class="pool">
     <h2>สมาชิก</h2>
+    ${dummyForm()}
     <div class="filters">
       <div class="pool-hint">${actP ? `คลิกชื่อเพื่อเพิ่มเข้า <b>${esc(actP.name)}</b> (${actP.members.length}/${data.partySize}) หรือลากชื่อไปวางในปาร์ตี้ไหนก็ได้` : "สร้างปาร์ตี้ก่อน แล้วลากชื่อไปวาง"}</div>
       <input type="search" id="q" placeholder="ค้นหาชื่อหรือสาย เช่น น้ำ" value="${esc(filter.q)}" aria-label="ค้นหา">
@@ -289,6 +307,21 @@ function render() {
   } else if (searchFocused) {
     const el = document.getElementById("q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length);
   }
+}
+
+function dummyForm() {
+  if (!dummyDraft.open) return `<button class="dummy-toggle" data-act="dummy-open">+ เพิ่มตัวละคร dummy (คนที่ไม่ได้ลงทะเบียน)</button>`;
+  const opts = [`<option value="">เลือกตัวละคร</option>`].concat(Object.entries(data.characters).map(([id, c]) =>
+    `<option value="${id}" ${dummyDraft.char_id === id ? "selected" : ""}>${esc(c.name)} (${c.stat})</option>`)).join("");
+  return `<form class="dummy-form" id="dummyForm" autocomplete="off">
+    <label class="full">ชื่อตัวละคร<input data-dummy="name" maxlength="32" value="${esc(dummyDraft.name)}" required></label>
+    <label>ตัวละคร<select data-dummy="char_id" required>${opts}</select></label>
+    <label>เลเวล<input data-dummy="level" type="number" inputmode="numeric" min="1" max="999" value="${esc(dummyDraft.level)}" required></label>
+    <label class="full">สาย (ไม่ใส่ก็ได้)<input data-dummy="build" maxlength="40" value="${esc(dummyDraft.build)}" placeholder="เช่น น้ำ, สายตรง"></label>
+    <span class="hint full">ตัว dummy จัดลงปาร์ตี้ได้เหมือนสมาชิก แต่บอทจะไม่แท็กใครตอนประกาศ</span>
+    <button type="button" class="ghost" data-act="dummy-cancel">ยกเลิก</button>
+    <button type="submit" class="primary">เพิ่ม</button>
+  </form>`;
 }
 
 function renderMembersOnly() {
@@ -358,6 +391,28 @@ app.addEventListener("click", async (ev) => {
       scheduleSave(target, 300);
       break;
     }
+    case "dummy-open":
+      dummyDraft.open = true;
+      render();
+      app.querySelector('[data-dummy="name"]')?.focus();
+      break;
+    case "dummy-cancel":
+      Object.assign(dummyDraft, { open: false, name: "", char_id: "", level: "", build: "" });
+      render();
+      break;
+    case "delete-dummy": {
+      const m = data.members.find((x) => x.user_id === b.dataset.user);
+      if (!m || !confirm(`ลบตัวละคร dummy "${m.name}"? จะถูกเอาออกจากทุกปาร์ตี้ด้วย`)) return;
+      b.disabled = true;
+      try {
+        await api("POST", { action: "delete_dummy", id: m.user_id.slice("dummy:".length) });
+        data.members = data.members.filter((x) => x !== m);
+        for (const q of data.parties) q.members = q.members.filter((x) => x !== m.user_id);
+        render();
+        toast(`ลบ ${m.name} แล้ว`);
+      } catch (e) { toast(e.message); b.disabled = false; }
+      break;
+    }
     case "remove":
       p.members = p.members.filter((x) => x !== b.dataset.user);
       render();
@@ -397,8 +452,24 @@ app.addEventListener("click", async (ev) => {
   }
 });
 
+app.addEventListener("submit", async (ev) => {
+  if (ev.target.id !== "dummyForm") return;
+  ev.preventDefault();
+  const btn = ev.target.querySelector('[type="submit"]');
+  btn.disabled = true;
+  try {
+    const { member } = await api("POST", { action: "add_dummy", dummy: { name: dummyDraft.name, char_id: dummyDraft.char_id, level: dummyDraft.level, build: dummyDraft.build } });
+    data.members.push(member);
+    Object.assign(dummyDraft, { name: "", level: "", build: "" }); // keep the form open to add more
+    render();
+    app.querySelector('[data-dummy="name"]')?.focus();
+    toast(`เพิ่ม ${member.name} แล้ว ลากหรือแตะเพื่อใส่ปาร์ตี้`);
+  } catch (e) { toast(e.message); btn.disabled = false; }
+});
+
 app.addEventListener("input", (ev) => {
   const el = ev.target;
+  if (el.dataset.dummy) { dummyDraft[el.dataset.dummy] = el.value; return; }
   if (el.id === "q") { filter.q = el.value; renderMembersOnly(); return; }
   if (el.dataset.field) {
     const p = data.parties.find((x) => x.id === el.dataset.party);
@@ -409,6 +480,7 @@ app.addEventListener("input", (ev) => {
   }
 });
 app.addEventListener("change", (ev) => {
+  if (ev.target.dataset.dummy) { dummyDraft[ev.target.dataset.dummy] = ev.target.value; return; }
   if (ev.target.id === "hide") { filter.hideTaken = ev.target.checked; renderMembersOnly(); }
 });
 // ---------- Picture of all parties, for Discord ----------
@@ -469,7 +541,7 @@ async function drawParties(parties) {
         ctx.font = font(500, 13); ctx.fillStyle = STAT_HEX[ch.stat];
         ctx.fillText(ch.name, nx, ry + 19); nx += ctx.measureText(ch.name).width + 6;
         ctx.fillStyle = "#b5bac1";
-        ctx.fillText(fit(ctx, `Lv.${m.level}${m.build ? " · " + m.build : ""}`, x + CW - 18 - nx), nx, ry + 19);
+        ctx.fillText(fit(ctx, `Lv.${m.level}${m.build ? " · " + m.build : ""}${m.dummy ? " · dummy" : ""}`, x + CW - 18 - nx), nx, ry + 19);
       });
     });
     y += lineH[li] + GAP;
@@ -528,7 +600,8 @@ else {
   load();
   // Pick up changes other members made, unless someone is typing here
   setInterval(() => {
-    const typing = document.activeElement && document.activeElement.dataset && document.activeElement.dataset.field;
+    const f = document.activeElement;
+    const typing = f && f.dataset && (f.dataset.field || f.dataset.dummy);
     if (!document.hidden && !typing && pending.size === 0) load(true);
   }, 15000);
 }

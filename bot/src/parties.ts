@@ -8,6 +8,20 @@ import { verifyLink, type LinkClaims } from "./partylink.js";
 /** Trickster parties hold up to 6 characters. */
 export const PARTY_SIZE = 6;
 export const MAX_PARTIES = 40;
+export const MAX_DUMMIES = 100;
+/** Party slots that hold a dummy character store "dummy:<id>" instead of a Discord user id. */
+export const DUMMY_PREFIX = "dummy:";
+export const isDummy = (slot: string) => slot.startsWith(DUMMY_PREFIX);
+
+/** A stand-in character that isn't a registered member, e.g. a friend outside Discord. */
+export interface Dummy {
+  id: string;
+  guild_id: string;
+  name: string;
+  char_id: string;
+  level: number;
+  build: string;
+}
 
 export interface Party {
   id: string;
@@ -15,7 +29,7 @@ export interface Party {
   name: string;
   /** Free text: when and where, e.g. "ToC 3 ทุ่ม" */
   note: string;
-  /** Discord user ids of registered members, in slot order. */
+  /** Discord user ids of registered members, or "dummy:<id>", in slot order. */
   members: string[];
   updated_at?: string;
 }
@@ -26,11 +40,18 @@ export interface PartyStore {
   /** Insert when id is empty, otherwise update that party. */
   save(p: Omit<Party, "id"> & { id?: string }): Promise<Party>;
   delete(guildId: string, id: string): Promise<boolean>;
+  listDummies(guildId: string): Promise<Dummy[]>;
+  addDummy(d: Omit<Dummy, "id">): Promise<Dummy>;
+  deleteDummy(guildId: string, id: string): Promise<boolean>;
   /** The server's fixed channel for party announcements, if one is set. */
   announceChannel?(guildId: string): Promise<string | null>;
 }
 
 const COLS = "id,guild_id,name,note,members,updated_at";
+const DUMMY_COLS = "id,guild_id,name,char_id,level,build";
+// The party_dummies table is new: until its SQL has been run, the page works without dummies
+const missingTable = (e: { code?: string } | null) => e?.code === "42P01" || e?.code === "PGRST205";
+const NO_DUMMY_TABLE = "ยังเพิ่มตัวละคร dummy ไม่ได้ ต้องรัน SQL ตาราง party_dummies ใน Supabase ก่อน";
 
 export class SupabasePartyStore implements PartyStore {
   private sb: SupabaseClient;
@@ -56,6 +77,24 @@ export class SupabasePartyStore implements PartyStore {
     const { data, error } = await q.select(COLS).single();
     if (error) throw error;
     return data as Party;
+  }
+  async listDummies(guildId: string) {
+    const { data, error } = await this.sb.from("party_dummies").select(DUMMY_COLS).eq("guild_id", guildId).order("created_at");
+    if (missingTable(error)) return [];
+    if (error) throw error;
+    return (data ?? []) as Dummy[];
+  }
+  async addDummy(d: Omit<Dummy, "id">) {
+    const { data, error } = await this.sb.from("party_dummies").insert(d).select(DUMMY_COLS).single();
+    if (missingTable(error)) throw new ApiError(503, NO_DUMMY_TABLE);
+    if (error) throw error;
+    return data as Dummy;
+  }
+  async deleteDummy(guildId: string, id: string) {
+    const { data, error } = await this.sb.from("party_dummies").delete().eq("guild_id", guildId).eq("id", id).select("id");
+    if (missingTable(error)) return false;
+    if (error) throw error;
+    return (data?.length ?? 0) > 0;
   }
   async announceChannel(guildId: string) {
     const { data, error } = await this.sb.from("party_channels").select("channel_id").eq("guild_id", guildId).maybeSingle();
@@ -98,13 +137,21 @@ const text = (v: unknown, max: number) => (typeof v === "string" ? v.trim().slic
 /** GET: everything the page needs. */
 export async function loadParties(d: PartyDeps, token: string | null) {
   const c = claims(d, token);
-  const [members, parties] = await Promise.all([d.store.search(c.guildId), d.parties.list(c.guildId)]);
+  const [members, parties, dummies] = await Promise.all([
+    d.store.search(c.guildId),
+    d.parties.list(c.guildId),
+    d.parties.listDummies(c.guildId),
+  ]);
   return {
     me: c.userId,
     expires: c.exp,
     partySize: PARTY_SIZE,
     characters: Object.fromEntries(Object.entries(CHARACTERS).map(([id, ch]) => [id, { name: ch.name, stat: ch.stat }])),
-    members: members.map(({ user_id, name, char_id, level, build }) => ({ user_id, name, char_id, level, build })),
+    members: [
+      ...members.map(({ user_id, name, char_id, level, build }) => ({ user_id, name, char_id, level, build })),
+      // Dummies sit in the same list, so the page places them exactly like members
+      ...dummies.map(({ id, name, char_id, level, build }) => ({ user_id: DUMMY_PREFIX + id, name, char_id, level, build, dummy: true })),
+    ],
     parties,
   };
 }
@@ -118,7 +165,10 @@ export async function partyAction(d: PartyDeps, body: any) {
     case "save": {
       const p = body.party ?? {};
       const pid = typeof p.id === "string" && UUID.test(p.id) ? p.id : undefined;
-      const known = new Set((await d.store.search(c.guildId)).map((m) => m.user_id));
+      const known = new Set([
+        ...(await d.store.search(c.guildId)).map((m) => m.user_id),
+        ...(await d.parties.listDummies(c.guildId)).map((x) => DUMMY_PREFIX + x.id),
+      ]);
       const members = [...new Set<string>(Array.isArray(p.members) ? p.members.filter((u: unknown) => typeof u === "string") : [])]
         .filter((u) => known.has(u))
         .slice(0, PARTY_SIZE);
@@ -138,12 +188,33 @@ export async function partyAction(d: PartyDeps, body: any) {
       if (!id) throw new ApiError(400, "ไม่พบปาร์ตี้");
       return { deleted: await d.parties.delete(c.guildId, id) };
     }
+    case "add_dummy": {
+      const x = body.dummy ?? {};
+      const name = text(x.name, 32);
+      if (!name) throw new ApiError(400, "ใส่ชื่อตัวละครก่อน");
+      if (typeof x.char_id !== "string" || !CHARACTERS[x.char_id]) throw new ApiError(400, "เลือกตัวละครก่อน");
+      const level = Math.trunc(Number(x.level));
+      if (!(level >= 1 && level <= 999)) throw new ApiError(400, "เลเวลต้องอยู่ระหว่าง 1 ถึง 999");
+      if ((await d.parties.listDummies(c.guildId)).length >= MAX_DUMMIES)
+        throw new ApiError(400, `มีตัวละคร dummy ครบ ${MAX_DUMMIES} ตัวแล้ว ลบตัวเก่าก่อน`);
+      const dummy = await d.parties.addDummy({ guild_id: c.guildId, name, char_id: x.char_id, level, build: text(x.build, 40) });
+      return { member: { user_id: DUMMY_PREFIX + dummy.id, name, char_id: dummy.char_id, level, build: dummy.build, dummy: true } };
+    }
+    case "delete_dummy": {
+      if (!id) throw new ApiError(400, "ไม่พบตัวละคร");
+      const deleted = await d.parties.deleteDummy(c.guildId, id);
+      // Take it out of every party it was in
+      const slot = DUMMY_PREFIX + id;
+      for (const p of await d.parties.list(c.guildId))
+        if (p.members.includes(slot)) await d.parties.save({ ...p, members: p.members.filter((u) => u !== slot) });
+      return { deleted };
+    }
     case "announce_all": {
       // The page draws every party with members into one picture; the bot posts it and tags everyone in it
       const png = decodePng(body.image);
       const parties = (await d.parties.list(c.guildId)).filter((p) => p.members.length);
       if (!parties.length) throw new ApiError(400, "ยังไม่มีปาร์ตี้ที่มีคน");
-      const users = [...new Set(parties.flatMap((p) => p.members))];
+      const users = [...new Set(parties.flatMap((p) => p.members))].filter((u) => !isDummy(u));
       const channel = (await d.parties.announceChannel?.(c.guildId)) || c.channelId;
       await d.discord.createMessageWithFile(
         channel,
@@ -159,7 +230,8 @@ export async function partyAction(d: PartyDeps, body: any) {
       if (!id) throw new ApiError(400, "ไม่พบปาร์ตี้");
       const party = await d.parties.get(c.guildId, id);
       if (!party) throw new ApiError(404, "ปาร์ตี้นี้ถูกลบไปแล้ว");
-      const byId = new Map((await d.store.search(c.guildId)).map((m) => [m.user_id, m]));
+      const byId = new Map<string, Slot>((await d.store.search(c.guildId)).map((m) => [m.user_id, m]));
+      for (const x of await d.parties.listDummies(c.guildId)) byId.set(DUMMY_PREFIX + x.id, { ...x, dummy: true });
       // A fixed party channel wins; otherwise post where the link was made
       const channel = (await d.parties.announceChannel?.(c.guildId)) || c.channelId;
       await d.discord.createMessage(channel, announcement(party, byId));
@@ -179,16 +251,19 @@ export function decodePng(b64: unknown): Uint8Array {
   return new Uint8Array(buf);
 }
 
-export function announcement(party: Party, byId: Map<string, Member>) {
+type Slot = Pick<Member, "name" | "char_id" | "level" | "build"> & { dummy?: boolean };
+
+export function announcement(party: Party, byId: Map<string, Slot>) {
+  const users = party.members.filter((u) => !isDummy(u));
   const slots = party.members.map((u, i) => {
     const m = byId.get(u);
-    if (!m) return `${i + 1}. <@${u}>`;
+    if (!m) return isDummy(u) ? "" : `${i + 1}. <@${u}>`;
     const ch = CHARACTERS[m.char_id];
-    return `${i + 1}. ${STAT_EMOJI[ch.stat]} **${m.name}** · ${ch.name}${m.build ? ` (${m.build})` : ""} · Lv.${m.level} <@${u}>`;
+    return `${i + 1}. ${STAT_EMOJI[ch.stat]} **${m.name}** · ${ch.name}${m.build ? ` (${m.build})` : ""} · Lv.${m.level} ${m.dummy ? "(dummy)" : `<@${u}>`}`;
   });
   const open = PARTY_SIZE - party.members.length;
   return {
-    content: party.members.map((u) => `<@${u}>`).join(" "),
+    content: users.map((u) => `<@${u}>`).join(" "),
     embeds: [
       {
         title: `🎉 ${party.name}`,
@@ -200,6 +275,6 @@ export function announcement(party: Party, byId: Map<string, Member>) {
       },
     ],
     // Ping only the party members, and the person who announced it is named in the text
-    allowed_mentions: { users: party.members.slice(0, 100) },
+    allowed_mentions: { users: users.slice(0, 100) },
   };
 }
